@@ -5,9 +5,13 @@
 $(document).ready(function(){
   if($('.intro-logo video').length > 0) {
     $("body").css({"height": "100%", "overflow": "hidden"});
+    $(".navbar").hide();
     $('.intro-logo video').on('ended',function(){
       $("body").css({"height": "auto", "overflow": "visible"});
-      $(".intro-logo").slideUp(500);
+      $(".intro-logo").slideUp(500, function(){
+        $(".navbar").slideDown(300);
+      });
+
     });
   }
 });
