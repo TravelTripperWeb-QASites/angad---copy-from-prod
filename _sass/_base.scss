@@ -1,21 +1,28 @@
 // Base Elements
 // ==========================================================================
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-  color: $text-color;
+  margin: 0;
+  padding: 0;
   font-family: $global-font-family;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font-family;
+  margin: 0;
 }
 
 h1 {
+  margin-top: 0;
   font-size: $type-size-3;
 }
 
 h2 {
-  font-size: $type-size-4;
+  @include text-formatting($global-font-family, $type-size-3, normal, normal, $white, uppercase, .1px)
 }
 
 h3 {
@@ -38,21 +45,45 @@ small, .small {
   font-size: $type-size-6;
 }
 
-u,
-ins {
-  border-bottom: 1px solid $text-color;
+p {
+  margin-bottom: 1.3rem;
+}
+
+del a {
+  color: inherit;
 }
 
 // Links
 
 a {
-  color: $link-color;
-  &:visited {
-    color: $link-color-visited;
-  }
   &:hover,
   &:active {
     outline: 0;
-    color: $link-color-hover;
+  }
+}
+
+// Sets a default bottom margin and removes bullet points from lists
+
+ul li,
+ol li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+li ul,
+li ol {
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+// Fix IE9 SVG bug
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.intro-logo {
+  video {
+    width: 100%;
   }
 }

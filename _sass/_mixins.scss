@@ -10,3 +10,37 @@
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+
+// Design made in this size
+@mixin container-fixed-width {
+  @include make-container;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+// Transition
+@mixin global-transition($transition) {
+  -webkit-transition: all $transition;
+  transition:         all $transition;
+  -moz-transition:    all $transition;
+  -o-transition:      all $transition;
+}
+
+@mixin text-formatting($font-family, $font-size, $font-weight, $line-height, $font-color, $text-transform, $letter-spacing) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $font-color;
+  text-transform: $text-transform;
+  letter-spacing: $letter-spacing;
+}
+
+// Containers
+
+@mixin container-fixed-width {
+  @include make-container;
+  max-width: 980px;
+  margin: 0 auto;
+}

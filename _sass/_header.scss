@@ -1,2 +1,15 @@
 // Header Elements
 // ==========================================================================
+.navbar-brand {
+  img {
+    width: 130px;
+    height: auto;
+  }
+}
+
+.coming-soon-text {
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+  @include text-formatting($lighter-font, 15px, normal, normal, $black, uppercase, .15px);
+}
