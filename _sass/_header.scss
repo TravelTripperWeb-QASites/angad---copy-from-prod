@@ -1,2 +1,27 @@
 // Header Elements
 // ==========================================================================
+.navbar {
+  padding: 0;
+  background-color: $white;
+  .nav-container {
+    @include main-container;
+    position: relative;
+    padding: 0;
+    .navbar-brand {
+      position: relative;
+      bottom: -12px;
+      margin: 0;
+      padding: 44px 0 0;
+      img {
+        width: 124px;
+        height: auto;
+      }
+    }
+    .coming-soon-text {
+      @include text-formatting($lighter-font, $type-size-4, 300, normal, $dark-font, uppercase, .3rem);
+      position: absolute;
+      right: 0;
+      bottom: 10px;
+    }
+  }
+}
