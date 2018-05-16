@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ site.active_lang | slice: 0,2 | default: "en" }}" class="no-js">
+
+<head>
+  {% include head.html %}
+  {% include head/custom.html %}
+</head>
+
+<body>
+
+  {% if site.data.tracking.analytics.provider and page.analytics != false %}
+    {% case site.data.tracking.analytics.provider %}
+    {% when "gtm" %}
+      {% include analytics/gtm-body.html %}
+    {% endcase %}
+  {% endif %}
+
+  <section class="intro-logo">
+    <video autoplay="autoplay" poster="/assets/images/logo-poster.png">
+      <!-- WebM/VP8 for Firefox4, Opera, and Chrome -->
+      <source type="video/webm" src="/assets/videos/logo.webm" />
+      <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
+      <source src="/assets/videos/logo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  {% include nav-main.html %}
+
+    {{ content }}
+
+  <footer class="footer">
+    {% include footer/custom.html %}
+    {% include footer.html %}
+  </footer>
+
+  {% include scripts.html %}
+
+</body>
+
+</html>
