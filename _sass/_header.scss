@@ -1,21 +1,27 @@
 // Header Elements
 // ==========================================================================
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
+  padding: 0;
   background-color: $white;
-}
-.navbar-brand {
-  img {
-    width: 130px;
-    height: auto;
+  .nav-container {
+    @include main-container;
+    position: relative;
+    padding: 0;
+    .navbar-brand {
+      position: relative;
+      bottom: -12px;
+      margin: 0;
+      padding: 44px 0 0;
+      img {
+        width: 124px;
+        height: auto;
+      }
+    }
+    .coming-soon-text {
+      @include text-formatting($lighter-font, $type-size-4, 300, normal, $dark-font, uppercase, .3rem);
+      position: absolute;
+      right: 0;
+      bottom: 10px;
+    }
   }
-}
-
-.coming-soon-text {
-  position: absolute;
-  right: 50px;
-  bottom: 20px;
-  @include text-formatting($lighter-font, 15px, normal, normal, $black, uppercase, .15px);
 }

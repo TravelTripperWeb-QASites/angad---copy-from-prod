@@ -12,10 +12,15 @@
 }
 
 
-// Design made in this size
-@mixin container-fixed-width {
+@mixin main-container {
   @include make-container;
-  max-width: 1110px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@mixin small-container {
+  @include make-container;
+  max-width: 620px;
   margin: 0 auto;
 }
 
@@ -35,12 +40,4 @@
   color: $font-color;
   text-transform: $text-transform;
   letter-spacing: $letter-spacing;
-}
-
-// Containers
-
-@mixin container-fixed-width {
-  @include make-container;
-  max-width: 980px;
-  margin: 0 auto;
 }

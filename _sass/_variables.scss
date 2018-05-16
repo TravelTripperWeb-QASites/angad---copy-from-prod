@@ -10,11 +10,15 @@ $header-font-family: 'CerebriSans-Bold' !default;
 $lighter-font: 'CerebriSans-Light' !default;
 
 // Type scale
-$type-size-1: 7.5rem !default; // ~120px
-$type-size-2: 1.953rem !default; // ~31.248px
-$type-size-3: 1.563rem !default; // ~25.008px
-$type-size-4: 1.25rem !default; // ~20px
-$type-size-5: 1rem !default; // ~16px
-$type-size-6: .75rem !default; // ~12px
-$type-size-7: .6875rem !default; // ~11px
-$type-size-8: .625rem !default; // ~10px
+$type-size-1: 5rem !default; // ~80px
+$type-size-2: 4.0625rem !default; // ~65px
+$type-size-3: 1.5rem !default; // ~24px
+$type-size-4: 2.1875rem !default; // ~35px
+
+// Colors
+
+$logo-clr-1: #0575db;
+$logo-clr-2: #db0533;
+$logo-clr-3: #05ab3d;
+$logo-clr-4: #fcd924;
+$dark-font: #010101;

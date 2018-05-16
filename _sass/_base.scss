@@ -12,45 +12,24 @@ body {
   font-family: $global-font-family;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: $type-size-3;
+
 }
 
 h2 {
-  @include text-formatting($global-font-family, $type-size-3, normal, normal, $white, uppercase, .1px)
+  @include text-formatting($lighter-font, $type-size-1, 300, normal, $white, uppercase, .5rem);
 }
 
 h3 {
-  font-size: $type-size-5;
-}
-
-h4 {
-  font-size: $type-size-6;
-}
-
-h5 {
-  font-size: $type-size-6;
-}
-
-h6 {
-  font-size: $type-size-6;
-}
-
-small, .small {
-  font-size: $type-size-6;
+  @include text-formatting($header-font-family, $type-size-2, 700, 4.375rem, $black, uppercase, .40625rem);
 }
 
 p {
-  margin-bottom: 1.3rem;
-}
-
-del a {
-  color: inherit;
+  @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, normal, .48px);
 }
 
 // Links
@@ -64,16 +43,13 @@ a {
 
 // Sets a default bottom margin and removes bullet points from lists
 
-ul li,
-ol li {
-  margin-bottom: 0.5rem;
-  list-style: none;
-}
-
-li ul,
-li ol {
-  margin-top: 0.5rem;
-  list-style: none;
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 // Fix IE9 SVG bug
