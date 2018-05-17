@@ -11,8 +11,8 @@ $(document).ready(function(){
   }, 2000);
 
   $(".overlay-blocks .overlay").hover(function(){
-    $(this).css({"width": "70%"});
-    $(".overlay-blocks .overlay").not(this).css({"width": "10%"});
+    $(this).css({"width": "72%"});
+    $(".overlay-blocks .overlay").not(this).css({"width": "9%"});
   }, function(){
     $(".overlay-blocks .block-1").css({"width": "30%"});
     $(".overlay-blocks .block-2").css({"width": "20%"});

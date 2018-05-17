@@ -25,11 +25,12 @@ $site-clr-3: #05ab3d;
 $site-clr-4: #fcd924;
 $dark-font: #010101;
 $light-grey: #e3e3e3;
+$black-transparent: rgba(0, 0, 0, .7);
 
 $grad-clr-1: #0679d6;
 $grad-clr-2: #05ab3c;
 
-$site-transparent-clr-1: rgba($site-clr-1, .5);
-$site-transparent-clr-2: rgba($site-clr-2, .5);
-$site-transparent-clr-3: rgba($site-clr-3, .5);
-$site-transparent-clr-4: rgba($site-clr-4, .5);
+$site-transparent-clr-1: rgba($site-clr-1, .4);
+$site-transparent-clr-2: rgba($site-clr-2, .4);
+$site-transparent-clr-3: rgba($site-clr-3, .4);
+$site-transparent-clr-4: rgba($site-clr-4, .4);

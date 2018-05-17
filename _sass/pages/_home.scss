@@ -87,6 +87,7 @@
       display: inline-block;
       float: left;
       height: 100%;
+      box-shadow: 15px 0px 6px $black-transparent;
       @include global-transition(.5s);
       &.block-1 {
         width: 30%;
