@@ -14,13 +14,13 @@
 
 @mixin main-container {
   @include make-container;
-  max-width: 1280px;
+  max-width: 1310px;
   margin: 0 auto;
 }
 
 @mixin small-container {
   @include make-container;
-  max-width: 620px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
@@ -30,6 +30,14 @@
   transition:         all $transition;
   -moz-transition:    all $transition;
   -o-transition:      all $transition;
+}
+
+@mixin vertical-align($position) {
+  -webkit-transform: translateY($position);
+  -moz-transform: translateY($position);
+  -ms-transform: translateY($position);
+  -o-transform: translateY($position);
+  transform: translateY($position);
 }
 
 @mixin text-formatting($font-family, $font-size, $font-weight, $line-height, $font-color, $text-transform, $letter-spacing) {

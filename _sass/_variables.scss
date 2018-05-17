@@ -14,11 +14,22 @@ $type-size-1: 5rem !default; // ~80px
 $type-size-2: 4.0625rem !default; // ~65px
 $type-size-3: 1.5rem !default; // ~24px
 $type-size-4: 2.1875rem !default; // ~35px
+$type-size-5: 1.25rem !default; // ~20px
+$type-size-6: .9375rem !default; // ~15px
 
 // Colors
 
-$logo-clr-1: #0575db;
-$logo-clr-2: #db0533;
-$logo-clr-3: #05ab3d;
-$logo-clr-4: #fcd924;
+$site-clr-1: #0575db;
+$site-clr-2: #db0533;
+$site-clr-3: #05ab3d;
+$site-clr-4: #fcd924;
 $dark-font: #010101;
+$light-grey: #e3e3e3;
+
+$grad-clr-1: #0679d6;
+$grad-clr-2: #05ab3c;
+
+$site-transparent-clr-1: rgba($site-clr-1, .5);
+$site-transparent-clr-2: rgba($site-clr-2, .5);
+$site-transparent-clr-3: rgba($site-clr-3, .5);
+$site-transparent-clr-4: rgba($site-clr-4, .5);

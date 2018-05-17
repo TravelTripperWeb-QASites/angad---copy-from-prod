@@ -23,21 +23,3 @@
 .transparent {
   opacity: 0;
 }
-
-.visually-hidden,
-.screen-reader-text,
-.screen-reader-text span,
-.screen-reader-shortcut {
-  position: absolute !important;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px !important;
-  width: 1px !important;
-  border: 0 !important;
-  overflow: hidden;
-}
-
-body:hover .visually-hidden a,
-body:hover .visually-hidden input,
-body:hover .visually-hidden button {
-  display: none !important;
-}

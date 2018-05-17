@@ -22,14 +22,237 @@ h1 {
 
 h2 {
   @include text-formatting($lighter-font, $type-size-1, 300, normal, $white, uppercase, .5rem);
+  @include media-breakpoint-down(sm) {
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+  }
 }
 
 h3 {
   @include text-formatting($header-font-family, $type-size-2, 700, 4.375rem, $black, uppercase, .40625rem);
+  @include media-breakpoint-down(sm) {
+    font-size: 2rem;
+    line-height: normal;
+    letter-spacing: .1875rem;
+  }
+}
+
+h4 {
+  @include text-formatting($header-font-family, $type-size-5, 400, 2rem, $white, uppercase, .1875rem);
 }
 
 p {
-  @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, normal, .48px);
+  @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, none, .48px);
+  @include media-breakpoint-down(sm) {
+    font-size: 1.375rem;
+    line-height: normal;
+    letter-spacing: .44px;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 1.1rem;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.full-text {
+  @include small-container;
+  .btn-holder {
+    margin: 20px 0 66px;
+    text-align: right;
+    @include media-breakpoint-down(sm) {
+      margin: 20px 0 0;
+    }
+  }
+}
+
+.primary-btn {
+  @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, uppercase, .25rem);
+  position: relative;
+  display: inline-block;
+  padding: 8px 0 0;
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 39px;
+    height: 45px;
+    margin-left: 15px;
+    content: '';
+    background-color: $site-clr-4;
+    background-image: url('/assets/images/arrow-right.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 14px;
+    @include global-transition(.3s);
+  }
+  @include media-breakpoint-down(sm) {
+    padding-right: 60px;
+    font-size: 1.375rem;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 1.2rem;
+  }
+  &:hover {
+    color: $black;
+    text-decoration: none;
+    &::after {
+      margin-left: 30px;
+    }
+  }
+}
+
+.color-block {
+  width: 39px;
+  height: 46px;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.bg-type-1 {
+  background-color: $site-clr-1;
+}
+.bg-type-2 {
+  background-color: $site-clr-2;
+}
+.bg-type-3 {
+  background-color: $site-clr-3;
+}
+.bg-type-4 {
+  background-color: $site-clr-4;
+}
+
+
+.right-color-block {
+  position: relative;
+  &::after {
+    @extend .color-block;
+    position: absolute;
+    bottom: 13px;
+    margin-left: 30px;
+    content: '';
+    background-color: $site-clr-2;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+}
+
+.left-color-block {
+  position: relative;
+  &::before {
+    @extend .color-block;
+    position: absolute;
+    top: 6px;
+    left: -62px;
+    content: '';
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  &.clr-2 {
+    &::before {
+      background-color: $site-clr-2;
+    }
+  }
+  &.clr-3 {
+    &::before {
+      background-color: $site-clr-3;
+    }
+  }
+  &.clr-4 {
+    &::before {
+      background-color: $site-clr-4;
+    }
+  }
+}
+
+.bg-styles {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  @include vertical-align(-50%);
+}
+
+.theme-carousel {
+  position: relative;
+  .banner-text {
+    z-index: 1;
+    @extend .vertical-center;
+  }
+  .carousel-inner {
+    .carousel-item {
+      @extend .bg-styles;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .carousel-control-prev, .carousel-control-next {
+    z-index: 2;
+    opacity: 1;
+    .left-slide {
+      display: inline-block;
+      width: 30px;
+      height: 53px;
+      background-image: url('/assets/images/arrow-left.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      @include media-breakpoint-down(sm) {
+        background-position: center;
+        background-size: 11px;
+      }
+    }
+    .right-slide {
+      @extend .left-slide;
+      background-image: url('/assets/images/arrow-right.png');
+    }
+  }
+  .carousel-indicators {
+    position: static;
+    margin-top: 20px;
+    li {
+      width: 18px;
+      height: 23px;
+      margin: 0 7px;
+      cursor: pointer;
+      background-color: $light-grey;
+      @include global-transition(.3s);
+      @include media-breakpoint-down(sm) {
+        width: 11px;
+        height: 14px;
+      }
+      &.active {
+        background-color: $site-clr-3;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.grad-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to right, $grad-clr-1, $grad-clr-2);
+  @include media-breakpoint-down(sm) {
+    height: 33px;
+  }
 }
 
 // Links

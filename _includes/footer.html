@@ -1,14 +1,60 @@
-<div class="container d-flex justify-content-between">
-  <div class="social-icons">
-    {% if site.data.ui-text[site.default_lang].follow_label %}
-      <strong>{{ site.data.ui-text[site.default_lang].follow_label }}</strong>
-    {% endif %}
-    {% if site.data.social.twitter.username %}
-      <a href="https://twitter.com/{{ site.data.social.twitter.username }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a>
-    {% endif %}
-    {% if site.data.social.facebook.username %}
-      <a href="https://facebook.com/{{ site.data.social.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a>
-    {% endif %}
+<footer>
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="address-sec order-3 order-lg-1">
+        <a class="footer-logo"  href="/" title="Angad Arts Hotel">
+          <img src="/assets/images/aah-logo-white.png" alt="Angad Arts Hotel">
+        </a>
+        <a class="footer-address">3550 Samuel Shepard Dr Saint Louis, MO 63103</a>
+      </div>
+      <div class="contact-sec order-4 order-lg-2">
+        <p class="phone-1">
+          <a href="tel:+1 (314) 561 0033" title="+1 (314) 561 0033">+1 (314) 561 0033</a>
+        </p>
+        <p class="phone-2">
+          <a href="tel:+1 (833) 233 0014" title="+1 (833) 233 0014">+1 (833) 233 0014</a>
+        </p>
+        <p>
+          <a class="email-address" href="mailto:info@angadartshotel.com" title="info@angadartshotel.com">info@angadartshotel.com</a>
+        </p>
+      </div>
+      <div class="email-subscription order-1 order-lg-3">
+        <h4>Stay in Touch</h4>
+        <form class="newsletter-footer" action="index.html" method="post">
+          <input class="form-control" type="email" name="email" value="" placeholder="name@domain.com" title="Enter Your Email" aria-label="Enter Your Email">
+          <button type="button" name="button"></button>
+        </form>
+        <ul class="social-share">
+          <li>
+            <a href="/">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-links order-2 order-lg-4">
+        <ul>
+          <li>
+            <a href="/" title="Press">Press</a>
+          </li>
+          <li>
+            <a href="/" title="About">About</a>
+          </li>
+          <li>
+            <a href="/" title="Careers">Careers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <span class="text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</span>
-</div>
+</footer>

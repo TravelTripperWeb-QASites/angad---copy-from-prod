@@ -3,3 +3,108 @@
     width: 100%;
   }
 }
+.full-text {
+  padding: 30px 20px 120px;
+  @include media-breakpoint-down(sm) {
+    padding: 26px 20px 40px;
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  .color-block {
+    &.bg-type-1 {
+      margin: 16px auto 0;
+    }
+    &.bg-type-3 {
+      margin: 0 40px 0 auto;
+    }
+  }
+}
+
+.stay-colorful {
+  @extend .bg-styles;
+  position: relative;
+  min-height: 810px;
+  overflow: hidden;
+  background-image: url('/assets/images/home/stay-colorful-bg.jpg');
+  .banner-text {
+    @extend .vertical-center;
+    h2 {
+      font-size: 8rem;
+      letter-spacing: .8rem;
+      @include media-breakpoint-down(sm) {
+        font-size: 2.75rem;
+        letter-spacing: .3px;
+      }
+    }
+  }
+  .overlay-blocks {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .overlay {
+      display: inline-block;
+      float: left;
+      width: 25%;
+      height: 100%;
+      &.block-1 {
+        background-color: $site-transparent-clr-3;
+        transform: skewX(12deg);
+        transform-origin: bottom left;
+      }
+      &.block-2 {
+        position: relative;
+        left: -6%;
+        background-color: $site-transparent-clr-1;
+        transform: skewX(15deg);
+      }
+      &.block-3 {
+        position: relative;
+        left: -8%;
+        background-color: $site-transparent-clr-2;
+        transform: skewX(11deg);
+      }
+      &.block-4 {
+        position: relative;
+        left: -6.5%;
+        background-color: $site-transparent-clr-4;
+        transform: skewX(15deg);
+      }
+    }
+  }
+}
+
+.dine-distinctively {
+  h2 {
+    span {
+      padding: 0 0 0 6px;
+      background-color: $site-clr-4;
+    }
+  }
+}
+
+.meet-magnificently {
+  h2 {
+    span {
+      display: inline-block;
+      padding: 0 0 0 6px;
+      background-color: $site-clr-2;
+    }
+  }
+  .carousel-indicators {
+    li {
+      &.active {
+        background-color: $site-clr-2;
+      }
+    }
+  }
+}
+
+.stay-colorful-sec {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
