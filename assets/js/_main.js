@@ -2,17 +2,22 @@
    jQuery plugin settings and other scripts
    ========================================================================== */
 
-// $(document).ready(function(){
-//   if($('.intro-logo video').length > 0) {
-//     $('.intro-logo video').trigger('play');
-//     $("body").css({"height": "100%", "overflow": "hidden"});
-//     $(".navbar").hide();
-//     $('.intro-logo video').on('ended',function(){
-//       $("body").css({"height": "auto", "overflow": "visible"});
-//       $(".intro-logo").slideUp(500, function(){
-//         $(".navbar").slideDown(300);
-//       });
-//
-//     });
-//   }
-// });
+$(document).ready(function(){
+  setTimeout(function(){
+    $(".intro-logo img").attr("src", "/assets/images/logo-animation.gif");
+  }, 500);
+  setTimeout(function(){
+    $(".intro-logo").slideUp(300);
+  }, 2000);
+
+  $(".overlay-blocks .overlay").hover(function(){
+    $(this).css({"width": "70%"});
+    $(".overlay-blocks .overlay").not(this).css({"width": "10%"});
+  }, function(){
+    $(".overlay-blocks .block-1").css({"width": "30%"});
+    $(".overlay-blocks .block-2").css({"width": "20%"});
+    $(".overlay-blocks .block-3").css({"width": "20%"});
+    $(".overlay-blocks .block-4").css({"width": "30%"});
+  });
+
+});
