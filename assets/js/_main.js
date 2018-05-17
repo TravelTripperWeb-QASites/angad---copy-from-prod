@@ -20,4 +20,14 @@ $(document).ready(function(){
     $(".overlay-blocks .block-4").css({"width": "30%"});
   });
 
+  $('.full-text .color-block').paroller({
+      factor: 0.2,
+      type: 'foreground'
+  });
+
+  $('.theme-carousel .banner-text').paroller({
+      factor: 0.2,
+      type: 'foreground'
+  });
+
 });
