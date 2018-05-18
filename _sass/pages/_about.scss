@@ -1,2 +1,21 @@
 // About Page Elements
 // ==========================================================================
+
+.inner-hero-banner {
+  position: relative;
+  h2 {
+    span {
+      padding: 0 0 0 6px;
+      background-color: $site-clr-4;
+    }
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0,0,0,.4);
+  }
+}

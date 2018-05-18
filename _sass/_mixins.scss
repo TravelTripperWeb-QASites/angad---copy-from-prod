@@ -20,6 +20,7 @@
 
 @mixin small-container {
   @include make-container;
+  position: relative;
   max-width: 680px;
   margin: 0 auto;
 }
