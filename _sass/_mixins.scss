@@ -25,6 +25,31 @@
   margin: 0 auto;
 }
 
+@mixin color-block {
+  width: 39px;
+  height: 46px;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+@mixin vertical-center {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  @include vertical-align(-50%);
+}
+
+@mixin bg-styles {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 // Transition
 @mixin global-transition($transition) {
   -webkit-transition: all $transition;

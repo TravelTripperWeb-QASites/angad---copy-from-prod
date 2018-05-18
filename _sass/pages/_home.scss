@@ -22,7 +22,7 @@
 }
 
 .stay-colorful {
-  @extend .bg-styles;
+  @include bg-styles;
   position: relative;
   min-height: 320px;
   overflow: hidden;
