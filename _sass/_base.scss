@@ -73,19 +73,10 @@ img {
   h3 {
     margin-bottom: 10px;
   }
-  .square-block {
-    @include color-block;
-    &.bg-type-1 {
-      margin: 16px auto 0;
-    }
-    &.bg-type-3 {
-      margin: 0 40px 0 auto;
-    }
-    &.bg-type-4 {
-      position: absolute;
-      right: 200px;
-      bottom: 50px;
-    }
+  .color-block-yellow {
+    position: absolute;
+    right: 200px;
+    bottom: 50px;
   }
 }
 
@@ -125,19 +116,19 @@ img {
   }
 }
 
-.color-block-1 {
+.color-block-blue {
   @include color-block;
   background-color: $site-clr-1;
 }
-.color-block-2 {
+.color-block-red {
   @include color-block;
   background-color: $site-clr-2;
 }
-.color-block-3 {
+.color-block-green {
   @include color-block;
   background-color: $site-clr-3;
 }
-.color-block-4 {
+.color-block-yellow {
   @include color-block;
   background-color: $site-clr-4;
 }
