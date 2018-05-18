@@ -163,6 +163,59 @@ img {
   }
 }
 
+.secondary-btn {
+  @extend .primary-btn;
+  padding: 0;
+  font-size: $type-size-7;
+  line-height: normal;
+  color: $white;
+  letter-spacing: .1875rem;
+  &::after {
+    width: 19px;
+    height: 25px;
+    background-size: 8px;
+  }
+  &:hover {
+    color: $white;
+  }
+
+  &.blue {
+    &::after {
+      background-color: $site-clr-1;
+    }
+    &:hover {
+      &::after {
+        background-color: $site-clr-4;
+      }
+    }
+  }
+
+  &.green {
+    &::after {
+      background-color: $site-clr-3;
+    }
+    &:hover {
+      &::after {
+        background-color: $site-clr-2;
+      }
+    }
+  }
+
+  &.red {
+    color: $black;
+    &:hover {
+      color: $black;
+      &::after {
+        background-color: $site-clr-3;
+      }
+    }
+    &::after {
+      background-color: $site-clr-2;
+    }
+  }
+
+}
+
 .color-block-blue {
   @include color-block;
   background-color: $site-clr-1;
