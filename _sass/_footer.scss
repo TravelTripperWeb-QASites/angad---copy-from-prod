@@ -42,10 +42,6 @@ footer {
           }
           @include text-formatting($lighter-font, $type-size-6, 300, 1.375rem, white, uppercase, .125rem);
           @include global-transition(.3s);
-          &:hover {
-            text-decoration: none;
-            letter-spacing: .18rem;
-          }
           padding-left: 30px;
         }
       }
@@ -60,10 +56,6 @@ footer {
           a {
             @include text-formatting($lighter-font, $type-size-6, 300, 1.375rem, white, uppercase, .125rem);
             @include global-transition(.3s);
-            &:hover {
-              text-decoration: none;
-              letter-spacing: .18rem;
-            }
             &.email-address {
               display: inline-block;
               margin-top: 20px;
@@ -98,12 +90,17 @@ footer {
             width: 19px;
             height: 25px;
             margin-left: 13px;
+            cursor: pointer;
             background-color: $site-clr-1;
             background-image: url('/assets/images/arrow-right.png');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: 8px;
             border: 0;
+            @include global-transition(.3s);
+            &:hover {
+              background-color: $site-clr-2;
+            }
           }
         }
         .social-share {
@@ -115,25 +112,8 @@ footer {
               font-size: 30px;
               color: $white;
               @include global-transition(.3s);
-              &.twitter-link {
-                &:hover {
-                  color: $site-clr-1;
-                }
-              }
-              &.facebook-link {
-                &:hover {
-                  color: $site-clr-2;
-                }
-              }
-              &.instagram-link {
-                &:hover {
-                  color: $site-clr-3;
-                }
-              }
-              &.spotify-link {
-                &:hover {
-                  color: $site-clr-4;
-                }
+              &:hover {
+                color: $site-clr-4;
               }
             }
           }
@@ -155,10 +135,6 @@ footer {
             a {
               @include text-formatting($lighter-font, $type-size-6, 300, 1.375rem, white, uppercase, .125rem);
               @include global-transition(.3s);
-              &:hover {
-                text-decoration: none;
-                letter-spacing: .18rem;
-              }
             }
           }
         }
