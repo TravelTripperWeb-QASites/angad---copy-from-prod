@@ -21,26 +21,37 @@
 }
 
 .room-amenities {
-  margin-bottom: 120px;
+  margin-bottom: 50px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 120px;
+  }
   .room-amenities-inner {
     @include make-row;
   }
   .small-img {
     @include make-col-ready();
     @include media-breakpoint-up(md) {
-      @include make-col(3.5);
+      @include make-col(4);
     }
-    min-height: 500px !important;
-    .square-block {
+    @include media-breakpoint-up(lg) {
+      @include make-col(3.5);
+      min-height: 500px !important;
+    }
+    min-height: 530px !important;
+    .color-block-blue {
       position: absolute;
-      bottom: -26px;
+      bottom: -23px;
       left: 150px;
     }
   }
   .content {
-    padding: 25px;
+    padding: 50px 25px;
     @include make-col-ready();
     @include media-breakpoint-up(md) {
+      @include make-col(4);
+      padding: 25px;
+    }
+    @include media-breakpoint-up(lg) {
       @include make-col(3);
     }
     ul {
@@ -67,9 +78,162 @@
     }
   }
   .big-img {
+    min-height: 300px !important;
     @include make-col-ready();
     @include media-breakpoint-up(md) {
+      @include make-col(4);
+      min-height: 500px !important;
+    }
+    @include media-breakpoint-up(lg) {
       @include make-col(5.5);
+    }
+  }
+}
+
+.services-sec {
+  margin-bottom: 50px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 120px;
+  }
+  .services-sec-inner {
+    @include make-row;
+  }
+  .content {
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+    position: relative;
+    padding-right: 30px;
+    ul {
+      width: 80%;
+      margin-bottom: 40px;
+      margin-left: 20%;
+      &.two {
+        width: 80%;
+        margin-top: 40px;
+        margin-bottom: 0;
+        margin-left: 5%;
+        li {
+          text-align: left;
+        }
+      }
+    }
+    li {
+      position: relative;
+      padding-bottom: 10px;
+      font-family: $lighter-font;
+      font-size: $type-size-7;
+      color: $black;
+      text-align: right;
+      text-transform: uppercase;
+      letter-spacing: .76px;
+      list-style: none;
+      span {
+        position: relative;
+        top: -5px;
+        left: -10px;
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background-color: $black;
+      }
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
+    }
+    .color-block-red {
+      position: absolute;
+      right: 30px;
+      bottom: 130px;
+      &.two {
+        bottom: 30px;
+        left: 30px;
+      }
+    }
+  }
+  .image {
+    position: relative;
+    min-height: 350px !important;
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(8);
+      min-height: 550px !important;
+    }
+    .color-block-green {
+      position: absolute;
+      top: -23px;
+      right: 350px;
+    }
+  }
+}
+
+.chef-david-burke {
+  margin-bottom: 50px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 120px;
+  }
+  .chef-david-burke-inner {
+    @include make-row;
+  }
+  .small-img {
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(3.5);
+      min-height: 500px !important;
+    }
+    min-height: 530px !important;
+  }
+  .content {
+    padding: 50px 25px;
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+      padding: 25px;
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(3);
+    }
+    ul {
+      padding-left: 25px;
+      li {
+        position: relative;
+        padding-bottom: 10px;
+        font-family: $lighter-font;
+        font-size: $type-size-7;
+        color: $black;
+        text-transform: uppercase;
+        letter-spacing: .76px;
+        list-style: none;
+        &:before {
+          position: absolute;
+          top: 12px;
+          left: -17px;
+          width: 5px;
+          height: 5px;
+          content: '';
+          background-color: $black;
+        }
+      }
+    }
+  }
+  .big-img {
+    min-height: 300px !important;
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+      min-height: 500px !important;
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(5.5);
+    }
+    .color-block-yellow {
+      position: absolute;
+      right: -23px;
+      bottom: 265px;
     }
   }
 }

@@ -61,7 +61,7 @@ img {
   @include small-container;
   padding: 30px 20px 120px;
   @include media-breakpoint-down(sm) {
-    padding: 26px 20px 40px;
+    padding: 50px 20px;
   }
   .btn-holder {
     margin: 20px 0 66px;
