@@ -25,9 +25,4 @@ $(document).ready(function(){
       type: 'foreground'
   });
 
-  $('.theme-carousel .banner-text').paroller({
-      factor: 0.2,
-      type: 'foreground'
-  });
-
 });
