@@ -104,14 +104,6 @@ img {
   }
 }
 
-.color-block {
-  width: 39px;
-  height: 46px;
-  @include media-breakpoint-down(sm) {
-    display: none;
-  }
-}
-
 .bg-type-1 {
   background-color: $site-clr-1;
 }
@@ -129,7 +121,7 @@ img {
 .right-color-block {
   position: relative;
   &::after {
-    @extend .color-block;
+    @include color-block;
     position: absolute;
     bottom: 13px;
     margin-left: 30px;
@@ -144,7 +136,7 @@ img {
 .left-color-block {
   position: relative;
   &::before {
-    @extend .color-block;
+    @include color-block;
     position: absolute;
     top: 6px;
     left: -62px;
@@ -170,32 +162,15 @@ img {
   }
 }
 
-.bg-styles {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.vertical-center {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: 0;
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  @include vertical-align(-50%);
-}
-
 .theme-carousel {
   position: relative;
   .banner-text {
     z-index: 1;
-    @extend .vertical-center;
+    @include vertical-center;
   }
   .carousel-inner {
     .carousel-item {
-      @extend .bg-styles;
+      @include bg-styles;
       min-height: 200px;
       background-position: center top;
       @include media-breakpoint-up(sm) {
@@ -294,9 +269,9 @@ svg:not(:root) {
   text-align: center;
   background-color: $black;
   img {
+    @include vertical-center;
     position: absolute;
     top: 50%;
     width: auto;
-    @include vertical-center;
   }
 }
