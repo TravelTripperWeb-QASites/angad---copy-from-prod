@@ -43,12 +43,6 @@
   @include vertical-align(-50%);
 }
 
-@mixin bg-styles {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
 // Transition
 @mixin global-transition($transition) {
   -webkit-transition: all $transition;

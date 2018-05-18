@@ -120,62 +120,27 @@ img {
   }
 }
 
-.bg-type-1 {
+.color-block-1 {
+  @include color-block;
   background-color: $site-clr-1;
 }
-.bg-type-2 {
+.color-block-2 {
+  @include color-block;
   background-color: $site-clr-2;
 }
-.bg-type-3 {
+.color-block-3 {
+  @include color-block;
   background-color: $site-clr-3;
 }
-.bg-type-4 {
+.color-block-4 {
+  @include color-block;
   background-color: $site-clr-4;
 }
 
-
-.right-color-block {
-  position: relative;
-  &::after {
-    @include color-block;
-    position: absolute;
-    bottom: 13px;
-    margin-left: 30px;
-    content: '';
-    background-color: $site-clr-2;
-    @include media-breakpoint-down(sm) {
-      display: none;
-    }
-  }
-}
-
-.left-color-block {
-  position: relative;
-  &::before {
-    @include color-block;
-    position: absolute;
-    top: 6px;
-    left: -62px;
-    content: '';
-    @include media-breakpoint-down(sm) {
-      display: none;
-    }
-  }
-  &.clr-2 {
-    &::before {
-      background-color: $site-clr-2;
-    }
-  }
-  &.clr-3 {
-    &::before {
-      background-color: $site-clr-3;
-    }
-  }
-  &.clr-4 {
-    &::before {
-      background-color: $site-clr-4;
-    }
-  }
+.bg-styles {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .theme-carousel {
@@ -186,7 +151,6 @@ img {
   }
   .carousel-inner {
     .carousel-item {
-      @include bg-styles;
       min-height: 200px;
       background-position: center top;
       @include media-breakpoint-up(sm) {
