@@ -3,24 +3,6 @@
     width: 100%;
   }
 }
-.full-text {
-  padding: 30px 20px 120px;
-  @include media-breakpoint-down(sm) {
-    padding: 26px 20px 40px;
-  }
-  h3 {
-    margin-bottom: 10px;
-  }
-  .square-block {
-    @include color-block;
-    &.bg-type-1 {
-      margin: 16px auto 0;
-    }
-    &.bg-type-3 {
-      margin: 0 40px 0 auto;
-    }
-  }
-}
 
 .stay-colorful {
   @include bg-styles;
