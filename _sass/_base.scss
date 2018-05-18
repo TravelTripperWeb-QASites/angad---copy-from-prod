@@ -57,26 +57,73 @@ img {
   max-width: 100%;
 }
 
-.full-text {
-  @include small-container;
-  padding: 30px 20px 120px;
-  @include media-breakpoint-down(sm) {
-    padding: 50px 20px;
-  }
-  .btn-holder {
-    margin: 20px 0 66px;
-    text-align: right;
+.full-text-wrap {
+  overflow-x: hidden;
+  .full-text {
+    @include small-container;
+    padding: 30px 20px 120px;
     @include media-breakpoint-down(sm) {
-      margin: 20px 0 0;
+      padding: 50px 20px;
     }
-  }
-  h3 {
-    margin-bottom: 10px;
-  }
-  .color-block-yellow {
-    position: absolute;
-    right: 200px;
-    bottom: 50px;
+    .btn-holder {
+      margin: 20px 0 66px;
+      text-align: right;
+      @include media-breakpoint-down(sm) {
+        margin: 20px 0 0;
+      }
+    }
+    h3 {
+      margin-bottom: 10px;
+    }
+    .text-content {
+      position: relative;
+      .top-block {
+        position: absolute;
+        top: -70px;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        margin: auto;
+      }
+      .top-left-block {
+        position: absolute;
+        top: 5px;
+        left: -65px;
+        z-index: -1;
+      }
+      .top-right-block {
+        position: absolute;
+        top: -70px;
+        right: 0;
+        z-index: -1;
+      }
+      .bottom-block {
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        margin: 25px auto 0;
+      }
+      .bottom-right-block {
+        position: absolute;
+        right: 30px;
+        bottom: 0;
+        z-index: -1;
+      }
+      .bottom {
+        bottom: -60px;
+      }
+      &.large {
+        @include media-breakpoint-up(md) {
+          padding-bottom: 120px;
+        }
+      }
+      &.medium {
+        @include media-breakpoint-up(md) {
+          padding-bottom: 90px;
+        }
+      }
+    }
   }
 }
 

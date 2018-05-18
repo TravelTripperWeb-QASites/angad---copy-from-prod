@@ -20,10 +20,22 @@ $(document).ready(function(){
     $(".overlay-blocks .block-4").css({"width": "30%"});
   });
 
-  // $('.full-text .square-block').paroller({
-  //     factor: 0.5,
-  //     type: 'foreground',
-  //     direction: 'horizontal'
-  // });
+  $('.top-block').paroller({
+    factor: -0.3,
+    type: 'foreground',
+    direction: 'horizontal'
+  });
+
+  $('.top-left-block').paroller({
+    factor: -0.3,
+    type: 'foreground',
+    direction: 'horizontal'
+  });
+
+  $('.bottom-block, .bottom-right-block, .top-right-block').paroller({
+    factor: 0.3,
+    type: 'foreground',
+    direction: 'horizontal'
+  });
 
 });
