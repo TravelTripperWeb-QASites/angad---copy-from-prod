@@ -11,7 +11,8 @@
   h3 {
     margin-bottom: 10px;
   }
-  .color-block {
+  .square-block {
+    @include color-block;
     &.bg-type-1 {
       margin: 16px auto 0;
     }

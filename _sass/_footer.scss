@@ -35,6 +35,7 @@ footer {
         }
         .footer-address {
           display: inline-block;
+          cursor: pointer;
           @include media-breakpoint-up(lg) {
             float: left;
             width: 55%;
@@ -42,8 +43,8 @@ footer {
           @include text-formatting($lighter-font, $type-size-6, 300, 1.375rem, white, uppercase, .125rem);
           @include global-transition(.3s);
           &:hover {
-            font-weight: 600;
             text-decoration: none;
+            letter-spacing: .18rem;
           }
           padding-left: 30px;
         }
@@ -55,14 +56,16 @@ footer {
         }
         margin-bottom: 20px;
         p {
+          line-height: 1rem;
           a {
             @include text-formatting($lighter-font, $type-size-6, 300, 1.375rem, white, uppercase, .125rem);
             @include global-transition(.3s);
             &:hover {
-              font-weight: 600;
               text-decoration: none;
+              letter-spacing: .18rem;
             }
             &.email-address {
+              display: inline-block;
               margin-top: 20px;
             }
           }
@@ -153,8 +156,8 @@ footer {
               @include text-formatting($lighter-font, $type-size-6, 300, 1.375rem, white, uppercase, .125rem);
               @include global-transition(.3s);
               &:hover {
-                font-weight: 600;
                 text-decoration: none;
+                letter-spacing: .18rem;
               }
             }
           }
