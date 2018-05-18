@@ -59,11 +59,32 @@ img {
 
 .full-text {
   @include small-container;
+  padding: 30px 20px 120px;
+  @include media-breakpoint-down(sm) {
+    padding: 26px 20px 40px;
+  }
   .btn-holder {
     margin: 20px 0 66px;
     text-align: right;
     @include media-breakpoint-down(sm) {
       margin: 20px 0 0;
+    }
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  .square-block {
+    @include color-block;
+    &.bg-type-1 {
+      margin: 16px auto 0;
+    }
+    &.bg-type-3 {
+      margin: 0 40px 0 auto;
+    }
+    &.bg-type-4 {
+      position: absolute;
+      right: 200px;
+      bottom: 50px;
     }
   }
 }

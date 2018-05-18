@@ -19,3 +19,27 @@
     background-color: rgba(0,0,0,.4);
   }
 }
+
+.room-amenities {
+  .room-amenities-inner {
+    @include make-row;
+  }
+  .small-img {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(3.5);
+    }
+  }
+  .content {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(3);
+    }
+  }
+  .big-img {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(5.5);
+    }
+  }
+}
