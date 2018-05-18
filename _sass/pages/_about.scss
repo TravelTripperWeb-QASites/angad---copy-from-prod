@@ -21,24 +21,54 @@
 }
 
 .room-amenities {
+  margin-bottom: 120px;
   .room-amenities-inner {
     @include make-row;
   }
   .small-img {
     @include make-col-ready();
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       @include make-col(3.5);
+    }
+    min-height: 500px !important;
+    .square-block {
+      position: absolute;
+      bottom: -26px;
+      left: 150px;
     }
   }
   .content {
+    padding: 25px;
     @include make-col-ready();
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       @include make-col(3);
+    }
+    ul {
+      padding-left: 25px;
+      li {
+        position: relative;
+        padding-bottom: 10px;
+        font-family: $lighter-font;
+        font-size: $type-size-7;
+        color: $black;
+        text-transform: uppercase;
+        letter-spacing: .76px;
+        list-style: none;
+        &:before {
+          position: absolute;
+          top: 12px;
+          left: -17px;
+          width: 5px;
+          height: 5px;
+          content: '';
+          background-color: $black;
+        }
+      }
     }
   }
   .big-img {
     @include make-col-ready();
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       @include make-col(5.5);
     }
   }

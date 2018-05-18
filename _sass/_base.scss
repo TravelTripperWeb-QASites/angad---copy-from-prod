@@ -296,3 +296,8 @@ svg:not(:root) {
     width: auto;
   }
 }
+.bg-styles {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
