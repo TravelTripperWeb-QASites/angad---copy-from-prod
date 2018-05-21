@@ -127,6 +127,10 @@ img {
   }
 }
 
+.link-clr {
+  color: $link-color;
+}
+
 .primary-btn {
   @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, uppercase, .25rem);
   position: relative;
