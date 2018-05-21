@@ -1,0 +1,16 @@
+{
+  "title": {
+    "required": true
+  },
+  "logo": {
+    "type": "image",
+    "required": false
+  },
+  "user_friendly_url": {
+    "type": "url_slug"
+  },
+  "date": {
+    "type": "date",
+    "required": true
+  }
+}
