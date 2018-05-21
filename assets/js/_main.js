@@ -44,3 +44,22 @@ $(document).ready(function(){
   $('.press-listing .list-item:nth-child(5n)').addClass("green").find(".secondary-btn").addClass("blue");
 
 });
+
+
+$(window).on("load resize scroll", function (e) {
+
+  // if($(document).scrollTop() > 100 && $(document).scrollTop() <= 200) {
+  //   $("nav").unbind().slideUp(500);
+  // }
+
+  if($(document).scrollTop() <= 100) {
+    $("nav").removeClass("fixed");
+    $("nav").unbind().slideDown(500);
+  }
+
+  if($(document).scrollTop() > 200) {
+    $("nav").addClass("fixed");
+    $("nav").unbind().slideDown(500);
+  }
+
+});
