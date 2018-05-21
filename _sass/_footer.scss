@@ -22,7 +22,6 @@ footer {
         }
         margin-bottom: 20px;
         .footer-logo {
-          display: inline-block;
           margin-bottom: 20px;
           @include media-breakpoint-up(lg) {
             float: left;
@@ -32,10 +31,11 @@ footer {
           img {
             max-width: 125px;
           }
+          @media screen and (min-width: 480px) and (max-width: 991px) {
+            float: left;
+          }
         }
         .footer-address {
-          display: inline-block;
-          cursor: pointer;
           @include media-breakpoint-up(lg) {
             float: left;
             width: 55%;
@@ -43,6 +43,14 @@ footer {
           @include text-formatting($lighter-font, $type-size-6, 300, 1.375rem, white, uppercase, .125rem);
           @include global-transition(.3s);
           padding-left: 30px;
+          cursor: pointer;
+          @media screen and (min-width: 480px) and (max-width: 991px) {
+            float: right;
+          }
+        }
+        @media screen and (min-width: 480px) and (max-width: 991px) {
+          width: 50%;
+          margin: 30px auto;
         }
       }
       .contact-sec {
