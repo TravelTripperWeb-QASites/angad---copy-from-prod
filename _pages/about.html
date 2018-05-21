@@ -12,7 +12,9 @@ meta_tags:
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="banner-text">
+        {% regionblock banner_heading, type: header %}
         <h2><span>a</span>bout us</h2>
+        {% endregionblock %}
       </div>
       <div class="carousel-item active" style="background-image: url('/assets/images/about/hero.jpg')">
       </div>
@@ -24,7 +26,9 @@ meta_tags:
   <div class="full-text ">
     <div class="text-content">
       <div class="color-block-red top-left-block"></div>
+      {% regionblock intro_text, type: text %}
       <p>Ideally located in the Grand Center Arts District, AHH offers a fusion of gracious hospitality combined with socially inspiring experiences for the most discerning guests. Our first in class service, distinctive dining and bar menus and venues and wide array of amenities create a truly authentic St. Louis experience. Welcome to your personal gateway to one of the midwest’s great cities.</p>
+      {% endregionblock %}
       <div class="color-block-yellow bottom bottom-right-block"></div>
     </div>
   </div>
@@ -36,6 +40,7 @@ meta_tags:
       <div class="color-block-blue"></div>
     </div>
     <div class="content d-flex align-items-center">
+      {% regionblock rooms_amenities_text, type: text %}
       <ul>
         <li>146 rooms including 38 suites</li>
         <li>First hotel that empowers guests to book rooms by the emotion of color.</li>
@@ -44,6 +49,7 @@ meta_tags:
         <li>Luxury linens and the most comfy beds and pillows</li>
         <li>Complimentary wifi</li>
       </ul>
+      {% endregionblock %}
     </div>
     <div class="big-img bg-styles" style="background-image: url('/assets/images/about/room-green.jpg');">
     </div>
@@ -53,9 +59,11 @@ meta_tags:
 <section class="services-sec">
   <div class="services-sec-inner m-0">
     <div class="content d-flex align-items-center">
+      {% regionblock services_one, type: text %}
       <ul class="">
         <li><span></span>Personal concierge services offering access to St. Louis attractions and special events</li>
       </ul>
+      {% endregionblock %}
       <div class="color-block-red"></div>
     </div>
     <div class="image bg-styles"  style="background-image: url('/assets/images/about/st-louis.jpg');">
@@ -70,9 +78,11 @@ meta_tags:
       <div class="color-block-yellow"></div>
     </div>
     <div class="content d-flex align-items-center">
+      {% regionblock rooms_amenities_text_2, type: text %}
       <ul>
         <li>Dining and nightlife with creative food & beverage selections by Chef David Burke</li>
       </ul>
+      {% endregionblock %}
     </div>
     <div class="small-img bg-styles" style="background-image: url('/assets/images/about/grand-tavern.jpg');">
     </div>
@@ -84,12 +94,13 @@ meta_tags:
     <div class="image bg-styles"  style="background-image: url('/assets/images/about/meet.jpg');">
     </div>
     <div class="content d-flex align-items-center">
+      {% regionblock services_two, type: text %}
       <ul class="two">
         <li><span></span>Outdoor rooftop terrace with panoramic views</li>
         <li><span></span>Inspired Grand Ballroom and Playhouse for meetings and private events</li>
         <li><span></span>Valet parking</li>
       </ul>
-      <!-- <p class="text-right"><span></span>Personal concierge services offering access to St. Louis attractions and special events</p> -->
+      {% endregionblock %}
       <div class="color-block-red two"></div>
     </div>
   </div>
@@ -99,7 +110,9 @@ meta_tags:
   <div class="full-text ">
     <div class="text-content">
       <div class="color-block-yellow top-left-block"></div>
+      {% regionblock enquiry-content, type: text %}
       <p>For any inquiries, please contact NJF Public Relations at <a href="mailto:aahpress@njfpr.com">aahpress@njfpr.com</a>. We look forward to speaking with you about Angad Arts Hotel, a wholly new hospitality experience and beacon for St. Louis’ vibrant arts scene.</p>
+      {% endregionblock %}
     </div>
     <div class="social-media-sec">
       <h4>join the conversation</h4>
