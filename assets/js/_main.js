@@ -38,4 +38,9 @@ $(document).ready(function(){
     direction: 'horizontal'
   });
 
+  $('.press-listing .list-item:nth-child(2n)').addClass("green").find(".secondary-btn").addClass("blue");
+  $('.press-listing .list-item:nth-child(3n)').addClass("blue").find(".secondary-btn").addClass("green");
+  $('.press-listing .list-item:nth-child(4n)').addClass("yellow").find(".secondary-btn").addClass("red");
+  $('.press-listing .list-item:nth-child(5n)').addClass("green").find(".secondary-btn").addClass("blue");
+
 });

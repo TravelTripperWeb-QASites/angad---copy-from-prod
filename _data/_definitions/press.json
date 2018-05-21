@@ -6,8 +6,12 @@
     "type": "image",
     "required": false
   },
-  "user_friendly_url": {
-    "type": "url_slug"
+  "url_friendly_name": {
+    "type": "url_slug",
+    "required": true
+  },
+  "description": {
+    "type": "richtext"
   },
   "date": {
     "type": "date",
