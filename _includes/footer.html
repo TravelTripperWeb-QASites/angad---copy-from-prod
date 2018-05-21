@@ -1,3 +1,7 @@
+{{ _site.data.contact }}
+{% assign phone1 = site.data.contact.phone-number-1 %}
+{% assign phone2 = site.data.contact.phone-number-2 %}
+{% assign contact-email = site.data.contact.contact-email %}
 <footer>
   <div class="footer-container">
     <div class="footer-row">
@@ -9,13 +13,13 @@
       </div>
       <div class="contact-sec order-4 order-lg-2">
         <p class="phone-1">
-          <a href="tel:+1 (314) 561 0033" title="+1 (314) 561 0033">+1 (314) 561 0033</a>
+          <a href="tel:{{phone1}}" title="{{phone1}}">{{phone1}}</a>
         </p>
         <p class="phone-2">
-          <a href="tel:+1 (833) 233 0014" title="+1 (833) 233 0014">+1 (833) 233 0014</a>
+          <a href="tel:{{phone2}}" title="{{phone2}}">{{phone2}}</a>
         </p>
         <p>
-          <a class="email-address" href="mailto:info@angadartshotel.com" title="info@angadartshotel.com">info@angadartshotel.com</a>
+          <a class="email-address" href="mailto:{{contact-email}}" title="{{contact-email}}">{{contact-email}}</a>
         </p>
       </div>
       <div class="email-subscription order-1 order-lg-3">
@@ -25,11 +29,11 @@
           <button type="button" name="button"></button>
         </form>
         <ul class="social-share">
-          <li>
+          <!-- <li>
             <a class="twitter-link" href="/" target="_blank" rel="nofollow">
               <i class="fab fa-twitter"></i>
             </a>
-          </li>
+          </li> -->
           <li>
             <a class="facebook-link" href="/" target="_blank" rel="nofollow">
               <i class="fab fa-facebook-f"></i>
@@ -40,23 +44,23 @@
               <i class="fab fa-instagram"></i>
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a class="spotify-link" href="/" target="_blank" rel="nofollow">
               <i class="fab fa-spotify"></i>
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
       <div class="footer-links order-2 order-lg-4">
         <ul>
           <li>
-            <a href="/" title="Press">Press</a>
+            <a href="/press/" title="Press">Press</a>
           </li>
           <li>
-            <a href="/" title="About">About</a>
+            <a href="/about/" title="About">About</a>
           </li>
           <li>
-            <a href="/" title="Careers">Careers</a>
+            <a href="/careers/" title="Careers">Careers</a>
           </li>
         </ul>
       </div>
