@@ -1,0 +1,7 @@
+{
+  "image": {
+    "label": "Banner Image",
+    "type": "image",
+    "required": true
+  }
+}
