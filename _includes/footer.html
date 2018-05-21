@@ -1,6 +1,7 @@
 {% assign phone1 = site.data.contact.phone-number-1 %}
 {% assign phone2 = site.data.contact.phone-number-2 %}
 {% assign contact-email = site.data.contact.contact-email %}
+{% assign jotform = site.data.forms.jotform %}
 <footer>
   <div class="footer-container">
     <div class="footer-row">
@@ -23,9 +24,10 @@
       </div>
       <div class="email-subscription order-1 order-lg-3">
         <h4>Stay in Touch</h4>
-        <form class="newsletter-footer" action="index.html" method="post">
-          <input class="form-control" type="email" name="email" value="" placeholder="name@domain.com" title="Enter Your Email" aria-label="Enter Your Email">
-          <button type="button" name="button"></button>
+        <form class="newsletter-footer" action="https://submit.jotform.me/submit/{{jotform.newsletter-id}}/" method="post" name="form_{{jotform.newsletter-id}}" id="{{jotform.newsletter-id}}">
+          <input type="hidden" name="formID" value="{{jotform.newsletter-id}}" />
+          <input class="form-control" type="email" id="input_3" name="q3_email" value="" placeholder="name@domain.com" title="Enter Your Email" aria-label="Enter Your Email">
+          <button id="input_2" type="submit" name="button"></button>
         </form>
         <ul class="social-share">
           <!-- <li>
