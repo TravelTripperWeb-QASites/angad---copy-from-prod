@@ -1,9 +1,9 @@
 # Site Settings
-title: "Home"
+title: "Angad Arts Hotel"
 title_separator: "|"
 name: "Angad Arts Hotel"
 description: "Angad Arts Hotel"
-url: https://www.angadartshotel.com/
+url: "https://www.angadartshotel.com"
 repository: "TravelTripperWeb/angad" # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
 
 # Language Settings
