@@ -29,10 +29,17 @@ footer {
             margin-bottom: 0;
           }
           img {
-            max-width: 125px;
+            max-width: 80px;
+            @include media-breakpoint-up(lg) {
+              max-width: 125px;
+            }
           }
           @media screen and (min-width: 480px) and (max-width: 991px) {
             float: left;
+          }
+          @media screen and (max-width: 479px) {
+            display: block;
+            text-align: center;
           }
         }
         .footer-address {
@@ -46,6 +53,10 @@ footer {
           cursor: pointer;
           @media screen and (min-width: 480px) and (max-width: 991px) {
             float: right;
+            padding-left: 0;
+          }
+          @media screen and (max-width: 479px) {
+            display: block;
           }
         }
         @media screen and (min-width: 480px) and (max-width: 991px) {
