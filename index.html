@@ -63,26 +63,33 @@ meta_tags:
       <div class="banner-text">
         <h2>Dine <span>D</span>istinctively</h2>
       </div>
-      <div class="carousel-item bg-styles active" style="background-image: url('/assets/images/home/dine-distinctively.jpg')">
-      </div>
-      <div class="carousel-item bg-styles" style="background-image: url('/assets/images/home/dine-distinctively.jpg')">
-      </div>
-      <div class="carousel-item bg-styles" style="background-image: url('/assets/images/home/dine-distinctively.jpg')">
-      </div>
+      {% assign dine-distinctively-items = site.data._models.dine-distinctively-carousel %}
+
+      {% for item in dine-distinctively-items %}
+
+        <div class="carousel-item bg-styles {% if forloop.index0 == 0 %} active {% endif %}" style="background-image: url('{{item.image.url}}')"></div>
+
+      {% endfor %}
+
+      {% if dine-distinctively-items.size > 1 %}
       <!-- Left and right controls -->
-      <a class="carousel-control-prev" href="#diningCarousel" data-slide="prev">
-        <span class="left-slide"></span>
-      </a>
-      <a class="carousel-control-next" href="#diningCarousel" data-slide="next">
-        <span class="right-slide"></span>
-      </a>
+        <a class="carousel-control-prev" href="#diningCarousel" data-slide="prev">
+          <span class="left-slide"></span>
+        </a>
+        <a class="carousel-control-next" href="#diningCarousel" data-slide="next">
+          <span class="right-slide"></span>
+        </a>
+      {% endif %}
+
     </div>
-    <!-- Indicators -->
-    <ul class="carousel-indicators">
-      <li data-target="#diningCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#diningCarousel" data-slide-to="1"></li>
-      <li data-target="#diningCarousel" data-slide-to="2"></li>
-    </ul>
+    {% if dine-distinctively-items.size > 1 %}
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        {% for item in dine-distinctively-items %}
+          <li data-target="#diningCarousel" data-slide-to="{{item.forloop0}}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   </div>
 </section>
 
@@ -104,27 +111,37 @@ meta_tags:
       <div class="banner-text">
         <h2>Meet Magnificentl<span>y</span></h2>
       </div>
-      <div class="carousel-item bg-styles active" style="background-image: url('/assets/images/home/meet-magnificently.jpg')">
-      </div>
-      <div class="carousel-item bg-styles" style="background-image: url('/assets/images/home/meet-magnificently.jpg')">
-      </div>
-      <div class="carousel-item bg-styles" style="background-image: url('/assets/images/home/meet-magnificently.jpg')">
-      </div>
+      {% assign meet-magnificently-items = site.data._models.meet-magnificently-carousel %}
+
+      {% for item in meet-magnificently-items %}
+
+        <div class="carousel-item bg-styles {% if forloop.index0 == 0 %} active {% endif %}" style="background-image: url('{{item.image.url}}')"></div>
+
+      {% endfor %}
+
       <div class="grad-bg"></div>
-      <!-- Left and right controls -->
-      <a class="carousel-control-prev" href="#meetCarousel" data-slide="prev">
-        <span class="left-slide"></span>
-      </a>
-      <a class="carousel-control-next" href="#meetCarousel" data-slide="next">
-        <span class="right-slide"></span>
-      </a>
+
+      {% if meet-magnificently-items.size > 1 %}
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#meetCarousel" data-slide="prev">
+          <span class="left-slide"></span>
+        </a>
+        <a class="carousel-control-next" href="#meetCarousel" data-slide="next">
+          <span class="right-slide"></span>
+        </a>
+
+      {% endif %}
+
     </div>
-    <!-- Indicators -->
-    <ul class="carousel-indicators">
-      <li data-target="#meetCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#meetCarousel" data-slide-to="1"></li>
-      <li data-target="#meetCarousel" data-slide-to="2"></li>
-    </ul>
+    {% if meet-magnificently-items.size > 1 %}
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        {% for item in dine-distinctively-items %}
+          <li data-target="#meetCarousel" data-slide-to="{{item.forloop0}}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   </div>
 </section>
 
