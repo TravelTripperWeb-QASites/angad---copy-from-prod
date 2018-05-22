@@ -3,6 +3,7 @@
 .navbar {
   padding: 0;
   background-color: $white;
+  @include global-transition(.5s);
   .nav-container {
     @include main-container;
     position: relative;

@@ -46,20 +46,27 @@ $(document).ready(function(){
 });
 
 
-$(window).on("load resize scroll", function (e) {
+$(window).on("load resize", function (e) {
 
-  // if($(document).scrollTop() > 100 && $(document).scrollTop() <= 200) {
-  //   $("nav").unbind().slideUp(500);
-  // }
-
-  if($(document).scrollTop() <= 100) {
+  if($(document).scrollTop() >= 0 && $(document).scrollTop() <= 200) {
     $("nav").removeClass("fixed");
-    $("nav").unbind().slideDown(500);
   }
 
   if($(document).scrollTop() > 200) {
     $("nav").addClass("fixed");
-    $("nav").unbind().slideDown(500);
   }
 
+});
+
+$(window).on("scroll", function (e) {
+  if($(document).scrollTop() >= 0 && $(document).scrollTop() <= 175) {
+    $("nav").removeClass("fixed").css({"top": "0"});
+  }
+
+  if($(document).scrollTop() > 175 && $(document).scrollTop() < 300) {
+    $("nav").css({"top": "-200px"}).removeClass("fixed");
+  }
+  if($(document).scrollTop() > 300) {
+    $("nav").addClass("fixed").css({"top": "0"});
+  }
 });
