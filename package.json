@@ -1,17 +1,17 @@
 {
-  "name": "angad",
-  "description": "Angad Arts Hotel",
+  "name": "bedrock",
+  "description": "Bedrock Jekyll Template",
   "version": "1.0.0",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TravelTripperWeb-Sites/angad"
+    "url": "https://github.com/TravelTripperWeb-Sites/_ttio_templates-bedrock"
   },
   "keywords": [
     "jekyll",
     "bedrock"
   ],
-  "author": "Raghuveer Panchagnula",
+  "author": "John Burkhard",
   "engines": {
     "node": ">= 0.10.0"
   },
