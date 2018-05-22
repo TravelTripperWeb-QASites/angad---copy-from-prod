@@ -53,6 +53,16 @@ p {
   }
 }
 
+// Links
+
+a {
+  color: $link-color;
+  &:hover, &:active {
+    color: $link-color;
+    outline: 0;
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -74,6 +84,21 @@ img {
     }
     h3 {
       margin-bottom: 10px;
+    }
+    .sitemap {
+      h4 {
+        font-size: 2rem;
+        color: $black;
+      }
+      ul {
+        margin-top: 10px;
+        li {
+          list-style: none;
+          a {
+            font-size: 1.4rem;
+          }
+        }
+      }
     }
     .text-content {
       position: relative;
@@ -127,9 +152,7 @@ img {
   }
 }
 
-.link-clr {
-  color: $link-color;
-}
+
 
 .primary-btn {
   @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, uppercase, .25rem);
@@ -315,14 +338,6 @@ img {
   }
 }
 
-// Links
-
-a {
-  &:hover,
-  &:active {
-    outline: 0;
-  }
-}
 
 // Sets a default bottom margin and removes bullet points from lists
 
@@ -354,9 +369,4 @@ svg:not(:root) {
     top: 50%;
     width: auto;
   }
-}
-.bg-styles {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }

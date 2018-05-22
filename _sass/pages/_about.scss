@@ -9,6 +9,10 @@
       background-color: $site-clr-4;
     }
   }
+  h3 {
+    font-size: 2rem;
+    color: $white;
+  }
   &:after {
     position: absolute;
     top: 0;
@@ -17,6 +21,11 @@
     left: 0;
     content: '';
     background-color: rgba(0,0,0,.4);
+  }
+  .theme-carousel {
+    .carousel-item {
+      background-position: center center;
+    }
   }
 }
 

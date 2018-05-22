@@ -4,30 +4,36 @@ title: Sitemap
 meta_description:
 permalink: /sitemap/
 meta_tags:
-  robots: noindex, follow
-published: false
+  robots:
 ---
 
-{% comment %}
+<section class="inner-hero-banner">
+  <div id="innerCarousel" class="carousel slide theme-carousel" data-ride="carousel">
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="banner-text">
+        {% regionblock banner_heading, type: header %}
+          <h2>Sitemap</h2>
+        {% endregionblock %}
+      </div>
+      <div class="carousel-item active bg-styles" style="background-image: url('/assets/images/404-banner.jpg')">
+      </div>
+    </div>
+  </div>
+</section>
 
-  Name:
-
-    Sitemap Page
-
-  Description:
-
-    Dynamically generated content from navigation.yml file.
-
-  Usage:
-
-    {% assign links = site.data.navigation.main %}
-
-    <ul>
-      {% for link in links %}
-        <li>
-          <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-{% endcomment %}
+<section class="full-text-wrap">
+  <div class="full-text">
+    <div class="text-content text-center">
+      <div class="color-block-red top-left-block"></div>
+      <div class="sitemap">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/" title="About">About</a></li>
+          <li><a href="/press/" title="Press">Press</a></li>
+        </ul>
+      </div>
+      <div class="color-block-yellow bottom bottom-right-block"></div>
+    </div>
+  </div>
+</section>
