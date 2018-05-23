@@ -83,9 +83,9 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 #   sort_reverse: true
 
 page_gen: #
-  - data: 'press'
-    template: 'press-detail'
-    dir: 'press'
+  # - data: 'press'
+  #   template: 'press-detail'
+  #   dir: 'press'
   # - data: 'blog'
   #   template: 'post-single'
   #   dir: 'blog'

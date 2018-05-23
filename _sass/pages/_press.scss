@@ -101,21 +101,21 @@
     }
   }
 }
-
-.press-detail {
-  @include main-container;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  h1 {
-    font-family: $header-font-family;
-    font-size: $type-size-4;
-    line-height: normal;
-    color: $black;
-    letter-spacing: 1px;
-  }
-  p {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    line-height: normal;
-  }
-}
+// 
+// .press-detail {
+//   @include main-container;
+//   margin-top: 80px;
+//   margin-bottom: 80px;
+//   h1 {
+//     font-family: $header-font-family;
+//     font-size: $type-size-4;
+//     line-height: normal;
+//     color: $black;
+//     letter-spacing: 1px;
+//   }
+//   p {
+//     margin-top: 20px;
+//     font-size: 1.2rem;
+//     line-height: normal;
+//   }
+// }

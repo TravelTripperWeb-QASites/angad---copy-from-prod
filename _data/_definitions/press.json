@@ -6,8 +6,7 @@
     "type": "image",
     "required": false
   },
-  "url_friendly_name": {
-    "type": "url_slug",
+  "link": {
     "required": true
   },
   "description": {
