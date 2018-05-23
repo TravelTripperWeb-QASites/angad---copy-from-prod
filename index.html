@@ -1,12 +1,171 @@
 ---
 layout: default
-title:
-meta_description:
+title: Luxury Hotels in St. Louis | Angad Arts Hotel
+meta_description: Ideally located in the heart of St. Louis’s Grand Center Arts District, Angad Arts Hotel offers superb, gracious hospitality combined with curation of socially inspiring experiences.
 permalink:
 meta_tags:
   robots:
 ---
 
-<div class="jumbotron mt-5">
-  <h1 class="display-3">Hello, World!</h1>
-</div>
+<section class="home-hero-video">
+  <video autoplay muted loop poster="/assets/images/main-video-poster.png" id="homePageVideo">
+    <source src="//cdn.traveltripper.io/site-assets/32_897_15881/media/2018-05-17-083257/hero-banner-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<section class="full-text-wrap">
+  <div class="full-text">
+    {% regionblock intro_heading, type: header %}
+      <h3>ANGAD ARTS HOTEL</h3>
+    {% endregionblock %}
+    <div class="text-content large">
+      <div class="color-block-red top-block"></div>
+      <div class="color-block-yellow top-left-block"></div>
+      {% regionblock intro_text, type: text %}
+        <p>Angad Arts Hotel (AAH) is a wholly new hospitality experience that embraces the visual arts, performance, fashion, literature and gastronomy. Ideally located in the heart of St. Louis’s Grand Center Arts District, AAH offers superb, gracious hospitality combined with curation of socially inspiring experiences. It is the first hotel in the world where guests are able to book their luxury accommodations not only by room type, but also by emotion of color.</p>
+      {% endregionblock %}
+      <div class="color-block-blue bottom-block"></div>
+      <div class="color-block-green bottom-right-block"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="stay-colorful-video">
+  <video muted loop poster="/assets/images/home/stay-colorful-banner.jpg" id="homePageVideo">
+    <source src="//cdn.traveltripper.io/site-assets/32_897_15880/media/2018-05-23-050643/stay-colorful.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+{% comment %}
+<section class="stay-colorful bg-styles">
+  <div class="overlay-blocks">
+    <a href="javascript:void(0);" class="overlay block-1"></a>
+    <a href="javascript:void(0);" class="overlay block-2"></a>
+    <a href="javascript:void(0);" class="overlay block-3"></a>
+    <a href="javascript:void(0);" class="overlay block-4"></a>
+  </div>
+  <div class="banner-text">
+    {% regionblock stay_colorful_heading, type: header %}
+      <h2>Stay Colorful</h2>
+    {% endregionblock %}
+  </div>
+</section>
+{% endcomment %}
+
+<section class="full-text-wrap">
+  <div class="full-text">
+    <div class="text-content">
+      <div class="color-block-green top-left-block"></div>
+      {% regionblock stay_colorful_text, type: text %}
+        <p>Designed by the Lawrence Group especially to appeal to your emotional side, the color palette of our rooms sets the mood for your stay. Choose your room by how you are feeling in the moment. Whether your choice is passionate red, tranquility blue, a happy yellow or green rejuvenation our rooms and amenities are perfect for work and play.</p>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
+
+<section class="dine-distinctively">
+  <div id="diningCarousel" class="carousel slide theme-carousel" data-ride="carousel">
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="banner-text">
+        <h2>Dine <span>D</span>istinctively</h2>
+      </div>
+      {% assign dine-distinctively-items = site.data._models.dining-carousel %}
+
+      {% for item in dine-distinctively-items %}
+
+        <div class="carousel-item bg-styles {% if forloop.index0 == 0 %} active {% endif %}" style="background-image: url('{{ item.image.url }}')"></div>
+
+      {% endfor %}
+
+      {% if dine-distinctively-items.size > 1 %}
+      <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#diningCarousel" data-slide="prev">
+          <span class="left-slide"></span>
+        </a>
+        <a class="carousel-control-next" href="#diningCarousel" data-slide="next">
+          <span class="right-slide"></span>
+        </a>
+      {% endif %}
+
+    </div>
+    {% if dine-distinctively-items.size > 1 %}
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        {% for item in dine-distinctively-items %}
+          <li data-target="#diningCarousel" data-slide-to="{{ item.forloop0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</section>
+
+<section class="full-text-wrap">
+  <div class="full-text">
+    <div class="text-content">
+      <div class="color-block-yellow top-left-block"></div>
+      {% regionblock dine_distinctively_text, type: text %}
+        <p>Dine at Grand Tavern, a new modern American concept from acclaimed Chef David Burke. Relax at the Chameleon Lounge or take in sweeping rooftop views of the city at Angad Rainbow Terrace while sipping hand-crafted cocktails in a space designed for sharing and socializing. Guests can also experience the flavor of Grand Tavern in the hotel’s Playroom or in the comfort of your room.</p>
+      {% endregionblock  %}
+    </div>
+  </div>
+</section>
+
+<section class="meet-magnificently">
+  <div id="meetCarousel" class="carousel slide theme-carousel" data-ride="carousel">
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="banner-text">
+        <h2>Meet Magnificentl<span>y</span></h2>
+      </div>
+      {% assign meet-magnificently-items = site.data._models.meeting-carousel %}
+
+      {% for item in meet-magnificently-items %}
+
+        <div class="carousel-item bg-styles {% if forloop.index0 == 0 %} active {% endif %}" style="background-image: url('{{ item.image.url }}')"></div>
+
+      {% endfor %}
+
+      <div class="grad-bg"></div>
+
+      {% if meet-magnificently-items.size > 1 %}
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#meetCarousel" data-slide="prev">
+          <span class="left-slide"></span>
+        </a>
+        <a class="carousel-control-next" href="#meetCarousel" data-slide="next">
+          <span class="right-slide"></span>
+        </a>
+
+      {% endif %}
+
+    </div>
+    {% if meet-magnificently-items.size > 1 %}
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        {% for item in dine-distinctively-items %}
+          <li data-target="#meetCarousel" data-slide-to="{{ item.forloop0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</section>
+
+<section class="full-text-wrap">
+  <div class="full-text">
+    <div class="text-content">
+      <div class="color-block-red top-left-block"></div>
+      {% regionblock meet_magnificently_text, type: text %}
+        <p>From corporate, to the celebrated, our creative spaces are designed to fit your specific needs and offer ideal settings for both social and business events. Featured are two exquisite private events spaces, each with their own pre-function area, as well as a conference room and an outdoor rooftop garden terrace with spectacular skyline views. A wide range of exceptional food and beverage menus are available, especially imagined by Chef Burke.</p>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
+
+{% include stay-colorful-banner.html %}
+
+{% include make-something-new.html %}

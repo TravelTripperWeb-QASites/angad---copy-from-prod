@@ -10,3 +10,62 @@
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+
+@mixin main-container {
+  @include make-container;
+  max-width: 1310px;
+  margin: 0 auto;
+}
+
+@mixin small-container {
+  @include make-container;
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+@mixin color-block {
+  width: 39px;
+  height: 46px;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+@mixin vertical-center {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  @include vertical-align(-50%);
+}
+
+// Transition
+@mixin global-transition($transition) {
+  -webkit-transition: all $transition;
+  transition:         all $transition;
+  -moz-transition:    all $transition;
+  -o-transition:      all $transition;
+}
+
+@mixin vertical-align($position) {
+  -webkit-transform: translateY($position);
+  -moz-transform: translateY($position);
+  -ms-transform: translateY($position);
+  -o-transform: translateY($position);
+  transform: translateY($position);
+}
+
+@mixin text-formatting($font-family, $font-size, $font-weight, $line-height, $font-color, $text-transform, $letter-spacing) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $font-color;
+  text-transform: $text-transform;
+  letter-spacing: $letter-spacing;
+}

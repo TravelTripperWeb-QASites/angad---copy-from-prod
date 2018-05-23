@@ -1,0 +1,121 @@
+.press-intro {
+  @include main-container;
+  margin: 90px auto 60px;
+  @include media-breakpoint-up(lg) {
+    margin: 180px auto 114px;
+  }
+  h3 {
+    margin-bottom: 12px;
+  }
+  p {
+    max-width: 640px;
+    a {
+      color: $link-color;
+    }
+  }
+}
+
+.press-listing {
+  @include main-container;
+  .list-row {
+    @include make-row;
+    .list-item {
+      @include make-col-ready();
+      padding: 0 20px;
+      @include media-breakpoint-up(sm) {
+        @include make-col(6);
+        padding: 0 12px;
+      }
+      @include media-breakpoint-up(xl) {
+        @include make-col(3);
+      }
+      .list-item-inner {
+        position: relative;
+        min-height: 300px;
+        padding: 30px;
+        background-color: $site-clr-2;
+        @include media-breakpoint-up(xl) {
+          min-height: 400px;
+          padding: 30px 60px 47px 30px;
+        }
+        .date {
+          @include text-formatting($lighter-font, $type-size-6, 300, normal, $white, none, .48px);
+        }
+        .title {
+          @include text-formatting($font-semi-bold, $type-size-8, 400, normal, $white, none, .48px);
+          margin-bottom: 45px;
+          @media screen and (max-width: 479px) {
+            font-size: 1.5rem;
+          }
+        }
+        &::after {
+          position: absolute;
+          right: 0;
+          bottom: -25px;
+          width: 0;
+          height: 0;
+          content: '';
+          border-top: 25px solid transparent;
+          border-right: 25px solid $site-clr-2;
+          border-bottom: 25px solid transparent;
+        }
+      }
+      &.green {
+        .list-item-inner {
+          background-color: $site-clr-3;
+          &::after {
+            border-right: 25px solid $site-clr-3;
+          }
+        }
+      }
+      &.blue {
+        .list-item-inner {
+          background-color: $site-clr-1;
+          &::after {
+            border-right: 25px solid $site-clr-1;
+          }
+        }
+      }
+      &.yellow {
+        .date {
+          color: $black;
+        }
+        .title {
+          color: $black;
+        }
+        .list-item-inner {
+          background-color: $site-clr-4;
+          &::after {
+            border-right: 25px solid $site-clr-4;
+          }
+        }
+      }
+      .press-logo {
+        margin-bottom: 55px;
+        padding-top: 40px;
+        text-align: right;
+        @include media-breakpoint-up(xl) {
+          margin-bottom: 90px;
+        }
+      }
+    }
+  }
+}
+// 
+// .press-detail {
+//   @include main-container;
+//   margin-top: 80px;
+//   margin-bottom: 80px;
+//   h1 {
+//     font-family: $header-font-family;
+//     font-size: $type-size-4;
+//     line-height: normal;
+//     color: $black;
+//     letter-spacing: 1px;
+//   }
+//   p {
+//     margin-top: 20px;
+//     font-size: 1.2rem;
+//     line-height: normal;
+//   }
+// }

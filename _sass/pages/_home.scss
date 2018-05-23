@@ -1,0 +1,131 @@
+.home-hero-video {
+  video {
+    width: 100%;
+  }
+}
+
+// .stay-colorful {
+//   position: relative;
+//   min-height: 320px;
+//   overflow: hidden;
+//   text-align: center;
+//   background-image: url('/assets/images/home/stay-colorful-bg.jpg');
+//   @include media-breakpoint-up(sm) {
+//     min-height: 500px;
+//   }
+//   @include media-breakpoint-up(lg) {
+//     min-height: 810px;
+//   }
+//   .banner-text {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     display: block;
+//     width: 100%;
+//     transform: translate(-50%, -50%);
+//     h2 {
+//       font-size: 2rem;
+//       line-height: 0;
+//       @media screen and (min-width: 350px) {
+//         font-size: 2.75rem;
+//         letter-spacing: .3px;
+//       }
+//       @include media-breakpoint-up(md) {
+//         font-size: 4rem;
+//         letter-spacing: .8rem;
+//       }
+//       @include media-breakpoint-up(lg) {
+//         font-size: 6rem;
+//       }
+//       @include media-breakpoint-up(xl) {
+//         font-size: 8rem;
+//       }
+//     }
+//   }
+//   .overlay-blocks {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     transform: skew(20deg);
+//     -webkit-transform: skew(20deg);
+//     -o-transform: skew(20deg);
+//     -ms-transform: skew(20deg);
+//
+//     left: -20%;
+//     width: 140%;
+//
+//     @include media-breakpoint-up(sm) {
+//       left: -15%;
+//       width: 130%;
+//     }
+//
+//     @include media-breakpoint-up(xl) {
+//       left: -12%;
+//       width: 125%;
+//     }
+//
+//     .overlay {
+//       display: inline-block;
+//       float: left;
+//       height: 100%;
+//       box-shadow: 15px 0px 6px $black-transparent;
+//       @include global-transition(.5s);
+//       &.block-1 {
+//         width: 30%;
+//         background-color: $site-transparent-clr-3;
+//       }
+//       &.block-2 {
+//         width: 20%;
+//         background-color: $site-transparent-clr-1;
+//       }
+//       &.block-3 {
+//         width: 20%;
+//         background-color: $site-transparent-clr-2;
+//       }
+//       &.block-4 {
+//         width: 30%;
+//         background-color: $site-transparent-clr-4;
+//       }
+//     }
+//   }
+// }
+
+.stay-colorful-video {
+  video {
+    width: 100%;
+  }
+}
+
+.dine-distinctively {
+  h2 {
+    span {
+      padding: 0 0 0 6px;
+      background-color: $site-clr-4;
+    }
+  }
+}
+
+.meet-magnificently {
+  h2 {
+    span {
+      display: inline-block;
+      padding: 0 0 0 6px;
+      background-color: $site-clr-2;
+    }
+  }
+  .carousel-indicators {
+    li {
+      &.active {
+        background-color: $site-clr-2;
+      }
+    }
+  }
+}
+
+.stay-colorful-sec {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}

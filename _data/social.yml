@@ -1,0 +1,20 @@
+# Social Sharing
+twitter:
+  username:
+facebook:
+  username: angadartshotel
+  app_id:
+  publisher:
+instagram:
+  username: angadartshotel
+spotify:
+  username:
+
+og_image: # Open Graph/Twitter default site image
+
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type: # Person or Organization (defaults to Person)
+  name: # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles

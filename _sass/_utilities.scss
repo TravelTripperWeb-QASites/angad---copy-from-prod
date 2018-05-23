@@ -3,43 +3,23 @@
 
 // Visibility
 
-.skip-link {
-  font-family: $sans-serif;
+.hidden {
+  display: none;
+  visibility: hidden;
 }
 
-// Social icons
+// For expiring content
 
-.social-icons {
-  .fa-facebook,
-  .fa-facebook-square {
-    color: $facebook-color;
-  }
-
-  .fa-google-plus,
-  .fa-google-plus-square {
-    color: $google-plus-color;
-  }
-
-  .fa-instagram {
-    color: $instagram-color;
-  }
-
-  .fa-pinterest,
-  .fa-pinterest-p,
-  .fa-pinterest-square {
-    color: $pinterest-color;
-  }
-
-  .fa-twitter,
-  .fa-twitter-square {
-    color: $twitter-color;
-  }
-
-  .fa-youtube,
-  .fa-youtube-square,
-  .fa-youtube-play {
-    color: $youtube-color;
-  }
+.expired {
+  display: none;
 }
 
+// For preloading images
 
+.load {
+  display: none;
+}
+
+.transparent {
+  opacity: 0;
+}

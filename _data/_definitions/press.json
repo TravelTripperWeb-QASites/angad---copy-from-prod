@@ -1,0 +1,19 @@
+{
+  "title": {
+    "required": true
+  },
+  "logo": {
+    "type": "image",
+    "required": false
+  },
+  "link": {
+    "required": true
+  },
+  "description": {
+    "type": "richtext"
+  },
+  "date": {
+    "type": "date",
+    "required": true
+  }
+}

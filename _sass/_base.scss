@@ -1,58 +1,372 @@
 // Base Elements
 // ==========================================================================
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-  color: $text-color;
+  margin: 0;
+  padding: 0;
   font-family: $global-font-family;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font-family;
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 
 h1 {
-  font-size: $type-size-3;
+  @include text-formatting($lighter-font, $type-size-1, 300, normal, $white, uppercase, .5rem);
+  @include media-breakpoint-down(sm) {
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+  }
 }
 
 h2 {
-  font-size: $type-size-4;
+  @extend h1;
 }
 
 h3 {
-  font-size: $type-size-5;
+  @include text-formatting($header-font-family, $type-size-2, 700, 4.375rem, $black, uppercase, .40625rem);
+  @include media-breakpoint-down(sm) {
+    font-size: 2rem;
+    line-height: normal;
+    letter-spacing: .1875rem;
+  }
 }
 
 h4 {
-  font-size: $type-size-6;
+  @include text-formatting($header-font-family, $type-size-5, 400, 2rem, $white, uppercase, .1875rem);
 }
 
-h5 {
-  font-size: $type-size-6;
-}
-
-h6 {
-  font-size: $type-size-6;
-}
-
-small, .small {
-  font-size: $type-size-6;
-}
-
-u,
-ins {
-  border-bottom: 1px solid $text-color;
+p {
+  @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, none, .48px);
+  @include media-breakpoint-down(sm) {
+    font-size: 1.375rem;
+    line-height: normal;
+    letter-spacing: .44px;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 1.1rem;
+  }
 }
 
 // Links
 
 a {
   color: $link-color;
-  &:visited {
-    color: $link-color-visited;
-  }
-  &:hover,
-  &:active {
+  &:hover, &:active {
+    color: $link-color;
     outline: 0;
-    color: $link-color-hover;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.full-text-wrap {
+  overflow-x: hidden;
+  .full-text {
+    @include small-container;
+    padding: 30px 20px 120px;
+    @include media-breakpoint-down(sm) {
+      padding: 50px 20px;
+    }
+    .btn-holder {
+      margin: 20px 0 66px;
+      text-align: right;
+      @include media-breakpoint-down(sm) {
+        margin: 20px 0 0;
+      }
+    }
+    h3 {
+      margin-bottom: 10px;
+    }
+    .sitemap {
+      h4 {
+        font-size: 2rem;
+        color: $black;
+      }
+      ul {
+        margin-top: 10px;
+        li {
+          list-style: none;
+          a {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    .text-content {
+      position: relative;
+      .top-block {
+        position: absolute;
+        top: -70px;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        margin: auto;
+      }
+      .top-left-block {
+        position: absolute;
+        top: 5px;
+        left: -65px;
+        z-index: -1;
+      }
+      .top-right-block {
+        position: absolute;
+        top: -70px;
+        right: 0;
+        z-index: -1;
+      }
+      .bottom-block {
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        margin: 25px auto 0;
+      }
+      .bottom-right-block {
+        position: absolute;
+        right: 30px;
+        bottom: 0;
+        z-index: -1;
+      }
+      .bottom {
+        bottom: -60px;
+      }
+      &.large {
+        @include media-breakpoint-up(md) {
+          padding-bottom: 120px;
+        }
+      }
+      &.medium {
+        @include media-breakpoint-up(md) {
+          padding-bottom: 90px;
+        }
+      }
+    }
+  }
+}
+
+
+
+.primary-btn {
+  @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, uppercase, .25rem);
+  position: relative;
+  display: inline-block;
+  padding: 8px 0 0;
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 39px;
+    height: 45px;
+    margin-left: 15px;
+    content: '';
+    background-color: $site-clr-4;
+    background-image: url('/assets/images/arrow-right.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 14px;
+    @include global-transition(.3s);
+  }
+  @include media-breakpoint-down(sm) {
+    padding-right: 60px;
+    font-size: 1.375rem;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 1.2rem;
+  }
+  &:hover {
+    color: $black;
+    text-decoration: none;
+    &::after {
+      background-color: $site-clr-3;
+    }
+  }
+}
+
+.secondary-btn {
+  @extend .primary-btn;
+  padding: 0;
+  font-size: $type-size-7;
+  line-height: normal;
+  color: $white;
+  letter-spacing: .1875rem;
+  &::after {
+    width: 19px;
+    height: 25px;
+    background-size: 8px;
+  }
+  &:hover {
+    color: $white;
+  }
+
+  &.blue {
+    &::after {
+      background-color: $site-clr-1;
+    }
+    &:hover {
+      &::after {
+        background-color: $site-clr-4;
+      }
+    }
+  }
+
+  &.green {
+    &::after {
+      background-color: $site-clr-3;
+    }
+    &:hover {
+      &::after {
+        background-color: $site-clr-2;
+      }
+    }
+  }
+
+  &.red {
+    color: $black;
+    &:hover {
+      color: $black;
+      &::after {
+        background-color: $site-clr-3;
+      }
+    }
+    &::after {
+      background-color: $site-clr-2;
+    }
+  }
+
+}
+
+.color-block-blue {
+  @include color-block;
+  background-color: $site-clr-1;
+}
+.color-block-red {
+  @include color-block;
+  background-color: $site-clr-2;
+}
+.color-block-green {
+  @include color-block;
+  background-color: $site-clr-3;
+}
+.color-block-yellow {
+  @include color-block;
+  background-color: $site-clr-4;
+}
+
+.bg-styles {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.theme-carousel {
+  position: relative;
+  .banner-text {
+    z-index: 1;
+    @include vertical-center;
+  }
+  .carousel-inner {
+    .carousel-item {
+      min-height: 200px;
+      background-position: center top;
+      @include media-breakpoint-up(sm) {
+        min-height: 500px;
+      }
+      @include media-breakpoint-up(lg) {
+        min-height: 700px;
+      }
+    }
+  }
+  .carousel-control-prev, .carousel-control-next {
+    z-index: 2;
+    opacity: 1;
+    .left-slide {
+      display: inline-block;
+      width: 30px;
+      height: 53px;
+      background-image: url('/assets/images/arrow-left.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      @include media-breakpoint-down(sm) {
+        background-position: center;
+        background-size: 11px;
+      }
+    }
+    .right-slide {
+      @extend .left-slide;
+      background-image: url('/assets/images/arrow-right.png');
+    }
+  }
+  .carousel-indicators {
+    position: static;
+    margin-top: 20px;
+    li {
+      width: 18px;
+      height: 23px;
+      margin: 0 7px;
+      cursor: pointer;
+      background-color: $light-grey;
+      @include global-transition(.3s);
+      @include media-breakpoint-down(sm) {
+        width: 11px;
+        height: 14px;
+      }
+      &.active {
+        background-color: $site-clr-3;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.grad-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to right, $grad-clr-1, $grad-clr-2);
+  @include media-breakpoint-down(sm) {
+    height: 33px;
+  }
+}
+
+
+// Sets a default bottom margin and removes bullet points from lists
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// Fix IE9 SVG bug
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.intro-logo {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: $black;
+  img {
+    @include vertical-center;
+    position: absolute;
+    top: 50%;
+    width: auto;
   }
 }
