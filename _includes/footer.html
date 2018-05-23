@@ -27,26 +27,39 @@
           <button id="input_2" type="submit" name="button"></button>
         </form>
         <ul class="social-share">
-          <!-- <li>
-            <a class="twitter-link" href="/" target="_blank" rel="nofollow">
+          {% assign sociallinks = site.data.social %}
+
+          {% if sociallinks.twitter.username %}
+          <li>
+            <a href="https://www.twitter.com/{{sociallinks.twitter.username}}" target="_blank" rel="nofollow">
               <i class="fab fa-twitter"></i>
             </a>
-          </li> -->
+          </li>
+          {% endif %}
+
+          {% if sociallinks.facebook.username %}
           <li>
-            <a class="facebook-link" href="/" target="_blank" rel="nofollow">
+            <a href="https://www.facebook.com/{{sociallinks.facebook.username}}" target="_blank" rel="nofollow">
               <i class="fab fa-facebook-f"></i>
             </a>
           </li>
+          {% endif %}
+
+          {% if sociallinks.instagram.username %}
           <li>
-            <a class="instagram-link" href="/" target="_blank" rel="nofollow">
+            <a href="https://www.instagram.com/{{sociallinks.instagram.username}}" target="_blank" rel="nofollow">
               <i class="fab fa-instagram"></i>
             </a>
           </li>
-          <!-- <li>
-            <a class="spotify-link" href="/" target="_blank" rel="nofollow">
+          {% endif %}
+
+          {% if sociallinks.spotify.username %}
+          <li>
+            <a href="/" target="_blank" rel="nofollow">
               <i class="fab fa-spotify"></i>
             </a>
-          </li> -->
+          </li>
+          {% endif %}
         </ul>
       </div>
       <div class="footer-links order-2 order-lg-4">
@@ -57,9 +70,6 @@
           <li>
             <a href="/about/" title="About">About</a>
           </li>
-          <!-- <li>
-            <a href="/careers/" title="Careers">Careers</a>
-          </li> -->
         </ul>
       </div>
     </div>

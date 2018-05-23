@@ -288,22 +288,28 @@
         color: $white;
         text-align: center;
         @include global-transition(.3s);
-        &:hover {
-          color: $site-clr-4;
-        }
         &.twitter-link {
           background-color: $site-clr-1;
+          &:hover {
+            background-color: $site-clr-3;
+          }
         }
         &.facebook-link {
           background-color: $site-clr-2;
+          &:hover {
+            background-color: $site-clr-4;
+          }
         }
         &.instagram-link {
           background-color: $site-clr-3;
+          &:hover {
+            background-color: $site-clr-1;
+          }
         }
         &.spotify-link {
           background-color: $site-clr-4;
           &:hover {
-            color: $black;
+            background-color: $site-clr-2;
           }
         }
       }
