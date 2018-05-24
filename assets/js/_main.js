@@ -27,7 +27,7 @@ $(document).ready(function(){
   });
 
 
-  $('.top-block').paroller({
+  $('.top-block, .from-left').paroller({
     factor: -0.2,
     type: 'foreground',
     direction: 'horizontal'
@@ -39,23 +39,17 @@ $(document).ready(function(){
     direction: 'horizontal'
   });
 
-  $('.bottom-block, .bottom-right-block, .top-right-block').paroller({
+  $('.bottom-block, .bottom-right-block, .top-right-block, .from-right').paroller({
     factor: 0.2,
     type: 'foreground',
     direction: 'horizontal'
   });
 
-  $('.from-left').paroller({
-    factor: -0.2,
-    type: 'foreground',
-    direction: 'horizontal'
-  });
-
-  $('.from-right').paroller({
-    factor: 0.2,
-    type: 'foreground',
-    direction: 'horizontal'
-  });
+  // $('.text-content.medium .top-right-block').paroller({
+  //   factor: 0.5,
+  //   type: 'foreground',
+  //   direction: 'horizontal'
+  // });
 
   $('.press-listing .list-item:nth-child(2n)').addClass("green").find(".secondary-btn").addClass("blue");
   $('.press-listing .list-item:nth-child(3n)').addClass("blue").find(".secondary-btn").addClass("green");
