@@ -28,19 +28,19 @@ $(document).ready(function(){
 
 
   $('.top-block').paroller({
-    factor: -0.3,
+    factor: -0.2,
     type: 'foreground',
     direction: 'horizontal'
   });
 
   $('.top-left-block').paroller({
-    factor: -0.3,
+    factor: -0.15,
     type: 'foreground',
     direction: 'horizontal'
   });
 
   $('.bottom-block, .bottom-right-block, .top-right-block').paroller({
-    factor: 0.3,
+    factor: 0.2,
     type: 'foreground',
     direction: 'horizontal'
   });

@@ -8,18 +8,14 @@ meta_tags:
 ---
 
 <section class="inner-hero-banner">
-  <div id="innerCarousel" class="carousel slide theme-carousel" data-ride="carousel">
-    <!-- The slideshow -->
-    <div class="carousel-inner">
-      <div class="banner-text">
-        {% regionblock banner_heading, type: header %}
-        <h2><span>a</span>bout us</h2>
-        {% endregionblock %}
-      </div>
-      <div class="carousel-item active bg-styles">
-        <img src="/assets/images/about/hero.jpg" alt="About Angad Arts">
-      </div>
-    </div>
+  <video autoplay muted loop poster="/assets/images/about/hero.jpg">
+    <source src="//cdn.traveltripper.io/site-assets/32_897_16116/media/2018-05-24-052827/videolamp.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="banner-text">
+    {% regionblock banner_heading, type: header %}
+    <h2><span>a</span>bout us</h2>
+  {% endregionblock %}
   </div>
 </section>
 

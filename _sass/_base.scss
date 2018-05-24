@@ -113,7 +113,7 @@ img {
       .top-left-block {
         position: absolute;
         top: 5px;
-        left: -65px;
+        left: -100px;
         z-index: -1;
       }
       .top-right-block {
@@ -266,12 +266,13 @@ img {
   background-size: cover;
 }
 
+.banner-text {
+  z-index: 1;
+  @include vertical-center;
+}
+
 .theme-carousel {
   position: relative;
-  .banner-text {
-    z-index: 1;
-    @include vertical-center;
-  }
   .carousel-inner {
     .carousel-item {
       // min-height: 200px;
