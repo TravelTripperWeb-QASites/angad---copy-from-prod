@@ -100,7 +100,7 @@
 }
 
 .play-overlay {
-  @include media-breakpoint-up(md) {
+  @media screen and (max-width: 1023px) {
     display: none;
   }
   position: absolute;

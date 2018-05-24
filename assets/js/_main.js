@@ -22,7 +22,7 @@ $(document).ready(function(){
   });
 
 */
-  if($(window).width() > 767) {
+  if($(window).width() > 1025) {
     $(".stay-colorful-video").hover(function(){
       $(this).find("video").trigger('play');
     }, function(){
@@ -30,7 +30,7 @@ $(document).ready(function(){
     });
   }
 
-  if($(window).width() <= 767) {
+  if($(window).width() <= 1024) {
     var $currentVideo = null;
     $(".stay-colorful-video video, .home-hero-video video").prop({"loop": false, "autoplay": false});
     $(".stay-colorful-video, .home-hero-video").click(function(){
