@@ -45,6 +45,18 @@ $(document).ready(function(){
     direction: 'horizontal'
   });
 
+  $('.from-left').paroller({
+    factor: -0.2,
+    type: 'foreground',
+    direction: 'horizontal'
+  });
+
+  $('.from-right').paroller({
+    factor: 0.2,
+    type: 'foreground',
+    direction: 'horizontal'
+  });
+
   $('.press-listing .list-item:nth-child(2n)').addClass("green").find(".secondary-btn").addClass("blue");
   $('.press-listing .list-item:nth-child(3n)').addClass("blue").find(".secondary-btn").addClass("green");
   $('.press-listing .list-item:nth-child(4n)').addClass("yellow").find(".secondary-btn").addClass("red");

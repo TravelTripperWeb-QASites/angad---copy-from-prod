@@ -105,6 +105,8 @@
 }
 
 .services-sec {
+  position: relative;
+  width: 100%;
   margin-bottom: 50px;
   @include media-breakpoint-up(md) {
     margin-bottom: 120px;
@@ -117,6 +119,7 @@
   }
   .services-sec-inner {
     @include make-row;
+    overflow-x: hidden;
   }
   .content {
     @include make-col-ready();
@@ -166,6 +169,7 @@
       position: absolute;
       right: 30px;
       bottom: 130px;
+      z-index: 9;
       &.two {
         bottom: 30px;
         left: 30px;
@@ -180,16 +184,19 @@
       @include make-col(8);
       min-height: 550px !important;
     }
-    .color-block-green {
-      position: absolute;
-      top: -23px;
-      right: 350px;
-    }
+  }
+  .color-block-green {
+    position: absolute;
+    top: -23px;
+    right: 350px;
+    z-index: 9;
   }
 }
 
 .chef-david-burke {
+  width: 100%;
   margin-bottom: 50px;
+  overflow-x: hidden;
   @include media-breakpoint-up(md) {
     margin-bottom: 120px;
   }
@@ -252,7 +259,7 @@
     }
     .color-block-yellow {
       position: absolute;
-      right: -23px;
+      right: 35px;
       bottom: 265px;
     }
   }
