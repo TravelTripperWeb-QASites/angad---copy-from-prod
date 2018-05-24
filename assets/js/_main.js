@@ -32,8 +32,8 @@ $(document).ready(function(){
 
   if($(window).width() <= 1024) {
     var $currentVideo = null;
-    $(".stay-colorful-video video, .home-hero-video video").prop({"loop": false, "autoplay": false});
-    $(".stay-colorful-video, .home-hero-video").click(function(){
+    $(".stay-colorful-video video, .home-hero-video video, .inner-hero-banner").prop({"loop": false, "autoplay": false});
+    $(".stay-colorful-video, .home-hero-video, .inner-hero-banner").click(function(){
       $currentVideo = $(this).find('video').get(0);
       $currentOverlay = $(this).find('.play-overlay');
       if($currentVideo.paused) {
@@ -45,7 +45,7 @@ $(document).ready(function(){
       }
     });
 
-    $(".stay-colorful-video video, .home-hero-video video").on('ended',function(){
+    $(".stay-colorful-video video, .home-hero-video video, .inner-hero-banner").on('ended',function(){
       $(this).parent().find(".play-overlay").fadeIn(300);
     });
 
