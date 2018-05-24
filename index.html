@@ -77,7 +77,9 @@ meta_tags:
 
       {% for item in dine-distinctively-items %}
 
-        <div class="carousel-item bg-styles {% if forloop.index0 == 0 %} active {% endif %}" style="background-image: url('{{ item.image.url }}')"></div>
+        <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}">
+          <img src="{{ item.image.url }}" alt="{{ item.image.alt }}">
+        </div>
 
       {% endfor %}
 
@@ -125,7 +127,9 @@ meta_tags:
 
       {% for item in meet-magnificently-items %}
 
-        <div class="carousel-item bg-styles {% if forloop.index0 == 0 %} active {% endif %}" style="background-image: url('{{ item.image.url }}')"></div>
+        <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}" >
+          <img src="{{ item.image.url }}" alt="{{ item.image.alt }}">
+        </div>
 
       {% endfor %}
 
