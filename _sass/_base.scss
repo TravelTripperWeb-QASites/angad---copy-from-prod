@@ -113,7 +113,7 @@ img {
       .top-left-block {
         position: absolute;
         top: 5px;
-        left: -65px;
+        left: -120px;
         z-index: -1;
       }
       .top-right-block {
@@ -266,21 +266,26 @@ img {
   background-size: cover;
 }
 
+.banner-text {
+  z-index: 1;
+  @include vertical-center;
+}
+
 .theme-carousel {
   position: relative;
-  .banner-text {
-    z-index: 1;
-    @include vertical-center;
-  }
   .carousel-inner {
     .carousel-item {
-      min-height: 200px;
-      background-position: center top;
-      @include media-breakpoint-up(sm) {
-        min-height: 500px;
-      }
-      @include media-breakpoint-up(lg) {
-        min-height: 700px;
+      // min-height: 200px;
+      // background-position: center top;
+      // @include media-breakpoint-up(sm) {
+      //   min-height: 500px;
+      // }
+      // @include media-breakpoint-up(lg) {
+      //   min-height: 700px;
+      // }
+      img {
+        width: 100%;
+        height: auto;
       }
     }
   }
@@ -326,10 +331,6 @@ img {
   }
 }
 .grad-bg {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
   width: 100%;
   height: 100px;
   background: linear-gradient(to right, $grad-clr-1, $grad-clr-2);

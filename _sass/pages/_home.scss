@@ -1,4 +1,5 @@
 .home-hero-video {
+  position: relative;
   video {
     width: 100%;
   }
@@ -92,8 +93,39 @@
 // }
 
 .stay-colorful-video {
+  position: relative;
   video {
     width: 100%;
+  }
+}
+
+.play-overlay {
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 6px;
+  left: 0;
+  background-color: $black-transparent-light;
+  .fa-play-circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    color: $white;
+    text-shadow: 0 0 30px $black;
+  }
+}
+.home-hero-video {
+  .play-overlay {
+    top: 2px;
+    bottom: 4px;
   }
 }
 

@@ -8,10 +8,13 @@ meta_tags:
 ---
 
 <section class="home-hero-video">
-  <video autoplay muted loop poster="/assets/images/main-video-poster.png" id="homePageVideo">
+  <video autoplay muted loop poster="/assets/images/main-video-poster.png" >
     <source src="//cdn.traveltripper.io/site-assets/32_897_15881/media/2018-05-17-083257/hero-banner-video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+  <div class="play-overlay">
+    <span class="far fa-play-circle"></span>
+  </div>
 </section>
 
 <section class="full-text-wrap">
@@ -33,10 +36,13 @@ meta_tags:
 
 
 <section class="stay-colorful-video">
-  <video muted loop poster="/assets/images/home/stay-colorful-banner.jpg" id="homePageVideo">
+  <video muted loop poster="/assets/images/home/stay-colorful-banner.jpg" >
     <source src="//cdn.traveltripper.io/site-assets/32_897_15880/media/2018-05-23-050643/stay-colorful.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+  <div class="play-overlay">
+    <span class="far fa-play-circle"></span>
+  </div>
 </section>
 
 {% comment %}
@@ -77,7 +83,9 @@ meta_tags:
 
       {% for item in dine-distinctively-items %}
 
-        <div class="carousel-item bg-styles {% if forloop.index0 == 0 %} active {% endif %}" style="background-image: url('{{ item.image.url }}')"></div>
+        <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}">
+          <img src="{{ item.image.url }}" alt="{{ item.image.alt }}">
+        </div>
 
       {% endfor %}
 
@@ -125,7 +133,9 @@ meta_tags:
 
       {% for item in meet-magnificently-items %}
 
-        <div class="carousel-item bg-styles {% if forloop.index0 == 0 %} active {% endif %}" style="background-image: url('{{ item.image.url }}')"></div>
+        <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}" >
+          <img src="{{ item.image.url }}" alt="{{ item.image.alt }}">
+        </div>
 
       {% endfor %}
 

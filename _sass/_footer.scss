@@ -53,10 +53,12 @@ footer {
           cursor: pointer;
           @media screen and (min-width: 480px) and (max-width: 991px) {
             float: right;
+            margin-top: -6px;
             padding-left: 0;
           }
           @media screen and (max-width: 479px) {
             display: block;
+            padding-left: 0;
           }
         }
         @media screen and (min-width: 480px) and (max-width: 991px) {
