@@ -131,19 +131,92 @@
 
 .dine-distinctively {
   h2 {
+    @include media-breakpoint-up(md) {
+      font-size: 3.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 5rem;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 6rem;
+    }
     span {
-      padding: 0 0 0 6px;
-      background-color: $site-clr-4;
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 4px;
+        left: -2px;
+        z-index: -1;
+        width: 25px;
+        height: 29px;
+        content: '';
+        background-color: $site-clr-4;
+        @include media-breakpoint-up(md) {
+          top: 7px;
+          left: -5px;
+          width: 50px;
+          height: 57px;
+        }
+        @include media-breakpoint-up(lg) {
+          top: 11px;
+          left: -6px;
+          width: 70px;
+          height: 80px;
+        }
+        @include media-breakpoint-up(xl) {
+          top: 14px;
+          left: -6px;
+          width: 80px;
+          height: 92px;
+        }
+
+      }
     }
   }
 }
 
 .meet-magnificently {
   h2 {
+    @include media-breakpoint-up(md) {
+      font-size: 3.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 5rem;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 6rem;
+    }
     span {
-      display: inline-block;
-      padding: 0 0 0 6px;
-      background-color: $site-clr-2;
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 4px;
+        left: -5px;
+        z-index: -1;
+        width: 25px;
+        height: 29px;
+        content: '';
+        background-color: $site-clr-2;
+        @include media-breakpoint-up(md) {
+          top: 7px;
+          left: -8px;
+          width: 50px;
+          height: 57px;
+        }
+        @include media-breakpoint-up(lg) {
+          top: 11px;
+          left: -12px;
+          width: 70px;
+          height: 80px;
+        }
+        @include media-breakpoint-up(xl) {
+          top: 14px;
+          left: -12px;
+          width: 80px;
+          height: 92px;
+        }
+
+      }
     }
   }
   .carousel-indicators {
