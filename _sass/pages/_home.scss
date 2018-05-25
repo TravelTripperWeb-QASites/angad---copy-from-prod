@@ -131,6 +131,15 @@
 
 .dine-distinctively {
   h2 {
+    @include media-breakpoint-up(md) {
+      font-size: 3.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 5rem;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 6rem;
+    }
     span {
       padding: 0 0 0 6px;
       background-color: $site-clr-4;
@@ -140,6 +149,15 @@
 
 .meet-magnificently {
   h2 {
+    @include media-breakpoint-up(md) {
+      font-size: 3.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 5rem;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 6rem;
+    }
     span {
       display: inline-block;
       padding: 0 0 0 6px;
