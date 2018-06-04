@@ -34,7 +34,7 @@ meta_tags:
   </div>
 </section>
 
-
+{% comment %}
 <section class="stay-colorful-video">
   <video muted loop poster="/assets/images/home/stay-colorful-banner.jpg" >
     <source src="//cdn.traveltripper.io/site-assets/32_897_15880/media/2018-05-23-050643/stay-colorful.mp4" type="video/mp4">
@@ -44,14 +44,13 @@ meta_tags:
     <span class="far fa-play-circle"></span>
   </div>
 </section>
-
-{% comment %}
-<section class="stay-colorful bg-styles">
+{% endcomment %}
+<section class="stay-colorful bg-styles"  id="mainroom-image" style="background-image: url('/assets/images/home/stay-colorful-bg.jpg')">
   <div class="overlay-blocks">
-    <a href="javascript:void(0);" class="overlay block-1"></a>
-    <a href="javascript:void(0);" class="overlay block-2"></a>
-    <a href="javascript:void(0);" class="overlay block-3"></a>
-    <a href="javascript:void(0);" class="overlay block-4"></a>
+    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-GREEN.jpg" class="overlay block-1"></a>
+    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-BLUE.jpg" class="overlay block-2"></a>
+    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-RED.jpg" class="overlay block-3"></a>
+    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-yellow.jpg" class="overlay block-4"></a>
   </div>
   <div class="banner-text">
     {% regionblock stay_colorful_heading, type: header %}
@@ -59,7 +58,6 @@ meta_tags:
     {% endregionblock %}
   </div>
 </section>
-{% endcomment %}
 
 <section class="full-text-wrap">
   <div class="full-text">
