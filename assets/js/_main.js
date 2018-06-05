@@ -33,7 +33,7 @@ $(document).ready(function(){
     });
   }
 
-  // if($(window).width() <= 1024) {
+  if($(window).width() <= 1024) {
     var $currentVideo = null;
     $(".stay-colorful-video video, .home-hero-video video, .inner-hero-banner").prop({"loop": false, "autoplay": false});
     $(".stay-colorful-video, .home-hero-video, .inner-hero-banner").click(function(){
@@ -52,7 +52,7 @@ $(document).ready(function(){
       $(this).parent().find(".play-overlay").fadeIn(300);
     });
 
-  // }
+  }
 
 
   $('.top-block, .from-left').paroller({

@@ -103,6 +103,9 @@
 }
 
 .play-overlay {
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
   position: absolute;
   top: 0;
   right: 0;
