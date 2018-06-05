@@ -127,6 +127,10 @@
   }
 }
 
+.home-hero-video .play-overlay {
+  bottom: 6px;
+}
+
 .dine-distinctively {
   h2 {
     @include media-breakpoint-up(md) {
