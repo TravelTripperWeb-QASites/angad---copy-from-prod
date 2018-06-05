@@ -3,6 +3,13 @@
 
 .inner-hero-banner {
   position: relative;
+  min-height: 300px;
+  @include media-breakpoint-up(sm) {
+    min-height: 500px;
+  }
+  @include media-breakpoint-up(lg) {
+    min-height: 700px;
+  }
   video {
     width: 100%;
   }

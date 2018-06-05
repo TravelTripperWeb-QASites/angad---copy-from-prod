@@ -2,6 +2,7 @@
   position: relative;
   video {
     width: 100%;
+    background: transparent url('/assets/images/main-video-poster.png') 50% 50% / cover no-repeat;
   }
 }
 
@@ -102,14 +103,12 @@
 }
 
 .play-overlay {
-  @media screen and (min-width: 1025px) {
-    display: none;
-  }
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 6px;
+  bottom: 0;
   left: 0;
+  cursor: pointer;
   background-color: $black-transparent-light;
   .fa-play-circle {
     position: absolute;
@@ -122,12 +121,6 @@
     margin: auto;
     color: $white;
     text-shadow: 0 0 30px $black;
-  }
-}
-.home-hero-video {
-  .play-overlay {
-    top: 2px;
-    bottom: 4px;
   }
 }
 
