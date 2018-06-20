@@ -7,9 +7,9 @@
   .nav-container {
     @include main-container;
     position: relative;
-    padding: 0 15px;
+    padding: 80px 15px 0;
     .navbar-brand {
-      position: relative;
+      position: absolute;
       bottom: -12px;
       z-index: 9;
       float: left;
@@ -45,9 +45,20 @@
     }
     .navbar-collapse {
       .navbar-nav {
-        
+        margin: 0 auto;
+        li {
+          a {
+            @include text-formatting($global-font-family, $type-size-6, 300, normal, $dark-font, uppercase, .0625rem);
+            padding: 15px;
+          }
+        }
       }
     }
+  }
+  .book-now-btn {
+    position: absolute;
+    right: 15px;
+    bottom: -50%;
   }
   &.fixed {
     position: fixed;
@@ -56,6 +67,18 @@
     width: 100%;
     .navbar-brand {
       padding: 0;
+      img {
+        width: 95px;
+      }
+    }
+    .nav-container {
+      padding-top: 20px;
+      .book-now-btn {
+        width: 100px;
+        height: 100px;
+        padding: 30px 0;
+        font-size: 1rem;
+      }
     }
   }
 }

@@ -194,6 +194,18 @@ img {
   }
 }
 
+.book-now-btn {
+  @include text-formatting($lighter-font, $type-size-3, 300, normal, $brand-red, uppercase, .125rem);
+  z-index: 9;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  padding: 42px 0;
+  text-align: center;
+  background-color: $brand-yellow;
+  border-radius: 50%;
+}
+
 .secondary-btn {
   @extend .primary-btn;
   padding: 0;
