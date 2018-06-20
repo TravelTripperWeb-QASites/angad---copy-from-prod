@@ -33,7 +33,7 @@
         position: relative;
         min-height: 300px;
         padding: 30px;
-        background-color: $site-clr-2;
+        background-color: $brand-red;
         @include media-breakpoint-up(xl) {
           min-height: 400px;
           padding: 30px 60px 47px 30px;
@@ -56,23 +56,23 @@
           height: 0;
           content: '';
           border-top: 25px solid transparent;
-          border-right: 25px solid $site-clr-2;
+          border-right: 25px solid $brand-red;
           border-bottom: 25px solid transparent;
         }
       }
       &.green {
         .list-item-inner {
-          background-color: $site-clr-3;
+          background-color: $brand-green;
           &::after {
-            border-right: 25px solid $site-clr-3;
+            border-right: 25px solid $brand-green;
           }
         }
       }
       &.blue {
         .list-item-inner {
-          background-color: $site-clr-1;
+          background-color: $brand-blue;
           &::after {
-            border-right: 25px solid $site-clr-1;
+            border-right: 25px solid $brand-blue;
           }
         }
       }
@@ -84,9 +84,9 @@
           color: $black;
         }
         .list-item-inner {
-          background-color: $site-clr-4;
+          background-color: $brand-yellow;
           &::after {
-            border-right: 25px solid $site-clr-4;
+            border-right: 25px solid $brand-yellow;
           }
         }
       }

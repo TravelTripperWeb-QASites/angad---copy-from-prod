@@ -6,7 +6,7 @@
 footer {
   padding: 50px 0 30px;
   text-align: center;
-  background-image: linear-gradient(to right, $site-clr-2 0%, $site-clr-1 100%);
+  background-image: linear-gradient(to right, $brand-red 0%, $brand-blue 100%);
   @include media-breakpoint-up(lg) {
     padding: 50px 0 105px;
     text-align: left;
@@ -113,7 +113,7 @@ footer {
             height: 25px;
             margin-left: 13px;
             cursor: pointer;
-            background-color: $site-clr-1;
+            background-color: $brand-blue;
             background-image: url('/assets/images/arrow-right.png');
             background-repeat: no-repeat;
             background-position: center center;
@@ -121,7 +121,7 @@ footer {
             border: 0;
             @include global-transition(.3s);
             &:hover {
-              background-color: $site-clr-2;
+              background-color: $brand-red;
             }
           }
         }
@@ -135,7 +135,7 @@ footer {
               color: $white;
               @include global-transition(.3s);
               &:hover {
-                color: $site-clr-4;
+                color: $brand-yellow;
               }
             }
           }

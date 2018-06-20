@@ -153,7 +153,7 @@
         width: 25px;
         height: 29px;
         content: '';
-        background-color: $site-clr-4;
+        background-color: $brand-yellow;
         @include media-breakpoint-up(md) {
           top: 7px;
           left: -5px;
@@ -199,7 +199,7 @@
         width: 25px;
         height: 29px;
         content: '';
-        background-color: $site-clr-2;
+        background-color: $brand-red;
         @include media-breakpoint-up(md) {
           top: 7px;
           left: -8px;
@@ -225,7 +225,7 @@
   .carousel-indicators {
     li {
       &.active {
-        background-color: $site-clr-2;
+        background-color: $brand-red;
       }
     }
   }

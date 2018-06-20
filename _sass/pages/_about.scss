@@ -18,7 +18,7 @@
     span {
       padding: 0 0 0 6px;
       text-shadow: none;
-      background-color: $site-clr-4;
+      background-color: $brand-yellow;
     }
   }
   h3 {
@@ -308,27 +308,27 @@
         text-align: center;
         @include global-transition(.3s);
         &.twitter-link {
-          background-color: $site-clr-1;
+          background-color: $brand-blue;
           &:hover {
-            background-color: $site-clr-3;
+            background-color: $brand-green;
           }
         }
         &.facebook-link {
-          background-color: $site-clr-2;
+          background-color: $brand-red;
           &:hover {
-            background-color: $site-clr-4;
+            background-color: $brand-yellow;
           }
         }
         &.instagram-link {
-          background-color: $site-clr-3;
+          background-color: $brand-green;
           &:hover {
-            background-color: $site-clr-1;
+            background-color: $brand-blue;
           }
         }
         &.spotify-link {
-          background-color: $site-clr-4;
+          background-color: $brand-yellow;
           &:hover {
-            background-color: $site-clr-2;
+            background-color: $brand-red;
           }
         }
       }

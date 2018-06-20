@@ -23,10 +23,10 @@ $type-size-9: 2rem !default; // ~32px
 
 // Colors
 
-$site-clr-1: #0575db;
-$site-clr-2: #db0533;
-$site-clr-3: #05ab3d;
-$site-clr-4: #fcd924;
+$brand-blue: #0575db;
+$brand-red: #db0533;
+$brand-green: #05ab3d;
+$brand-yellow: #fcd924;
 $dark-font: #010101;
 $light-grey: #e3e3e3;
 $link-color: #db0533;
@@ -36,7 +36,7 @@ $black-transparent-light: rgba(0, 0, 0, .3);
 $grad-clr-1: #0679d6;
 $grad-clr-2: #05ab3c;
 
-$site-transparent-clr-1: rgba($site-clr-1, .4);
-$site-transparent-clr-2: rgba($site-clr-2, .4);
-$site-transparent-clr-3: rgba($site-clr-3, .4);
-$site-transparent-clr-4: rgba($site-clr-4, .4);
+$site-transparent-clr-1: rgba($brand-blue, .4);
+$site-transparent-clr-2: rgba($brand-red, .4);
+$site-transparent-clr-3: rgba($brand-green, .4);
+$site-transparent-clr-4: rgba($brand-yellow, .4);

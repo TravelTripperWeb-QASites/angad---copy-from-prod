@@ -38,7 +38,7 @@ h3 {
 }
 
 h4 {
-  @include text-formatting($header-font-family, $type-size-9, 700, normal, $black, uppercase, .0625rem);    
+  @include text-formatting($header-font-family, $type-size-9, 700, normal, $black, uppercase, .0625rem);
 }
 
 h5 {
@@ -171,7 +171,7 @@ img {
     height: 45px;
     margin-left: 15px;
     content: '';
-    background-color: $site-clr-4;
+    background-color: $brand-yellow;
     background-image: url('/assets/images/arrow-right.png');
     background-repeat: no-repeat;
     background-position: center center;
@@ -189,7 +189,7 @@ img {
     color: $black;
     text-decoration: none;
     &::after {
-      background-color: $site-clr-3;
+      background-color: $brand-green;
     }
   }
 }
@@ -212,22 +212,22 @@ img {
 
   &.blue {
     &::after {
-      background-color: $site-clr-1;
+      background-color: $brand-blue;
     }
     &:hover {
       &::after {
-        background-color: $site-clr-4;
+        background-color: $brand-yellow;
       }
     }
   }
 
   &.green {
     &::after {
-      background-color: $site-clr-3;
+      background-color: $brand-green;
     }
     &:hover {
       &::after {
-        background-color: $site-clr-2;
+        background-color: $brand-red;
       }
     }
   }
@@ -237,11 +237,11 @@ img {
     &:hover {
       color: $black;
       &::after {
-        background-color: $site-clr-3;
+        background-color: $brand-green;
       }
     }
     &::after {
-      background-color: $site-clr-2;
+      background-color: $brand-red;
     }
   }
 
@@ -249,19 +249,19 @@ img {
 
 .color-block-blue {
   @include color-block;
-  background-color: $site-clr-1;
+  background-color: $brand-blue;
 }
 .color-block-red {
   @include color-block;
-  background-color: $site-clr-2;
+  background-color: $brand-red;
 }
 .color-block-green {
   @include color-block;
-  background-color: $site-clr-3;
+  background-color: $brand-green;
 }
 .color-block-yellow {
   @include color-block;
-  background-color: $site-clr-4;
+  background-color: $brand-yellow;
 }
 
 .bg-styles {
@@ -328,7 +328,7 @@ img {
         height: 14px;
       }
       &.active {
-        background-color: $site-clr-3;
+        background-color: $brand-green;
         transform: scale(1.1);
       }
     }
