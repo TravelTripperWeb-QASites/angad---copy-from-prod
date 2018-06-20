@@ -38,6 +38,10 @@ h3 {
 }
 
 h4 {
+  @include text-formatting($header-font-family, $type-size-9, 700, normal, $black, uppercase, .0625rem);    
+}
+
+h5 {
   @include text-formatting($header-font-family, $type-size-5, 400, 2rem, $white, uppercase, .1875rem);
 }
 
