@@ -3,9 +3,9 @@
 
 .inner-hero-banner {
   position: relative;
-  min-height: 300px;
+  min-height: 225px;
   @include media-breakpoint-up(sm) {
-    min-height: 500px;
+    min-height: 400px;
   }
   @include media-breakpoint-up(lg) {
     min-height: 660px;
