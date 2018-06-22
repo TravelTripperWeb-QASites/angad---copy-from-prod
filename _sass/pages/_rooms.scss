@@ -1,2 +1,176 @@
 // Rooms & Room Details Page Elements
 // ==========================================================================
+
+.rooms {
+  @include main-container;
+  margin: 0 auto;
+
+  // Filter styling
+  .filter {
+    h6 {
+      font-family: $global-font-family;
+      font-size: $font-size-base;
+      color: $black;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        position: relative;
+        display: inline-block;
+        list-style: none;
+
+        &:after {
+          position: absolute;
+          top: 5px;
+          right: -5px;
+          font-size: 1.8rem;
+          color: $brand-grey;
+          content: '\2022';
+        }
+
+        a {
+          display: inline-block;
+          padding: 0 20px;
+          font-family: $lighter-font;
+          font-size: $type-size-4;
+          color: $brand-grey;
+          text-transform: uppercase;
+          letter-spacing: 6.8px;
+
+          &:hover, &.active {
+            color: $black;
+            text-decoration: none;
+          }
+        }
+
+        &:first-child {
+          a {
+            padding-left: 0;
+          }
+        }
+
+        &:last-child {
+          a {
+            padding-right: 0;
+          }
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  // Listing Styling
+  .rooms-listing {
+    @include make-row;
+    margin-top: 75px;
+
+    .room-item {
+      @include make-col-ready;
+
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+      }
+
+      .room-image {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .book-now-btn {
+          position: absolute;
+          right: 30px;
+          bottom: -70px;
+
+          &:hover {
+            color: $brand-yellow;
+            text-decoration: none;
+            background: $brand-red;
+          }
+
+          @include media-breakpoint-down(md) {
+            width: 100px;
+            height: 100px;
+            padding: 30px 0;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .room-info {
+        padding: 30px 0 60px;
+        h4 {
+          margin-bottom: 0;
+          font-size: $type-size-11;
+        }
+        p {
+          font-size: $type-size-10;
+          text-transform: uppercase;
+        }
+
+        @include media-breakpoint-up(md) {
+          padding: 40px 0 70px;
+          h4 {
+            margin-bottom: 10px;
+            font-size: $type-size-9;
+          }
+          p {
+            font-size: $type-size-3;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cross-sell-banner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+
+  img {
+    width: 100%;
+  }
+
+  h2 {
+    @include vertical-center;
+    span {
+      position: relative;
+      color: $white;
+      &:after {
+        position: absolute;
+        top: 4px;
+        left: -2px;
+        z-index: -1;
+        width: 25px;
+        height: 29px;
+        content: '';
+        background-color: $brand-green;
+
+        @include media-breakpoint-up(md) {
+          top: 15px;
+          left: -5px;
+          width: 65px;
+          height: 72px;
+        }
+        @include media-breakpoint-up(lg) {
+          top: 15px;
+          left: -6px;
+          width: 66px;
+          height: 72px;
+        }
+        @include media-breakpoint-up(xl) {
+          top: 14px;
+          left: -6px;
+          width: 67px;
+          height: 74px;
+        }
+      }
+    }
+  }
+}

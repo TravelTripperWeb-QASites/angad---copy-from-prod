@@ -1,4 +1,4 @@
-.press-intro {
+.page-intro {
   @include main-container;
   margin: 90px auto 60px;
   @include media-breakpoint-up(lg) {
@@ -101,7 +101,7 @@
     }
   }
 }
-// 
+//
 // .press-detail {
 //   @include main-container;
 //   margin-top: 80px;

@@ -5,17 +5,126 @@ meta_description:
 permalink: /rooms/
 meta_tags:
   robots:
-published: false
+published: true
 ---
 
-{% comment %}
+<!-- Rooms page Intro -->
+<section class="page-intro mb-5">
+  {% regionblock rooms_page_title, type: header %}
+    <h3>Stay Colorful</h3>
+  {% endregionblock %}
+  {% regionblock rooms_page_text, type: text %}
+    <p>Featuring 146 artfully designed guest rooms, including 38 suites and 25 extended stay rooms with kitchenettes, ours is the ﬁrst hotel in the world that gives you the option of booking your room not only by bed and room size, but also by the emotion of color – <span class="passion-red">Passion Red</span>, <span class="tranquility-blue">Tranquility Blue</span>, <span class="rejuvenation-green">Rejuvenation Green</span> or <span class="happiness-yellow">Happiness Yellow</span>.</p>
+  {% endregionblock %}
+</section>
 
-  Name:
+<!-- Rooms Listing Wrapper -->
+<section class="rooms">
 
-    Rooms Listing Page
+  <!-- Filter rooms by Category -->
+  <div class="filter">
+    <h6>Filter by room type</h6>
+    <ul>
+      <li>
+        <a href="javascript:void(0)" class="active">Small</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">Medium</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">DBL Queens</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">DBL Bunk Beds</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">Suites</a>
+      </li>
+    </ul>
+  </div>
 
-  Description:
+  <!-- Rooms Listing -->
+  <div class="rooms-listing">
 
-    Display room list from RezTrip.
+    <!-- Room item1 -->
+    <div class="room-item">
+      <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
+        <a href="#" class="book-now-btn">Book Now</a>
+      </div>
+      <div class="room-info">
+        <h4>Small</h4>
+        <p>230 - 280 Sq Ft</p>
+        <p>1 Queen Bed</p>
+      </div>
+    </div>
 
-{% endcomment %}
+    <!-- Room item2 -->
+    <div class="room-item">
+      <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
+        <a href="#" class="book-now-btn">Book Now</a>
+      </div>
+      <div class="room-info">
+        <h4>Small</h4>
+        <p>230 - 280 Sq Ft</p>
+        <p>1 Queen Bed</p>
+      </div>
+    </div>
+
+    <!-- Room item3 -->
+    <div class="room-item">
+      <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
+        <a href="#" class="book-now-btn">Book Now</a>
+      </div>
+      <div class="room-info">
+        <h4>Small</h4>
+        <p>230 - 280 Sq Ft</p>
+        <p>1 Queen Bed</p>
+      </div>
+    </div>
+
+    <!-- Room item4 -->
+    <div class="room-item">
+      <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
+        <a href="#" class="book-now-btn">Book Now</a>
+      </div>
+      <div class="room-info">
+        <h4>Small</h4>
+        <p>230 - 280 Sq Ft</p>
+        <p>1 Queen Bed</p>
+      </div>
+    </div>
+
+    <!-- Room item5 -->
+    <div class="room-item">
+      <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
+        <a href="#" class="book-now-btn">Book Now</a>
+      </div>
+      <div class="room-info">
+        <h4>Small</h4>
+        <p>230 - 280 Sq Ft</p>
+        <p>1 Queen Bed</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Offers Cross Sell Banner -->
+<section class="cross-sell-banner">
+  <h2>Arrive <span>A</span>ffordably</h2>
+  <img src="/assets/images/rooms/offers-cross-sell.jpg" alt="Angad Offers" />
+</section>
+
+<!-- Offers Cross sell content -->
+<section class="full-text-wrap">
+  <div class="full-text pb-2">
+    <div class="text-content">
+      <div class="color-block-green top-left-block"></div>
+      <p>Introducing the best place to receive special discounted rates and offers - available only on our website.</p>
+      <p class="btn-holder">
+        <a href="/offers/" class="primary-btn">View All Offers</a>
+      </p>
+    </div>
+  </div>
+</section>

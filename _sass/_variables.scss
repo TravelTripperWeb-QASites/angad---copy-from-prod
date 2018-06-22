@@ -20,6 +20,8 @@ $type-size-6: .9375rem !default; // ~15px
 $type-size-7: 1.1875rem !default; // ~19px
 $type-size-8: 1.875rem !default; // ~30px
 $type-size-9: 2rem !default; // ~32px
+$type-size-10: 1.375rem !default; //22px
+$type-size-11: 1.625rem !default; //26px
 
 // Colors
 
@@ -40,3 +42,6 @@ $site-transparent-clr-1: rgba($brand-blue, .4);
 $site-transparent-clr-2: rgba($brand-red, .4);
 $site-transparent-clr-3: rgba($brand-green, .4);
 $site-transparent-clr-4: rgba($brand-yellow, .4);
+
+// Extra Colours
+$brand-grey: #757575;
