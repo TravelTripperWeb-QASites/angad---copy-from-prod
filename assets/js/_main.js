@@ -146,56 +146,6 @@ $(document)
 
   });
 
-//for sticky header
-
-$(window)
-  .on("load resize", function (e) {
-
-    if ($(document)
-      .scrollTop() >= 0 && $(document)
-      .scrollTop() <= 200) {
-      $("nav")
-        .removeClass("fixed");
-    }
-
-    if ($(document)
-      .scrollTop() > 200) {
-      $("nav")
-        .addClass("fixed");
-    }
-
-  });
-
-$(window)
-  .on("scroll", function (e) {
-    if ($(document)
-      .scrollTop() >= 0 && $(document)
-      .scrollTop() <= 175) {
-      $("nav")
-        .removeClass("fixed")
-        .css({
-          "top": "0"
-        });
-    }
-
-    if ($(document)
-      .scrollTop() > 175 && $(document)
-      .scrollTop() < 300) {
-      $("nav")
-        .css({
-          "top": "-200px"
-        })
-        .removeClass("fixed");
-    }
-    if ($(document)
-      .scrollTop() > 300) {
-      $("nav")
-        .addClass("fixed")
-        .css({
-          "top": "0"
-        });
-    }
-  });
 
 //for sticky header
 
@@ -210,9 +160,6 @@ $(window)
       $("nav")
         .removeClass("scroll-header");
     }
-
-    // Make Offer listing cards same height function trigger
-    fixItemHeights();
 
   });
 
@@ -248,3 +195,12 @@ function fixItemHeights() {
       // Note: IF box-sizing is border-box, would need to manually add border and padding to height (or tallest element will overflow by amount of vertical border + vertical padding)
     });
 }
+
+$(window)
+  .on("load resize", function () {
+    // Make Offer listing cards same height function trigger
+    if ($(window)
+      .width() > 767) {
+      fixItemHeights();
+    }
+  });

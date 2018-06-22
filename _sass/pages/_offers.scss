@@ -16,11 +16,16 @@
 
     .offer-item {
       @include make-col-ready;
-      margin-bottom: 60px;
-
+      margin-bottom: 50px;
+      &:last-child {
+        margin-bottom: 0;
+      }
       @include media-breakpoint-up(md) {
         @include make-col(6);
-        margin-bottom: 70px;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 10px;
+        }
       }
 
       .offer-image {
@@ -81,6 +86,30 @@
           }
         }
       }
+    }
+  }
+}
+
+.rooms-cross-sell {
+  margin-top: 0;
+
+  .primary-btn {
+    margin-right: 0;
+
+    &:after {
+      background-color: $brand-red;
+    }
+    &:hover {
+      &:after {
+        background-color: $brand-green;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-top: 10px;
+    .primary-btn {
+      margin-right: 50px;
     }
   }
 }
