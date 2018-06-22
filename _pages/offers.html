@@ -5,17 +5,69 @@ meta_description:
 permalink: /offers/
 meta_tags:
   robots:
-published: false
+published: true
 ---
 
-{% comment %}
+<!-- Offers Wrapper-->
+<section class="offers">
+  <h1 class="page-title">Offers</h1>
 
-  Name:
+  <!-- Offers Listing -->
+  <div class="offers-listing">
 
-    Offers Listing Page
+    <!-- Offer item1 -->
+    <div class="offer-item">
+      <div class="offer-image" style="background-image: url('/assets/images/offers/y-peppers.jpg');">
+      </div>
+      <div class="offer-info balance_height">
+        <h4>Some like it hot!</h4>
+        <p>
+          Book lowest published rate only available on ourweb site. Rates from $95 including complimentary wifi.
+        </p>
+        <a class="primary-btn" href="#">Book Now</a>
+      </div>
+    </div>
 
-  Description:
+    <!-- Offer item2 -->
+    <div class="offer-item">
+      <div class="offer-image" style="background-image: url('/assets/images/offers/breakfast-offer.jpg');">
+      </div>
+      <div class="offer-info balance_height">
+        <h4>B&B</h4>
+        <p>
+          Breakfast & Burke - enjoy breakfast for two either in your room or in the Grand Tavern by David Burke. Special menu includes pot of coffee or tea, pastry basket, eggs any style and more.
+        </p>
+        <a class="primary-btn" href="#">Book Now</a>
+      </div>
+    </div>
 
-    Display offer list from RezTrip.
+  </div>
+</section>
 
-{% endcomment %}
+<!-- Rooms Cross Sell Banner -->
+<section class="stay-colorful bg-styles"  id="mainroom-image" style="background-image: url('/assets/images/home/stay-colorful-bg-min.jpg')">
+  <div class="overlay-blocks">
+    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-GREEN-min.jpg" class="overlay block-1"></a>
+    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-BLUE-min.jpg" class="overlay block-2"></a>
+    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-RED-min.jpg" class="overlay block-3"></a>
+    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-yellow-min.jpg" class="overlay block-4"></a>
+  </div>
+  <div class="banner-text">
+    {% regionblock stay_colorful_heading, type: header %}
+      <h2>Stay Colorful</h2>
+    {% endregionblock %}
+  </div>
+</section>
+
+<!-- Rooms Cross sell content -->
+<section class="full-text-wrap rooms-cross-sell">
+  <div class="full-text">
+    <div class="text-content">
+      <div class="color-block-green top-left-block"></div>
+      <p>Designed by the Lawrence Group especially to appeal to your emotional side, the color palette of our rooms sets the mood for your stay. Choose your room by how you are feeling in the moment. Whether your choice is passionate red, tranquility blue, a happy yellow or green rejuvenation our rooms and amenities are perfect for work and play.</p>
+      <p class="btn-holder">
+        <a href="/rooms/" class="primary-btn">View All Rooms</a>
+      </p>
+    </div>
+  </div>
+</section>
