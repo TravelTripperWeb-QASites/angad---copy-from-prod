@@ -398,6 +398,17 @@ svg:not(:root) {
     width: auto;
   }
 }
+
 .mb-80 {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 80px;
+  }
+}
+
+.mb-120 {
+  margin-bottom: 55px !important;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 120px !important;
+  }
 }
