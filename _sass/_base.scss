@@ -199,6 +199,13 @@ img {
   @include media-breakpoint-down(sm) {
     padding-right: 60px;
     font-size: 1.375rem;
+    &:after {
+      top: 6px;
+      bottom: 0;
+      width: 27px;
+      height: 32px;
+      background-size: 10px;
+    }
   }
   @media screen and (max-width: 479px) {
     font-size: 1.2rem;
