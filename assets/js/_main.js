@@ -197,6 +197,21 @@ $(window)
     }
   });
 
+//for sticky header
+
+$(window)
+  .on("load resize scroll", function () {
+
+    if ($(document)
+      .scrollTop() > 100) {
+      $("nav")
+        .addClass("scroll-header");
+    } else {
+      $("nav")
+        .removeClass("scroll-header");
+    }
+
+  });
 
 // Make Offer listing cards same height
 

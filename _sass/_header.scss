@@ -1,6 +1,10 @@
 // Header Elements
 // ==========================================================================
 .navbar {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
   padding: 0;
   background-color: $white;
   @include global-transition(.5s);
@@ -8,6 +12,7 @@
     @include main-container;
     position: relative;
     padding: 80px 15px 0;
+    @include global-transition(.3s);
     @include media-breakpoint-down(md) {
       padding: 70px 15px 0;
     }
@@ -18,7 +23,6 @@
       float: left;
       margin: 0;
       padding: 44px 0 0;
-      @include global-transition(.3s);
       @include media-breakpoint-down(md) {
         top: 23px;
         bottom: auto;
@@ -26,11 +30,11 @@
       }
       @include media-breakpoint-down(sm) {
         margin-left: 7px;
-        padding: 10px 0 0;
       }
       img {
         width: 124px;
         height: auto;
+        @include global-transition(.3s);
         @include media-breakpoint-down(md) {
           width: 80px;
         }
@@ -116,11 +120,7 @@
       right: 100px;
     }
   }
-  &.fixed {
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    width: 100%;
+  &.scroll-header {
     .navbar-brand {
       padding: 0;
       img {
