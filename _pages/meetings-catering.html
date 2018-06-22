@@ -7,7 +7,7 @@ meta_tags:
   robots:
 published: true
 ---
-<section class="inner-hero-banner bg-styles" style="background-image: url('/assets/images/meetings/hero.jpg')">
+<section class="inner-hero-banner bg-styles meet-magnificently" style="background-image: url('/assets/images/meetings/hero.jpg')">
   <div class="banner-text">
     {% regionblock banner_heading, type: header %}
       <h1>meet magnificentl<span>y</span></h1>
@@ -15,18 +15,18 @@ published: true
   </div>
 </section>
 
-<section class="full-image-text mb-120">
-  <img class="top-img" src="/assets/images/dining/grand-tavern.jpg" alt="Grand Tavern">
-  <div class="text-wrap">
-    <div class="full-sec">
-      <h3 class="main-heading"> GRAND TAVERN </h3>
-      <h5 class="sub-heading">by david burke</h5>
-    </div>
-    <div class="left-sec">
-      <p>Grand Tavern by David Burke, Angad Arts Hotel’s signature restaurant is Chef Burke’s first St. Louis based concept in partnership with Esquared Hospitality. The ambience is comfortable and welcoming, serving breakfast, lunch and dinner, Sunday brunch and pre and post theatre specials. The bar and lounge features a menu designed for diners to share casual small plates and classic drinks. The main dining room showcases Chef Burke’s playful cuisine and whimsical take on classic and contemporary American dishes. Those familiar with Chef David Burke can look forward to his famous clothesline bacon and pastrami salmon. He also pays homage to St. Louis by putting his twist on local classics.</p>
-    </div>
-    <div class="right-sec with-border">
-      <img class="grand-tavern-logo" src="/assets/images/dining/grand-tavern-logo.png" alt="Grand Tavern Logo">
+<section class="full-text-wrap mb-120">
+  <div class="full-text pb-0">
+    <div class="text-content">
+      <div class="color-block-red top-left-block"></div>
+      {% regionblock rfp_text, type: text %}
+        <p>Two exquisite private events spaces each with their own pre-function room, as well as an outdoor rooftop garden terrace with spectacular skyline views, offer ideal settings for both social and corporate events. The Angad Playhouse is located atop the hotel with surrounding windows offering stunning views. Adjacent to the Grand Tavern by David Burke is our Grand Ballroom exquisitely designed to be reminiscent of its glorious past with a modern twist.  </p>
+      {% endregionblock %}
+
+      <p class="btn-holder mb-0">
+        <a href="/rfp/" class="primary-btn blue" target="_blank">Request For Proposal</a>
+      </p>
+
     </div>
   </div>
 </section>
