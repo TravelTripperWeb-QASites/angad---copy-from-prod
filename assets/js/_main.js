@@ -211,11 +211,14 @@ $(window)
         .removeClass("scroll-header");
     }
 
+    // Make Offer listing cards same height function trigger
+    fixItemHeights();
+
   });
 
-// Make Offer listing cards same height
+// Make Offer listing cards same height function
 
-function fixButtonHeights() {
+function fixItemHeights() {
   var heights = new Array();
 
   // Loop to get all element heights
@@ -245,18 +248,3 @@ function fixButtonHeights() {
       // Note: IF box-sizing is border-box, would need to manually add border and padding to height (or tallest element will overflow by amount of vertical border + vertical padding)
     });
 }
-
-$(window)
-  .load(function () {
-    // Fix heights on page load
-    fixButtonHeights();
-  });
-
-// Fix heights on window resize
-$(window)
-  .resize(function () {
-    // Needs to be a timeout function so it doesn't fire every ms of resize
-    setTimeout(function () {
-      fixButtonHeights();
-    }, 120);
-  });
