@@ -28,7 +28,7 @@ h2 {
   @extend h1;
 }
 
-h3 {
+h3, .page-title {
   @include text-formatting($header-font-family, $type-size-2, 700, 4.375rem, $black, uppercase, .40625rem);
   @include media-breakpoint-down(sm) {
     font-size: 2rem;
