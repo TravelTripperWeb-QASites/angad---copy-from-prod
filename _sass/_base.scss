@@ -154,6 +154,20 @@ img {
       }
     }
   }
+  &.variation {
+    .full-text {
+      padding: 30px 20px;
+      @include media-breakpoint-down(sm) {
+        padding: 50px 20px;
+      }
+
+      .text-content {
+        .top-left-block {
+          left: -80px;
+        }
+      }
+    }
+  }
 }
 
 
