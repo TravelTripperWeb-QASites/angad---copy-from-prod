@@ -83,27 +83,12 @@ $(document).ready(function(){
 
 //for sticky header
 
-$(window).on("load resize", function (e) {
+$(window).on("load resize scroll", function () {
 
-  if($(document).scrollTop() >= 0 && $(document).scrollTop() <= 200) {
-    $("nav").removeClass("fixed");
+  if($(document).scrollTop() > 100) {
+    $("nav").addClass("scroll-header");
+  } else {
+    $("nav").removeClass("scroll-header");
   }
 
-  if($(document).scrollTop() > 200) {
-    $("nav").addClass("fixed");
-  }
-
-});
-
-$(window).on("scroll", function (e) {
-  if($(document).scrollTop() >= 0 && $(document).scrollTop() <= 175) {
-    $("nav").removeClass("fixed").css({"top": "0"});
-  }
-
-  if($(document).scrollTop() > 175 && $(document).scrollTop() < 300) {
-    $("nav").css({"top": "-200px"}).removeClass("fixed");
-  }
-  if($(document).scrollTop() > 300) {
-    $("nav").addClass("fixed").css({"top": "0"});
-  }
 });
