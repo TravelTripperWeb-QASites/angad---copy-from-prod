@@ -179,7 +179,7 @@ img {
   @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, uppercase, .25rem);
   position: relative;
   display: inline-block;
-  padding: 8px 0 0;
+  padding: 8px 0 5px;
   &::after {
     position: absolute;
     top: 0;
@@ -214,6 +214,16 @@ img {
     text-decoration: none;
     &::after {
       background-color: $brand-green;
+    }
+  }
+  &.blue {
+    &::after {
+      background-color: $brand-blue;
+    }
+    &:hover {
+      &::after {
+        background-color: $brand-red;
+      }
     }
   }
 }
@@ -430,5 +440,81 @@ svg:not(:root) {
   margin-bottom: 55px !important;
   @include media-breakpoint-up(lg) {
     margin-bottom: 120px !important;
+  }
+}
+
+.inner-hero-banner {
+  position: relative;
+  min-height: 225px;
+  @include media-breakpoint-up(sm) {
+    min-height: 400px;
+  }
+  @include media-breakpoint-up(lg) {
+    min-height: 660px;
+  }
+  video {
+    width: 100%;
+  }
+  h1 {
+    text-shadow: 0 0 30px $black;
+    span {
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 4px;
+        left: -2px;
+        z-index: -1;
+        width: 25px;
+        height: 29px;
+        content: '';
+        background-color: $brand-yellow;
+        @include media-breakpoint-up(md) {
+          top: 13px;
+          left: -5px;
+          width: 66px;
+          height: 76px;
+        }
+        @include media-breakpoint-up(lg) {
+          top: 11px;
+          left: -6px;
+          width: 70px;
+          height: 80px;
+        }
+        @include media-breakpoint-up(xl) {
+          top: 12px;
+          left: -8px;
+          width: 72px;
+          height: 83px;
+        }
+
+      }
+    }
+  }
+  h3 {
+    font-size: 2rem;
+    color: $white;
+  }
+  // &:after {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   content: '';
+  //   background-color: rgba(0,0,0,.4);
+  // }
+  .theme-carousel {
+    .carousel-item {
+      background-position: center center;
+    }
+  }
+  &.meet-magnificently {
+    h1 {
+      span {
+        &::after {
+          background-color: $brand-red;
+        }
+      }
+    }
   }
 }
