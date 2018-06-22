@@ -1,2 +1,23 @@
 // Dining Page Elements
 // ==========================================================================
+.full-image-text {
+  @include main-container;
+  .top-img {
+    margin-bottom: 40px;
+  }
+  .text-wrap {
+    @include make-row;
+    .left-sec {
+      @include make-col-ready();
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+      }
+    }
+    .right-sec {
+      @include make-col-ready();
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+      }
+    }
+  }
+}

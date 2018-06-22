@@ -8,17 +8,44 @@
     min-height: 500px;
   }
   @include media-breakpoint-up(lg) {
-    min-height: 700px;
+    min-height: 660px;
   }
   video {
     width: 100%;
   }
-  h2 {
+  h1 {
     text-shadow: 0 0 30px $black;
     span {
-      padding: 0 0 0 6px;
-      text-shadow: none;
-      background-color: $brand-yellow;
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 4px;
+        left: -2px;
+        z-index: -1;
+        width: 25px;
+        height: 29px;
+        content: '';
+        background-color: $brand-yellow;
+        @include media-breakpoint-up(md) {
+          top: 13px;
+          left: -5px;
+          width: 66px;
+          height: 76px;
+        }
+        @include media-breakpoint-up(lg) {
+          top: 11px;
+          left: -6px;
+          width: 70px;
+          height: 80px;
+        }
+        @include media-breakpoint-up(xl) {
+          top: 12px;
+          left: -8px;
+          width: 72px;
+          height: 83px;
+        }
+
+      }
     }
   }
   h3 {

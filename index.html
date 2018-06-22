@@ -108,7 +108,7 @@ meta_tags:
       <!-- Indicators -->
       <ul class="carousel-indicators">
         {% for item in dine-distinctively-items %}
-          <li data-target="#diningCarousel" data-slide-to="{{ item.forloop0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
+          <li data-target="#diningCarousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
         {% endfor %}
       </ul>
     {% endif %}
@@ -162,7 +162,7 @@ meta_tags:
       <!-- Indicators -->
       <ul class="carousel-indicators">
         {% for item in dine-distinctively-items %}
-          <li data-target="#meetCarousel" data-slide-to="{{ item.forloop0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
+          <li data-target="#meetCarousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
         {% endfor %}
       </ul>
     {% endif %}
