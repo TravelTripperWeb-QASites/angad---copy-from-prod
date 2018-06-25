@@ -6,7 +6,7 @@
   margin: 90px auto 60px;
 
   @include media-breakpoint-up(md) {
-    margin: 180px auto 114px;
+    margin: 180px auto 64px;
   }
 
   // Listing Styling
@@ -22,10 +22,6 @@
       }
       @include media-breakpoint-up(md) {
         @include make-col(6);
-        margin-bottom: 10px;
-        &:last-child {
-          margin-bottom: 10px;
-        }
       }
 
       .offer-image {

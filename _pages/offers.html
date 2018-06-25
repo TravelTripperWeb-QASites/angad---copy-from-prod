@@ -8,36 +8,23 @@ meta_tags:
 published: true
 ---
 
+<div class="loading" style="display:block;">Loading&#8230;</div>
 <!-- Offers Wrapper-->
-<section class="offers">
+<section class="offers" rt3-special-rates="offers">
   <h1 class="page-title">Offers</h1>
 
   <!-- Offers Listing -->
   <div class="offers-listing">
-
+    <div class="no-offer-block" ng-show="offers.special_rates.length == 0"><h6>We're sorry, there are no special offers available at this time.</h6></div>
     <!-- Offer item1 -->
-    <div class="offer-item">
-      <div class="offer-image" style="background-image: url('/assets/images/offers/y-peppers.jpg');">
+    <div class="offer-item mb-80" ng-repeat="offer in offers.special_rates">
+      <div class="offer-image" ng-style="{'background-image': 'url([[offer.images[0].large || '/assets/images/dummy.jpg' ]])'}">
       </div>
       <div class="offer-info balance_height">
-        <h4>Some like it hot!</h4>
-        <p>
-          Book lowest published rate only available on ourweb site. Rates from $95 including complimentary wifi.
+        <h4 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h4>
+        <p ng-bind-html="offer.short_description | renderHTMLCorrectly">
         </p>
-        <a class="primary-btn" href="#">Book Now</a>
-      </div>
-    </div>
-
-    <!-- Offer item2 -->
-    <div class="offer-item">
-      <div class="offer-image" style="background-image: url('/assets/images/offers/breakfast-offer.jpg');">
-      </div>
-      <div class="offer-info balance_height">
-        <h4>B&B</h4>
-        <p>
-          Breakfast & Burke - enjoy breakfast for two either in your room or in the Grand Tavern by David Burke. Special menu includes pot of coffee or tea, pastry basket, eggs any style and more.
-        </p>
-        <a class="primary-btn" href="#">Book Now</a>
+        <a class="primary-btn" ng-href="[[ offer.promo_url ]]" target="_blank">Book Now</a>
       </div>
     </div>
 
