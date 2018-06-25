@@ -490,6 +490,15 @@ svg:not(:root) {
       }
     }
   }
+  &.blue {
+    h1 {
+      span {
+        &:after {
+          background: $brand-blue;
+        }
+      }
+    }
+  }
   h3 {
     font-size: 2rem;
     color: $white;
