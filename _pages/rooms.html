@@ -49,12 +49,12 @@ published: true
     <!-- Room item1 -->
     <div class="room-item" ng-repeat="room in browser.roomsList ">
       <div class="room-image" ng-style="{'background-image':'url([[room.photos[0].large]])'}">
-        <a href="#" class="book-now-btn">Book Now</a>
+        <a ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" class="book-now-btn" target="_blank">Book Now</a>
       </div>
       <div class="room-info">
         <h4>Small</h4>
-        <p>230 - 280 Sq Ft</p>
-        <p>1 Queen Bed</p>
+        <p ng-if="room.room_size">[[room.room_size]] [[room.room_size_units | roomSizeUnits]]</p>
+        <p>[[room.name]]</p>
       </div>
     </div>
 
