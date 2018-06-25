@@ -26,33 +26,35 @@ published: true
     <h6>Filter by room type</h6>
     <ul>
       <li>
-        <a href="javascript:void(0);" class="active">Small</a>
+        <a href="javascript:void(0);" class="active" ng-click="filters.category = ''">All Rooms</a>
       </li>
       <li>
-        <a href="javascript:void(0);">Medium</a>
+        <a href="javascript:void(0);" ng-click="filters.category = 'Small'">Small</a>
       </li>
       <li>
-        <a href="javascript:void(0);">DBL Queens</a>
+        <a href="javascript:void(0);" ng-click="filters.category = 'Medium'">Medium</a>
       </li>
       <li>
-        <a href="javascript:void(0);">DBL Bunk Beds</a>
+        <a href="javascript:void(0);"  ng-click="filters.category = 'Double Queens'">DBL Queens</a>
       </li>
       <li>
-        <a href="javascript:void(0);">Suites</a>
+        <a href="javascript:void(0);" ng-click="filters.category = 'Double Bunk Beds'">DBL Bunk Beds</a>
+      </li>
+      <li>
+        <a href="javascript:void(0);" ng-click="filters.category = 'Suites'">Suites</a>
       </li>
     </ul>
   </div>
 
   <!-- Rooms Listing -->
   <div class="rooms-listing">
-
     <!-- Room item1 -->
-    <div class="room-item" ng-repeat="room in browser.roomsList ">
+    <div class="room-item" ng-repeat="room in browser.roomsList | filter: filters">
       <div class="room-image" ng-style="{'background-image':'url([[room.photos[0].large]])'}">
         <a ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" class="book-now-btn" target="_blank">Book Now</a>
       </div>
       <div class="room-info">
-        <h4>Small</h4>
+        <h4>[[room.category]]</h4>
         <p ng-if="room.room_size">[[room.room_size]] [[room.room_size_units | roomSizeUnits]]</p>
         <p>[[room.name]]</p>
       </div>

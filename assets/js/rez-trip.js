@@ -5,8 +5,8 @@
       $interpolateProvider.endSymbol(']]');
     })
     .value('rt3api', new Rt3Api({
-      portalId: 'beaconhotelwdc',
-      hotelId: 'WDCBH',
+      portalId: 'angadartshotel',
+      hotelId: 'STLAAH',
       defaultLocale: 'en',
       defaultCurrency: 'USD'
     }))
@@ -57,7 +57,7 @@
     }])
     .controller('loader', ['$scope', function($scope) {
       //$(".loading").css("display","block");
-
+      $scope.filters = {};
       setTimeout(function(){
 
         $(".loading").fadeOut('slow');
