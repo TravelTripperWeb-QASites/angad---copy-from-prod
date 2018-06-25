@@ -7,7 +7,7 @@ meta_tags:
   robots:
 published: true
 ---
-
+<div class="loading" style="display:block;">Loading&#8230;</div>
 <!-- Rooms page Intro -->
 <section class="page-intro mb-5">
   {% regionblock rooms_page_title, type: header %}
@@ -19,26 +19,26 @@ published: true
 </section>
 
 <!-- Rooms Listing Wrapper -->
-<section class="rooms">
+<section class="rooms" ng-controller="loader">
 
   <!-- Filter rooms by Category -->
   <div class="filter">
     <h6>Filter by room type</h6>
     <ul>
       <li>
-        <a href="javascript:void(0)" class="active">Small</a>
+        <a href="javascript:void(0);" class="active">Small</a>
       </li>
       <li>
-        <a href="javascript:void(0)">Medium</a>
+        <a href="javascript:void(0);">Medium</a>
       </li>
       <li>
-        <a href="javascript:void(0)">DBL Queens</a>
+        <a href="javascript:void(0);">DBL Queens</a>
       </li>
       <li>
-        <a href="javascript:void(0)">DBL Bunk Beds</a>
+        <a href="javascript:void(0);">DBL Bunk Beds</a>
       </li>
       <li>
-        <a href="javascript:void(0)">Suites</a>
+        <a href="javascript:void(0);">Suites</a>
       </li>
     </ul>
   </div>
@@ -47,8 +47,8 @@ published: true
   <div class="rooms-listing">
 
     <!-- Room item1 -->
-    <div class="room-item">
-      <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
+    <div class="room-item" ng-repeat="room in browser.roomsList ">
+      <div class="room-image" ng-style="{'background-image':'url([[room.photos[0].large]])'}">
         <a href="#" class="book-now-btn">Book Now</a>
       </div>
       <div class="room-info">
@@ -59,7 +59,7 @@ published: true
     </div>
 
     <!-- Room item2 -->
-    <div class="room-item">
+    <!-- <div class="room-item">
       <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
         <a href="#" class="book-now-btn">Book Now</a>
       </div>
@@ -68,10 +68,10 @@ published: true
         <p>230 - 280 Sq Ft</p>
         <p>1 Queen Bed</p>
       </div>
-    </div>
+    </div> -->
 
     <!-- Room item3 -->
-    <div class="room-item">
+    <!-- <div class="room-item">
       <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
         <a href="#" class="book-now-btn">Book Now</a>
       </div>
@@ -80,10 +80,10 @@ published: true
         <p>230 - 280 Sq Ft</p>
         <p>1 Queen Bed</p>
       </div>
-    </div>
+    </div> -->
 
     <!-- Room item4 -->
-    <div class="room-item">
+    <!-- <div class="room-item">
       <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
         <a href="#" class="book-now-btn">Book Now</a>
       </div>
@@ -92,10 +92,10 @@ published: true
         <p>230 - 280 Sq Ft</p>
         <p>1 Queen Bed</p>
       </div>
-    </div>
+    </div> -->
 
     <!-- Room item5 -->
-    <div class="room-item">
+    <!-- <div class="room-item">
       <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
         <a href="#" class="book-now-btn">Book Now</a>
       </div>
@@ -104,7 +104,7 @@ published: true
         <p>230 - 280 Sq Ft</p>
         <p>1 Queen Bed</p>
       </div>
-    </div>
+    </div> -->
 
   </div>
 

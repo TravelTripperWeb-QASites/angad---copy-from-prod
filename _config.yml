@@ -5,7 +5,7 @@ name: "Angad Arts Hotel"
 description: "Angad Arts Hotel"
 url: "https://www.angadartshotel.com"
 repository: "TravelTripperWeb/angad" # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
-
+reztripUrl: https://angadartshotel.reztrip.com/
 # Language Settings
 default_lang: 'en'
 languages: ['en']
