@@ -11,6 +11,7 @@
     "type": "text"
   },
   "event_date": {
+    "required": true,
     "label": "Event Date",
     "type": "date",
     "instructions": "Date of event or start date of event."
