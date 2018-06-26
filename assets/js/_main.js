@@ -144,6 +144,12 @@ $(document)
       .find(".secondary-btn")
       .addClass("blue");
 
+
+      $(".filter li a").click(function(){
+        $(".filter li a").removeClass("active");
+        $(this).addClass("active");
+      });
+
   });
 
 
