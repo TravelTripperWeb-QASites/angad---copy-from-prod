@@ -6,6 +6,7 @@
   }
   .btn-holder {
     @include media-breakpoint-down(lg) {
+      width: 90%;
       text-align: right;
     }
   }
