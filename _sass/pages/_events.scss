@@ -1,69 +1,196 @@
 // Events Page Elements
 // ==========================================================================
 
+// Events Listing Wrapper
 .events {
   @include make-container;
   max-width: 1280px;
   margin: 0 auto;
   .events-listing {
     @include make-row;
-    .event {
+  }
+}
+
+//Event tile
+.event {
+  @include make-col-ready;
+  margin-bottom: 60px;
+
+  @include media-breakpoint-up(sm) {
+    @include make-col(6);
+    margin-bottom: 80px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(4);
+    margin-bottom: 80px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    @include make-col(3);
+    margin-bottom: 80px;
+  }
+
+  h4 {
+    padding: 30px;
+    color: $white;
+    background: $black;
+
+    span {
+      display: block;
+      font-family: $lighter-font;
+      font-weight: 100;
+      line-height: 1.6rem;
+    }
+  }
+
+  .event-image {
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .event-info {
+    position: relative;
+    box-sizing: content-box;
+    padding: 25px 0;
+  }
+
+  .primary-btn {
+    display: block;
+    margin: 0 0 30px;
+    text-align: right;
+
+    @include media-breakpoint-up(md) {
+      margin: 0 54px 30px 0;
+    }
+  }
+  hr {
+    background: $black;
+  }
+}
+
+// Events Details
+.event-details {
+  @include make-container;
+  max-width: 1280px;
+  margin: 80px auto;
+  .event-details-wrapper {
+    @include make-row;
+
+    .event-details-image, .event-details-content {
       @include make-col-ready;
-      margin-bottom: 60px;
 
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(md) {
         @include make-col(6);
-        margin-bottom: 80px;
+      }
+    }
+
+    .event-details-content {
+      padding-top: 40px;
+
+      @include media-breakpoint-up(md) {
+        padding-top: 76px;
       }
 
-      @include media-breakpoint-up(lg) {
-        @include make-col(4);
-        margin-bottom: 80px;
+      h5 {
+        padding: 20px 0;
+        font-family: $global-font-family;
+        font-size: $type-size-3;
+        color: $black;
+
       }
 
-      @include media-breakpoint-up(xl) {
-        @include make-col(3);
-        margin-bottom: 80px;
-      }
-
-      h4 {
-        padding: 30px;
-        color: $white;
-        background: $black;
-
-        span {
-          display: block;
-          font-family: $lighter-font;
-          font-weight: 100;
-          line-height: 1.6rem;
-        }
-      }
-
-      .event-image {
-        width: 100%;
-        height: 200px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-
-      .event-info {
-        position: relative;
-        box-sizing: content-box;
-        padding: 25px 0;
+      p {
+        padding: 20px 0;
       }
 
       .primary-btn {
         display: block;
-        margin: 30px 0 30px 0;
+        margin: 0 0 30px;
         text-align: right;
 
         @include media-breakpoint-up(md) {
-          margin: 30px 54px 30px 0;
+          margin: 0 54px 50px 0;
         }
       }
+
       hr {
         background: $black;
+      }
+
+      .tnc {
+        padding: 30px 0;
+
+        h6 {
+          font-family: $global-font-family;
+          font-size: $font-size-base;
+          text-transform: uppercase;
+        }
+
+        p {
+          padding-top: 3px;
+          font-size: $font-size-base;
+          line-height: 1.2rem;
+        }
+      }
+
+    }
+  }
+}
+
+//More events carousel
+.more-events {
+  @include make-container;
+  padding: 30px 15px 80px;
+  background: $black;
+
+  .more-events-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    h2 {
+      padding: 20px 0 45px;
+      font-family: $lighter-font;
+      font-size: $type-size-12;
+      letter-spacing: 4px;
+    }
+    .more-events-listing {
+      @include make-row;
+      color: $white;
+      .event {
+        flex: none;
+        max-width: 100%;
+        margin: 0 15px;
+        padding: 0;
+        outline: 0;
+
+        h4 {
+          color: $black;
+          background: $white;
+        }
+
+        .event-info {
+          p {
+            font-family: $lighter-font;
+            color: $white;
+          }
+        }
+
+        .secondary-btn {
+          margin-right: 34px;
+          font-family: $lighter-font;
+          color: $white;
+          &:after {
+            background-image: url('/assets/images/arrow-right-black.png');
+          }
+        }
+
+        hr {
+          margin-bottom: 0;
+          background: $white;
+        }
       }
     }
   }
