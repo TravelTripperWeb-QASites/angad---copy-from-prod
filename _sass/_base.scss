@@ -277,6 +277,14 @@ img {
   }
 }
 
+.link-btn {
+  @include text-formatting($lighter-font, 1.188rem, 300, normal, $black, uppercase, 2.85px);
+  &:hover {
+    color: $black;
+    text-decoration: underline;
+  }
+}
+
 .book-now-btn {
   @include text-formatting($lighter-font, $type-size-3, 300, normal, $brand-red, uppercase, .125rem);
   z-index: 9;
@@ -309,6 +317,12 @@ img {
   }
   &:hover {
     color: $white;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &:after {
+      top: 0;
+    }
   }
 
   &.blue {
@@ -364,6 +378,19 @@ img {
   @include color-block;
   background-color: $brand-yellow;
 }
+
+.left-border-blue {
+  @include media-breakpoint-up(lg) {
+    border-left: 1px solid $brand-blue;
+  }
+}
+
+.left-border-red {
+  @include media-breakpoint-up(lg) {
+    border-left: 1px solid $brand-red;
+  }
+}
+
 
 .bg-styles {
   background-repeat: no-repeat;
@@ -439,8 +466,8 @@ img {
   width: 100%;
   height: 100px;
   background: linear-gradient(to right, $grad-clr-1, $grad-clr-2);
-  @include media-breakpoint-down(sm) {
-    height: 33px;
+  @include media-breakpoint-down(lg) {
+    height: 60px;
   }
 }
 
