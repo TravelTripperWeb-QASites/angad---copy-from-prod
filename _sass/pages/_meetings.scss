@@ -1,0 +1,58 @@
+.menu-links {
+  margin-top: 30px;
+  .secondary-btn {
+    margin: 40px 0 0 50px;
+    color: $black;
+  }
+  .btn-holder {
+    @include media-breakpoint-down(lg) {
+      text-align: right;
+    }
+  }
+}
+
+.event-spaces {
+  .event-spaces-row {
+    @include make-row;
+    margin: 0;
+    .event-spaces-img {
+      @include make-col-ready();
+      @include media-breakpoint-up(lg) {
+        @include make-col(5);
+        padding-right: 0;
+      }
+      min-height: 320px;
+      background-image: url('/assets/images/meetings/skyline.jpg');
+    }
+    .event-spaces-text {
+      padding-left: 35px;
+      @include make-col-ready();
+      @include media-breakpoint-up(lg) {
+        @include make-col(7);
+        padding-left: 24px;
+      }
+      p {
+        max-width: 240px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        @media screen and (min-width: 1140px) {
+          max-width: 300px;
+        }
+      }
+    }
+    .event-spaces-inner {
+      @include main-container;
+      position: relative;
+      display: none;
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+      img {
+        position: absolute;
+        right: 20px;
+        bottom: -100px;
+        max-width: 300px;
+      }
+    }
+  }
+}
