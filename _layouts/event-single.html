@@ -38,7 +38,7 @@ layout: default
       <!-- Event -->
       <div class="event">
         <h4>{{ event.event_date }}<span>{% if event.event_enddate != '' %}to {{ event.event_enddate }}{% else %}{{ event.event_time }}{% endif %}</span></h4>
-        <div class="event-image" style="background-image: url('{{ event.event_image.url }}')">
+        <div class="event-image" style="background-image: url('{{ event.event_large_image.url_large }}')">
         </div>
         <div class="event-info balance_height">
           <p>
