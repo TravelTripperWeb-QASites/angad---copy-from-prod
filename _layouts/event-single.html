@@ -7,7 +7,7 @@ layout: default
 
     <div class="event-details-image">
       <a class="primary-btn reverse" href="/aah-tonight/">Back to Calendar</a>
-      <img src="{{ page.event_image.url }}" alt="{{ page.event_image.alt }}" />
+      <img src="{{ page.event_large_image.url_large }}" alt="{{ page.event_image.alt }}" />
     </div>
 
     <div class="event-details-content">
@@ -38,7 +38,7 @@ layout: default
       <!-- Event -->
       <div class="event">
         <h4>{{ event.event_date }}<span>{% if event.event_enddate != '' %}to {{ event.event_enddate }}{% else %}{{ event.event_time }}{% endif %}</span></h4>
-        <div class="event-image" style="background-image: url('{{ event.event_large_image.url_large }}')">
+        <div class="event-image" style="background-image: url('{{ event.event_thumb_image.url_small }}')">
         </div>
         <div class="event-info balance_height">
           <p>
