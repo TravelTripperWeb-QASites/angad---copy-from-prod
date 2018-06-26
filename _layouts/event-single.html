@@ -44,7 +44,7 @@ layout: default
             {{ event.short_description }}
           </p>
         </div>
-        <a class="secondary-btn" href="/aah-tonight/{{ event.url_friendly_name }}/">{{ event.btn_txt }}</a>
+        <a class="secondary-btn {% if event.btn_txt and event.btn_txt == '' %}hidden{% endif %}" href="/aah-tonight/{{ event.url_friendly_name }}/">{{ event.btn_txt }}</a>
         <hr>
       </div>
       {% endfor %}

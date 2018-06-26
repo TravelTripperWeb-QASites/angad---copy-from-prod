@@ -66,6 +66,11 @@
     @include media-breakpoint-up(md) {
       margin: 0 54px 30px 0;
     }
+
+    &.hidden {
+      height: 45px;
+      opacity: 0;
+    }
   }
   hr {
     background: $black;
@@ -196,6 +201,11 @@
             @include media-breakpoint-down(sm) {
               top: 0;
             }
+          }
+
+          &.hidden {
+            height: 24px;
+            opacity: 0;
           }
         }
 
