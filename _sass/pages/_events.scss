@@ -42,6 +42,12 @@
       font-weight: 100;
       line-height: 1.6rem;
     }
+
+    i {
+      font-style: normal;
+      text-transform: none;
+      opacity: .5;
+    }
   }
 
   .event-image {
@@ -106,6 +112,11 @@
         font-size: $type-size-3;
         color: $black;
 
+        i {
+          font-style: normal;
+          text-transform: none;
+          opacity: .5;
+        }
       }
 
       p {
