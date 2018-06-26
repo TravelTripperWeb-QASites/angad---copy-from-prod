@@ -52,6 +52,9 @@
           color: $black;
         }
       }
+      .secondary-btn {
+        color: $black;
+      }
     }
     .phone {
       @include make-col-ready();
