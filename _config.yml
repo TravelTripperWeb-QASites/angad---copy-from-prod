@@ -82,16 +82,16 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 #   sort_field: 'date'
 #   sort_reverse: true
 
-page_gen: #
+page_gen:
   # - data: 'press'
   #   template: 'press-detail'
   #   dir: 'press'
   # - data: 'blog'
   #   template: 'post-single'
   #   dir: 'blog'
-  # - data: 'events'
-  #   template: 'event-single'
-  #   dir: 'events'
+    - data: 'events'
+      template: 'event-single'
+      dir: 'aah-tonight'
   # - data: 'offers'
   #   template: 'offer-single'
   #   dir: 'offers'

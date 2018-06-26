@@ -2,32 +2,42 @@
 layout: default
 title: Events
 meta_description:
-permalink: /events/
+permalink: /aah-tonight/
 meta_tags:
   robots:
-published: false
+published: true
 ---
 
-{% comment %}
+{% assign events = site.data._models.events | sort: 'event_date' %}
 
-  Name:
+<section class="inner-hero-banner bg-styles blue mb-80" style="background-image: url('/assets/images/events/events-banner.jpg')">
+  <div class="banner-text">
+    {% regionblock banner_heading, type: header %}
+      <h1>AAH! <span>T</span>onight</h1>
+    {% endregionblock %}
+  </div>
+</section>
 
-    Events Page
+<section class="events">
+  <div class="events-listing">
 
-  Description:
+    {% for event in events %}
 
-    Display events[item] from a content model.
+    <!-- Event -->
+    <div class="event">
+      <h4>{{ event.event_date | date: "%a %b %d" }}<span>{% if event.event_enddate and event.event_enddate != '' %}to {{ event.event_enddate | date: "%a %b %d" }}{% else %}{{ event.event_time }}{% endif %}</span></h4>
+      <div class="event-image" style="background-image: url('{{ event.event_thumb_image.url_small }}')">
+      </div>
+      <div class="event-info balance_height">
+        <p>
+          {{ event.short_description }}
+        </p>
+      </div>
+        <a class="primary-btn {% if event.btn_txt and event.btn_txt == '' %}hidden{% endif %}" href="/aah-tonight/{{ event.url_friendly_name }}/">{{ event.btn_txt }}</a>
+      <hr>
+    </div>
 
-  Usage:
+    {% endfor %}
 
-    Assign content model on page then display using [item].
-
-    eg. {% assign events = site.data._models.events %}
-        {% for item in events %}
-          {{ item.title }}
-          {{ item.location }}
-          {{ item.start_date | date: "%B %d %Y" }} - {{ item.end_date | date: "%B %d %Y" }}
-          {{ item.description | strip_html | truncatewords: 18 }}
-        {% endfor %}
-
-{% endcomment %}
+  </div>
+</section>
