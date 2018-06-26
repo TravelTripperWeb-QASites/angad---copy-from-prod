@@ -157,8 +157,14 @@
       letter-spacing: 4px;
     }
     .more-events-listing {
-      @include make-row;
+      margin-right: -15px;
+      margin-left: -15px;
       color: $white;
+
+      .slick-track {
+        margin: 0;
+      }
+
       .event {
         flex: none;
         max-width: 100%;
@@ -175,6 +181,9 @@
           p {
             font-family: $lighter-font;
             color: $white;
+            @include media-breakpoint-down(sm) {
+              font-size: $type-size-10;
+            }
           }
         }
 
@@ -184,12 +193,21 @@
           color: $white;
           &:after {
             background-image: url('/assets/images/arrow-right-black.png');
+            @include media-breakpoint-down(sm) {
+              top: 0;
+            }
           }
         }
 
         hr {
           margin-bottom: 0;
           background: $white;
+        }
+
+        @include media-breakpoint-down(sm) {
+          .event-image {
+            height: 280px;
+          }
         }
       }
     }

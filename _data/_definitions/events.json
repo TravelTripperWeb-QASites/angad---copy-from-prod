@@ -1,0 +1,64 @@
+{
+  "title": {
+    "required": true,
+    "label": "SEO Title"
+  },
+  "event_name": {
+    "required": true,
+    "label": "Event Name"
+  },
+  "meta_description": {
+    "type": "text"
+  },
+  "event_date": {
+    "required": true,
+    "label": "Event Date",
+    "instructions": "Date of event or start date of event."
+  },
+  "event_time": {
+    "label": "Event Time",
+    "instructions": "Enter this if it's a single day event only."
+  },
+  "event_enddate": {
+    "label": "Event End Date",
+    "instructions": "Fill this only if it's a multiday event. For single day events, don't fill this."
+  },
+  "event_venue": {
+    "required": true,
+    "label": "Event Venue"
+  },
+  "short_description": {
+    "required": true,
+    "type": "text",
+    "label": "Events Listing Page Description"
+  },
+  "long_description": {
+    "required": true,
+    "type": "richtext",
+    "label": "Event Details Page Description"
+  },
+  "terms": {
+    "required": true,
+    "type": "richtext",
+    "label": "Terms & Conditions"
+  },
+  "url_friendly_name": {
+    "required": true,
+    "type": "text",
+    "label": "Event Details Page URL"
+  },
+  "btn_txt": {
+    "required": true,
+    "type": "text",
+    "label": "Enter Button Name"
+  },
+  "reserve_url": {
+    "type": "url",
+    "label": "Event Reserve / External URL"
+  },
+  "event_image": {
+    "required": true,
+    "type": "image",
+    "label": "Event Image"
+  }
+}

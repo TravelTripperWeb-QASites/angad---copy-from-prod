@@ -8,29 +8,7 @@ meta_tags:
 published: true
 ---
 
-{% comment %}
-
-  Name:
-
-    Events Page
-
-  Description:
-
-    Display events[item] from a content model.
-
-  Usage:
-
-    Assign content model on page then display using [item].
-
-    eg. {% assign events = site.data._models.events %}
-        {% for item in events %}
-          {{ item.title }}
-          {{ item.location }}
-          {{ item.start_date | date: "%B %d %Y" }} - {{ item.end_date | date: "%B %d %Y" }}
-          {{ item.description | strip_html | truncatewords: 18 }}
-        {% endfor %}
-
-{% endcomment %}
+{% assign events = site.data._models.events | sort: 'start_date' %}
 
 <section class="inner-hero-banner bg-styles blue mb-80" style="background-image: url('/assets/images/events/events-banner.jpg')">
   <div class="banner-text">
@@ -43,76 +21,23 @@ published: true
 <section class="events">
   <div class="events-listing">
 
-    <!-- Event -->
-    <div class="event">
-      <h4>Tue Sep 30<span>7 pm</span></h4>
-      <div class="event-image" style="background-image: url('/assets/images/events/event1.jpg')">
-      </div>
-      <div class="event-info balance_height">
-        <p>
-          Incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-      <a class="primary-btn" href="#">Learn More</a>
-      <hr>
-    </div>
+    {% for event in events %}
 
     <!-- Event -->
     <div class="event">
-      <h4>Tue Sep 30<span>7 pm</span></h4>
-      <div class="event-image" style="background-image: url('/assets/images/events/event1.jpg')">
+      <h4>{{ event.event_date }}<span>{% if event.event_enddate != '' %}to {{ event.event_enddate }}{% else %}{{ event.event_time }}{% endif %}</span></h4>
+      <div class="event-image" style="background-image: url('{{ event.event_image.url }}')">
       </div>
       <div class="event-info balance_height">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+          {{ event.short_description }}
         </p>
       </div>
-      <a class="primary-btn" href="#">Learn More</a>
+      <a class="primary-btn" href="/aah-tonight/{{ event.url_friendly_name }}/">{{ event.btn_txt }}</a>
       <hr>
     </div>
 
-    <!-- Event -->
-    <div class="event">
-      <h4>Tue Sep 30<span>7 pm</span></h4>
-      <div class="event-image" style="background-image: url('/assets/images/events/event1.jpg')">
-      </div>
-      <div class="event-info balance_height">
-        <p>
-          Incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-      <a class="primary-btn" href="#">Learn More</a>
-      <hr>
-    </div>
-
-    <!-- Event -->
-    <div class="event">
-      <h4>Tue Sep 30<span>7 pm</span></h4>
-      <div class="event-image" style="background-image: url('/assets/images/events/event1.jpg')">
-      </div>
-      <div class="event-info balance_height">
-        <p>
-          Incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-      <a class="primary-btn" href="#">Learn More</a>
-      <hr>
-    </div>
-
-    <!-- Event -->
-    <div class="event">
-      <h4>Tue Sep 30<span>7 pm</span></h4>
-      <div class="event-image" style="background-image: url('/assets/images/events/event1.jpg')">
-      </div>
-      <div class="event-info balance_height">
-        <p>
-          Incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-      <a class="primary-btn" href="#">Learn More</a>
-      <hr>
-    </div>
-
+    {% endfor %}
 
   </div>
 </section>

@@ -209,7 +209,7 @@ $(window)
 
 $('.more-events-listing')
   .slick({
-    infinite: false,
+    infinite: true,
     prevArrow: false,
     nextArrow: false,
     speed: 300,
