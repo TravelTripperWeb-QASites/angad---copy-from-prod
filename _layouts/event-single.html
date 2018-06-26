@@ -13,7 +13,7 @@ layout: default
     <div class="event-details-content">
       <h4>{{ page.event_name }}</h4>
       <h5>
-        {{ page.event_date | date: "%a %b %d" }}<span> {% if page.event_enddate and page.event_enddate != '' %} <br />to {{ page.event_enddate | date: "%a %b %d" }}{% else %}<br />{{ page.event_time }}{% endif %}<br />
+        {{ page.event_date | date: "%a %b %d" }}<span> {% if page.event_enddate and page.event_enddate != '' %} <br /><i>to</i> {{ page.event_enddate | date: "%a %b %d" }}{% else %}<br />{{ page.event_time }}{% endif %}<br />
         @ {{ page.event_venue }}
       </h5>
       {{ page.long_description }}
@@ -36,7 +36,7 @@ layout: default
       {% for event in events %}
       <!-- Event -->
       <div class="event">
-        <h4>{{ event.event_date | date: "%a %b %d" }}<span>{% if event.event_enddate and event.event_enddate != '' %}to {{ event.event_enddate | date: "%a %b %d" }}{% else %}{{ event.event_time }}{% endif %}</span></h4>
+        <h4>{{ event.event_date | date: "%a %b %d" }}<span>{% if event.event_enddate and event.event_enddate != '' %}<i>to</i> {{ event.event_enddate | date: "%a %b %d" }}{% else %}{{ event.event_time }}{% endif %}</span></h4>
         <div class="event-image" style="background-image: url('{{ event.event_thumb_image.url_small }}')">
         </div>
         <div class="event-info balance_height">
