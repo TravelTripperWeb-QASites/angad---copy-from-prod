@@ -4,6 +4,7 @@
     "required": true
   },
   "sort_order": {
-    "type": "integer"
+    "type": "integer",
+    "required": true
   }
 }
