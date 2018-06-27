@@ -144,11 +144,12 @@ $(document)
       .find(".secondary-btn")
       .addClass("blue");
 
-
-      $(".filter li a").click(function(){
-        $(".filter li a").removeClass("active");
-        $(this).addClass("active");
-      });
+    $('[data-offergallery]').lightGallery({
+      selector: '.item',
+      counter: false,
+      download: false,
+      fullScreen: false
+    });
 
   });
 
