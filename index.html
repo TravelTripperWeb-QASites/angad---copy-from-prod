@@ -172,7 +172,7 @@ meta_tags:
     {% if meet-magnificently-items.size > 1 %}
       <!-- Indicators -->
       <ul class="carousel-indicators">
-        {% for item in dine-distinctively-items %}
+        {% for item in meet-magnificently-items %}
           <li data-target="#meetCarousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
         {% endfor %}
       </ul>
@@ -214,7 +214,7 @@ meta_tags:
 
       {% endfor %}
 
-      {% if dine-distinctively-items.size > 1 %}
+      {% if offer-images-items.size > 1 %}
       <!-- Left and right controls -->
         <a class="carousel-control-prev" href="#offersCarousel" data-slide="prev">
           <span class="left-slide"></span>
@@ -225,10 +225,10 @@ meta_tags:
       {% endif %}
 
     </div>
-    {% if dine-distinctively-items.size > 1 %}
+    {% if offer-images-items.size > 1 %}
       <!-- Indicators -->
       <ul class="carousel-indicators">
-        {% for item in dine-distinctively-items %}
+        {% for item in offer-images-items %}
           <li data-target="#offersCarousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
         {% endfor %}
       </ul>
