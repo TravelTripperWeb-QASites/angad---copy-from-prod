@@ -1,23 +1,59 @@
 <div class="form-part">
   <form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.rfp-id }}/" class="custom-form" method="post" name="form_{{ site.data.forms.jotform.rfp-id }}" id="{{ site.data.forms.jotform.rfp-id }}" accept-charset="utf-8">
+
     <input type="hidden" name="formID" value="{{ site.data.forms.jotform.rfp-id }}">
-    <input type="text" class="form-control" placeholder="First Name *" title="First Name" aria-label="First Name" id="input_3" name="q3_firstName" required />
-    <input type="text" class="form-control" placeholder="Last Name *" title="Last Name" aria-label="Last Name" id="input_4" name="q4_lastName" required />
-    <input type="email" class="form-control" placeholder="Email *" title="Email" aria-label="Email" id="input_5" name="q5_email" required />
-    <input type="text" class="form-control" placeholder="Contact Number *" id="input_6_area" name="q6_phoneNumber[area]" title="Contact Number" aria-label="Contact Number" required />
-    <select class="form-control" id="input_7" name="q7_subject" title="Purpose" aria-label="Purpose">
-      <option value="">Planning For</option>
-      <option>Business Meeting</option>
-      <option>Corporate Gathering</option>
-      <option>Family Reunion</option>
-      <option>Other..</option>
-    </select>
-    <textarea placeholder="Comments" title="Comments" aria-label="Comments" class="form-control" id="input_8" name="q8_comments"></textarea>
+
+    <input type="text" class="form-control" placeholder="First Name *" title="First Name" aria-label="First Name" id="input_3" name="q1_name" required />
+
+    <input type="email" class="form-control" placeholder="Email *" title="Email" aria-label="Email" id="input_5" name="q2_email" required />
+
+    <input type="text" class="form-control" placeholder="Contact Number *" id="input_6_area" name="q8_phoneNumber" title="Contact Number" aria-label="Contact Number" required />
+
+    <input type="text" class="form-control" placeholder="Organization" id="input_6_or" name="q4_organization" title="Organization" aria-label="Organization" />
+
+    <h6>TYPE OF EVENT:</h6>
     <div class="agree">
-      <input type="checkbox" class="" name="q10_iAgree[]" id="agree" value="agree" required="">
-      <label class="form-check-label" for="agree">I agree to the <a href="/terms/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.</label>
+      <input type="checkbox" class="" id="input_9_1" name="q5_typeOf[]" value="Meeting" >
+      <label class="form-check-label" for="input_9_1">Meeting</label>
     </div>
+
+    <div class="agree">
+      <input type="checkbox" class="" id="input_9_2" name="q5_typeOf[]" value="Banquet" >
+      <label class="form-check-label" for="input_9_2">Banquet</label>
+    </div>
+
+    <div class="agree">
+      <input type="checkbox" class="" id="input_9_3" name="q5_typeOf[]" value="Team Outing" >
+      <label class="form-check-label" for="input_9_3">Team Outing</label>
+    </div>
+
+    <div class="agree">
+      <input type="checkbox" class="" id="input_9_4" name="q5_typeOf[]" value="Hotel" >
+      <label class="form-check-label" for="input_9_4">Hotel</label>
+    </div>
+
+    <div class="agree">
+      <input type="checkbox" class="" id="input_9_5" name="q5_typeOf[]" value="Wedding" >
+      <label class="form-check-label" for="input_9_5">Wedding</label>
+    </div>
+
+    <div class="agree mb-1">
+      <input type="checkbox" class="" id="input_9_6" name="q5_typeOf[]" value="Other" >
+      <label class="form-check-label" for="input_9_6">Other</label>
+    </div>
+
+    <input type="text" id="input_6" placeholder="yyyy/mm/dd/" class="form-textbox jfInput-input jfCardDateInput venue-booking-date form-control arrival-datepicker" value="" max="2100-12-30">
+
+    <textarea placeholder="Tell Us About Your Event*" title="Tell Us About Your Event*" aria-label="Tell Us About Your Event*" class="form-control" id="input_8" name="q7_tellUs" required></textarea>
+
+    <div class="agree">
+      <input type="checkbox" class="" id="input_9_0" name="q9_acceptTerms[]" value="Agree" required="">
+      <label class="form-check-label" for="input_9_0">I agree to the <a href="/terms/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.</label>
+    </div>
+
     <button type="submit" id="rfpBtn" class="secondary-btn green" disabled>Submit</button>
+
     <p class="required text-right">Required fields are marked *</p>
+
   </form>
 </div>

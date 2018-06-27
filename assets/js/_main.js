@@ -314,3 +314,17 @@ $('.more-events-listing')
     // instead of a settings object
   ]
   });
+
+  $(".arrival-datepicker, .departure-datepicker").datepicker({
+      dateFormat: "yy-mm-dd",
+      altField: '.main-date-1',
+      altFormat: 'yy-mm-dd',
+      minDate: 0,
+      onSelect: function (date) {
+          var date2 = $('.arrival-datepicker').datepicker('getDate');
+          //date2.setDate(date2.getDate() + 1);
+          $('.arrival-datepicker').datepicker('setDate', date2);
+          //sets minDate to dt1 date + 1
+          $('.departure-datepicker').datepicker('option', 'minDate', date2);
+      }
+  });
