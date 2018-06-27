@@ -72,6 +72,12 @@ meta_tags:
       {% regionblock stay_colorful_text, type: text %}
         <p>Designed by the Lawrence Group especially to appeal to your emotional side, the color palette of our rooms sets the mood for your stay. Choose your room by how you are feeling in the moment. Whether your choice is passionate red, tranquility blue, a happy yellow or green rejuvenation our rooms and amenities are perfect for work and play.</p>
       {% endregionblock %}
+
+      {% regionblock stay_colorful_cta, type: text %}
+        <p class="btn-holder">
+          <a href="/rooms/" class="primary-btn red" title="View All Rooms" >View All Rooms</a>
+        </p>
+      {% endregionblock %}
     </div>
   </div>
 </section>
@@ -122,6 +128,11 @@ meta_tags:
       {% regionblock dine_distinctively_text, type: text %}
         <p>Dine at Grand Tavern, a new modern American concept from acclaimed Chef David Burke. Relax at the Chameleon Lounge or take in sweeping rooftop views of the city at Angad Rainbow Terrace while sipping hand-crafted cocktails in a space designed for sharing and socializing. Guests can also experience the flavor of Grand Tavern in the hotel’s Playroom or in the comfort of your room.</p>
       {% endregionblock  %}
+      {% regionblock dine_distinctively_cta, type: text %}
+        <p class="btn-holder">
+          <a href="/rooms/" class="primary-btn green" title="Dining & Bars">Dining & Bars</a>
+        </p>
+      {% endregionblock %}
     </div>
   </div>
 </section>
@@ -161,7 +172,7 @@ meta_tags:
     {% if meet-magnificently-items.size > 1 %}
       <!-- Indicators -->
       <ul class="carousel-indicators">
-        {% for item in dine-distinctively-items %}
+        {% for item in meet-magnificently-items %}
           <li data-target="#meetCarousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
         {% endfor %}
       </ul>
@@ -175,6 +186,67 @@ meta_tags:
       <div class="color-block-red top-left-block"></div>
       {% regionblock meet_magnificently_text, type: text %}
         <p>From corporate, to the celebrated, our creative spaces are designed to fit your specific needs and offer ideal settings for both social and business events. Featured are two exquisite private events spaces, each with their own pre-function area, as well as a conference room and an outdoor rooftop garden terrace with spectacular skyline views. A wide range of exceptional food and beverage menus are available, especially imagined by Chef Burke.</p>
+      {% endregionblock %}
+      {% regionblock meet_magnificently_cta, type: text %}
+        <p class="btn-holder">
+          <a href="/meetings-catering/" class="primary-btn blue" title="Meetings & Catering">Meetings & Catering</a>
+        </p>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
+
+
+<section class="arrive-affordably">
+  <div id="offersCarousel" class="carousel slide theme-carousel" data-ride="carousel">
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="banner-text">
+        <h2>Arrive <span>A</span>ffordably</h2>
+      </div>
+      {% assign offer-images-items = site.data._models.offer-images-carousel %}
+
+      {% for item in offer-images-items %}
+
+        <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}">
+          <img src="{{ item.image.url }}" alt="{{ item.image.alt }}">
+        </div>
+
+      {% endfor %}
+
+      {% if offer-images-items.size > 1 %}
+      <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#offersCarousel" data-slide="prev">
+          <span class="left-slide"></span>
+        </a>
+        <a class="carousel-control-next" href="#offersCarousel" data-slide="next">
+          <span class="right-slide"></span>
+        </a>
+      {% endif %}
+
+    </div>
+    {% if offer-images-items.size > 1 %}
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        {% for item in offer-images-items %}
+          <li data-target="#offersCarousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</section>
+
+<section class="full-text-wrap">
+  <div class="full-text">
+    <div class="text-content">
+      <div class="color-block-green top-left-block"></div>
+      {% regionblock arrive_affordably_text, type: text %}
+        <p>Introducing the best place to receive special discounted rates and offers - available only on our website.</p>
+      {% endregionblock %}
+      {% regionblock arrive_affordably_cta, type: text %}
+        <p class="btn-holder">
+          <a href="/offers/" class="primary-btn" title="View All Offers">View All Offers</a>
+        </p>
       {% endregionblock %}
     </div>
   </div>
