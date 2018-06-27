@@ -132,7 +132,7 @@
   bottom: 6px;
 }
 
-.dine-distinctively {
+.dine-distinctively, .arrive-affordably {
   h2 {
     @include media-breakpoint-up(md) {
       font-size: 3.5rem;
@@ -173,6 +173,16 @@
           height: 92px;
         }
 
+      }
+    }
+  }
+}
+
+.arrive-affordably {
+  h2 {
+    span {
+      &::after {
+        background-color: $brand-green;
       }
     }
   }
