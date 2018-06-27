@@ -111,10 +111,11 @@ footer {
               }
             }
             label {
-              @include text-formatting($lighter-font, $type-size-13, 300, 1.375rem, white, uppercase, .125rem);
+              @include text-formatting($lighter-font, $type-size-13, 300, 1.375rem, white, none, normal);
               @include global-transition(.3s);
               margin: 10px 0 0;
               a {
+                color: $white;
                 text-decoration: underline;
               }
             }

@@ -183,12 +183,12 @@ $(document)
     });
 
     $(this.form)
-    .find('#signUpBtn') // Button class names should be unique for every form
+    .find('#signUpBtn, #rfpBtn') // Button class names should be unique for every form
     .prop('disabled', !isValidForm);
     return isValidForm;
     }
 
-    $('#signUpBtn') // Button class names should be unique for every form
+    $('#signUpBtn, #rfpBtn') // Button class names should be unique for every form
     .closest('form')
     // indirectly bind the handler to form
     .submit(function () {
