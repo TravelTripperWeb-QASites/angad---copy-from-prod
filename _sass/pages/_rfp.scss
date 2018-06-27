@@ -2,6 +2,7 @@
 // ==========================================================================
 
 .rfp-wrapper {
+  @include main-container;
   margin-top: 100px;
   margin-bottom: 50px;
 }
@@ -51,6 +52,12 @@
 
   p{
     &.required {
+      font-size: $type-size-13;
+    }
+  }
+
+  .form-check-label {
+    @include media-breakpoint-down(sm) {
       font-size: $type-size-13;
     }
   }

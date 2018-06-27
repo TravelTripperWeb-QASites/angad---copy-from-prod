@@ -1,3 +1,4 @@
+{% assign footer-links = site.data.navigation.footer %}
 <footer>
   <div class="footer-container">
     <div class="footer-row">
@@ -70,12 +71,11 @@
       </div>
       <div class="footer-links order-2 order-lg-4">
         <ul>
+          {% for link in footer-links %}
           <li>
-            <a href="/press/" title="Press">Press</a>
+            <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>
           </li>
-          <li>
-            <a href="/about/" title="About">About</a>
-          </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
