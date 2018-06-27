@@ -11,3 +11,13 @@ main:
     url: /aah-tonight/
   - title: Storytelling
     url: /storytelling/
+
+footer:
+  - title: Gallery
+    url: /gallery/
+  - title: Contact us
+    url: /contact/
+  - title: Press
+    url: /press/
+  - title: About
+    url: /about/
