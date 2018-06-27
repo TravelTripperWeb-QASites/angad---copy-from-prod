@@ -20,6 +20,26 @@
       "git_file_name": "_assets/image_data/breakfast-shine.json",
       "path": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-06-27-015248/breakfast-shine.jpg",
       "alt": "breakfast-shine"
+    },
+    {
+      "name": "brooke-lark-176364-unsplash@2x",
+      "file_name": "brooke-lark-176364-unsplash@2x.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-071233/brooke-lark-176364-unsplash_2x.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-06-26-071233",
+      "file_type": "image/jpeg",
+      "width": 604,
+      "height": 384,
+      "file_size": 74582,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-071233/large_brooke-lark-176364-unsplash_2x.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-071233/medium_brooke-lark-176364-unsplash_2x.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-071233/small_brooke-lark-176364-unsplash_2x.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-071233/xsmall_brooke-lark-176364-unsplash_2x.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-071233/thumb_brooke-lark-176364-unsplash_2x.jpg",
+      "git_file_name": "_assets/image_data/brooke-lark-176364-unsplash-2x.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-071233/brooke-lark-176364-unsplash_2x.jpg",
+      "alt": "brooke-lark-176364-unsplash@2x"
     }
   ],
   "description": ""
