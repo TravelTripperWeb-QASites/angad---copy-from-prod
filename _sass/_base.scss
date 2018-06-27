@@ -84,7 +84,7 @@ img {
       padding: 50px 20px;
     }
     .btn-holder {
-      margin: 20px 0 66px;
+      margin: 20px 0 0;
       text-align: right;
       @include media-breakpoint-down(sm) {
         margin: 20px 0 0;
@@ -268,6 +268,28 @@ img {
   &.blue {
     &::after {
       background-color: $brand-blue;
+    }
+    &:hover {
+      &::after {
+        background-color: $brand-red;
+      }
+    }
+  }
+
+  &.red {
+    &::after {
+      background-color: $brand-red;
+    }
+    &:hover {
+      &::after {
+        background-color: $brand-yellow;
+      }
+    }
+  }
+
+  &.green {
+    &::after {
+      background-color: $brand-green;
     }
     &:hover {
       &::after {
