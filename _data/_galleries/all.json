@@ -60,6 +60,26 @@
       "git_file_name": "_assets/image_data/robert-collins-362599-unsplash-2x.json",
       "path": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-071131/robert-collins-362599-unsplash_2x.jpg",
       "alt": "robert-collins-362599-unsplash@2x"
+    },
+    {
+      "name": "james-price-335314-unsplash@2x",
+      "file_name": "james-price-335314-unsplash@2x.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-064356/james-price-335314-unsplash_2x.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-06-26-064356",
+      "file_type": "image/jpeg",
+      "width": 1256,
+      "height": 1000,
+      "file_size": 247818,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-064356/large_james-price-335314-unsplash_2x.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-064356/medium_james-price-335314-unsplash_2x.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-064356/small_james-price-335314-unsplash_2x.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-064356/xsmall_james-price-335314-unsplash_2x.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-064356/thumb_james-price-335314-unsplash_2x.jpg",
+      "git_file_name": "_assets/image_data/james-price-335314-unsplash-2x.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-26-064356/james-price-335314-unsplash_2x.jpg",
+      "alt": "james-price-335314-unsplash@2x"
     }
   ],
   "description": ""
