@@ -20,9 +20,7 @@ layout: default
     {% endif %}
 {% endfor %}
 
-<div class="blog-banner" style="background-image: url('/assets/images/storytelling/blog-banner.jpg');">
-     <h1>Blog</h1>
-</div>
+<div class="blog-details-banner bg-styles" style="background-image: url('{{blog.blogimage.url}}');"></div>
 
 <section class="blog-container">
     <div class="blog-row">
@@ -39,9 +37,6 @@ layout: default
                     {%else%}
                     <a class="next not-active" href="#">Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                     {%endif%}
-                </div>
-                <div class="blog-details-img">
-                    <img src="{{blog.blogimage.url}}" class="img-responsive hero-img" alt="{{blog.img_alt_txt}}">
                 </div>
 
                 <h1 class="blog-heading">{{blog.title}}</h1>
