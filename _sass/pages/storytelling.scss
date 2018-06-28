@@ -34,7 +34,9 @@
         @include make-col(8);
         padding-right: 50px;
       }
-      margin-top: -150px;
+      &.lead-post {        
+        margin-top: -150px;
+      }
       .blog-intro-text {
         display: block;
         width: 100%;
