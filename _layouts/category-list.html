@@ -8,7 +8,23 @@ layout: default
 
 <section class="blog-container">
   <div class="blog-row">
-    <div class="blog-col">
+    <div class="blog-col lead-post">
+
+      <div class="lead-story-box">
+        {% for post in site.data._models.storytelling | limit: 1 %}
+          {% if post.category.url_friendly_name == page.url_friendly_name %}
+            <p class="info">
+              <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span> | <span class="categories"> <a href="{{post.category.url_friendly_name}}" > {{post.category.title}} </a></span>
+            </p>
+            <h3>{{post.title}}</h3>
+            {{post.short_description}}
+            <div class="btn-holder">
+              <a class="secondary-btn" href="{{post.url_friendly_name}}"> Read Story </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
       <h3 class="blog-intro">Dolore Magna Aliqua</h3>
       <p class="blog-intro-text">Lorem ipsum dolor sit blog, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
       {% for post in site.data._models.storytelling %}
