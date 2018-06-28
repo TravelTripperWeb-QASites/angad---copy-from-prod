@@ -248,48 +248,51 @@
     display: block;
     margin-bottom: 30px;
   }
-  .social-share {
-    @include media-breakpoint-up(md) {
+  h5 {
+    color: $black;
+  }
+}
+.social-share {
+  @include media-breakpoint-up(md) {
+    display: inline-block;
+  }
+  display: block;
+  margin: 0 0 0 12px;
+  li {
+    display: inline-block;
+    list-style: none;
+    a {
       display: inline-block;
-    }
-    display: block;
-    margin: 0 0 0 12px;
-    li {
-      display: inline-block;
-      list-style: none;
-      a {
-        display: inline-block;
-        width: 39px;
-        height: 46px;
-        margin-right: 15px;
-        padding: 6px 7px;
-        font-size: 24px;
-        color: $white;
-        text-align: center;
-        @include global-transition(.3s);
-        &.twitter-link {
-          background-color: $brand-blue;
-          &:hover {
-            background-color: $brand-green;
-          }
-        }
-        &.facebook-link {
-          background-color: $brand-red;
-          &:hover {
-            background-color: $brand-yellow;
-          }
-        }
-        &.instagram-link {
+      width: 39px;
+      height: 46px;
+      margin-right: 15px;
+      padding: 6px 7px;
+      font-size: 24px;
+      color: $white;
+      text-align: center;
+      @include global-transition(.3s);
+      &.twitter-link {
+        background-color: $brand-blue;
+        &:hover {
           background-color: $brand-green;
-          &:hover {
-            background-color: $brand-blue;
-          }
         }
-        &.spotify-link {
+      }
+      &.facebook-link {
+        background-color: $brand-red;
+        &:hover {
           background-color: $brand-yellow;
-          &:hover {
-            background-color: $brand-red;
-          }
+        }
+      }
+      &.instagram-link, &.google-plus-link {
+        background-color: $brand-green;
+        &:hover {
+          background-color: $brand-blue;
+        }
+      }
+      &.spotify-link, &.pinterest-link {
+        background-color: $brand-yellow;
+        &:hover {
+          background-color: $brand-red;
         }
       }
     }
