@@ -20,6 +20,18 @@ include_in_nav_localized:
 <section class="blog-container">
   <div class="blog-row">
     <div class="blog-col">
+
+      <div class="lead-story-box">
+        <p class="info">
+          <span class="date"> May 30, 2018 </span> | <span class="categories">Category</span>
+        </p>
+        <h3>Lead story head</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="btn-holder">          
+          <a class="secondary-btn" href=""> Read Story </a>
+        </div>
+      </div>
+
       <h3 class="blog-intro">Dolore Magna Aliqua</h3>
       <p class="blog-intro-text">Lorem ipsum dolor sit blog, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
       {% for post in data_paginator.posts %}
@@ -73,7 +85,7 @@ include_in_nav_localized:
           {% endif %}
 
           <div class="pagnum">
-            Page {% if data_paginator.page < 10 %} 0{% endif %}{{data_paginator.page}} Of {{data_paginator.total_pages}}
+            Page {{data_paginator.page}} Of {{data_paginator.total_pages}}
           </div>
 
         </div>
