@@ -1,0 +1,130 @@
+.blog-banner {
+  min-height: 765px;
+}
+.blog-container {
+  @include main-container;
+  margin-top: 50px;
+  .blog-row {
+    @include make-row;
+    margin: 0;
+    .blog-col {
+      @include make-col-ready();
+      @include media-breakpoint-up(md) {
+        @include make-col(8);
+        padding-right: 50px;
+      }
+      h3 {
+        @include text-formatting($font-semi-bold, $type-size-12, 400, 3.75rem, $black, uppercase, .25rem);
+      }
+      .blog-intro-text {
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      .post-item {
+        .post-img {
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        .blog-item-text {
+          max-width: 90%;
+        }
+        .post-title {
+          color: $black;
+          h4 {
+            @include text-formatting($font-semi-bold, $type-size-3, 400, normal, $black, uppercase, .0625rem);
+          }
+        }
+        .info {
+          margin-bottom: 20px;
+          p {
+            .date {
+              @include text-formatting($global-font-family, $font-size-base, 400, normal, $black, uppercase, .0625rem);
+              margin-right: 10px;
+            }
+            .categories {
+              @include text-formatting($global-font-family, $font-size-base, 400, normal, $brand-red, uppercase, .0625rem);
+              margin-left: 10px;
+            }
+          }
+        }
+        .short-description {
+          margin-bottom: 20px;
+        }
+        .btn-holder {
+          width: 100%;
+          text-align: right;
+        }
+      }
+      hr {
+        background-color: $black;
+      }
+      .pagination {
+        margin-bottom: 120px;
+        .left-arrow {
+          display: inline-block;
+          width: 26px;
+          height: 30px;
+          margin-right: 20px;
+          padding-top: 2px;
+          text-align: center;
+          background-color: $brand-blue;
+          &.disabled {
+            opacity: .5;
+          }
+          img {
+            width: 7px;
+          }
+        }
+        .right-arrow {
+          @extend .left-arrow;
+          margin-right: 10px;
+          background-color: $brand-green;
+        }
+      }
+      .pagnum {
+        @include text-formatting($global-font-family, 1.188rem, 400, 2rem, $black, uppercase, .1875rem);
+      }
+    }
+    .blog-right-block {
+      @include make-col-ready();
+      @include media-breakpoint-up(md) {
+        @include make-col(4);
+        padding-left: 50px;
+      }
+      .widget-box {
+        margin-bottom: 50px;
+        h5 {
+          @include text-formatting($header-font-family, 1.25rem, 400, normal, $black, uppercase, .1875rem);
+          margin-bottom: 20px;
+        }
+        .categories {
+          li {
+            margin-bottom: 5px;
+            list-style: none;
+            a {
+              @include text-formatting($global-font-family,  1.188rem, 300, normal, $black, uppercase, .125rem);
+            }
+          }
+        }
+      }
+      .search-form {
+        width: 100%;
+        .input-grey {
+          height: 33px;
+          padding-left: 9px;
+          font-size: .9375rem;
+          text-transform: uppercase;
+          border: 1px solid $black;
+        }
+        .submit-btn {
+          height: 34px;
+          color: $white;
+          background: $brand-blue;
+          border: 0;
+        }
+      }
+    }
+  }
+}

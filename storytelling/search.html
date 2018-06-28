@@ -2,13 +2,13 @@
 title_localized:
   en: Blog | The Royalton Hotel in New York City
 label_localized:
-  en: 
+  en:
 layout_localized:
   en: default
 meta_description_localized:
   en: Blog.
 meta_keywords_localized:
-  en: 
+  en:
 published_localized:
   en: true
 include_in_nav_localized:
@@ -29,18 +29,18 @@ include_in_nav_localized:
                 <h2> SEARCH RESULT: </h2>
                 <ul id="search-results"></ul>
             </div>
-        </div> 
+        </div>
         <div class="blog-right-block">
             {% include blog-aside.html %}
-        </div>   
+        </div>
     </div>
 </section>
 
 <script>
   window.store = {
-    {% for post in site.data._models.blog %}
+    {% for post in site.data._models.storytelling %}
       "{{ post.url_friendly_name }}": {
-        "title": "{{ post.title | xml_escape }}", 
+        "title": "{{ post.title | xml_escape }}",
         "category": "{{ post.category.title | xml_escape }}",
         "content": {{ post.short_description | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url_friendly_name | xml_escape }}"
