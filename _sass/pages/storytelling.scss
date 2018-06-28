@@ -34,6 +34,7 @@
         @include make-col(8);
         padding-right: 50px;
       }
+      margin-top: -150px;
       .blog-intro-text {
         display: block;
         width: 100%;
@@ -276,5 +277,43 @@
         }
       }
     }
+  }
+}
+
+.lead-story-box {
+  margin-bottom: 70px;
+  padding: 20px 80px 30px 30px;
+  background-color: $brand-red;
+  h3 {
+    font-size: 2.5rem;
+    line-height: normal;
+    color: $white;
+  }
+  .info {
+    margin-bottom: 5px;
+    color: $white;
+    .date {
+      color: $white;
+    }
+    .categories {
+      color: $white;
+    }
+  }
+  p {
+    font-family: $lighter-font;
+    color: $white;
+  }
+  .btn-holder {
+    width: 100%;
+    margin-top: 20px;
+    text-align: right;
+    .secondary-btn {
+      &:after {
+        color: $white;
+      }
+    }
+  }
+  a {
+    color: $white;
   }
 }
