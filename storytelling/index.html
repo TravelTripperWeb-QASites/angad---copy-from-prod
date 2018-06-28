@@ -22,14 +22,16 @@ include_in_nav_localized:
     <div class="blog-col">
 
       <div class="lead-story-box">
-        <p class="info">
-          <span class="date"> May 30, 2018 </span> | <span class="categories">Category</span>
-        </p>
-        <h3>Lead story head</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="btn-holder">          
-          <a class="secondary-btn" href=""> Read Story </a>
-        </div>
+        {% for post in site.data._models.storytelling | limit: 1 %}
+          <p class="info">
+            <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span> | <span class="categories"> <a href="{{post.category.url_friendly_name}}" > {{post.category.title}} </a></span>
+          </p>
+          <h3>{{post.title}}</h3>
+          {{post.short_description}}
+          <div class="btn-holder">
+            <a class="secondary-btn" href="{{post.url_friendly_name}}"> Read Story </a>
+          </div>
+        {% endfor %}
       </div>
 
       <h3 class="blog-intro">Dolore Magna Aliqua</h3>
