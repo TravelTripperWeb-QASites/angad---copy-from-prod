@@ -382,6 +382,17 @@ img {
     }
   }
 
+  &.reverse {
+    @include media-breakpoint-down(sm) {
+      padding-left: 30px;
+    }
+    &:before {
+      top: 0;
+      width: 19px;
+      height: 25px;
+    }
+  }
+
 }
 
 .color-block-blue {

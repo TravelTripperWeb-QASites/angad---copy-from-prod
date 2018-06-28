@@ -17,7 +17,6 @@ include_in_nav_localized:
 ---
 <div class="blog-banner bg-styles" style="background-image: url('/assets/images/storytelling/banner.jpg');">
 </div>
-
 <section class="blog-container">
   <div class="blog-row">
     <div class="blog-col">
@@ -32,16 +31,14 @@ include_in_nav_localized:
             <a href="/storytelling/{{ post.url_friendly_name }}/" title="{{post.title}}" class="post-title">
               <h4> {{post.title}} </h4>
             </a>
-            <div class="info">
-              <p>
+            <p class="info">
                 <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span>
                 {% if post.category.url_friendly_name %} |
                   <span class="categories">
                     <a href="/storytelling/category/{{post.category.url_friendly_name}}/" >{{post.category.title}}</a>
                 </span>
                 {% endif %}
-              </p>
-            </div>
+            </p>
             <div class="short-description">
               {{post.short_description}}
             </div>
