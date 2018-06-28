@@ -1,6 +1,10 @@
 .blog-banner {
   min-height: 765px;
 }
+.blog-details-banner {
+  @extend .blog-banner;
+  background-position: top center;
+}
 .blog-container {
   @include main-container;
   margin-top: 50px;
