@@ -1,35 +1,23 @@
-<form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.rfp-id }}/" method="post" name="form_{{ site.data.forms.jotform.rfp-id }}" id="{{ site.data.forms.jotform.rfp-id }}"
-    accept-charset="utf-8" autocomplete="off">
+<div class="form-part">
+  <form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.rfp-id }}/" class="custom-form" method="post" name="form_{{ site.data.forms.jotform.rfp-id }}" id="{{ site.data.forms.jotform.rfp-id }}" accept-charset="utf-8">
     <input type="hidden" name="formID" value="{{ site.data.forms.jotform.rfp-id }}">
-    <label>Name*</label>
-    <input type="text" id="input_3" name="q3_name" placeholder="" required>
-    <label>Email*</label>
-    <input type="email" id="input_4" name="q4_email" placeholder="" required>
-    <label>Phone Number *</label>
-    <input type="tel" id="input_5" name="q5_phone" placeholder="" required>
-    <label>Organization</label>
-    <input type="text" id="input_6" name="q6_organization" placeholder="">
-
-    <h6>TYPE OF EVENT:</h6>
-    <label><input type="checkbox" id="input_9_0" name="q9_typeOf[]" value="Meeting">Meeting</label>
-    <label><input type="checkbox" id="input_9_1" name="q9_typeOf[]" value="Banquet">Banquet</label>
-    <label><input type="checkbox" id="input_9_2" name="q9_typeOf[]" value="Team Outing">Team Outing</label>
-    <label><input type="checkbox" id="input_9_3" name="q9_typeOf[]" value="Hotel">Hotel</label>
-    <label><input type="checkbox" id="input_9_4" name="q9_typeOf[]" value="Wedding">Wedding</label>
-    <label><input type="checkbox" id="input_9_5" name="q9_typeOf[]" value="Other">Other</label>
-
-    <label>Event Date</label>
-    <input type="text" id="input_8" name="q8_eventDate" placeholder="">
-
-    <label>Tell Us About Your Event*</label>
-    <textarea cols="40" rows="5" id="input_7" name="q7_tellUs" placeholder="" required></textarea>
-    <button type="submit" id="input_2">SEND</button>
-    <input type="hidden" id="simple_spc" name="simple_spc" value="{{ site.data.forms.jotform.rfp-id }}">
-
-    <script type="text/javascript">
-        document.getElementById("si" + "mple" + "_spc").value = "{{ site.data.forms.jotform.rfp-id }}-{{ site.data.forms.jotform.rfp-id }}";
-    </script>
-</form>
-<script type="text/javascript">
-    JotForm.ownerView = true;
-</script>
+    <input type="text" class="form-control" placeholder="First Name *" title="First Name" aria-label="First Name" id="input_3" name="q3_firstName" required />
+    <input type="text" class="form-control" placeholder="Last Name *" title="Last Name" aria-label="Last Name" id="input_4" name="q4_lastName" required />
+    <input type="email" class="form-control" placeholder="Email *" title="Email" aria-label="Email" id="input_5" name="q5_email" required />
+    <input type="text" class="form-control" placeholder="Contact Number *" id="input_6_area" name="q6_phoneNumber[area]" title="Contact Number" aria-label="Contact Number" required />
+    <select class="form-control" id="input_7" name="q7_subject" title="Purpose" aria-label="Purpose">
+      <option value="">Planning For</option>
+      <option>Business Meeting</option>
+      <option>Corporate Gathering</option>
+      <option>Family Reunion</option>
+      <option>Other..</option>
+    </select>
+    <textarea placeholder="Comments" title="Comments" aria-label="Comments" class="form-control" id="input_8" name="q8_comments"></textarea>
+    <div class="agree">
+      <input type="checkbox" class="" name="q10_iAgree[]" id="agree" value="agree" required="">
+      <label class="form-check-label" for="agree">I agree to the <a href="/terms/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.</label>
+    </div>
+    <button type="submit" id="rfpBtn" class="secondary-btn green" disabled>Submit</button>
+    <p class="required text-right">Required fields are marked *</p>
+  </form>
+</div>
