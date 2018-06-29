@@ -1,0 +1,76 @@
+// RFP Page Elements
+// ==========================================================================
+
+.rfp-wrapper {
+  @include main-container;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.form-part {
+  @include make-col-ready();
+  @include media-breakpoint-up(md) {
+    @include make-col(5);
+  }
+  .form-control {
+    display: inline-block;
+    height: 40px;
+    margin: 11px 0;
+    padding: 7px;
+    font-family: $global-font-family;
+    font-size: $type-size-6;
+    text-transform: none;
+    letter-spacing: .75px;
+    background: #fff;
+    border-color: $black;
+    border-radius: 0;
+
+    &:focus {
+      box-shadow: inherit;
+    }
+
+    &:-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $brand-grey;
+    }
+    &:-moz-placeholder { /* Firefox 19+ */
+      color: $brand-grey;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: $brand-grey;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $brand-grey;
+    }
+
+  }
+
+  textarea {
+    &.form-control {
+      height: 120px;
+      resize: none;
+    }
+  }
+
+  p{
+    &.required {
+      font-size: $type-size-13;
+    }
+  }
+
+  .form-check-label {
+    @include media-breakpoint-down(sm) {
+      font-size: $type-size-13;
+    }
+  }
+
+  #rfpBtn {
+    margin-top: 30px;
+    color: #000;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    &:disabled {
+      cursor: not-allowed;
+      opacity: .5;
+    }
+  }
+}

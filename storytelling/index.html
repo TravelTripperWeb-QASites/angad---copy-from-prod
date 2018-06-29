@@ -1,0 +1,100 @@
+---
+title_localized:
+  en: Storytelling | Angad Arts Hotel
+label_localized:
+  en:
+layout_localized:
+  en: default
+meta_description_localized:
+  en: Blog.
+meta_keywords_localized:
+  en:
+published_localized:
+  en: true
+include_in_nav_localized:
+  en: true
+
+---
+<div class="blog-banner bg-styles" style="background-image: url('/assets/images/storytelling/banner.jpg');">
+</div>
+<section class="blog-container">
+  <div class="blog-row">
+    <div class="blog-col lead-post">
+      <div class="lead-story-box">
+        {% for post in site.data._models.storytelling | limit: 1 %}
+          <p class="info">
+            <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span> | <span class="categories"> <a href="{{post.category.url_friendly_name}}" > {{post.category.title}} </a></span>
+          </p>
+          <h3>{{post.title}}</h3>
+          {{post.short_description}}
+          <div class="btn-holder">
+            <a class="secondary-btn" href="{{post.url_friendly_name}}"> Read Story </a>
+          </div>
+        {% endfor %}
+      </div>
+
+      <h3 class="blog-intro">Dolore Magna Aliqua</h3>
+      <p class="blog-intro-text">Lorem ipsum dolor sit blog, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+      {% for post in data_paginator.posts %}
+        <div class="post-item mb-80">
+          <a href="/storytelling/{{ post.url_friendly_name }}/" title="{{post.title}}">
+            <img src="{{post.blogimage.url}}" class="img-responsive post-img" alt="{{post.img_alt_txt}}">
+          </a>
+          <div class="blog-item-text">
+            <a href="/storytelling/{{ post.url_friendly_name }}/" title="{{post.title}}" class="post-title">
+              <h4> {{post.title}} </h4>
+            </a>
+            <p class="info">
+                <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span>
+                {% if post.category.url_friendly_name %} |
+                  <span class="categories">
+                    <a href="/storytelling/category/{{post.category.url_friendly_name}}/" >{{post.category.title}}</a>
+                </span>
+                {% endif %}
+            </p>
+            <div class="short-description">
+              {{post.short_description}}
+            </div>
+            <div class="btn-holder">
+              <a class="secondary-btn red" href="/storytelling/{{ post.url_friendly_name }}/"> Read Story </a>
+            </div>
+          </div>
+        </div>
+      <div class="clearfix"></div>
+      {% endfor %}
+      <hr>
+
+      {% if data_paginator.total_pages > 1 %}
+
+        <div class="pagination">
+          {% if data_paginator.previous_page %}
+          {% if data_paginator.page %}
+          <a name="previous" title="previous" class="left-arrow" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> <img src="/assets/images/arrow-left.png" alt="Previous Page"> </a>
+          {% else %}
+          <a href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> {{ page }} </a>
+          {% endif %}
+          {% else %}
+          <a href="#"  name="previous" title="previous"  class="left-arrow disabled"><img src="/assets/images/arrow-left.png" alt="Previous Page"></a>
+          {% endif %}
+
+          {% if data_paginator.next_page %}
+          <a  name="next" title="next"  class="right-arrow" href="{{ data_paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+            <img src="/assets/images/arrow-right.png" alt="next page">
+          </a>
+          {% else %}
+          <a href="#"  name="next" title="next"  class="right-arrow disabled"> <img src="/assets/images/arrow-right.png" alt="next page"> </a>
+          {% endif %}
+
+          <div class="pagnum">
+            Page {{data_paginator.page}} Of {{data_paginator.total_pages}}
+          </div>
+
+        </div>
+      {% endif %}
+
+    </div>
+    <div class="blog-right-block">
+      {% include blog-aside.html %}
+    </div>
+  </div>
+</section>
