@@ -18,7 +18,7 @@
     }
     .navbar-brand {
       position: absolute;
-      bottom: -12px;
+      bottom: -18px;
       z-index: 10;
       float: left;
       margin: 0;
@@ -53,11 +53,28 @@
         background-color: rgba($white, .95);
       }
       .navbar-nav {
+        position: relative;
         margin: 0 auto;
         li {
+          z-index: 9;
+          @include media-breakpoint-up(lg) {
+            &:hover {
+              z-index: 0;
+              a {
+                opacity: 0;
+              }
+              .show-on-hover {
+                display: block;
+                opacity: 1;
+              }
+            }
+          }
           a {
+            position: relative;
             @include text-formatting($global-font-family, $type-size-6, 300, normal, $dark-font, uppercase, .0625rem);
+            @include global-transition(.3s);
             padding: 15px;
+            transform-origin: left;
             @include media-breakpoint-down(lg) {
               padding-right: 6px;
               padding-left: 6px;
@@ -70,6 +87,62 @@
               font-weight: 400;
               color: $black;
               letter-spacing: .25rem;
+            }
+            &.show-on-hover {
+              position: absolute;
+              top: -55px;
+              left: 0;
+              display: none;
+              width: 180%;
+              font-family: $extrabold-font;
+              font-size: 5.75rem;
+              font-weight: 400;
+              text-transform: uppercase;
+            }
+          }
+
+          &.mainnav-rooms {
+            &:hover {
+              .show-on-hover {
+                color: $brand-yellow;
+              }
+            }
+          }
+          &.mainnav-offers {
+            &:hover {
+              .show-on-hover {
+                color: $nav-light-blue;
+              }
+            }
+          }
+          &.mainnav-dining-bars {
+              &:hover {
+                .show-on-hover {
+                color: $nav-orange;
+              }
+            }
+          }
+          &.mainnav-meetings-catering {
+            &:hover {
+              .show-on-hover {
+                color: $nav-light-green;
+              }
+            }
+          }
+          &.mainnav-aah-tonight {
+            &:hover {
+              .show-on-hover {
+                color: $black;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: $nav-light-blue;
+              }
+            }
+          }
+          &.mainnav-storytelling {
+            &:hover {
+              .show-on-hover {
+                color: $brand-blue;
+              }
             }
           }
         }
@@ -147,6 +220,71 @@
           height: 90px;
           padding: 25px 0;
         }
+      }
+    }
+  }
+  .rooms-logo, .offers-logo, .dining-bars-logo, .meetings-catering-logo, .aah-tonight-logo, .storytelling-logo {
+    display: none;
+  }
+  @include media-breakpoint-up(lg) {
+    &.hovered-rooms {
+      background-color: $brand-red;
+      .default-logo {
+        display: none;
+      }
+      .rooms-logo {
+        display: block;
+      }
+      .hoverlink-rooms {
+        a {
+          display: block !important;
+          color: $brand-yellow !important;
+        }
+      }
+    }
+    &.hovered-offers {
+      background-color: $brand-blue;
+      .default-logo {
+        display: none;
+      }
+      .offers-logo {
+        display: block;
+      }
+    }
+    &.hovered-dining-bars {
+      background-color: $nav-purple;
+      .default-logo {
+        display: none;
+      }
+      .dining-bars-logo {
+        display: block;
+      }
+    }
+    &.hovered-meetings-catering {
+      background-color: $nav-green;
+      .default-logo {
+        display: none;
+      }
+      .meetings-catering-logo {
+        display: block;
+      }
+    }
+    &.hovered-aah-tonight {
+      background-color: $black;
+      .default-logo {
+        display: none;
+      }
+      .aah-tonight-logo {
+        display: block;
+      }
+    }
+    &.hovered-storytelling {
+      background-color: $nav-yellow;
+      .default-logo {
+        display: none;
+      }
+      .storytelling-logo {
+        display: block;
       }
     }
   }

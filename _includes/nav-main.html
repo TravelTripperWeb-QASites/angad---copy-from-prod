@@ -3,7 +3,13 @@
 <nav class="navbar navbar-expand-lg">
   <div class="nav-container d-flex align-items-end">
     <a class="navbar-brand" href="/">
-      <img src="/assets/images/logo.svg" alt="Angad Arts Hotel">
+      <img class="default-logo" src="/assets/images/logo.svg" alt="Angad Arts Hotel">
+      <img class="rooms-logo" src="/assets/images/rooms-logo.svg" alt="Angad Arts Hotel">
+      <img class="offers-logo" src="/assets/images/offers-logo.svg" alt="Angad Arts Hotel">
+      <img class="dining-bars-logo" src="/assets/images/dining-bars-logo.svg" alt="Angad Arts Hotel">
+      <img class="meetings-catering-logo" src="/assets/images/meetings-catering-logo.svg" alt="Angad Arts Hotel">
+      <img class="aah-tonight-logo" src="/assets/images/aah-tonight-logo.svg" alt="Angad Arts Hotel">
+      <img class="storytelling-logo" src="/assets/images/storytelling-logo.svg" alt="Angad Arts Hotel">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -11,10 +17,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         {% for link in links %}
-        <li class="nav-item{% if page.url == link.url %} active{% endif%}">
-          <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+        <li class="nav-item{% if page.url == link.url %} active{% endif%} mainnav-{{ link.url | replace: '/', '' }}">
+          <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}</a>
+          <a class="nav-link show-on-hover" href="{{ link.url | absolute_url }}">{{ link.title }}</a>
         </li>
         {% endfor %}
+      </ul>
+      <ul class="hover-state-nav">
       </ul>
     </div>
     <a href="javascript:void(0);" class="book-now-btn" show-booking-widget>Book Now</a>
