@@ -130,6 +130,9 @@
             }
           }
           &.mainnav-aah-tonight {
+            .show-on-hover {
+              left: 200px;
+            }
             &:hover {
               .show-on-hover {
                 color: $black;
@@ -139,6 +142,9 @@
             }
           }
           &.mainnav-storytelling {
+            .show-on-hover {
+              left: 250px;
+            }
             &:hover {
               .show-on-hover {
                 color: $brand-blue;
