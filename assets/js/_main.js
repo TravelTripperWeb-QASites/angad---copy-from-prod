@@ -145,13 +145,40 @@ $(document)
       .addClass("blue");
 
 
-      $(".filter li a").click(function(){
-        $(".filter li a").removeClass("active");
-        $(this).addClass("active");
+    $(".filter li a")
+      .click(function () {
+        $(".filter li a")
+          .removeClass("active");
+        $(this)
+          .addClass("active");
       });
 
   });
 
+//Rooms category filter
+$(document)
+  .on("click", ".filter li a", function () {
+    var filterOption = $(this)
+      .attr("data-filter");
+    $(".filter li a")
+      .removeClass("active");
+    $(this)
+      .addClass("active");
+    if (filterOption == "all-rooms") {
+      $(".rooms-listing .room-item")
+        .fadeIn(100);
+    } else if (filterOption == "ada-filter") {
+      $(".rooms-listing .room-item")
+        .fadeOut(100);
+      $(".rooms-listing .room-item.ada-option")
+        .fadeIn(100);
+    } else {
+      $(".rooms-listing .room-item")
+        .fadeOut(100);
+      $(".rooms-listing .room-item" + "." + filterOption)
+        .fadeIn(100);
+    }
+  });
 
 //for sticky header
 

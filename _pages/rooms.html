@@ -32,26 +32,6 @@ published: true
         {% endfor %}
         <li> <a href="javascript:void(0);" data-filter="ada-filter">ADA Rooms & Suites</a></li>
       </ul>
-    <!-- <ul>
-      <li>
-        <a href="javascript:void(0);" class="active">All Rooms</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);">Small</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);">Medium</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);">DBL Queens</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);">DBL Bunk Beds</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);">Suites</a>
-      </li>
-    </ul> -->
   </div>
 
   <!-- Rooms Listing -->
@@ -68,23 +48,11 @@ published: true
         </div>
         <div class="room-info">
           <h4>{{ room.room_type.title }}</h4>
-          <p>{{ room.room_size }} SQ FT</p>
+          <p>{{ room.room_size }}</p>
           <p>{{ room.title }}</p>
         </div>
       </div>
     {% endfor %}
-
-    <!-- Room item1 -->
-    <!-- <div class="room-item" ng-repeat="room in browser.roomsList | filter: filters">
-      <div class="room-image" ng-style="{'background-image':'url([[room.photos[0].large]])'}">
-        <a ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" class="book-now-btn" target="_blank">Book Now</a>
-      </div>
-      <div class="room-info">
-        <h4>[[room.category]]</h4>
-        <p ng-if="room.room_size">[[room.room_size]] [[room.room_size_units | roomSizeUnits]]</p>
-        <p>[[room.name]]</p>
-      </div>
-    </div> -->
 
   </div>
 

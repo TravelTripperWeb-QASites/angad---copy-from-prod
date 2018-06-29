@@ -1,6 +1,6 @@
 {
   "title": "Cozy Queen",
-  "room_type": "categories1",
+  "room_type": "categories2",
   "room_image": {
     "name": "Cozy Queen@2x",
     "file_name": "Cozy Queen@2x.jpg",
@@ -25,5 +25,5 @@
   "room_size": "350 SQ FT",
   "booking_link": "https://www.starwoodhotels.com/preferredguest/room.html?propertyID=97502",
   "ada_options_available": true,
-  "sort_order": 1
+  "sort_order": 2
 }

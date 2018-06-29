@@ -16,7 +16,7 @@
     "required": true
   },
   "room_size": {
-    "type": "integer",
+    "label": "Room Size",
     "instructions": "(in square feet)"
   },
   "booking_link": {
