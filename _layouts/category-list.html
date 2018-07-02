@@ -2,8 +2,7 @@
 layout: default
 ---
 {% assign seo_title = page.data.title %}
-
-<div class="blog-banner bg-styles" style="background-image: url('/assets/images/storytelling/banner.jpg');">
+<div class="blog-banner bg-styles" style="background-image: url('{{page.data.categoryimage.url_large}}');">
 </div>
 
 <section class="blog-container">
@@ -11,7 +10,7 @@ layout: default
     <div class="blog-col lead-post">
 
       <div class="lead-story-box">
-        {% for post in site.data._models.storytelling | limit: 1 %}
+        {% for post in site.data._models.storytelling %}
           {% if post.category.url_friendly_name == page.url_friendly_name %}
             <p class="info">
               <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span> | <span class="categories"> <a href="{{post.category.url_friendly_name}}" > {{post.category.title}} </a></span>
@@ -21,6 +20,7 @@ layout: default
             <div class="btn-holder">
               <a class="secondary-btn" href="{{post.url_friendly_name}}"> Read Story </a>
             </div>
+            {% break %}
           {% endif %}
         {% endfor %}
       </div>
