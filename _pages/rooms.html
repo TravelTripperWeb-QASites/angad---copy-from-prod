@@ -24,89 +24,35 @@ published: true
   <!-- Filter rooms by Category -->
   <div class="filter">
     <h6>Filter by room type</h6>
-    <ul>
-      <li>
-        <a href="javascript:void(0);" class="active" ng-click="filters.category = ''">All Rooms</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" ng-click="filters.category = 'Small'">Small</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" ng-click="filters.category = 'Medium'">Medium</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);"  ng-click="filters.category = 'Double Queens'">DBL Queens</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" ng-click="filters.category = 'Double Bunk Beds'">DBL Bunk Beds</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" ng-click="filters.category = 'Suites'">Suites</a>
-      </li>
-    </ul>
+    {% assign categories = site.data._models.categories | sort: 'sort_order' %}
+      <ul>
+        <li> <a href="javascript:void(0);" class="active" data-filter="all-rooms">All Rooms</a></li>
+        {% for category in categories %}
+        <li> <a href="javascript:void(0);" data-filter="{{ category.title | downcase | replace: ' ', '-' }}">{{ category.title }}</a></li>
+        {% endfor %}
+        <li> <a href="javascript:void(0);" data-filter="ada-filter">ADA Rooms & Suites</a></li>
+      </ul>
   </div>
 
   <!-- Rooms Listing -->
   <div class="rooms-listing">
-    <!-- Room item1 -->
-    <div class="room-item" ng-repeat="room in browser.roomsList | filter: filters">
-      <div class="room-image" ng-style="{'background-image':'url([[room.photos[0].large]])'}">
-        <a ng-href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" class="book-now-btn" target="_blank">Book Now</a>
-      </div>
-      <div class="room-info">
-        <h4>[[room.category]]</h4>
-        <p ng-if="room.room_size">[[room.room_size]] [[room.room_size_units | roomSizeUnits]]</p>
-        <p>[[room.name]]</p>
-      </div>
-    </div>
 
-    <!-- Room item2 -->
-    <!-- <div class="room-item">
-      <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
-        <a href="#" class="book-now-btn">Book Now</a>
+    {% assign rooms = site.data._models.rooms | sort: 'sort_order' %}
+    {% for room in rooms %}
+      <div class="room-item {{ room.room_type.title | downcase | replace: ' ', '-' }} {% if room.ada_options_available == true %} ada-option {% endif %}">
+        <div class="room-image" style="background-image: url('{{ room.room_image.url }}');">
+          <a class="book-now-btn" href="{{ room.booking_link }}">Book Now</a>
+          {% if room.ada_options_available == true %}
+            <div class="ada-available"><span>ADA Options Available</span><i class="fa fa-wheelchair"></i></div>
+          {% endif %}
+        </div>
+        <div class="room-info">
+          <h4>{{ room.room_type.title }}</h4>
+          <p>{{ room.room_size }}</p>
+          <p>{{ room.title }}</p>
+        </div>
       </div>
-      <div class="room-info">
-        <h4>Small</h4>
-        <p>230 - 280 Sq Ft</p>
-        <p>1 Queen Bed</p>
-      </div>
-    </div> -->
-
-    <!-- Room item3 -->
-    <!-- <div class="room-item">
-      <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
-        <a href="#" class="book-now-btn">Book Now</a>
-      </div>
-      <div class="room-info">
-        <h4>Small</h4>
-        <p>230 - 280 Sq Ft</p>
-        <p>1 Queen Bed</p>
-      </div>
-    </div> -->
-
-    <!-- Room item4 -->
-    <!-- <div class="room-item">
-      <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
-        <a href="#" class="book-now-btn">Book Now</a>
-      </div>
-      <div class="room-info">
-        <h4>Small</h4>
-        <p>230 - 280 Sq Ft</p>
-        <p>1 Queen Bed</p>
-      </div>
-    </div> -->
-
-    <!-- Room item5 -->
-    <!-- <div class="room-item">
-      <div class="room-image" style="background-image: url('/assets/images/rooms/room-s.jpg');">
-        <a href="#" class="book-now-btn">Book Now</a>
-      </div>
-      <div class="room-info">
-        <h4>Small</h4>
-        <p>230 - 280 Sq Ft</p>
-        <p>1 Queen Bed</p>
-      </div>
-    </div> -->
+    {% endfor %}
 
   </div>
 
