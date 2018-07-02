@@ -4,6 +4,19 @@
 
 $(document)
   .ready(function () {
+
+    //hover effects for navigation
+
+    $(".nav-item").hover(function(){
+      var hoveredItemClass = $(this).attr('class').split(' ')[1];
+      var hoveredItem = hoveredItemClass.replace("mainnav-", "");
+      $(".navbar").addClass("hovered-"+hoveredItem);
+    }, function(){
+      $(".navbar").removeClass (function (index, className) {
+        return (className.match (/(^|\s)hovered-\S+/g) || []).join(' ');
+      });
+    });
+
     setTimeout(function () {
       $(".intro-logo img")
         .attr("src", "/assets/images/logo-animation.gif");
