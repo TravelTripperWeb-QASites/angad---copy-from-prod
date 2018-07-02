@@ -7,15 +7,21 @@ $(document)
 
     //hover effects for navigation
 
-    $(".nav-item").hover(function(){
-      var hoveredItemClass = $(this).attr('class').split(' ')[1];
-      var hoveredItem = hoveredItemClass.replace("mainnav-", "");
-      $(".navbar").addClass("hovered-"+hoveredItem);
-    }, function(){
-      $(".navbar").removeClass (function (index, className) {
-        return (className.match (/(^|\s)hovered-\S+/g) || []).join(' ');
+    $(".nav-item")
+      .hover(function () {
+        var hoveredItemClass = $(this)
+          .attr('class')
+          .split(' ')[1];
+        var hoveredItem = hoveredItemClass.replace("mainnav-", "");
+        $(".navbar")
+          .addClass("hovered-" + hoveredItem);
+      }, function () {
+        $(".navbar")
+          .removeClass(function (index, className) {
+            return (className.match(/(^|\s)hovered-\S+/g) || [])
+              .join(' ');
+          });
       });
-    });
 
     setTimeout(function () {
       $(".intro-logo img")
@@ -360,3 +366,21 @@ function pinterestShare(img, desc) {
     "&description=" + desc, "pinIt", "toolbar=no, scrollbars=no, resizable=no, top=0, right=0");
   return false;
 }
+
+$(".arrival-datepicker, .departure-datepicker")
+  .datepicker({
+    dateFormat: "yy-mm-dd",
+    altField: '.main-date-1',
+    altFormat: 'yy-mm-dd',
+    minDate: 0,
+    onSelect: function (date) {
+      var date2 = $('.arrival-datepicker')
+        .datepicker('getDate');
+      //date2.setDate(date2.getDate() + 1);
+      $('.arrival-datepicker')
+        .datepicker('setDate', date2);
+      //sets minDate to dt1 date + 1
+      $('.departure-datepicker')
+        .datepicker('option', 'minDate', date2);
+    }
+  });
