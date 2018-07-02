@@ -1,0 +1,33 @@
+{
+  "title": {
+    "label": "Room Name",
+    "required": true
+  },
+  "room_type": {
+    "label": "Room Type",
+    "type": "model",
+    "model_name": "categories",
+    "display_field": "title",
+    "required": true
+  },
+  "room_image": {
+    "label": "Room Image",
+    "type": "image",
+    "required": true
+  },
+  "room_size": {
+    "label": "Room Size",
+    "instructions": "(in square feet)"
+  },
+  "booking_link": {
+    "label": "Booking Link",
+    "required": true
+  },
+  "ada_options_available": {
+    "type": "boolean",
+    "label": "ADA Options Available?"
+  },
+  "sort_order": {
+    "type": "integer"
+  }
+}

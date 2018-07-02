@@ -167,3 +167,27 @@
     }
   }
 }
+
+.ada-available {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  font-family: $lighter-font;
+  font-size: .625rem;
+  color: $white;
+  text-transform: uppercase;
+  background: rgba(0,0,0,.7);
+  span {
+    display: none;
+    margin-right: 8px;
+  }
+  svg {
+    font-size: $font-size-base;
+  }
+  &:hover {
+    span {
+      display: inline-block;
+    }
+  }
+}
