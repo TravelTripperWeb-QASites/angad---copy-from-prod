@@ -31,14 +31,14 @@
               I agree to the <a href="/terms/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.
             </label>
           </div>
-          <button id="signUpBtn" type="submit" name="button" disabled></button>
+          <button id="signUpBtn" type="submit" name="button" title="Signup" aria-label="Signup" disabled></button>
         </form>
         <ul class="social-share">
           {% assign sociallinks = site.data.social %}
 
           {% if sociallinks.twitter.username %}
           <li>
-            <a href="https://www.twitter.com/{{sociallinks.twitter.username}}" target="_blank" rel="nofollow">
+            <a href="https://www.twitter.com/{{sociallinks.twitter.username}}" target="_blank" rel="nofollow" title="Follow us on Twitter" >
               <i class="fab fa-twitter"></i>
             </a>
           </li>
@@ -46,7 +46,7 @@
 
           {% if sociallinks.facebook.username %}
           <li>
-            <a href="https://www.facebook.com/{{sociallinks.facebook.username}}" target="_blank" rel="nofollow">
+            <a href="https://www.facebook.com/{{sociallinks.facebook.username}}" target="_blank" rel="nofollow" title="Follow us on Facebook" >
               <i class="fab fa-facebook-f"></i>
             </a>
           </li>
@@ -54,7 +54,7 @@
 
           {% if sociallinks.instagram.username %}
           <li>
-            <a href="https://www.instagram.com/{{sociallinks.instagram.username}}" target="_blank" rel="nofollow">
+            <a href="https://www.instagram.com/{{sociallinks.instagram.username}}" target="_blank" rel="nofollow" title="Follow us on Instagram" >
               <i class="fab fa-instagram"></i>
             </a>
           </li>
@@ -62,7 +62,7 @@
 
           {% if sociallinks.spotify.username %}
           <li>
-            <a href="/" target="_blank" rel="nofollow">
+            <a href="/" target="_blank" rel="nofollow" title="Follow us on Spotify" >
               <i class="fab fa-spotify"></i>
             </a>
           </li>
