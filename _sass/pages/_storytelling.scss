@@ -11,7 +11,10 @@
   padding-right: 0;
   padding-left: 0;
   .blog-intro {
-    @include text-formatting($font-semi-bold, $type-size-12, 400, 3.75rem, $black, uppercase, .25rem);
+    @include text-formatting($font-semi-bold, $type-size-12, 400, normal, $black, uppercase, .25rem);
+    @include media-breakpoint-down(md) {
+      font-size: 2rem;
+    }
   }
   .info {
     width: 100%;
@@ -287,9 +290,12 @@
   padding: 20px 80px 30px 30px;
   background-color: $brand-red;
   h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: normal;
     color: $white;
+    @include media-breakpoint-up(md) {
+      font-size: 2.5rem;
+    }
   }
   .info {
     margin-bottom: 5px;
