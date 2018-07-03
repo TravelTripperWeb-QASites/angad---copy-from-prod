@@ -135,9 +135,7 @@
             }
             &:hover {
               .show-on-hover {
-                color: $black;
-                -webkit-text-stroke-width: 2px;
-                -webkit-text-stroke-color: $nav-light-blue;
+                color: $nav-light-blue;
               }
             }
           }
