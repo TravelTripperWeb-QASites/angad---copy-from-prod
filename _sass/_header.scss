@@ -96,6 +96,7 @@
               color: $black;
               letter-spacing: 0.25rem;
             }
+
             &.show-on-hover {
               position: absolute;
               top: -55px;
@@ -107,6 +108,7 @@
               font-weight: 400;
               text-transform: uppercase;
             }
+
           }
 
           &.mainnav-rooms {
@@ -154,6 +156,17 @@
             &:hover {
               .show-on-hover {
                 color: $brand-blue;
+              }
+            }
+          }
+          &.active {
+            a {
+              font-weight: bold;
+              &:hover {
+                opacity: 1;
+              }
+              &.show-on-hover {
+                display: none;
               }
             }
           }

@@ -17,7 +17,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         {% for link in links %}
-        <li class="nav-item{% if page.url == link.url %} active{% endif%} mainnav-{{ link.url | replace: '/', '' }}">
+        <li class="nav-item mainnav-{{ link.url | replace: '/', '' }} {% if page.url == link.url %} active {% endif %}">
           <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}</a>
           <a class="nav-link show-on-hover" href="{{ link.url | absolute_url }}">{{ link.title }}</a>
         </li>
