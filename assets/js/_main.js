@@ -11,7 +11,11 @@ $(document).ready(function() {
         .attr("class")
         .split(" ")[1];
       var hoveredItem = hoveredItemClass.replace("mainnav-", "");
-      $(".navbar").addClass("hovered-" + hoveredItem);
+
+      if(window.location.href.indexOf(hoveredItem) == -1) {
+        $(".navbar").addClass("hovered-" + hoveredItem);
+      }
+
     },
     function() {
       $(".navbar").removeClass(function(index, className) {

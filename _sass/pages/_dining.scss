@@ -51,6 +51,13 @@
           @include make-col(9);
         }
       }
+      &.grand-tavern-text {
+        p {
+          @include media-breakpoint-up(lg) {
+            margin-top: 0;
+          }
+        }
+      }
     }
     .right-sec {
       @include make-col-ready();
@@ -79,6 +86,9 @@
     .full-sec {
       @include make-col-ready();
       @include make-col(12);
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 25px;
+      }
     }
   }
 }
