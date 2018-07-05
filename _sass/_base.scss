@@ -16,12 +16,26 @@ body {
   font-family: $global-font-family;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
 h1 {
-  @include text-formatting($lighter-font, $type-size-1, 300, normal, $white, uppercase, .5rem);
+  @include text-formatting(
+    $lighter-font,
+    $type-size-1,
+    300,
+    normal,
+    $white,
+    uppercase,
+    0.5rem
+  );
   @include media-breakpoint-down(sm) {
     font-size: 1.75rem;
     letter-spacing: 3px;
@@ -32,29 +46,62 @@ h2 {
   @extend h1;
 }
 
-h3, .page-title {
-  @include text-formatting($header-font-family, $type-size-2, 700, 4.375rem, $black, uppercase, .40625rem);
+h3,
+.page-title {
+  @include text-formatting(
+    $header-font-family,
+    $type-size-2,
+    700,
+    4.375rem,
+    $black,
+    uppercase,
+    0.40625rem
+  );
   @include media-breakpoint-down(sm) {
     font-size: 2rem;
     line-height: normal;
-    letter-spacing: .1875rem;
+    letter-spacing: 0.1875rem;
   }
 }
 
 h4 {
-  @include text-formatting($header-font-family, $type-size-9, 700, normal, $black, uppercase, .0625rem);
+  @include text-formatting(
+    $header-font-family,
+    $type-size-9,
+    700,
+    normal,
+    $black,
+    uppercase,
+    0.0625rem
+  );
 }
 
 h5 {
-  @include text-formatting($header-font-family, $type-size-5, 400, 2rem, $white, uppercase, .1875rem);
+  @include text-formatting(
+    $header-font-family,
+    $type-size-5,
+    400,
+    2rem,
+    $white,
+    uppercase,
+    0.1875rem
+  );
 }
 
 p {
-  @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, none, .48px);
+  @include text-formatting(
+    $global-font-family,
+    $type-size-3,
+    400,
+    2rem,
+    $black,
+    none,
+    0.48px
+  );
   @include media-breakpoint-down(sm) {
     font-size: 1.375rem;
     line-height: normal;
-    letter-spacing: .44px;
+    letter-spacing: 0.44px;
   }
   @media screen and (max-width: 479px) {
     font-size: 1.1rem;
@@ -65,7 +112,8 @@ p {
 
 a {
   color: $link-color;
-  &:hover, &:active {
+  &:hover,
+  &:active {
     color: $link-color;
     outline: 0;
   }
@@ -174,9 +222,16 @@ img {
   }
 }
 
-
 .primary-btn {
-  @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, uppercase, .25rem);
+  @include text-formatting(
+    $global-font-family,
+    $type-size-3,
+    400,
+    2rem,
+    $black,
+    uppercase,
+    0.25rem
+  );
   position: relative;
   display: inline-block;
   padding: 8px 0 5px;
@@ -187,13 +242,13 @@ img {
     width: 39px;
     height: 45px;
     margin-left: 15px;
-    content: '';
+    content: "";
     background-color: $brand-yellow;
-    background-image: url('/assets/images/arrow-right.png');
+    background-image: url("/assets/images/arrow-right.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 14px;
-    @include global-transition(.3s);
+    @include global-transition(0.3s);
   }
   @include media-breakpoint-down(sm) {
     padding-right: 60px;
@@ -222,7 +277,7 @@ img {
     padding: 0 0 0 30px;
     font-size: $type-size-7;
     line-height: normal;
-    letter-spacing: .1875rem;
+    letter-spacing: 0.1875rem;
 
     &::after {
       display: none;
@@ -236,13 +291,13 @@ img {
       width: 19px;
       height: 25px;
       margin-right: 15px;
-      content: '';
+      content: "";
       background-color: $brand-red;
-      background-image: url('/assets/images/arrow-left.png');
+      background-image: url("/assets/images/arrow-left.png");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 8px;
-      @include global-transition(.3s);
+      @include global-transition(0.3s);
     }
 
     @include media-breakpoint-down(sm) {
@@ -300,7 +355,15 @@ img {
 }
 
 .link-btn {
-  @include text-formatting($lighter-font, 1.188rem, 300, normal, $black, uppercase, 2.85px);
+  @include text-formatting(
+    $lighter-font,
+    1.188rem,
+    300,
+    normal,
+    $black,
+    uppercase,
+    2.85px
+  );
   &:hover {
     color: $black;
     text-decoration: underline;
@@ -308,7 +371,15 @@ img {
 }
 
 .book-now-btn {
-  @include text-formatting($lighter-font, $type-size-3, 300, normal, $brand-red, uppercase, .125rem);
+  @include text-formatting(
+    $lighter-font,
+    $type-size-3,
+    300,
+    normal,
+    $brand-red,
+    uppercase,
+    0.125rem
+  );
   z-index: 9;
   display: inline-block;
   width: 140px;
@@ -317,7 +388,7 @@ img {
   text-align: center;
   background-color: $brand-yellow;
   border-radius: 50%;
-  @include global-transition(.3s);
+  @include global-transition(0.3s);
   &:hover {
     color: $brand-yellow;
     text-decoration: none;
@@ -331,7 +402,7 @@ img {
   font-size: $type-size-7;
   line-height: normal;
   color: $white;
-  letter-spacing: .1875rem;
+  letter-spacing: 0.1875rem;
   &::after {
     width: 19px;
     height: 25px;
@@ -392,7 +463,6 @@ img {
       height: 25px;
     }
   }
-
 }
 
 .color-block-blue {
@@ -424,7 +494,6 @@ img {
   }
 }
 
-
 .bg-styles {
   background-repeat: no-repeat;
   background-position: center center;
@@ -454,14 +523,15 @@ img {
       }
     }
   }
-  .carousel-control-prev, .carousel-control-next {
+  .carousel-control-prev,
+  .carousel-control-next {
     z-index: 2;
     opacity: 1;
     .left-slide {
       display: inline-block;
       width: 30px;
       height: 53px;
-      background-image: url('/assets/images/arrow-left.png');
+      background-image: url("/assets/images/arrow-left.png");
       background-repeat: no-repeat;
       background-size: 100%;
       @include media-breakpoint-down(sm) {
@@ -471,7 +541,7 @@ img {
     }
     .right-slide {
       @extend .left-slide;
-      background-image: url('/assets/images/arrow-right.png');
+      background-image: url("/assets/images/arrow-right.png");
     }
   }
   .carousel-indicators {
@@ -483,7 +553,7 @@ img {
       margin: 0 7px;
       cursor: pointer;
       background-color: $light-grey;
-      @include global-transition(.3s);
+      @include global-transition(0.3s);
       @include media-breakpoint-down(sm) {
         width: 11px;
         height: 14px;
@@ -503,7 +573,6 @@ img {
     height: 60px;
   }
 }
-
 
 // Sets a default bottom margin and removes bullet points from lists
 
@@ -575,7 +644,7 @@ svg:not(:root) {
         z-index: -1;
         width: 25px;
         height: 29px;
-        content: '';
+        content: "";
         background-color: $brand-yellow;
         @include media-breakpoint-up(md) {
           top: 13px;
@@ -595,7 +664,6 @@ svg:not(:root) {
           width: 72px;
           height: 83px;
         }
-
       }
     }
   }

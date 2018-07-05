@@ -11,7 +11,15 @@
   padding-right: 0;
   padding-left: 0;
   .blog-intro {
-    @include text-formatting($font-semi-bold, $type-size-12, 400, normal, $black, uppercase, .25rem);
+    @include text-formatting(
+      $font-semi-bold,
+      $type-size-12,
+      400,
+      normal,
+      $black,
+      uppercase,
+      0.25rem
+    );
     @include media-breakpoint-down(md) {
       font-size: 2rem;
     }
@@ -20,11 +28,27 @@
     width: 100%;
     margin-bottom: 20px;
     .date {
-      @include text-formatting($global-font-family, $font-size-base, 400, normal, $black, uppercase, .0625rem);
+      @include text-formatting(
+        $global-font-family,
+        $font-size-base,
+        400,
+        normal,
+        $black,
+        uppercase,
+        0.0625rem
+      );
       margin-right: 10px;
     }
     .categories {
-      @include text-formatting($global-font-family, $font-size-base, 400, normal, $brand-red, uppercase, .0625rem);
+      @include text-formatting(
+        $global-font-family,
+        $font-size-base,
+        400,
+        normal,
+        $brand-red,
+        uppercase,
+        0.0625rem
+      );
       margin-left: 10px;
     }
   }
@@ -57,7 +81,15 @@
         .post-title {
           color: $black;
           h4 {
-            @include text-formatting($font-semi-bold, $type-size-3, 400, normal, $black, uppercase, .0625rem);
+            @include text-formatting(
+              $font-semi-bold,
+              $type-size-3,
+              400,
+              normal,
+              $black,
+              uppercase,
+              0.0625rem
+            );
           }
         }
         .short-description {
@@ -83,7 +115,7 @@
           text-align: center;
           background-color: $brand-blue;
           &.disabled {
-            opacity: .5;
+            opacity: 0.5;
           }
           img {
             width: 7px;
@@ -96,7 +128,15 @@
         }
       }
       .pagnum {
-        @include text-formatting($global-font-family, 1.188rem, 400, 2rem, $black, uppercase, .1875rem);
+        @include text-formatting(
+          $global-font-family,
+          1.188rem,
+          400,
+          2rem,
+          $black,
+          uppercase,
+          0.1875rem
+        );
       }
       .post-details {
         .info {
@@ -117,7 +157,15 @@
       .widget-box {
         margin-bottom: 50px;
         h5 {
-          @include text-formatting($header-font-family, 1.25rem, 400, normal, $black, uppercase, .1875rem);
+          @include text-formatting(
+            $header-font-family,
+            1.25rem,
+            400,
+            normal,
+            $black,
+            uppercase,
+            0.1875rem
+          );
           margin-bottom: 20px;
         }
         .categories {
@@ -125,7 +173,15 @@
             margin-bottom: 5px;
             list-style: none;
             a {
-              @include text-formatting($global-font-family,  1.188rem, 300, normal, $black, uppercase, .125rem);
+              @include text-formatting(
+                $global-font-family,
+                1.188rem,
+                300,
+                normal,
+                $black,
+                uppercase,
+                0.125rem
+              );
             }
           }
         }
@@ -135,7 +191,7 @@
         .input-grey {
           height: 33px;
           padding-left: 9px;
-          font-size: .9375rem;
+          font-size: 0.9375rem;
           text-transform: uppercase;
           border: 1px solid $black;
         }
@@ -152,7 +208,15 @@
           width: 100%;
         }
         h4 {
-          @include text-formatting($header-font-family, $type-size-7, 400, normal, $black, uppercase, .0625rem);
+          @include text-formatting(
+            $header-font-family,
+            $type-size-7,
+            400,
+            normal,
+            $black,
+            uppercase,
+            0.0625rem
+          );
         }
         .thumb-img {
           margin-bottom: 25px;
@@ -175,11 +239,27 @@
         .info {
           padding-left: 0;
           .date {
-            @include text-formatting($global-font-family, $font-size-base, 400, normal, $black, uppercase, .0625rem);
+            @include text-formatting(
+              $global-font-family,
+              $font-size-base,
+              400,
+              normal,
+              $black,
+              uppercase,
+              0.0625rem
+            );
             margin-right: 10px;
           }
           .categories {
-            @include text-formatting($global-font-family, $font-size-base, 400, normal, $brand-red, uppercase, .0625rem);
+            @include text-formatting(
+              $global-font-family,
+              $font-size-base,
+              400,
+              normal,
+              $brand-red,
+              uppercase,
+              0.0625rem
+            );
             margin-left: 10px;
           }
         }
@@ -207,7 +287,15 @@
       margin-bottom: 60px;
       text-align: right;
       .share-heading {
-        @include text-formatting($global-font-family, $type-size-3, 400, normal, $black, uppercase, .0625rem);
+        @include text-formatting(
+          $global-font-family,
+          $type-size-3,
+          400,
+          normal,
+          $black,
+          uppercase,
+          0.0625rem
+        );
       }
     }
   }
@@ -221,7 +309,7 @@
     h2 {
       padding-bottom: 25px;
       font-size: $type-size-12;
-      letter-spacing: .25rem;
+      letter-spacing: 0.25rem;
       @include media-breakpoint-up(md) {
         padding-left: 12px;
       }
@@ -251,7 +339,15 @@
           background-size: cover;
         }
         h4 {
-          @include text-formatting($global-font-family, $type-size-3, 600, normal, $white, uppercase, .0625rem);
+          @include text-formatting(
+            $global-font-family,
+            $type-size-3,
+            600,
+            normal,
+            $white,
+            uppercase,
+            0.0625rem
+          );
           margin-bottom: 5px;
         }
         .short-description {
@@ -264,11 +360,27 @@
           margin-bottom: 20px;
           color: $white;
           .date {
-            @include text-formatting($global-font-family, $font-size-base, 400, normal, $white, uppercase, .0625rem);
+            @include text-formatting(
+              $global-font-family,
+              $font-size-base,
+              400,
+              normal,
+              $white,
+              uppercase,
+              0.0625rem
+            );
             margin-right: 10px;
           }
           .categories {
-            @include text-formatting($global-font-family, $font-size-base, 400, normal, $brand-red, uppercase, .0625rem);
+            @include text-formatting(
+              $global-font-family,
+              $font-size-base,
+              400,
+              normal,
+              $brand-red,
+              uppercase,
+              0.0625rem
+            );
             margin-left: 10px;
           }
         }
@@ -350,5 +462,4 @@
       }
     }
   }
-
 }

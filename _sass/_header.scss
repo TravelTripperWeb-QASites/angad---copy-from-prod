@@ -7,12 +7,12 @@
   width: 100%;
   padding: 0;
   background-color: $white;
-  @include global-transition(.5s);
+  @include global-transition(0.5s);
   .nav-container {
     @include main-container;
     position: relative;
     padding: 80px 15px 0;
-    @include global-transition(.3s);
+    @include global-transition(0.3s);
     @media screen and (max-width: 991px) {
       padding: 70px 15px 0;
     }
@@ -34,7 +34,7 @@
       img {
         width: 124px;
         height: auto;
-        @include global-transition(.3s);
+        @include global-transition(0.3s);
         @media screen and (max-width: 991px) {
           width: 80px;
         }
@@ -50,7 +50,7 @@
         width: 100%;
         padding: 120px 40px;
         text-align: center;
-        background-color: rgba($white, .95);
+        background-color: rgba($white, 0.95);
       }
       .navbar-nav {
         position: relative;
@@ -71,14 +71,22 @@
           }
           a {
             position: relative;
-            @include text-formatting($global-font-family, $type-size-6, 300, normal, $dark-font, uppercase, .0625rem);
-            @include global-transition(.3s);
+            @include text-formatting(
+              $global-font-family,
+              $type-size-6,
+              300,
+              normal,
+              $dark-font,
+              uppercase,
+              0.0625rem
+            );
+            @include global-transition(0.3s);
             padding: 15px;
             transform-origin: left;
             @include media-breakpoint-down(lg) {
               padding-right: 6px;
               padding-left: 6px;
-              font-size: .8rem;
+              font-size: 0.8rem;
             }
             @media screen and (max-width: 991px) {
               padding: 30px 0;
@@ -86,7 +94,7 @@
               font-size: 1.875rem;
               font-weight: 400;
               color: $black;
-              letter-spacing: .25rem;
+              letter-spacing: 0.25rem;
             }
             &.show-on-hover {
               position: absolute;
@@ -116,8 +124,8 @@
             }
           }
           &.mainnav-dining-bars {
-              &:hover {
-                .show-on-hover {
+            &:hover {
+              .show-on-hover {
                 color: $nav-orange;
               }
             }
@@ -160,12 +168,20 @@
       padding: 0;
       .navbar-toggler-icon {
         width: 35px;
-        background-image: url('/assets/images/nav-btn-lines.png');
+        background-image: url("/assets/images/nav-btn-lines.png");
         background-size: 100% auto;
       }
     }
     .coming-soon-text {
-      @include text-formatting($lighter-font, $type-size-4, 300, normal, $dark-font, uppercase, .3rem);
+      @include text-formatting(
+        $lighter-font,
+        $type-size-4,
+        300,
+        normal,
+        $dark-font,
+        uppercase,
+        0.3rem
+      );
       position: absolute;
       right: 15px;
       bottom: 10px;
@@ -191,7 +207,7 @@
       width: 90px;
       height: 90px;
       padding: 30px 0;
-      font-size: .9375rem;
+      font-size: 0.9375rem;
     }
     @media screen and (max-width: 479px) {
       right: 100px;
@@ -227,7 +243,12 @@
       }
     }
   }
-  .rooms-logo, .offers-logo, .dining-bars-logo, .meetings-catering-logo, .aah-tonight-logo, .storytelling-logo {
+  .rooms-logo,
+  .offers-logo,
+  .dining-bars-logo,
+  .meetings-catering-logo,
+  .aah-tonight-logo,
+  .storytelling-logo {
     display: none;
   }
   @include media-breakpoint-up(lg) {

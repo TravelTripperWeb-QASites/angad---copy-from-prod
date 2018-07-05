@@ -44,7 +44,7 @@
         font-size: $type-size-7;
         color: $black;
         text-transform: uppercase;
-        letter-spacing: .76px;
+        letter-spacing: 0.76px;
         list-style: none;
         &:before {
           position: absolute;
@@ -52,7 +52,7 @@
           left: -17px;
           width: 5px;
           height: 5px;
-          content: '';
+          content: "";
           background-color: $black;
         }
       }
@@ -117,7 +117,7 @@
       color: $black;
       text-align: right;
       text-transform: uppercase;
-      letter-spacing: .76px;
+      letter-spacing: 0.76px;
       list-style: none;
       span {
         position: relative;
@@ -200,7 +200,7 @@
         font-size: $type-size-7;
         color: $black;
         text-transform: uppercase;
-        letter-spacing: .76px;
+        letter-spacing: 0.76px;
         list-style: none;
         &:before {
           position: absolute;
@@ -208,7 +208,7 @@
           left: -17px;
           width: 5px;
           height: 5px;
-          content: '';
+          content: "";
           background-color: $black;
         }
       }
@@ -240,7 +240,15 @@
     text-align: left;
   }
   h4 {
-    @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, uppercase, .25rem);
+    @include text-formatting(
+      $global-font-family,
+      $type-size-3,
+      400,
+      2rem,
+      $black,
+      uppercase,
+      0.25rem
+    );
     @include media-breakpoint-up(md) {
       display: inline-block;
       margin-bottom: 0;
@@ -270,7 +278,7 @@
       font-size: 24px;
       color: $white;
       text-align: center;
-      @include global-transition(.3s);
+      @include global-transition(0.3s);
       &.twitter-link {
         background-color: $brand-blue;
         &:hover {
@@ -283,13 +291,15 @@
           background-color: $brand-yellow;
         }
       }
-      &.instagram-link, &.google-plus-link {
+      &.instagram-link,
+      &.google-plus-link {
         background-color: $brand-green;
         &:hover {
           background-color: $brand-blue;
         }
       }
-      &.spotify-link, &.pinterest-link {
+      &.spotify-link,
+      &.pinterest-link {
         background-color: $brand-yellow;
         &:hover {
           background-color: $brand-red;

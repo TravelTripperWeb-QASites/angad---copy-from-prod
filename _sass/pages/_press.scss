@@ -39,10 +39,26 @@
           padding: 30px 60px 47px 30px;
         }
         .date {
-          @include text-formatting($lighter-font, $type-size-6, 300, normal, $white, none, .48px);
+          @include text-formatting(
+            $lighter-font,
+            $type-size-6,
+            300,
+            normal,
+            $white,
+            none,
+            0.48px
+          );
         }
         .title {
-          @include text-formatting($font-semi-bold, $type-size-8, 400, normal, $white, none, .48px);
+          @include text-formatting(
+            $font-semi-bold,
+            $type-size-8,
+            400,
+            normal,
+            $white,
+            none,
+            0.48px
+          );
           margin-bottom: 45px;
           @media screen and (max-width: 479px) {
             font-size: 1.5rem;
@@ -54,7 +70,7 @@
           bottom: -25px;
           width: 0;
           height: 0;
-          content: '';
+          content: "";
           border-top: 25px solid transparent;
           border-right: 25px solid $brand-red;
           border-bottom: 25px solid transparent;

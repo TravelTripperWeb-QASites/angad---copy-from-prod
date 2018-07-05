@@ -2,13 +2,11 @@
 layout: default
 ---
 {% assign seo_title = page.data.title %}
-<div class="blog-banner bg-styles" style="background-image: url('{{page.data.categoryimage.url_large}}');">
-</div>
+<div class="blog-banner bg-styles" style="background-image: url('{{page.data.categoryimage.url_large}}');"></div>
 
 <section class="blog-container">
   <div class="blog-row">
     <div class="blog-col lead-post">
-
       <div class="lead-story-box">
         {% for post in site.data._models.storytelling %}
           {% if post.category.url_friendly_name == page.url_friendly_name %}

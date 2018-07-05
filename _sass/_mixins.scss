@@ -1,7 +1,6 @@
 // Mixins
 // ==========================================================================
 
-
 // Vertical Center (Includes IE9)
 
 @mixin vertical-center {
@@ -10,7 +9,6 @@
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 
 @mixin main-container {
   @include make-container;
@@ -47,9 +45,9 @@
 // Transition
 @mixin global-transition($transition) {
   -webkit-transition: all $transition;
-  transition:         all $transition;
-  -moz-transition:    all $transition;
-  -o-transition:      all $transition;
+  transition: all $transition;
+  -moz-transition: all $transition;
+  -o-transition: all $transition;
 }
 
 @mixin vertical-align($position) {
@@ -60,7 +58,15 @@
   transform: translateY($position);
 }
 
-@mixin text-formatting($font-family, $font-size, $font-weight, $line-height, $font-color, $text-transform, $letter-spacing) {
+@mixin text-formatting(
+  $font-family,
+  $font-size,
+  $font-weight,
+  $line-height,
+  $font-color,
+  $text-transform,
+  $letter-spacing
+) {
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight;
