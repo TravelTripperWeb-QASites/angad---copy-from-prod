@@ -17,7 +17,6 @@
     @include make-row;
     margin: 0;
     .event-spaces-img {
-
       @include make-col-ready();
       @include media-breakpoint-up(lg) {
         @include make-col(5);
@@ -28,7 +27,7 @@
         min-height: 210px;
       }
 
-      background-image: url('/assets/images/meetings/skyline.jpg');
+      background-image: url("/assets/images/meetings/skyline.jpg");
     }
     .event-spaces-text {
       padding-left: 35px;

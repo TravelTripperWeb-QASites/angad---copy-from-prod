@@ -1,15 +1,14 @@
 // Variables
 // ==========================================================================
 
-
 // Typography
 $font-size-base: 1rem !default;
 
-$global-font-family: 'CerebriSans-Book' !default;
-$header-font-family: 'CerebriSans-Bold' !default;
-$font-semi-bold: 'CerebriSans-SemiBold' !default;
-$lighter-font: 'CerebriSans-Light' !default;
-$extrabold-font: 'CerebriSans-ExtraBold' !default;
+$global-font-family: "CerebriSans-Book" !default;
+$header-font-family: "CerebriSans-Bold" !default;
+$font-semi-bold: "CerebriSans-SemiBold" !default;
+$lighter-font: "CerebriSans-Light" !default;
+$extrabold-font: "CerebriSans-ExtraBold" !default;
 
 // Type scale
 $type-size-1: 5rem !default; // ~80px
@@ -17,14 +16,14 @@ $type-size-2: 4.0625rem !default; // ~65px
 $type-size-3: 1.5rem !default; // ~24px
 $type-size-4: 2.1875rem !default; // ~35px
 $type-size-5: 1.25rem !default; // ~20px
-$type-size-6: .9375rem !default; // ~15px
+$type-size-6: 0.9375rem !default; // ~15px
 $type-size-7: 1.1875rem !default; // ~19px
 $type-size-8: 1.875rem !default; // ~30px
 $type-size-9: 2rem !default; // ~32px
 $type-size-10: 1.375rem !default; //22px
 $type-size-11: 1.625rem !default; //26px
 $type-size-12: 2.5rem !default; //40px
-$type-size-13: .75rem !default; //12px
+$type-size-13: 0.75rem !default; //12px
 
 // Colors
 
@@ -35,8 +34,8 @@ $brand-yellow: #fcd924;
 $dark-font: #010101;
 $light-grey: #e3e3e3;
 $link-color: #db0533;
-$black-transparent: rgba(0, 0, 0, .7);
-$black-transparent-light: rgba(0, 0, 0, .3);
+$black-transparent: rgba(0, 0, 0, 0.7);
+$black-transparent-light: rgba(0, 0, 0, 0.3);
 $nav-purple: #2e006f;
 $nav-green: #18654a;
 $nav-yellow: #ffba04;
@@ -47,10 +46,10 @@ $nav-light-green: #8cd742;
 $grad-clr-1: #0679d6;
 $grad-clr-2: #05ab3c;
 
-$site-transparent-clr-1: rgba($brand-blue, .4);
-$site-transparent-clr-2: rgba($brand-red, .4);
-$site-transparent-clr-3: rgba($brand-green, .4);
-$site-transparent-clr-4: rgba($brand-yellow, .4);
+$site-transparent-clr-1: rgba($brand-blue, 0.4);
+$site-transparent-clr-2: rgba($brand-red, 0.4);
+$site-transparent-clr-3: rgba($brand-green, 0.4);
+$site-transparent-clr-4: rgba($brand-yellow, 0.4);
 
 // Extra Colours
 $brand-grey: #757575;

@@ -20,7 +20,6 @@ published: true
 
 <!-- Rooms Listing Wrapper -->
 <section class="rooms" ng-controller="loader">
-
   <!-- Filter rooms by Category -->
   <div class="filter">
     <h6>Filter by room type</h6>
@@ -36,7 +35,6 @@ published: true
 
   <!-- Rooms Listing -->
   <div class="rooms-listing">
-
     {% assign rooms = site.data._models.rooms | sort: 'sort_order' %}
     {% for room in rooms %}
       <div class="room-item {{ room.room_type.title | downcase | replace: ' ', '-' }} {% if room.ada_options_available == true %} ada-option {% endif %}">
@@ -53,9 +51,7 @@ published: true
         </div>
       </div>
     {% endfor %}
-
   </div>
-
 </section>
 
 <!-- Offers Cross Sell Banner -->

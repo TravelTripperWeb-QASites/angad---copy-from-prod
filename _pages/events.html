@@ -20,9 +20,7 @@ published: true
 
 <section class="events">
   <div class="events-listing">
-
     {% for event in events %}
-
     <!-- Event -->
     <div class="event">
       <h4>{{ event.event_date | date: "%a %b %d" }}<span>{% if event.event_enddate and event.event_enddate != '' %}<i>to</i> {{ event.event_enddate | date: "%a %b %d" }}{% else %}{{ event.event_time }}{% endif %}</span></h4>
@@ -36,8 +34,6 @@ published: true
         <a class="primary-btn {% if event.btn_txt and event.btn_txt == '' %}hidden{% endif %}" href="/aah-tonight/{{ event.url_friendly_name }}/" title="{{ event.event_name }}">{{ event.btn_txt }}</a>
       <hr>
     </div>
-
     {% endfor %}
-
   </div>
 </section>
