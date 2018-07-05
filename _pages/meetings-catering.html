@@ -19,11 +19,13 @@ published: true
   <div class="full-text pb-0">
     <div class="text-content">
       <div class="color-block-red top-left-block"></div>
-      {% regionblock rfp_text, type: text %}
+      {% regionblock meetings_intro, type: text %}
         <p>Two exquisite private events spaces each with their own pre-function room, as well as an outdoor rooftop garden terrace with spectacular skyline views, offer ideal settings for both social and corporate events. The Angad Playhouse is located atop the hotel with surrounding windows offering stunning views. Adjacent to the Grand Tavern by David Burke is our Grand Ballroom exquisitely designed to be reminiscent of its glorious past with a modern twist.  </p>
       {% endregionblock %}
       <p class="btn-holder mb-0">
-        <a href="/request-for-proposal/" class="primary-btn blue">Request For Proposal</a>
+        {% regionblock meetings_cta, type: text %}
+          <a href="/request-for-proposal/" class="primary-btn blue">Request For Proposal</a>
+        {% endregionblock %}
       </p>
     </div>
   </div>
@@ -33,18 +35,24 @@ published: true
   <img class="top-img" src="/assets/images/meetings/grand-ballroom.jpg" alt="Grand Ballroom">
   <div class="text-wrap">
     <div class="full-sec">
-      <h3>grand ballroom</h3>
+      {% regionblock grand_ballroom_heading, type: header %}
+        <h3>grand ballroom</h3>
+      {% endregionblock %}
     </div>
     <div class="left-sec">
-      <p>Adjacent to the Grand Tavern by David Burke is our Grand Ballroom exquisitely designed to be reminiscent of its glorious past with a modern twist.</p>
-      <p>Prefunction Stand Up: 100 people<br>Banquet Seating Count: 168 people</p>
+      {% regionblock grand_ballroom_text, type: text %}
+        <p>Adjacent to the Grand Tavern by David Burke is our Grand Ballroom exquisitely designed to be reminiscent of its glorious past with a modern twist.</p>
+        <p>Prefunction Stand Up: 100 people<br>Banquet Seating Count: 168 people</p>
+      {% endregionblock %}
     </div>
     <div class="right-sec menu-links left-border-blue">
-      <a href="#" class="link-btn" title="view floorplans">view floorplans</a><br>
-      <a href="#" class="link-btn" title="view menus">view menus</a> <br>
-      <div class="btn-holder">
-        <a href="#" class="secondary-btn red">inquire now</a>
-      </div>
+      {% regionblock grand_ballroom_cta, type: text %}
+        <a href="#" class="link-btn" title="view floorplans">view floorplans</a><br>
+        <a href="#" class="link-btn" title="view menus">view menus</a> <br>
+        <div class="btn-holder">
+          <a href="#" class="secondary-btn red">inquire now</a>
+        </div>
+      {% endregionblock %}
     </div>
   </div>
 </section>
@@ -53,20 +61,26 @@ published: true
   <img class="top-img" src="/assets/images/meetings/angad-playhouse.jpg" alt="Angad Playhouse">
   <div class="text-wrap">
     <div class="full-sec">
-      <h3>Angad Playhouse</h3>
+      {% regionblock playhouse_header, type: header %}
+        <h3 class="text-right">Angad Playhouse</h3>
+      {% endregionblock %}
     </div>
     <div class="left-sec text-right large">
-      <p>The perfect place to celebrate your wedding reception after a rooftop ceremony at sunset. The prefunction space can be used for a cocktail reception followed by a dinner in the ballroom.</p>
-      <p>Lobby Seating: 36 people<br>
-      Prefunction Seating: 30 people<Mbr>
-      Banquet Seating Count: 120 people</p>
+      {% regionblock playhouse_text, type: text %}
+        <p>The perfect place to celebrate your wedding reception after a rooftop ceremony at sunset. The prefunction space can be used for a cocktail reception followed by a dinner in the ballroom.</p>
+        <p>Lobby Seating: 36 people<br>
+        Prefunction Seating: 30 people<Mbr>
+        Banquet Seating Count: 120 people</p>
+      {% endregionblock %}
     </div>
     <div class="right-sec menu-links left-border-red small">
-      <a href="#" class="link-btn" title="view floorplans">view floorplans</a><br>
-      <a href="#" class="link-btn" title="view menus">view menus</a> <br>
-      <div class="btn-holder">
-        <a href="#" class="secondary-btn yellow">inquire now</a>
-      </div>
+      {% regionblock playhouse_cta, type: text %}
+        <a href="#" class="link-btn" title="view floorplans">view floorplans</a><br>
+        <a href="#" class="link-btn" title="view menus">view menus</a> <br>
+        <div class="btn-holder">
+          <a href="#" class="secondary-btn yellow">inquire now</a>
+        </div>
+      {% endregionblock %}
     </div>
   </div>
 </section>
@@ -76,10 +90,14 @@ published: true
     <div class="event-spaces-img bg-styles">
     </div>
     <div class="event-spaces-text">
-      <p>Our event spaces atop the hotel boast spectacular skyline views and are ideal settings for both social and corporate events.</p>
+      {% regionblock event_spaces_text, type: text %}
+        <p>Our event spaces atop the hotel boast spectacular skyline views and are ideal settings for both social and corporate events.</p>
+      {% endregionblock %}
     </div>
     <div class="event-spaces-inner">
-      <img src="/assets/images/meetings/rooftop.jpg" alt="Rooftop View">
+      {% regionblock event_spaces_img, type: image %}
+        <img src="/assets/images/meetings/rooftop.jpg" alt="Rooftop View">
+      {% endregionblock %}
     </div>
   </div>
   <div class="grad-bg"></div>
@@ -89,18 +107,24 @@ published: true
   <img class="top-img" src="/assets/images/meetings/rainbow-terrace.jpg" alt="ANGAD RAINBOW TERRACE">
   <div class="text-wrap">
     <div class="full-sec">
-      <h3>ANGAD RAINBOW TERRACE</h3>
+      {% regionblock rainbow_terrace_header, type: header %}
+        <h3>ANGAD RAINBOW TERRACE</h3>
+      {% endregionblock %}
     </div>
     <div class="left-sec">
-      <p>The Angad Rainbow Terrace (A.R.T.) is an enchanting indoor/outdoor rooftop lounge bar and event space with sweeping views including the Saint Louis city skyline and the famous Gateway Arch. Enjoy hand crafted cocktails, new and old world wines, inspired small plate offerings created by Chef David Burke at sunset or under the moonlight.</p>
-      <p>Interior Bar Seating: 12 people<br>Interior Lounge Seating: 20 people<br>Terrace Seating Count: 74 people</p>
+      {% regionblock rainbow_terrace_text, type: text %}
+        <p>The Angad Rainbow Terrace (A.R.T.) is an enchanting indoor/outdoor rooftop lounge bar and event space with sweeping views including the Saint Louis city skyline and the famous Gateway Arch. Enjoy hand crafted cocktails, new and old world wines, inspired small plate offerings created by Chef David Burke at sunset or under the moonlight.</p>
+        <p>Interior Bar Seating: 12 people<br>Interior Lounge Seating: 20 people<br>Terrace Seating Count: 74 people</p>
+      {% endregionblock %}
     </div>
     <div class="right-sec menu-links left-border-blue">
-      <a href="#" class="link-btn" title="view floorplans">view floorplans</a><br>
-      <a href="#" class="link-btn" title="view menus">view menus</a> <br>
-      <div class="btn-holder">
-        <a href="#" class="secondary-btn green">inquire now</a>
-      </div>
+      {% regionblock rainbow_terrace_cta, type: text %}
+        <a href="#" class="link-btn" title="view floorplans">view floorplans</a><br>
+        <a href="#" class="link-btn" title="view menus">view menus</a> <br>
+        <div class="btn-holder">
+          <a href="#" class="secondary-btn green">inquire now</a>
+        </div>
+      {% endregionblock %}
     </div>
   </div>
 </section>
