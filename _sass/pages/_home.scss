@@ -2,7 +2,8 @@
   position: relative;
   video {
     width: 100%;
-    background: transparent url('/assets/images/main-video-poster.png') 50% 50% / cover no-repeat;
+    background: transparent url("/assets/images/main-video-poster.png") 50% 50% /
+      cover no-repeat;
   }
 }
 
@@ -11,7 +12,7 @@
   min-height: 320px;
   overflow: hidden;
   text-align: center;
-  transition: background .5s ease;
+  transition: background 0.5s ease;
   @include media-breakpoint-up(sm) {
     min-height: 500px;
   }
@@ -31,11 +32,11 @@
       line-height: 0;
       @media screen and (min-width: 350px) {
         font-size: 2.75rem;
-        letter-spacing: .3px;
+        letter-spacing: 0.3px;
       }
       @include media-breakpoint-up(md) {
         font-size: 4rem;
-        letter-spacing: .8rem;
+        letter-spacing: 0.8rem;
       }
       @include media-breakpoint-up(lg) {
         font-size: 6rem;
@@ -73,7 +74,7 @@
       float: left;
       height: 100%;
 
-      @include global-transition(.5s);
+      @include global-transition(0.5s);
       &.block-1 {
         width: 30%;
         background-color: $site-transparent-clr-3;
@@ -132,7 +133,8 @@
   bottom: 6px;
 }
 
-.dine-distinctively, .arrive-affordably {
+.dine-distinctively,
+.arrive-affordably {
   h2 {
     @include media-breakpoint-up(md) {
       font-size: 3.5rem;
@@ -152,7 +154,7 @@
         z-index: -1;
         width: 25px;
         height: 29px;
-        content: '';
+        content: "";
         background-color: $brand-yellow;
         @include media-breakpoint-up(md) {
           top: 7px;
@@ -172,7 +174,6 @@
           width: 80px;
           height: 92px;
         }
-
       }
     }
   }
@@ -189,7 +190,8 @@
 }
 
 .meet-magnificently {
-  h2, h1 {
+  h2,
+  h1 {
     @include media-breakpoint-up(md) {
       font-size: 3.5rem;
     }
@@ -208,7 +210,7 @@
         z-index: -1;
         width: 25px;
         height: 29px;
-        content: '';
+        content: "";
         background-color: $brand-red;
         @include media-breakpoint-up(md) {
           top: 7px;
@@ -228,7 +230,6 @@
           width: 80px;
           height: 92px;
         }
-
       }
     }
   }

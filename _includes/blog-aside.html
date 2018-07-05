@@ -1,7 +1,6 @@
 <div class="right-col">
   {% if page_name == "details-page" %}
     <div class="prev-next-posts">
-
       {% if nextPostUrl %}
       <div class="next-post">
         <a href="/storytelling/{{nextPostUrl}}" class="secondary-btn red" title="{{nextPostTitle}}">Next Story</a>
@@ -28,16 +27,16 @@
         </p>
       </div>
       {% endif %}
-
-
     </div>
   {% endif %}
+
   <div class="widget-box">
     <form class="search-form" action="/storytelling/search/" method="get">
       <input type="text" id="search-box" class="input-grey" name="query" placeholder="Search" aria-label="Search Field" title="Search Field" />
       <button class="submit-btn" title="Search" aria-label="Search"><i class="fa fa-search"></i></button>
     </form>
   </div>
+
   <div class="widget-box">
     <h5>Categories</h5>
     <ul class="categories">

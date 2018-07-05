@@ -12,11 +12,10 @@ published: true
 <!-- Offers Wrapper-->
 <section class="offers" rt3-special-rates="offers">
   <h1 class="page-title">Offers</h1>
-
   <!-- Offers Listing -->
   <div class="offers-listing">
     <div class="no-offer-block" ng-show="offers.special_rates.length == 0"><h6>We're sorry, there are no special offers available at this time.</h6></div>
-    <!-- Offer item1 -->
+    <!-- Offer item 1 -->
     <div class="offer-item mb-80" ng-repeat="offer in offers.special_rates">
       <div class="offer-image" ng-style="{'background-image': 'url([[offer.images[0].large || '/assets/images/dummy.jpg' ]])'}">
       </div>
@@ -27,7 +26,6 @@ published: true
         <a class="primary-btn" ng-href="[[ offer.promo_url ]]" target="_blank">Book Now</a>
       </div>
     </div>
-
   </div>
 </section>
 
