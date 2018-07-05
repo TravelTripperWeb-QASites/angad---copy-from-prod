@@ -9,6 +9,7 @@ _asset_bundler_cache
 npm-debug.log*
 bower_components/
 .bundle/
+.eslintrc
 
 
 ### Travel Tripper ###
