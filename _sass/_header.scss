@@ -161,7 +161,7 @@
           }
           &.active {
             a {
-              font-weight: bold;
+              font-family: $extrabold-font;
               &:hover {
                 opacity: 1;
               }
