@@ -247,6 +247,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080636/thumb_Rainbow-Terrace.jpg",
       "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080636/Rainbow-Terrace.jpg",
       "alt": "Rainbow-Terrace"
+    },
+    {
+      "name": "Rooftop-view",
+      "file_name": "Rooftop-view.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080647/Rooftop-view.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-06-080647",
+      "file_type": "image/jpeg",
+      "width": 824,
+      "height": 1200,
+      "file_size": 230671,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080647/large_Rooftop-view.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080647/medium_Rooftop-view.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080647/small_Rooftop-view.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080647/xsmall_Rooftop-view.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080647/thumb_Rooftop-view.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080647/Rooftop-view.jpg",
+      "alt": "Rooftop-view"
     }
   ],
   "description": ""
