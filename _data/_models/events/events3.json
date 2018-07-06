@@ -71,5 +71,6 @@
     "caption": ""
   },
   "event_date": "2018-07-26T18:30:00.000Z",
-  "event_enddate": "2018-07-27T18:30:00.000Z"
+  "event_enddate": "2018-07-27T18:30:00.000Z",
+  "btn_color": "red"
 }
