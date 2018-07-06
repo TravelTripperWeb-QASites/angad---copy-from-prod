@@ -323,6 +323,19 @@ img {
     }
   }
 
+  &.yellow {
+    &::after {
+      background-color: $brand-yellow;
+      background-image: url("/assets/images/arrow-right-black.png");
+    }
+    &:hover {
+      &::after {
+        background-color: $brand-green;
+        background-image: url("/assets/images/arrow-right.png");
+      }
+    }
+  }
+
   &.blue {
     &::after {
       background-color: $brand-blue;
@@ -341,6 +354,7 @@ img {
     &:hover {
       &::after {
         background-color: $brand-yellow;
+        background-image: url("/assets/images/arrow-right-black.png");
       }
     }
   }
@@ -379,7 +393,7 @@ img {
     $type-size-3,
     300,
     normal,
-    $brand-red,
+    $dark-red,
     uppercase,
     0.125rem
   );
@@ -395,7 +409,7 @@ img {
   &:hover {
     color: $brand-yellow;
     text-decoration: none;
-    background: $brand-red;
+    background: $dark-red;
   }
 }
 
@@ -428,6 +442,7 @@ img {
     &:hover {
       &::after {
         background-color: $brand-yellow;
+        background-image: url("/assets/images/arrow-right-black.png");
       }
     }
   }
@@ -449,12 +464,20 @@ img {
       color: $black;
       &::after {
         background-color: $brand-green;
+        background-image: url("/assets/images/arrow-right.png");
       }
     }
     &::after {
-      background-color: $brand-red;
+      background-color: $brand-red;      
     }
   }
+
+  &.yellow {
+    &::after {
+      background-image: url("/assets/images/arrow-right-black.png");
+    }
+  }
+
 
   &.reverse {
     @include media-breakpoint-down(sm) {
