@@ -323,6 +323,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080723/thumb_Room-RED.jpg",
       "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080723/Room-RED.jpg",
       "alt": "Room-RED"
+    },
+    {
+      "name": "Room-Service-2",
+      "file_name": "Room-Service-2.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080736/Room-Service-2.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-06-080736",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 797,
+      "file_size": 244330,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080736/large_Room-Service-2.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080736/medium_Room-Service-2.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080736/small_Room-Service-2.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080736/xsmall_Room-Service-2.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080736/thumb_Room-Service-2.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080736/Room-Service-2.jpg",
+      "alt": "Room-Service-2"
     }
   ],
   "description": ""
