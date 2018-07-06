@@ -71,5 +71,6 @@
     "alt": "St Louis",
     "caption": ""
   },
-  "event_date": "2018-07-03T18:30:00.000Z"
+  "event_date": "2018-07-03T18:30:00.000Z",
+  "event_enddate": "2018-08-03T18:30:00.000Z"
 }

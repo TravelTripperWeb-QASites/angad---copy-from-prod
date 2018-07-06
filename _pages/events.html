@@ -23,7 +23,21 @@ published: true
     {% for event in events %}
     <!-- Event -->
     <div class="event">
-      <h4>{{ event.event_date | date: "%a %b %d" }}<span>{% if event.event_enddate and event.event_enddate != '' %}<i>to</i> {{ event.event_enddate | date: "%a %b %d" }}{% else %}{{ event.event_time }}{% endif %}</span></h4>
+      <h4>
+        {% assign month = event.event_enddate | date: "%b" %}
+        {% assign smonth = event.event_date | date: "%b" %}
+        {% if month == smonth %}
+          {% assign end_date = event.event_enddate | date: "%d" %}
+        {% else %}
+          {% assign end_date = event.event_enddate | date: "%b %d" %}
+        {% endif %}
+        {% if event.event_enddate and event.event_enddate != '' %}
+          {{ event.event_date | date: "%b %d" }} - {{ end_date }}
+        {% else %}
+          {{ event.event_date | date: "%a %b %d" }}
+        {% endif %}
+        <span>{{ event.event_time }}</span>
+      </h4>
       <div class="event-image" style="background-image: url('{{ event.event_thumb_image.url_small }}')">
       </div>
       <div class="event-info balance_height">
