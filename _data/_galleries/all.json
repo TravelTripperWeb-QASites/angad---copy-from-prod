@@ -2,6 +2,25 @@
   "name": "All",
   "photos": [
     {
+      "name": "12. Staircase@2x",
+      "file_name": "12. Staircase@2x.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-06-27-053244/12._Staircase_2x.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-06-27-053244",
+      "file_type": "image/jpeg",
+      "width": 604,
+      "height": 372,
+      "file_size": 65454,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-06-27-053244/large_12._Staircase_2x.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-06-27-053244/medium_12._Staircase_2x.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-06-27-053244/small_12._Staircase_2x.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-06-27-053244/xsmall_12._Staircase_2x.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-06-27-053244/thumb_12._Staircase_2x.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-06-27-053244/12._Staircase_2x.jpg",
+      "alt": "Staircase"
+    },
+    {
       "name": "13.  BAR@2x",
       "file_name": "13.  BAR@2x.jpg",
       "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-06-27-053307/13.__BAR_2x.jpg",
