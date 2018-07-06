@@ -133,6 +133,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/thumb_Angad-Playroom.jpg",
       "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/Angad-Playroom.jpg",
       "alt": "Angad-Playroom"
+    },
+    {
+      "name": "Ballroom-Render",
+      "file_name": "Ballroom-Render.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080520/Ballroom-Render.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-06-080520",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1013,
+      "file_size": 280084,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080520/large_Ballroom-Render.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080520/medium_Ballroom-Render.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080520/small_Ballroom-Render.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080520/xsmall_Ballroom-Render.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080520/thumb_Ballroom-Render.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080520/Ballroom-Render.jpg",
+      "alt": "Ballroom-Render"
     }
   ],
   "description": ""
