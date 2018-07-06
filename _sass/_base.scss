@@ -468,7 +468,7 @@ img {
       }
     }
     &::after {
-      background-color: $brand-red;      
+      background-color: $brand-red;
     }
   }
 
@@ -477,7 +477,6 @@ img {
       background-image: url("/assets/images/arrow-right-black.png");
     }
   }
-
 
   &.reverse {
     @include media-breakpoint-down(sm) {

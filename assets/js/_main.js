@@ -12,10 +12,9 @@ $(document).ready(function() {
         .split(" ")[1];
       var hoveredItem = hoveredItemClass.replace("mainnav-", "");
 
-      if(window.location.href.indexOf(hoveredItem) == -1) {
+      if (window.location.href.indexOf(hoveredItem) == -1) {
         $(".navbar").addClass("hovered-" + hoveredItem);
       }
-
     },
     function() {
       $(".navbar").removeClass(function(index, className) {

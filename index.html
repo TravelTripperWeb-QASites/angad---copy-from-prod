@@ -8,7 +8,7 @@ meta_tags:
 ---
 
 <section class="home-hero-video">
-  <video autoplay muted loop poster="/assets/images/home/main-video-poster.jpg" caption="main video" >
+  <video autoplay muted loop poster="/assets/images/home/main-video-poster.jpg" caption="main video">
     <source src="https://cdn.traveltripper.io/site-assets/32_897_15881/media/2018-05-17-083257/hero-banner-video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -196,7 +196,6 @@ meta_tags:
   </div>
 </section>
 
-
 <section class="arrive-affordably">
   <div id="offersCarousel" class="carousel slide theme-carousel" data-ride="carousel">
     <!-- The slideshow -->
@@ -205,15 +204,11 @@ meta_tags:
         <h2>Arrive <span>A</span>ffordably</h2>
       </div>
       {% assign offer-images-items = site.data._models.offer-images-carousel %}
-
       {% for item in offer-images-items %}
-
         <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}">
           <img src="{{ item.image.url }}" alt="{{ item.image.alt }}">
         </div>
-
       {% endfor %}
-
       {% if offer-images-items.size > 1 %}
       <!-- Left and right controls -->
         <a class="carousel-control-prev" href="#offersCarousel" data-slide="prev" title="Previous Item">
@@ -223,7 +218,6 @@ meta_tags:
           <span class="right-slide"></span>
         </a>
       {% endif %}
-
     </div>
     {% if offer-images-items.size > 1 %}
       <!-- Indicators -->
