@@ -64,19 +64,65 @@
     padding: 25px 0;
   }
 
-  .primary-btn {
+  .secondary-btn {
     display: block;
     margin: 0 0 30px;
+    color: $black;
     text-align: right;
 
     @include media-breakpoint-up(md) {
-      margin: 0 54px 30px 0;
+      margin: 0 34px 30px 0;
     }
 
     &.hidden {
       height: 45px;
       opacity: 0;
     }
+
+    &.blue {
+      &:after {
+        background-color: $brand-blue;
+      }
+      &:hover {
+        &:after {
+          background-color: $brand-green;
+        }
+      }
+    }
+
+    &.green {
+      &:after {
+        background-color: $brand-green;
+      }
+      &:hover {
+        &:after {
+          background-color: $brand-blue;
+        }
+      }
+    }
+
+    &.red {
+      &:after {
+        background-color: $brand-red;
+      }
+      &:hover {
+        &:after {
+          background-color: $brand-yellow;
+        }
+      }
+    }
+
+    &.yellow {
+      &:after {
+        background-color: $brand-yellow;
+      }
+      &:hover {
+        &:after {
+          background-color: $brand-red;
+        }
+      }
+    }
+
   }
   hr {
     background: $black;
@@ -207,6 +253,7 @@
           margin-right: 34px;
           font-family: $lighter-font;
           color: $white;
+
           &:after {
             background-image: url("/assets/images/arrow-right-black.png");
             @include media-breakpoint-down(sm) {
@@ -233,4 +280,8 @@
       }
     }
   }
+}
+
+.btn-holder {
+  height: 59px;
 }

@@ -31,7 +31,9 @@ published: true
           {{ event.short_description }}
         </p>
       </div>
-        <a class="primary-btn {% if event.btn_txt and event.btn_txt == '' %}hidden{% endif %}" href="/aah-tonight/{{ event.url_friendly_name }}/" title="{{ event.event_name }}">{{ event.btn_txt }}</a>
+      <div class="btn-holder">
+        <a class="secondary-btn {{ event.btn_color }} {% if event.btn_txt and event.btn_txt == '' %}hidden{% endif %}" href="/aah-tonight/{{ event.url_friendly_name }}/" title="{{ event.event_name }}">{{ event.btn_txt }}</a>
+      </div>
       <hr>
     </div>
     {% endfor %}

@@ -57,6 +57,17 @@
     "type": "url",
     "label": "Event Reserve / External URL"
   },
+  "btn_color": {
+    "label": "Button Colour",
+    "type": "select",
+    "options": [
+      "blue",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "required": true
+  },
   "event_thumb_image": {
     "required": true,
     "type": "image",
