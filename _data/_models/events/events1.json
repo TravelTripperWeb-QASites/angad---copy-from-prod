@@ -71,5 +71,6 @@
     "alt": "Fashion show & dinner at Angad Playhouse",
     "caption": ""
   },
-  "event_date": "2018-07-17T18:30:00.000Z"
+  "event_date": "2018-07-17T18:30:00.000Z",
+  "btn_color": "yellow"
 }
