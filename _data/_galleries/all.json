@@ -266,6 +266,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080647/thumb_Rooftop-view.jpg",
       "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080647/Rooftop-view.jpg",
       "alt": "Rooftop-view"
+    },
+    {
+      "name": "Room-BLUE",
+      "file_name": "Room-BLUE.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080658/Room-BLUE.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-06-080658",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1013,
+      "file_size": 298999,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080658/large_Room-BLUE.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080658/medium_Room-BLUE.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080658/small_Room-BLUE.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080658/xsmall_Room-BLUE.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080658/thumb_Room-BLUE.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080658/Room-BLUE.jpg",
+      "alt": "Room-BLUE"
     }
   ],
   "description": ""
