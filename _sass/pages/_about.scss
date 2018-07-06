@@ -288,6 +288,7 @@
       &.facebook-link {
         background-color: $brand-red;
         &:hover {
+          color: $black;
           background-color: $brand-yellow;
         }
       }
@@ -300,6 +301,7 @@
       }
       &.spotify-link,
       &.pinterest-link {
+        color: $black;
         background-color: $brand-yellow;
         &:hover {
           background-color: $brand-red;

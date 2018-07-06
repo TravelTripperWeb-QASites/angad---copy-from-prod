@@ -141,19 +141,23 @@ $(document).ready(function() {
   $(".press-listing .list-item:nth-child(2n)")
     .addClass("green")
     .find(".secondary-btn")
-    .addClass("blue");
+    .addClass("blue")
+    .removeClass("yellow");
   $(".press-listing .list-item:nth-child(3n)")
     .addClass("blue")
     .find(".secondary-btn")
-    .addClass("green");
+    .addClass("green")
+    .removeClass("yellow");
   $(".press-listing .list-item:nth-child(4n)")
     .addClass("yellow")
     .find(".secondary-btn")
-    .addClass("red");
+    .addClass("red")
+    .removeClass("yellow");
   $(".press-listing .list-item:nth-child(5n)")
     .addClass("green")
     .find(".secondary-btn")
-    .addClass("blue");
+    .addClass("blue")
+    .removeClass("yellow");
 
   $("[data-offergallery]").lightGallery({
     selector: ".item",
