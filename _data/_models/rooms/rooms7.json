@@ -1,6 +1,6 @@
 {
-  "sort_order": 7,
-  "title": "Double Bunk Beds (Green, Red & Yellow)",
+  "sort_order": 4,
+  "title": "Four XL Twins",
   "room_type": "categories4",
   "room_image": {
     "name": "Room DBB@2x",
@@ -23,6 +23,6 @@
     "caption": ""
   },
   "booking_link": "https://angadartshotel.reztrip.com/search?selected_room_category=Double%20Bunk%20Beds&selected_room=QTY&_ga=2.192956329.562446127.1530008939-352339687.1528700580",
-  "room_size": "378 SQ FT",
+  "room_size": "380 SQ FT",
   "ada_options_available": true
 }
