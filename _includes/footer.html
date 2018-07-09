@@ -73,7 +73,7 @@
         <ul>
           {% for link in footer-links %}
           <li>
-            <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>
+            <a href="{{ link.url | absolute_url }}" {% if link.new-tab == true %} target="_blank" {% endif %}>{{ link.title }}</a>
           </li>
           {% endfor %}
         </ul>
