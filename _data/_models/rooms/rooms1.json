@@ -23,6 +23,6 @@
   },
   "room_size": "230 TO 280 SQ FT",
   "booking_link": "https://angadartshotel.reztrip.com/classic/en/searches/5b356dcbca66661cc0da2a5c/hotels/STLAAH/rooms?action=show&controller=landings#%3Fcategory=&category=small",
-  "ada_options_available": true,
+  "ada_options_available": false,
   "sort_order": 1
 }
