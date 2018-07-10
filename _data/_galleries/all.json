@@ -306,25 +306,6 @@
       "alt": "Room-YELLOW"
     },
     {
-      "name": "Skyline",
-      "file_name": "Skyline.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/Skyline.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-07-06-080758",
-      "file_type": "image/jpeg",
-      "width": 1800,
-      "height": 794,
-      "file_size": 201421,
-      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/large_Skyline.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/medium_Skyline.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/small_Skyline.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/xsmall_Skyline.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/thumb_Skyline.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/Skyline.jpg",
-      "alt": "Skyline"
-    },
-    {
       "name": "tavern62_by_david_burke_food_1_mikey_pozarik__x_large",
       "file_name": "tavern62_by_david_burke_food_1_mikey_pozarik__x_large.jpg",
       "url": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-113915/tavern62_by_david_burke_food_1_mikey_pozarik__x_large.jpg",
@@ -343,6 +324,25 @@
       "git_file_name": "_assets/image_data/tavern62-by-david-burke-food-1-mikey-pozarik--x-large.json",
       "path": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-113915/tavern62_by_david_burke_food_1_mikey_pozarik__x_large.jpg",
       "alt": "Tavern 62 by David Burke"
+    },
+    {
+      "name": "Skyline",
+      "file_name": "Skyline.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/Skyline.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-06-080758",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 794,
+      "file_size": 201421,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/large_Skyline.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/medium_Skyline.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/small_Skyline.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/xsmall_Skyline.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/thumb_Skyline.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080758/Skyline.jpg",
+      "alt": "Skyline"
     },
     {
       "name": "TERRACE-ALTERNATE-PLANTING",
