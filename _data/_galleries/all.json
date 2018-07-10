@@ -382,6 +382,26 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080811/thumb_TERRACE-ALTERNATE-PLANTING.jpg",
       "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080811/TERRACE-ALTERNATE-PLANTING.jpg",
       "alt": "TERRACE-ALTERNATE-PLANTING"
+    },
+    {
+      "name": "SLU Dog Park Sculpture Garden ",
+      "file_name": "SLU Dog Park Sculpture Garden .jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-10-144541/SLU_Dog_Park_Sculpture_Garden_.png",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-10-144541",
+      "file_type": "image/jpeg",
+      "width": 620,
+      "height": 459,
+      "file_size": 524317,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-10-144541/large_SLU_Dog_Park_Sculpture_Garden_.png",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-10-144541/medium_SLU_Dog_Park_Sculpture_Garden_.png",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-10-144541/small_SLU_Dog_Park_Sculpture_Garden_.png",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-10-144541/xsmall_SLU_Dog_Park_Sculpture_Garden_.png",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-10-144541/thumb_SLU_Dog_Park_Sculpture_Garden_.png",
+      "git_file_name": "_assets/image_data/SLU-Dog-Park-Sculpture-Garden-.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-10-144541/SLU_Dog_Park_Sculpture_Garden_.png",
+      "alt": "SLU Dog Park Sculpture Garden "
     }
   ],
   "description": ""
