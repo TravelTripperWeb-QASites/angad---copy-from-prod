@@ -116,25 +116,6 @@
       "alt": "14.-Terrace-Day"
     },
     {
-      "name": "Angad-Playroom",
-      "file_name": "Angad-Playroom.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/Angad-Playroom.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-07-06-080503",
-      "file_type": "image/jpeg",
-      "width": 1800,
-      "height": 797,
-      "file_size": 289106,
-      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/large_Angad-Playroom.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/medium_Angad-Playroom.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/small_Angad-Playroom.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/xsmall_Angad-Playroom.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/thumb_Angad-Playroom.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/Angad-Playroom.jpg",
-      "alt": "Angad-Playroom"
-    },
-    {
       "name": "LAMP_FPO",
       "file_name": "LAMP_FPO.jpg",
       "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080609/LAMP_FPO.jpg",
@@ -152,6 +133,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080609/thumb_LAMP_FPO.jpg",
       "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080609/LAMP_FPO.jpg",
       "alt": "LAMP_FPO"
+    },
+    {
+      "name": "Angad-Playroom",
+      "file_name": "Angad-Playroom.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/Angad-Playroom.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-06-080503",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 797,
+      "file_size": 289106,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/large_Angad-Playroom.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/medium_Angad-Playroom.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/small_Angad-Playroom.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/xsmall_Angad-Playroom.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/thumb_Angad-Playroom.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080503/Angad-Playroom.jpg",
+      "alt": "Angad-Playroom"
     },
     {
       "name": "Ballroom-Render",
@@ -173,25 +173,6 @@
       "alt": "Ballroom-Render"
     },
     {
-      "name": "iStock-599887874",
-      "file_name": "iStock-599887874.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/iStock-599887874.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-07-06-080549",
-      "file_type": "image/jpeg",
-      "width": 1800,
-      "height": 1200,
-      "file_size": 298604,
-      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/large_iStock-599887874.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/medium_iStock-599887874.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/small_iStock-599887874.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/xsmall_iStock-599887874.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/thumb_iStock-599887874.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/iStock-599887874.jpg",
-      "alt": "iStock-599887874"
-    },
-    {
       "name": "Corridor",
       "file_name": "Corridor.jpg",
       "url": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/Corridor.jpg",
@@ -210,6 +191,25 @@
       "git_file_name": "_assets/image_data/Corridor.json",
       "path": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/Corridor.jpg",
       "alt": "Angad Arts Hotel Corridor"
+    },
+    {
+      "name": "iStock-599887874",
+      "file_name": "iStock-599887874.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/iStock-599887874.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-06-080549",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1200,
+      "file_size": 298604,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/large_iStock-599887874.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/medium_iStock-599887874.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/small_iStock-599887874.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/xsmall_iStock-599887874.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/thumb_iStock-599887874.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080549/iStock-599887874.jpg",
+      "alt": "iStock-599887874"
     },
     {
       "name": "Rainbow-Terrace",
