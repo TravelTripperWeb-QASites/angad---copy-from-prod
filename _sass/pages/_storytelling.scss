@@ -57,7 +57,7 @@
     margin: 0;
     .blog-col {
       @include make-col-ready();
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(lg) {
         @include make-col(8);
         padding-right: 50px;
       }
@@ -150,7 +150,7 @@
     }
     .blog-right-block {
       @include make-col-ready();
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(lg) {
         @include make-col(4);
         padding-left: 50px;
       }
@@ -262,6 +262,14 @@
             );
             margin-left: 10px;
           }
+        }
+      }
+      &.fixed {
+        @include media-breakpoint-up(lg) {
+          position: fixed;
+          top: 90px;
+          right: 100px;
+          background-color: $white;
         }
       }
     }

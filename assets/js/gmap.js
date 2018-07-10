@@ -288,4 +288,8 @@ function initialize() {
      icon: '/assets/images/map-pointer.png',
      map: map
    });
+   
+   google.maps.event.addListenerOnce(map, 'idle', () => {
+     document.getElementsByTagName('iframe')[0].title = "Google Maps";
+   });
 }

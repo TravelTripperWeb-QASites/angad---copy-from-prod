@@ -241,6 +241,19 @@ $(window).on("load resize scroll", function() {
   } else {
     $("nav").removeClass("scroll-header");
   }
+
+  if($(".blog-row").length) {    
+    var distance = $('.blog-row').offset().top,
+    $window = $(window);
+
+    if ( $window.scrollTop() >= distance ) {
+      $('.blog-right-block').addClass("fixed");
+    } else {
+      $('.blog-right-block').removeClass("fixed");
+    }
+  }
+
+
 });
 
 // Make Offer listing cards same height function

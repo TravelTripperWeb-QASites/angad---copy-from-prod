@@ -9,7 +9,7 @@ published: true
 ---
 <div class="loading" style="display:block;">Loading&#8230;</div>
 <!-- Rooms page Intro -->
-<section class="page-intro mb-5">
+<section class="page-intro mb-5" tabindex="0">
   {% regionblock rooms_page_title, type: header %}
     <h1 class="page-title mb-4">Stay Colorful</h1>
   {% endregionblock %}
@@ -21,7 +21,7 @@ published: true
 <!-- Rooms Listing Wrapper -->
 <section class="rooms" ng-controller="loader">
   <!-- Filter rooms by Category -->
-  <div class="filter">
+  <div class="filter" tabindex="0">
     <h6>Filter by room type</h6>
     {% assign categories = site.data._models.categories | sort: 'sort_order' %}
       <ul>
@@ -29,7 +29,7 @@ published: true
         {% for category in categories %}
         <li> <a href="javascript:void(0);" data-filter="{{ category.title | downcase | replace: ' ', '-' }}">{{ category.title }}</a></li>
         {% endfor %}
-        <li> <a href="javascript:void(0);" data-filter="ada-filter">ADA Rooms & Suites</a></li>
+        <li> <a href="javascript:void(0);" data-filter="ada-filter">A.D.A. Rooms & Suites</a></li>
       </ul>
   </div>
 
@@ -37,7 +37,7 @@ published: true
   <div class="rooms-listing">
     {% assign rooms = site.data._models.rooms | sort: 'sort_order' %}
     {% for room in rooms %}
-      <div class="room-item {{ room.room_type.title | downcase | replace: ' ', '-' }} {% if room.ada_options_available == true %} ada-option {% endif %}">
+      <div class="room-item {{ room.room_type.title | downcase | replace: ' ', '-' }} {% if room.ada_options_available == true %} ada-option {% endif %}" tabindex="0">
         <div class="room-image" style="background-image: url('{{ room.room_image.url }}');">
           <a class="book-now-btn" href="{{ room.booking_link }}">Book Now</a>
           {% if room.ada_options_available == true %}
@@ -55,17 +55,17 @@ published: true
 </section>
 
 <!-- Offers Cross Sell Banner -->
-<section class="cross-sell-banner">
+<section class="cross-sell-banner" tabindex="0">
   <h2>Arrive <span>A</span>ffordably</h2>
   <img src="/assets/images/rooms/offers-cross-sell.jpg" alt="Angad Offers" />
 </section>
 
 <!-- Offers Cross sell content -->
-<section class="full-text-wrap variation">
+<section class="full-text-wrap variation" tabindex="0">
   <div class="full-text">
     <div class="text-content">
       <div class="color-block-green top-left-block"></div>
-      <p>Introducing the best place to receive special discounted rates and offers - available only on our website.</p>
+      <p>Introducing the best place to receive special discounted rates and offers - available only on our website.</p>
       <p class="btn-holder">
         <a href="/offers/" class="primary-btn yellow">View All Offers</a>
       </p>
