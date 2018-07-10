@@ -7,6 +7,10 @@
   "url_friendly_name": {
     "required": true
   },
+  "intro_heading": {
+  },
+  "intro_text": {
+  },
   "order":{
   	 "required": true
   }

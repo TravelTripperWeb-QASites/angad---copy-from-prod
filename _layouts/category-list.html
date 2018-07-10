@@ -11,12 +11,12 @@ layout: default
         {% for post in site.data._models.storytelling %}
           {% if post.category.url_friendly_name == page.url_friendly_name %}
             <p class="info">
-              <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span> | <span class="categories"> <a href="{{post.category.url_friendly_name}}" > {{post.category.title}} </a></span>
+              <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span> | <span class="categories"> <a href="/storytelling/category/{{post.category.url_friendly_name}}" > {{post.category.title}} </a></span>
             </p>
             <h3>{{post.title}}</h3>
             {{post.short_description}}
             <div class="btn-holder">
-              <a class="secondary-btn yellow" href="{{post.url_friendly_name}}"> Read Story </a>
+              <a class="secondary-btn yellow" href="/storytelling/{{post.url_friendly_name}}"> Read Story </a>
             </div>
             {% break %}
           {% endif %}

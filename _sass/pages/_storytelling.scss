@@ -1,5 +1,8 @@
 .blog-banner {
-  min-height: 765px;
+  min-height: calc(100vh - 130px);
+  @include media-breakpoint-down(md) {
+    min-height: calc(100vh - 70px);
+  }
 }
 .blog-details-banner {
   @extend .blog-banner;
