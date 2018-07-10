@@ -173,6 +173,26 @@
       "alt": "iStock-599887874"
     },
     {
+      "name": "Corridor",
+      "file_name": "Corridor.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/Corridor.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-10-122144",
+      "file_type": "image/jpeg",
+      "width": 2700,
+      "height": 961,
+      "file_size": 409306,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/large_Corridor.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/medium_Corridor.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/small_Corridor.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/xsmall_Corridor.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/thumb_Corridor.jpg",
+      "git_file_name": "_assets/image_data/Corridor.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/Corridor.jpg",
+      "alt": "Angad Arts Hotel Corridor"
+    },
+    {
       "name": "LAMP_FPO",
       "file_name": "LAMP_FPO.jpg",
       "url": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080609/LAMP_FPO.jpg",
@@ -362,26 +382,6 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080811/thumb_TERRACE-ALTERNATE-PLANTING.jpg",
       "path": "//cdn.traveltripper.io/site-assets/32_897_17031/media/2018-07-06-080811/TERRACE-ALTERNATE-PLANTING.jpg",
       "alt": "TERRACE-ALTERNATE-PLANTING"
-    },
-    {
-      "name": "Corridor",
-      "file_name": "Corridor.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/Corridor.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-07-10-122144",
-      "file_type": "image/jpeg",
-      "width": 2700,
-      "height": 961,
-      "file_size": 409306,
-      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/large_Corridor.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/medium_Corridor.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/small_Corridor.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/xsmall_Corridor.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/thumb_Corridor.jpg",
-      "git_file_name": "_assets/image_data/Corridor.json",
-      "path": "//cdn.traveltripper.io/site-assets/32_897_17323/media/2018-07-10-122144/Corridor.jpg",
-      "alt": "Angad Arts Hotel Corridor"
     }
   ],
   "description": ""
