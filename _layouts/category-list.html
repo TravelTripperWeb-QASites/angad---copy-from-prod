@@ -13,7 +13,7 @@ layout: default
             <p class="info">
               <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span> | <span class="categories"> <a href="/storytelling/category/{{post.category.url_friendly_name}}" > {{post.category.title}} </a></span>
             </p>
-            <h3>{{post.title}}</h3>
+            <h2>{{post.title}}</h2>
             {{post.short_description}}
             <div class="btn-holder">
               <a class="secondary-btn yellow" href="/storytelling/{{post.url_friendly_name}}"> Read Story </a>
@@ -23,10 +23,10 @@ layout: default
         {% endfor %}
       </div>
 
-      <h3 class="blog-intro">Dolore Magna Aliqua</h3>
-      <p class="blog-intro-text">Lorem ipsum dolor sit blog, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+      <h3 class="blog-intro">{{page.intro_heading}}</h3>
+      <p class="blog-intro-text">{{page.intro_text}}</p>
       {% for post in site.data._models.storytelling %}
-          {%if post.category.url_friendly_name == page.url_friendly_name %}
+          {% if post.category.url_friendly_name == page.url_friendly_name %}
             <div class="post-item mb-80">
               <a href="/storytelling/{{ post.url_friendly_name }}/" title="{{post.title}}">
                 <img src="{{post.blogimage.url}}" class="img-responsive post-img" alt="{{post.img_alt_txt}}">

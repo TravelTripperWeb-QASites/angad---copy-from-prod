@@ -85,8 +85,8 @@
           color: $black;
           h4 {
             @include text-formatting(
-              $font-semi-bold,
-              $type-size-3,
+              $header-font-family,
+              $type-size-9,
               400,
               normal,
               $black,
@@ -117,12 +117,20 @@
           padding-top: 2px;
           text-align: center;
           background-color: $brand-blue;
+          &:hover {
+            background-color: $brand-red;
+          }
           &.disabled {
-            opacity: 0.5;
+            pointer-events: none;
+            background-color: $checkbox-border;
+            &:hover {
+              background-color: $checkbox-border;
+            }
           }
           img {
             width: 7px;
           }
+          @include global-transition(0.3s);
         }
         .right-arrow {
           @extend .left-arrow;
@@ -201,12 +209,18 @@
         .submit-btn {
           height: 34px;
           color: $white;
+          cursor: pointer;
           background: $brand-blue;
           border: 0;
+          @include global-transition(0.3s);
+          &:hover {
+            background-color: $brand-red;
+          }
         }
       }
       .prev-next-posts {
         margin-bottom: 50px;
+        @include global-transition(0.3s);
         .thumb-img {
           width: 100%;
         }
@@ -271,8 +285,14 @@
         @include media-breakpoint-up(lg) {
           position: fixed;
           top: 90px;
-          right: 100px;
+          right: 50px;
           background-color: $white;
+        }
+        @media screen and (min-width: 1400px) {
+          right: 65px;
+        }
+        @media screen and (min-width: 1610px) {
+          right: 100px;
         }
       }
     }
@@ -412,12 +432,14 @@
   margin-bottom: 70px;
   padding: 20px 80px 30px 30px;
   background-color: $brand-red;
-  h3 {
-    font-size: 2rem;
+  h2 {
+    font-family: $header-font-family;
+    font-size: 4.063rem;
     line-height: normal;
     color: $white;
+    letter-spacing: 0.25px;
     @include media-breakpoint-up(md) {
-      font-size: 2.5rem;
+      font-size: $type-size-2;
     }
   }
   .info {
