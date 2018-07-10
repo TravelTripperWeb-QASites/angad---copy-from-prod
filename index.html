@@ -87,7 +87,9 @@ meta_tags:
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="banner-text">
-        <h2>Dine <span>D</span>istinctively</h2>
+        {% regionblock dine_distinctively_header, type: header %}
+          <h2>Dine <span>D</span>istinctively</h2>
+        {% endregionblock %}
       </div>
       {% assign dine-distinctively-items = site.data._models.dining-carousel %}
 
@@ -142,7 +144,9 @@ meta_tags:
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="banner-text">
-        <h2>Meet Magnificentl<span>y</span></h2>
+        {% regionblock meet_magnificently_header, type: header %}
+          <h2>Meet Magnificentl<span>y</span></h2>
+        {% endregionblock %}
       </div>
       {% assign meet-magnificently-items = site.data._models.meeting-carousel %}
 
@@ -201,7 +205,9 @@ meta_tags:
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="banner-text">
-        <h2>Arrive <span>A</span>ffordably</h2>
+        {% regionblock meet_magnificently_header, type: header %}
+          <h2>Arrive <span>A</span>ffordably</h2>
+        {% endregionblock %}
       </div>
       {% assign offer-images-items = site.data._models.offer-images-carousel %}
       {% for item in offer-images-items %}
@@ -248,4 +254,23 @@ meta_tags:
 
 {% include stay-colorful-banner.html %}
 
-{% include make-something-new.html %}
+<section class="full-text-wrap" tabindex="0">
+  <div class="full-text">
+    {% regionblock make_something_header, type: header %}
+      <h3>Make Something New With Us</h3>
+    {% endregionblock %}
+    <div class="text-content medium">
+      <div class="color-block-red top-right-block"></div>
+      <div class="color-block-green top-left-block"></div>
+      {% regionblock make_something_header, type: text %}
+        <p>In anticipation of our opening, we invite you to join the Angad Arts Hotel (AAH) community by sharing your words, photographs and drawing to help create our online “Stay Colorful” mural.</p>
+      {% endregionblock %}
+      <p class="btn-holder">
+        {% regionblock make_something_cta, type: text %}
+          <a href="http://createsomethingnew.angadartshotel.com" class="primary-btn yellow" target="_blank">Start Creating</a>
+        {% endregionblock %}
+      </p>
+      <div class="color-block-blue bottom-block"> </div>
+    </div>
+  </div>
+</section>
