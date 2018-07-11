@@ -149,7 +149,7 @@
       position: relative;
       &::after {
         position: absolute;
-        top: 4px;
+        top: -2px;
         left: -2px;
         z-index: -1;
         width: 25px;
@@ -157,19 +157,19 @@
         content: "";
         background-color: $brand-yellow;
         @include media-breakpoint-up(md) {
-          top: 7px;
+          top: -2px;
           left: -5px;
           width: 50px;
           height: 57px;
         }
         @include media-breakpoint-up(lg) {
-          top: 11px;
+          top: -5px;
           left: -6px;
           width: 70px;
           height: 80px;
         }
         @include media-breakpoint-up(xl) {
-          top: 14px;
+          top: -3px;
           left: -6px;
           width: 80px;
           height: 92px;
@@ -205,7 +205,7 @@
       position: relative;
       &::after {
         position: absolute;
-        top: 4px;
+        top: -2px;
         left: -5px;
         z-index: -1;
         width: 25px;
@@ -213,19 +213,19 @@
         content: "";
         background-color: $brand-red;
         @include media-breakpoint-up(md) {
-          top: 7px;
+          top: -2px;
           left: -8px;
           width: 50px;
           height: 57px;
         }
         @include media-breakpoint-up(lg) {
-          top: 11px;
+          top: -5px;
           left: -12px;
           width: 70px;
           height: 80px;
         }
         @include media-breakpoint-up(xl) {
-          top: 14px;
+          top: -3px;
           left: -12px;
           width: 80px;
           height: 92px;
