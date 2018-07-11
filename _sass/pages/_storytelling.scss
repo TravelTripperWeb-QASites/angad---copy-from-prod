@@ -165,6 +165,7 @@
         @include make-col(4);
         padding-left: 50px;
       }
+      position: static;
       .widget-box {
         margin-bottom: 50px;
         h5 {
@@ -220,7 +221,6 @@
       }
       .prev-next-posts {
         margin-bottom: 50px;
-        @include global-transition(0.3s);
         .thumb-img {
           width: 100%;
         }
@@ -284,15 +284,8 @@
       &.fixed {
         @include media-breakpoint-up(lg) {
           position: fixed;
-          top: 90px;
-          right: 50px;
+          top: 110px;
           background-color: $white;
-        }
-        @media screen and (min-width: 1400px) {
-          right: 65px;
-        }
-        @media screen and (min-width: 1610px) {
-          right: 100px;
         }
       }
     }
@@ -327,6 +320,18 @@
           uppercase,
           0.0625rem
         );
+      }
+    }
+    .blog-right-block {
+      &.fixed {
+        &.fixed {
+          @include media-breakpoint-up(lg) {
+            position: fixed;
+            top: auto;
+            bottom: 0;
+            background-color: $white;
+          }
+        }
       }
     }
   }

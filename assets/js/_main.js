@@ -242,19 +242,22 @@ $(window).on("load resize scroll", function() {
     $("nav").removeClass("scroll-header");
   }
 
-  if($(".blog-row").length) {    
+  if($(".blog-container").length) {
     var distance = $('.blog-row').offset().top,
     $window = $(window);
-
+    var parentWidth = $(".blog-container").outerWidth();
     if ( $window.scrollTop() >= distance ) {
+      var leftPosition = $(".blog-col").offset().left+$(".blog-col").outerWidth();
       $('.blog-right-block').addClass("fixed");
+      var blockWidth = parentWidth*(33.33/100);
+      $('.blog-right-block').css({"left": leftPosition+"px", "max-width": blockWidth+"px"});
     } else {
       $('.blog-right-block').removeClass("fixed");
     }
   }
 
-
 });
+
 
 // Make Offer listing cards same height function
 

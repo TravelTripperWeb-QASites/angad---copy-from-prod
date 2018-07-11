@@ -179,6 +179,9 @@ footer {
             }
           }
         }
+        .checkmark {
+          top: 3px;
+        }
       }
       .footer-links {
         @include make-col-ready();
