@@ -9,15 +9,17 @@ meta_tags:
 
 <section class="inner-hero-banner bg-styles" style="background-image: url('/assets/images/about/hero.jpg')">
   <video autoplay muted loop poster="/assets/images/about/hero.jpg">
-    <source src="//cdn.traveltripper.io/site-assets/32_897_16116/media/2018-05-24-052827/videolamp.mp4" type="video/mp4">
+    <source src="//cdn.traveltripper.io/site-assets/32_897_16116/media/2018-05-24-052827/videolamp.mp4" type="video/mp4" caption="lamp video">
     Your browser does not support the video tag.
   </video>
+
   <div class="play-overlay">
     <span class="far fa-play-circle"></span>
   </div>
+
   <div class="banner-text">
     {% regionblock banner_heading, type: header %}
-    <h2><span>a</span>bout us</h2>
+    <h1><span>a</span>bout us</h1>
   {% endregionblock %}
   </div>
 </section>
@@ -115,10 +117,9 @@ meta_tags:
       {% endregionblock %}
     </div>
     <div class="social-media-sec">
-      <h4>join the conversation</h4>
+      <h5>join the conversation</h5>
       <ul class="social-share">
         {% assign sociallinks = site.data.social %}
-
         {% if sociallinks.twitter.username %}
         <li>
           <a class="twitter-link" href="https://www.twitter.com/{{sociallinks.twitter.username}}" target="_blank" rel="nofollow">
@@ -126,7 +127,6 @@ meta_tags:
           </a>
         </li>
         {% endif %}
-
         {% if sociallinks.facebook.username %}
         <li>
           <a class="facebook-link" href="https://www.facebook.com/{{sociallinks.facebook.username}}" target="_blank" rel="nofollow">
@@ -134,7 +134,6 @@ meta_tags:
           </a>
         </li>
         {% endif %}
-
         {% if sociallinks.instagram.username %}
         <li>
           <a class="instagram-link" href="https://www.instagram.com/{{sociallinks.instagram.username}}" target="_blank" rel="nofollow">
@@ -142,7 +141,6 @@ meta_tags:
           </a>
         </li>
         {% endif %}
-
         {% if sociallinks.spotify.username %}
         <li>
           <a class="spotify-link" href="/" target="_blank" rel="nofollow">
@@ -156,8 +154,29 @@ meta_tags:
 </section>
 
 <section class="stay-colorful-sec">
-  <img src="/assets/images/home/stay-colorful.jpg" alt="Stay Colorful">
+  {% regionblock stay_colorful_img, type: image %}
+    <img src="/assets/images/home/stay-colorful.jpg" alt="Stay Colorful">
+  {% endregionblock %}
   <div class="grad-bg"></div>
 </section>
 
-{% include make-something-new.html %}
+<section class="full-text-wrap" tabindex="0">
+  <div class="full-text">
+    {% regionblock make_something_header, type: header %}
+      <h3>Make Something New With Us</h3>
+    {% endregionblock %}
+    <div class="text-content medium">
+      <div class="color-block-red top-right-block"></div>
+      <div class="color-block-green top-left-block"></div>
+      {% regionblock make_something_header, type: text %}
+        <p>In anticipation of our opening, we invite you to join the Angad Arts Hotel (AAH) community by sharing your words, photographs and drawing to help create our online “Stay Colorful” mural.</p>
+      {% endregionblock %}
+      <p class="btn-holder">
+        {% regionblock make_something_cta, type: text %}
+          <a href="http://createsomethingnew.angadartshotel.com" class="primary-btn yellow" target="_blank">Start Creating</a>
+        {% endregionblock %}
+      </p>
+      <div class="color-block-blue bottom-block"> </div>
+    </div>
+  </div>
+</section>

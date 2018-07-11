@@ -8,7 +8,7 @@ meta_tags:
 ---
 
 <section class="home-hero-video">
-  <video autoplay muted loop poster="/assets/images/home/main-video-poster.jpg" >
+  <video autoplay muted loop poster="/assets/images/home/main-video-poster.jpg" caption="main video">
     <source src="https://cdn.traveltripper.io/site-assets/32_897_15881/media/2018-05-17-083257/hero-banner-video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -17,7 +17,7 @@ meta_tags:
   </div>
 </section>
 
-<section class="full-text-wrap">
+<section class="full-text-wrap" tabindex="0">
   <div class="full-text">
     {% regionblock intro_heading, type: header %}
       <h3>ANGAD ARTS HOTEL</h3>
@@ -53,10 +53,10 @@ meta_tags:
 
 <section class="stay-colorful bg-styles"  id="mainroom-image" style="background-image: url('/assets/images/home/stay-colorful-bg-min.jpg')">
   <div class="overlay-blocks">
-    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-GREEN-min.jpg" class="overlay block-1"></a>
-    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-BLUE-min.jpg" class="overlay block-2"></a>
-    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-RED-min.jpg" class="overlay block-3"></a>
-    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-yellow-min.jpg" class="overlay block-4"></a>
+    <a href="javascript:void(0);" title="Overlay Room Image" data-imgsrc="/assets/images/home/Room-GREEN-min.jpg" class="overlay block-1"></a>
+    <a href="javascript:void(0);" title="Overlay Room Image" data-imgsrc="/assets/images/home/Room-BLUE-min.jpg" class="overlay block-2"></a>
+    <a href="javascript:void(0);" title="Overlay Room Image" data-imgsrc="/assets/images/home/Room-RED-min.jpg" class="overlay block-3"></a>
+    <a href="javascript:void(0);" title="Overlay Room Image" data-imgsrc="/assets/images/home/Room-yellow-min.jpg" class="overlay block-4"></a>
   </div>
   <div class="banner-text">
     {% regionblock stay_colorful_heading, type: header %}
@@ -65,23 +65,31 @@ meta_tags:
   </div>
 </section>
 
-<section class="full-text-wrap">
+<section class="full-text-wrap" tabindex="0">
   <div class="full-text">
     <div class="text-content">
       <div class="color-block-green top-left-block"></div>
       {% regionblock stay_colorful_text, type: text %}
         <p>Designed by the Lawrence Group especially to appeal to your emotional side, the color palette of our rooms sets the mood for your stay. Choose your room by how you are feeling in the moment. Whether your choice is passionate red, tranquility blue, a happy yellow or green rejuvenation our rooms and amenities are perfect for work and play.</p>
       {% endregionblock %}
+
+      {% regionblock stay_colorful_cta, type: text %}
+        <p class="btn-holder">
+          <a href="/rooms/" class="primary-btn red" title="View All Rooms" >View All Rooms</a>
+        </p>
+      {% endregionblock %}
     </div>
   </div>
 </section>
 
-<section class="dine-distinctively">
+<section class="dine-distinctively" tabindex="0">
   <div id="diningCarousel" class="carousel slide theme-carousel" data-ride="carousel">
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="banner-text">
-        <h2>Dine <span>D</span>istinctively</h2>
+        {% regionblock dine_distinctively_header, type: header %}
+          <h2>Dine <span>D</span>istinctively</h2>
+        {% endregionblock %}
       </div>
       {% assign dine-distinctively-items = site.data._models.dining-carousel %}
 
@@ -95,10 +103,10 @@ meta_tags:
 
       {% if dine-distinctively-items.size > 1 %}
       <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#diningCarousel" data-slide="prev">
+        <a class="carousel-control-prev" href="#diningCarousel" data-slide="prev" title="Previous Item" >
           <span class="left-slide"></span>
         </a>
-        <a class="carousel-control-next" href="#diningCarousel" data-slide="next">
+        <a class="carousel-control-next" href="#diningCarousel" data-slide="next" title="Next Item" >
           <span class="right-slide"></span>
         </a>
       {% endif %}
@@ -108,30 +116,37 @@ meta_tags:
       <!-- Indicators -->
       <ul class="carousel-indicators">
         {% for item in dine-distinctively-items %}
-          <li data-target="#diningCarousel" data-slide-to="{{ item.forloop0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
+          <li data-target="#diningCarousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
         {% endfor %}
       </ul>
     {% endif %}
   </div>
 </section>
 
-<section class="full-text-wrap">
+<section class="full-text-wrap" tabindex="0">
   <div class="full-text">
     <div class="text-content">
       <div class="color-block-yellow top-left-block"></div>
       {% regionblock dine_distinctively_text, type: text %}
         <p>Dine at Grand Tavern, a new modern American concept from acclaimed Chef David Burke. Relax at the Chameleon Lounge or take in sweeping rooftop views of the city at Angad Rainbow Terrace while sipping hand-crafted cocktails in a space designed for sharing and socializing. Guests can also experience the flavor of Grand Tavern in the hotel’s Playroom or in the comfort of your room.</p>
       {% endregionblock  %}
+      {% regionblock dine_distinctively_cta, type: text %}
+        <p class="btn-holder">
+          <a href="/rooms/" class="primary-btn green" title="Dining & Bars">Dining & Bars</a>
+        </p>
+      {% endregionblock %}
     </div>
   </div>
 </section>
 
-<section class="meet-magnificently">
+<section class="meet-magnificently" tabindex="0">
   <div id="meetCarousel" class="carousel slide theme-carousel" data-ride="carousel">
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="banner-text">
-        <h2>Meet Magnificentl<span>y</span></h2>
+        {% regionblock meet_magnificently_header, type: header %}
+          <h2>Meet Magnificentl<span>y</span></h2>
+        {% endregionblock %}
       </div>
       {% assign meet-magnificently-items = site.data._models.meeting-carousel %}
 
@@ -148,10 +163,10 @@ meta_tags:
       {% if meet-magnificently-items.size > 1 %}
 
         <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#meetCarousel" data-slide="prev">
+        <a class="carousel-control-prev" href="#meetCarousel" data-slide="prev" title="Previous Item">
           <span class="left-slide"></span>
         </a>
-        <a class="carousel-control-next" href="#meetCarousel" data-slide="next">
+        <a class="carousel-control-next" href="#meetCarousel" data-slide="next" title="Next Item">
           <span class="right-slide"></span>
         </a>
 
@@ -161,20 +176,77 @@ meta_tags:
     {% if meet-magnificently-items.size > 1 %}
       <!-- Indicators -->
       <ul class="carousel-indicators">
-        {% for item in dine-distinctively-items %}
-          <li data-target="#meetCarousel" data-slide-to="{{ item.forloop0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
+        {% for item in meet-magnificently-items %}
+          <li data-target="#meetCarousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
         {% endfor %}
       </ul>
     {% endif %}
   </div>
 </section>
 
-<section class="full-text-wrap">
+<section class="full-text-wrap" tabindex="0">
   <div class="full-text">
     <div class="text-content">
       <div class="color-block-red top-left-block"></div>
       {% regionblock meet_magnificently_text, type: text %}
         <p>From corporate, to the celebrated, our creative spaces are designed to fit your specific needs and offer ideal settings for both social and business events. Featured are two exquisite private events spaces, each with their own pre-function area, as well as a conference room and an outdoor rooftop garden terrace with spectacular skyline views. A wide range of exceptional food and beverage menus are available, especially imagined by Chef Burke.</p>
+      {% endregionblock %}
+      {% regionblock meet_magnificently_cta, type: text %}
+        <p class="btn-holder">
+          <a href="/meetings-catering/" class="primary-btn blue" title="Meetings & Catering">Meetings & Catering</a>
+        </p>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
+
+<section class="arrive-affordably" tabindex="0">
+  <div id="offersCarousel" class="carousel slide theme-carousel" data-ride="carousel">
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="banner-text">
+        {% regionblock meet_magnificently_header, type: header %}
+          <h2>Arrive <span>A</span>ffordably</h2>
+        {% endregionblock %}
+      </div>
+      {% assign offer-images-items = site.data._models.offer-images-carousel %}
+      {% for item in offer-images-items %}
+        <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}">
+          <img src="{{ item.image.url }}" alt="{{ item.image.alt }}">
+        </div>
+      {% endfor %}
+      {% if offer-images-items.size > 1 %}
+      <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#offersCarousel" data-slide="prev" title="Previous Item">
+          <span class="left-slide"></span>
+        </a>
+        <a class="carousel-control-next" href="#offersCarousel" data-slide="next" title="Next Item">
+          <span class="right-slide"></span>
+        </a>
+      {% endif %}
+    </div>
+    {% if offer-images-items.size > 1 %}
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        {% for item in offer-images-items %}
+          <li data-target="#offersCarousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}"></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</section>
+
+<section class="full-text-wrap" tabindex="0">
+  <div class="full-text">
+    <div class="text-content">
+      <div class="color-block-green top-left-block"></div>
+      {% regionblock arrive_affordably_text, type: text %}
+        <p>Introducing the best place to receive special discounted rates and offers - available only on our website.</p>
+      {% endregionblock %}
+      {% regionblock arrive_affordably_cta, type: text %}
+        <p class="btn-holder">
+          <a href="/offers/" class="primary-btn yellow" title="View All Offers">View All Offers</a>
+        </p>
       {% endregionblock %}
     </div>
   </div>
@@ -182,4 +254,23 @@ meta_tags:
 
 {% include stay-colorful-banner.html %}
 
-{% include make-something-new.html %}
+<section class="full-text-wrap" tabindex="0">
+  <div class="full-text">
+    {% regionblock make_something_header, type: header %}
+      <h3>Make Something New With Us</h3>
+    {% endregionblock %}
+    <div class="text-content medium">
+      <div class="color-block-red top-right-block"></div>
+      <div class="color-block-green top-left-block"></div>
+      {% regionblock make_something_header, type: text %}
+        <p>In anticipation of our opening, we invite you to join the Angad Arts Hotel (AAH) community by sharing your words, photographs and drawing to help create our online “Stay Colorful” mural.</p>
+      {% endregionblock %}
+      <p class="btn-holder">
+        {% regionblock make_something_cta, type: text %}
+          <a href="http://createsomethingnew.angadartshotel.com" class="primary-btn yellow" target="_blank">Start Creating</a>
+        {% endregionblock %}
+      </p>
+      <div class="color-block-blue bottom-block"> </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,57 @@
+<div class="right-col">
+  {% if page_name == "details-page" %}
+    <div class="prev-next-posts">
+      {% if nextPostUrl %}
+      <div class="next-post">
+        <a href="/storytelling/{{nextPostUrl}}" class="secondary-btn red" title="{{nextPostTitle}}">Next Story</a>
+        <a class="next" href="/storytelling/{{nextPostUrl}}/">
+          <img class="thumb-img" src="{{nextPostThumb}}" alt="{{nextPostTitle}}">
+        </a>
+        <h4>{{nextPostTitle}}</h4>
+        <p class="info">
+          <span class="date"> {{ nextPostDate | date: "%B %d, %Y" }} </span> {% if nextPostCategoryUrl %}| <span class="categories"><a href="/storytelling/category/{{nextPostCategoryUrl}}/">{{nextPostCategory}}</a></span> {% endif %}
+        </p>
+      </div>
+      {% endif %}
+
+      {% if prevPostUrl %}
+      <hr>
+      <div class="prev-post">
+        <a href="/storytelling/{{prevPostUrl}}" class="secondary-btn red reverse" title="{{prevPostTitle}}">Previous Story</a>
+        <a class="prev" href="/storytelling/{{prevPostUrl}}/">
+          <img class="thumb-img" src="{{prevPostThumb}}" alt="{{prevPostTitle}}">
+        </a>
+        <h4>{{prevPostTitle}}</h4>
+        <p class="info">
+          <span class="date"> {{ prevPostDate | date: "%B %d, %Y" }} </span> {% if prevPostCategoryUrl %}| <span class="categories"><a href="/storytelling/category/{{prevPostCategoryUrl}}/">{{prevPostCategory}}</a></span> {% endif %}
+        </p>
+      </div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="widget-box">
+    <form class="search-form" action="/storytelling/search/" method="get">
+      <input type="text" id="search-box" class="input-grey" name="query" placeholder="Search" aria-label="Search Field" title="Search Field" />
+      <button class="submit-btn" title="Search" aria-label="Search"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+  <div class="widget-box">
+    <h5>Categories</h5>
+    <ul class="categories">
+      {% assign categories = site.data._models.category | sort:'order'%} {% for categorylist in categories %}
+      <li><a href="/storytelling/category/{{categorylist.url_friendly_name}}/" title="{{categorylist.title}}"> {{categorylist.title}}
+        {% assign count = 0 %}
+        {% for postcount in site.data._models.storytelling %}
+        {% if postcount.category.title == categorylist.title%}
+        {% capture count  %}{{ count  | plus: '1' }}{% endcapture %}
+        {%endif%}
+        {%endfor%}
+        <span>({{count}})</span>
+        </a>
+      </li>
+      {%endfor%}
+    </ul>
+  </div>
+</div>

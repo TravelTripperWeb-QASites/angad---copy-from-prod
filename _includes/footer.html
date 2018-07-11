@@ -1,3 +1,4 @@
+{% assign footer-links = site.data.navigation.footer %}
 <footer>
   <div class="footer-container">
     <div class="footer-row">
@@ -19,19 +20,26 @@
         </p>
       </div>
       <div class="email-subscription order-1 order-lg-3">
-        <h4>Stay in Touch</h4>
+        <h5 tabindex="0">Stay in Touch</h5>
         {% assign jotform = site.data.forms.jotform %}
         <form class="newsletter-footer" action="https://submit.jotform.me/submit/{{jotform.newsletter-id}}/" method="post" name="form_{{jotform.newsletter-id}}" id="{{jotform.newsletter-id}}">
           <input type="hidden" name="formID" value="{{jotform.newsletter-id}}" />
-          <input class="form-control" type="email" id="input_3" name="q3_email" value="" placeholder="name@domain.com" title="Enter Your Email" aria-label="Enter Your Email">
-          <button id="input_2" type="submit" name="button"></button>
+          <div class="newsletter-footer-inner">
+            <input class="form-control" type="email" name="q3_email" value="" placeholder="name@domain.com" title="Enter Your Email" aria-label="Enter Your Email" required>
+            <label for="input_4_0" class="agree">
+              <input type="checkbox" aria-label="I agree to the Terms of Service and Privacy Policy." title="I agree to the Terms of Service and Privacy Policy." id="input_4_0" name="q4_acceptTerms[]" required>
+              I agree to the <a href="/terms/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <button id="signUpBtn" type="submit" name="button" title="Signup" aria-label="Signup" disabled></button>
         </form>
         <ul class="social-share">
           {% assign sociallinks = site.data.social %}
 
           {% if sociallinks.twitter.username %}
           <li>
-            <a href="https://www.twitter.com/{{sociallinks.twitter.username}}" target="_blank" rel="nofollow">
+            <a href="https://www.twitter.com/{{sociallinks.twitter.username}}" target="_blank" rel="nofollow" title="Follow us on Twitter" >
               <i class="fab fa-twitter"></i>
             </a>
           </li>
@@ -39,7 +47,7 @@
 
           {% if sociallinks.facebook.username %}
           <li>
-            <a href="https://www.facebook.com/{{sociallinks.facebook.username}}" target="_blank" rel="nofollow">
+            <a href="https://www.facebook.com/{{sociallinks.facebook.username}}" target="_blank" rel="nofollow" title="Follow us on Facebook" >
               <i class="fab fa-facebook-f"></i>
             </a>
           </li>
@@ -47,7 +55,7 @@
 
           {% if sociallinks.instagram.username %}
           <li>
-            <a href="https://www.instagram.com/{{sociallinks.instagram.username}}" target="_blank" rel="nofollow">
+            <a href="https://www.instagram.com/{{sociallinks.instagram.username}}" target="_blank" rel="nofollow" title="Follow us on Instagram" >
               <i class="fab fa-instagram"></i>
             </a>
           </li>
@@ -55,7 +63,7 @@
 
           {% if sociallinks.spotify.username %}
           <li>
-            <a href="/" target="_blank" rel="nofollow">
+            <a href="/" target="_blank" rel="nofollow" title="Follow us on Spotify" >
               <i class="fab fa-spotify"></i>
             </a>
           </li>
@@ -64,12 +72,11 @@
       </div>
       <div class="footer-links order-2 order-lg-4">
         <ul>
+          {% for link in footer-links %}
           <li>
-            <a href="/press/" title="Press">Press</a>
+            <a href="{{ link.url | absolute_url }}" {% if link.new-tab == true %} target="_blank" {% endif %}>{{ link.title }}</a>
           </li>
-          <li>
-            <a href="/about/" title="About">About</a>
-          </li>
+          {% endfor %}
         </ul>
       </div>
     </div>

@@ -1,23 +1,26 @@
 main:
-  - title: About
-    url: /about/
-  - title: Amenities
-    url: /amenities/
-  - title: Attractions
-    url: /attractions/
   - title: Rooms
     url: /rooms/
   - title: Offers
     url: /offers/
-  - title: Location
-    url: /location/
-  - title: Dining
-    url: /dining/
-  - title: Events
-    url: /events/
+  - title: Dining & Bars
+    url: /dining-bars/
+  - title: Meetings & Catering
+    url: /meetings-catering/
+  # - title: Aah! tonight
+  #   url: /aah-tonight/
+  - title: Storytelling
+    url: /storytelling/
+
+footer:
   - title: Gallery
     url: /gallery/
-  - title: Blog
-    url: /blog/
-  - title: Contact
+  - title: Contact us
     url: /contact/
+  - title: Press
+    url: /press/
+  - title: About
+    url: /about/
+  - title: Careers
+    url: https://harri.com/Angad-Arts-Hotel
+    new-tab: true

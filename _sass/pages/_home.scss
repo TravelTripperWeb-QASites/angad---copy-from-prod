@@ -2,7 +2,8 @@
   position: relative;
   video {
     width: 100%;
-    background: transparent url('/assets/images/main-video-poster.png') 50% 50% / cover no-repeat;
+    background: transparent url("/assets/images/main-video-poster.png") 50% 50% /
+      cover no-repeat;
   }
 }
 
@@ -11,7 +12,7 @@
   min-height: 320px;
   overflow: hidden;
   text-align: center;
-  transition: background .5s ease;
+  transition: background 0.5s ease;
   @include media-breakpoint-up(sm) {
     min-height: 500px;
   }
@@ -31,11 +32,11 @@
       line-height: 0;
       @media screen and (min-width: 350px) {
         font-size: 2.75rem;
-        letter-spacing: .3px;
+        letter-spacing: 0.3px;
       }
       @include media-breakpoint-up(md) {
         font-size: 4rem;
-        letter-spacing: .8rem;
+        letter-spacing: 0.8rem;
       }
       @include media-breakpoint-up(lg) {
         font-size: 6rem;
@@ -73,7 +74,7 @@
       float: left;
       height: 100%;
 
-      @include global-transition(.5s);
+      @include global-transition(0.5s);
       &.block-1 {
         width: 30%;
         background-color: $site-transparent-clr-3;
@@ -132,7 +133,8 @@
   bottom: 6px;
 }
 
-.dine-distinctively {
+.dine-distinctively,
+.arrive-affordably {
   h2 {
     @include media-breakpoint-up(md) {
       font-size: 3.5rem;
@@ -147,39 +149,49 @@
       position: relative;
       &::after {
         position: absolute;
-        top: 4px;
+        top: -2px;
         left: -2px;
         z-index: -1;
         width: 25px;
         height: 29px;
-        content: '';
-        background-color: $site-clr-4;
+        content: "";
+        background-color: $brand-yellow;
         @include media-breakpoint-up(md) {
-          top: 7px;
+          top: -2px;
           left: -5px;
           width: 50px;
           height: 57px;
         }
         @include media-breakpoint-up(lg) {
-          top: 11px;
+          top: -5px;
           left: -6px;
           width: 70px;
           height: 80px;
         }
         @include media-breakpoint-up(xl) {
-          top: 14px;
+          top: -3px;
           left: -6px;
           width: 80px;
           height: 92px;
         }
+      }
+    }
+  }
+}
 
+.arrive-affordably {
+  h2 {
+    span {
+      &::after {
+        background-color: $brand-green;
       }
     }
   }
 }
 
 .meet-magnificently {
-  h2 {
+  h2,
+  h1 {
     @include media-breakpoint-up(md) {
       font-size: 3.5rem;
     }
@@ -193,39 +205,38 @@
       position: relative;
       &::after {
         position: absolute;
-        top: 4px;
+        top: -2px;
         left: -5px;
         z-index: -1;
         width: 25px;
         height: 29px;
-        content: '';
-        background-color: $site-clr-2;
+        content: "";
+        background-color: $brand-red;
         @include media-breakpoint-up(md) {
-          top: 7px;
+          top: -2px;
           left: -8px;
           width: 50px;
           height: 57px;
         }
         @include media-breakpoint-up(lg) {
-          top: 11px;
+          top: -5px;
           left: -12px;
           width: 70px;
           height: 80px;
         }
         @include media-breakpoint-up(xl) {
-          top: 14px;
+          top: -3px;
           left: -12px;
           width: 80px;
           height: 92px;
         }
-
       }
     }
   }
   .carousel-indicators {
     li {
       &.active {
-        background-color: $site-clr-2;
+        background-color: $brand-red;
       }
     }
   }

@@ -1,4 +1,4 @@
-.press-intro {
+.page-intro {
   @include main-container;
   margin: 90px auto 60px;
   @include media-breakpoint-up(lg) {
@@ -33,16 +33,32 @@
         position: relative;
         min-height: 300px;
         padding: 30px;
-        background-color: $site-clr-2;
+        background-color: $brand-red;
         @include media-breakpoint-up(xl) {
           min-height: 400px;
           padding: 30px 60px 47px 30px;
         }
         .date {
-          @include text-formatting($lighter-font, $type-size-6, 300, normal, $white, none, .48px);
+          @include text-formatting(
+            $lighter-font,
+            $type-size-6,
+            300,
+            normal,
+            $white,
+            none,
+            0.48px
+          );
         }
         .title {
-          @include text-formatting($font-semi-bold, $type-size-8, 400, normal, $white, none, .48px);
+          @include text-formatting(
+            $font-semi-bold,
+            $type-size-8,
+            400,
+            normal,
+            $white,
+            none,
+            0.48px
+          );
           margin-bottom: 45px;
           @media screen and (max-width: 479px) {
             font-size: 1.5rem;
@@ -54,25 +70,25 @@
           bottom: -25px;
           width: 0;
           height: 0;
-          content: '';
+          content: "";
           border-top: 25px solid transparent;
-          border-right: 25px solid $site-clr-2;
+          border-right: 25px solid $brand-red;
           border-bottom: 25px solid transparent;
         }
       }
       &.green {
         .list-item-inner {
-          background-color: $site-clr-3;
+          background-color: $brand-green;
           &::after {
-            border-right: 25px solid $site-clr-3;
+            border-right: 25px solid $brand-green;
           }
         }
       }
       &.blue {
         .list-item-inner {
-          background-color: $site-clr-1;
+          background-color: $brand-blue;
           &::after {
-            border-right: 25px solid $site-clr-1;
+            border-right: 25px solid $brand-blue;
           }
         }
       }
@@ -84,9 +100,9 @@
           color: $black;
         }
         .list-item-inner {
-          background-color: $site-clr-4;
+          background-color: $brand-yellow;
           &::after {
-            border-right: 25px solid $site-clr-4;
+            border-right: 25px solid $brand-yellow;
           }
         }
       }
@@ -101,7 +117,7 @@
     }
   }
 }
-// 
+//
 // .press-detail {
 //   @include main-container;
 //   margin-top: 80px;

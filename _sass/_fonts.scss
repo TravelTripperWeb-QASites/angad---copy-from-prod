@@ -1,24 +1,18 @@
-@font-face {
-  font-family: 'CerebriSans-Bold';
-  src: url('/assets/fonts/CerebriSans-Bold.otf');
-}
+// @import must be at top of file, otherwise CSS will not work
 
-@font-face {
-  font-family: 'CerebriSans-Book';
-  src: url('/assets/fonts/CerebriSans-Book.otf');
-}
+@import url("//hello.myfonts.net/count/370a5d");
 
-@font-face {
-  font-family: 'CerebriSans-ExtraBold';
-  src: url('/assets/fonts/CerebriSans-ExtraBold.otf');
-}
 
-@font-face {
-  font-family: 'CerebriSans-Light';
-  src: url('/assets/fonts/CerebriSans-Light.otf');
-}
+@font-face {font-family: 'CerebriSans-Bold';src: url('/assets/webfonts/370A5D_0_0.eot');src: url('/assets/webfonts/370A5D_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/370A5D_0_0.woff2') format('woff2'),url('/assets/webfonts/370A5D_0_0.woff') format('woff'),url('/assets/webfonts/370A5D_0_0.ttf') format('truetype');}
 
-@font-face {
-  font-family: 'CerebriSans-SemiBold';
-  src: url('/assets/fonts/CerebriSans-SemiBold.otf');
-}
+
+@font-face {font-family: 'CerebriSans-Book';src: url('/assets/webfonts/370A5D_1_0.eot');src: url('/assets/webfonts/370A5D_1_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/370A5D_1_0.woff2') format('woff2'),url('/assets/webfonts/370A5D_1_0.woff') format('woff'),url('/assets/webfonts/370A5D_1_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'CerebriSans-ExtraBold';src: url('/assets/webfonts/370A5D_2_0.eot');src: url('/assets/webfonts/370A5D_2_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/370A5D_2_0.woff2') format('woff2'),url('/assets/webfonts/370A5D_2_0.woff') format('woff'),url('/assets/webfonts/370A5D_2_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'CerebriSans-Light';src: url('/assets/webfonts/370A5D_3_0.eot');src: url('/assets/webfonts/370A5D_3_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/370A5D_3_0.woff2') format('woff2'),url('/assets/webfonts/370A5D_3_0.woff') format('woff'),url('/assets/webfonts/370A5D_3_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'CerebriSans-SemiBold';src: url('/assets/webfonts/370A5D_4_0.eot');src: url('/assets/webfonts/370A5D_4_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/370A5D_4_0.woff2') format('woff2'),url('/assets/webfonts/370A5D_4_0.woff') format('woff'),url('/assets/webfonts/370A5D_4_0.ttf') format('truetype');}

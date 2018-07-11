@@ -1,2 +1,110 @@
 // Offers & Offer Details Page Elements
 // ==========================================================================
+
+.offers {
+  @include main-container;
+  margin: 90px auto 60px;
+
+  @include media-breakpoint-up(md) {
+    margin: 180px auto 64px;
+  }
+
+  // Listing Styling
+  .offers-listing {
+    @include make-row;
+    margin-top: 30px;
+
+    .offer-item {
+      @include make-col-ready;
+      margin-bottom: 50px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+      }
+
+      .offer-image {
+        position: relative;
+        width: 100%;
+        height: 245px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @include media-breakpoint-up(md) {
+          height: 350px;
+        }
+      }
+
+      .offer-info {
+        position: relative;
+        box-sizing: content-box;
+        max-width: 530px;
+        padding: 30px 0 60px;
+
+        h4 {
+          margin-bottom: 0;
+          font-size: $type-size-11;
+        }
+        p {
+          font-size: $type-size-10;
+        }
+
+        .primary-btn {
+          position: absolute;
+          right: -5px;
+          bottom: 0;
+
+          &:after {
+            background-color: $brand-green;
+          }
+          &:hover {
+            &:after {
+              background-color: $brand-red;
+            }
+          }
+        }
+
+        @include media-breakpoint-up(md) {
+          padding: 40px 0 70px;
+
+          h4 {
+            margin-bottom: 10px;
+            font-size: $type-size-9;
+          }
+          p {
+            font-size: $type-size-3;
+          }
+          .primary-btn {
+            right: 54px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.rooms-cross-sell {
+  margin-top: 0;
+
+  .primary-btn {
+    margin-right: 0;
+
+    &:after {
+      background-color: $brand-red;
+    }
+    &:hover {
+      &:after {
+        background-color: $brand-green;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-top: 10px;
+    .primary-btn {
+      margin-right: 50px;
+    }
+  }
+}

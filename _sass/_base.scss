@@ -9,15 +9,33 @@ html {
 body {
   margin: 0;
   padding: 0;
+  padding-top: 70px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 129px;
+  }
   font-family: $global-font-family;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
 h1 {
-  @include text-formatting($lighter-font, $type-size-1, 300, normal, $white, uppercase, .5rem);
+  @include text-formatting(
+    $lighter-font,
+    $type-size-1,
+    300,
+    normal,
+    $white,
+    uppercase,
+    0.5rem
+  );
   @include media-breakpoint-down(sm) {
     font-size: 1.75rem;
     letter-spacing: 3px;
@@ -28,25 +46,62 @@ h2 {
   @extend h1;
 }
 
-h3 {
-  @include text-formatting($header-font-family, $type-size-2, 700, 4.375rem, $black, uppercase, .40625rem);
+h3,
+.page-title {
+  @include text-formatting(
+    $global-font-family,
+    $type-size-2,
+    700,
+    4.375rem,
+    $black,
+    uppercase,
+    0.40625rem
+  );
   @include media-breakpoint-down(sm) {
     font-size: 2rem;
     line-height: normal;
-    letter-spacing: .1875rem;
+    letter-spacing: 0.1875rem;
   }
 }
 
 h4 {
-  @include text-formatting($header-font-family, $type-size-5, 400, 2rem, $white, uppercase, .1875rem);
+  @include text-formatting(
+    $header-font-family,
+    $type-size-9,
+    700,
+    normal,
+    $black,
+    uppercase,
+    0.0625rem
+  );
+}
+
+h5 {
+  @include text-formatting(
+    $header-font-family,
+    $type-size-5,
+    400,
+    2rem,
+    $white,
+    uppercase,
+    0.1875rem
+  );
 }
 
 p {
-  @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, none, .48px);
+  @include text-formatting(
+    $global-font-family,
+    $type-size-3,
+    400,
+    2rem,
+    $black,
+    none,
+    0.48px
+  );
   @include media-breakpoint-down(sm) {
     font-size: 1.375rem;
     line-height: normal;
-    letter-spacing: .44px;
+    letter-spacing: 0.44px;
   }
   @media screen and (max-width: 479px) {
     font-size: 1.1rem;
@@ -57,7 +112,8 @@ p {
 
 a {
   color: $link-color;
-  &:hover, &:active {
+  &:hover,
+  &:active {
     color: $link-color;
     outline: 0;
   }
@@ -76,7 +132,7 @@ img {
       padding: 50px 20px;
     }
     .btn-holder {
-      margin: 20px 0 66px;
+      margin: 20px 0 0;
       text-align: right;
       @include media-breakpoint-down(sm) {
         margin: 20px 0 0;
@@ -150,15 +206,38 @@ img {
       }
     }
   }
+  &.variation {
+    .full-text {
+      padding: 30px 20px;
+      @include media-breakpoint-down(sm) {
+        padding: 50px 20px;
+      }
+
+      .text-content {
+        .top-left-block {
+          left: -80px;
+        }
+      }
+    }
+    .btn-holder {
+      margin-bottom: 100px;
+    }
+  }
 }
 
-
-
 .primary-btn {
-  @include text-formatting($global-font-family, $type-size-3, 400, 2rem, $black, uppercase, .25rem);
+  @include text-formatting(
+    $global-font-family,
+    $type-size-3,
+    400,
+    2rem,
+    $black,
+    uppercase,
+    0.25rem
+  );
   position: relative;
   display: inline-block;
-  padding: 8px 0 0;
+  padding: 8px 0 5px;
   &::after {
     position: absolute;
     top: 0;
@@ -166,17 +245,24 @@ img {
     width: 39px;
     height: 45px;
     margin-left: 15px;
-    content: '';
-    background-color: $site-clr-4;
-    background-image: url('/assets/images/arrow-right.png');
+    content: "";
+    background-color: $brand-yellow;
+    background-image: url("/assets/images/arrow-right.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 14px;
-    @include global-transition(.3s);
+    @include global-transition(0.3s);
   }
   @include media-breakpoint-down(sm) {
     padding-right: 60px;
     font-size: 1.375rem;
+    &:after {
+      top: 6px;
+      bottom: 0;
+      width: 27px;
+      height: 32px;
+      background-size: 10px;
+    }
   }
   @media screen and (max-width: 479px) {
     font-size: 1.2rem;
@@ -185,8 +271,145 @@ img {
     color: $black;
     text-decoration: none;
     &::after {
-      background-color: $site-clr-3;
+      background-color: $brand-green;
     }
+  }
+
+  &.reverse {
+    margin: 30px 0;
+    padding: 0 0 0 30px;
+    font-size: $type-size-7;
+    line-height: normal;
+    letter-spacing: 0.1875rem;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 19px;
+      height: 25px;
+      margin-right: 15px;
+      content: "";
+      background-color: $brand-red;
+      background-image: url("/assets/images/arrow-left.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 8px;
+      @include global-transition(0.3s);
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-left: 60px;
+      font-size: 1.375rem;
+      &:before {
+        top: -2px;
+        bottom: 0;
+        width: 27px;
+        height: 32px;
+        background-size: 10px;
+      }
+    }
+    &:hover {
+      color: $black;
+      text-decoration: none;
+      &::before {
+        background-color: $brand-green;
+      }
+    }
+  }
+
+  &.yellow {
+    &::after {
+      background-color: $brand-yellow;
+      background-image: url("/assets/images/arrow-right-black.png");
+    }
+    &:hover {
+      &::after {
+        background-color: $brand-green;
+        background-image: url("/assets/images/arrow-right.png");
+      }
+    }
+  }
+
+  &.blue {
+    &::after {
+      background-color: $brand-blue;
+    }
+    &:hover {
+      &::after {
+        background-color: $brand-red;
+      }
+    }
+  }
+
+  &.red {
+    &::after {
+      background-color: $brand-red;
+    }
+    &:hover {
+      &::after {
+        background-color: $brand-yellow;
+        background-image: url("/assets/images/arrow-right-black.png");
+      }
+    }
+  }
+
+  &.green {
+    &::after {
+      background-color: $brand-green;
+    }
+    &:hover {
+      &::after {
+        background-color: $brand-red;
+      }
+    }
+  }
+}
+
+.link-btn {
+  @include text-formatting(
+    $lighter-font,
+    1.188rem,
+    300,
+    normal,
+    $black,
+    uppercase,
+    2.85px
+  );
+  &:hover {
+    color: $black;
+    text-decoration: underline;
+  }
+}
+
+.book-now-btn {
+  @include text-formatting(
+    $lighter-font,
+    $type-size-3,
+    300,
+    normal,
+    $dark-red,
+    uppercase,
+    0.125rem
+  );
+  z-index: 9;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  padding: 42px 0;
+  text-align: center;
+  background-color: $brand-yellow;
+  border-radius: 50%;
+  @include global-transition(0.3s);
+  &:hover {
+    color: $brand-yellow;
+    text-decoration: none;
+    background: $dark-red;
   }
 }
 
@@ -196,7 +419,7 @@ img {
   font-size: $type-size-7;
   line-height: normal;
   color: $white;
-  letter-spacing: .1875rem;
+  letter-spacing: 0.1875rem;
   &::after {
     width: 19px;
     height: 25px;
@@ -206,24 +429,31 @@ img {
     color: $white;
   }
 
+  @include media-breakpoint-down(sm) {
+    &:after {
+      top: 0;
+    }
+  }
+
   &.blue {
     &::after {
-      background-color: $site-clr-1;
+      background-color: $brand-blue;
     }
     &:hover {
       &::after {
-        background-color: $site-clr-4;
+        background-color: $brand-yellow;
+        background-image: url("/assets/images/arrow-right-black.png");
       }
     }
   }
 
   &.green {
     &::after {
-      background-color: $site-clr-3;
+      background-color: $brand-green;
     }
     &:hover {
       &::after {
-        background-color: $site-clr-2;
+        background-color: $brand-red;
       }
     }
   }
@@ -233,31 +463,60 @@ img {
     &:hover {
       color: $black;
       &::after {
-        background-color: $site-clr-3;
+        background-color: $brand-green;
+        background-image: url("/assets/images/arrow-right.png");
       }
     }
     &::after {
-      background-color: $site-clr-2;
+      background-color: $brand-red;
     }
   }
 
+  &.yellow {
+    &::after {
+      background-image: url("/assets/images/arrow-right-black.png");
+    }
+  }
+
+  &.reverse {
+    @include media-breakpoint-down(sm) {
+      padding-left: 30px;
+    }
+    &:before {
+      top: 0;
+      width: 19px;
+      height: 25px;
+    }
+  }
 }
 
 .color-block-blue {
   @include color-block;
-  background-color: $site-clr-1;
+  background-color: $brand-blue;
 }
 .color-block-red {
   @include color-block;
-  background-color: $site-clr-2;
+  background-color: $brand-red;
 }
 .color-block-green {
   @include color-block;
-  background-color: $site-clr-3;
+  background-color: $brand-green;
 }
 .color-block-yellow {
   @include color-block;
-  background-color: $site-clr-4;
+  background-color: $brand-yellow;
+}
+
+.left-border-blue {
+  @include media-breakpoint-up(lg) {
+    border-left: 1px solid $brand-blue;
+  }
+}
+
+.left-border-red {
+  @include media-breakpoint-up(lg) {
+    border-left: 1px solid $brand-red;
+  }
 }
 
 .bg-styles {
@@ -289,14 +548,15 @@ img {
       }
     }
   }
-  .carousel-control-prev, .carousel-control-next {
+  .carousel-control-prev,
+  .carousel-control-next {
     z-index: 2;
     opacity: 1;
     .left-slide {
       display: inline-block;
       width: 30px;
       height: 53px;
-      background-image: url('/assets/images/arrow-left.png');
+      background-image: url("/assets/images/arrow-left.png");
       background-repeat: no-repeat;
       background-size: 100%;
       @include media-breakpoint-down(sm) {
@@ -306,7 +566,7 @@ img {
     }
     .right-slide {
       @extend .left-slide;
-      background-image: url('/assets/images/arrow-right.png');
+      background-image: url("/assets/images/arrow-right.png");
     }
   }
   .carousel-indicators {
@@ -318,13 +578,13 @@ img {
       margin: 0 7px;
       cursor: pointer;
       background-color: $light-grey;
-      @include global-transition(.3s);
+      @include global-transition(0.3s);
       @include media-breakpoint-down(sm) {
         width: 11px;
         height: 14px;
       }
       &.active {
-        background-color: $site-clr-3;
+        background-color: $brand-green;
         transform: scale(1.1);
       }
     }
@@ -334,11 +594,10 @@ img {
   width: 100%;
   height: 100px;
   background: linear-gradient(to right, $grad-clr-1, $grad-clr-2);
-  @include media-breakpoint-down(sm) {
-    height: 33px;
+  @include media-breakpoint-down(lg) {
+    height: 60px;
   }
 }
-
 
 // Sets a default bottom margin and removes bullet points from lists
 
@@ -359,6 +618,7 @@ svg:not(:root) {
 
 .intro-logo {
   position: fixed;
+  top: 0;
   z-index: 999;
   width: 100%;
   height: 100%;
@@ -369,5 +629,106 @@ svg:not(:root) {
     position: absolute;
     top: 50%;
     width: auto;
+  }
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-80 {
+  margin-bottom: 40px;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 80px;
+  }
+}
+
+.mb-120 {
+  margin-bottom: 55px !important;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 120px !important;
+  }
+}
+
+.inner-hero-banner {
+  position: relative;
+  min-height: 225px;
+  @include media-breakpoint-up(sm) {
+    min-height: 400px;
+  }
+  @include media-breakpoint-up(lg) {
+    min-height: 660px;
+  }
+  video {
+    width: 100%;
+  }
+  h1 {
+    span {
+      position: relative;
+      &::after {
+        position: absolute;
+        top: -1px;
+        left: -2px;
+        z-index: -1;
+        width: 25px;
+        height: 29px;
+        content: "";
+        background-color: $brand-yellow;
+        @include media-breakpoint-up(md) {
+          top: -2px;
+          left: -5px;
+          width: 66px;
+          height: 76px;
+        }
+        @include media-breakpoint-up(lg) {
+          top: -4px;
+          left: -6px;
+          width: 70px;
+          height: 80px;
+        }
+        @include media-breakpoint-up(xl) {
+          top: -6px;
+          left: -8px;
+          width: 72px;
+          height: 83px;
+        }
+      }
+    }
+  }
+  &.blue {
+    h1 {
+      span {
+        &:after {
+          background: $brand-blue;
+        }
+      }
+    }
+  }
+  h3 {
+    font-size: 2rem;
+    color: $white;
+  }
+  // &:after {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   content: '';
+  //   background-color: rgba(0,0,0,.4);
+  // }
+  .theme-carousel {
+    .carousel-item {
+      background-position: center center;
+    }
+  }
+  &.meet-magnificently {
+    h1 {
+      span {
+        &::after {
+          background-color: $brand-red;
+        }
+      }
+    }
   }
 }

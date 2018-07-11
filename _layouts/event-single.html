@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<section class="event-details">
+  <div class="event-details-wrapper">
+    <div class="event-details-image">
+      <a class="primary-btn reverse" href="/aah-tonight/">Back to Calendar</a>
+      <img src="{{ page.event_large_image.url_large }}" alt="{{ page.event_image.alt }}" />
+    </div>
+    <div class="event-details-content">
+      <h4>{{ page.event_name }}</h4>
+      <h5>
+        {{ page.event_date | date: "%a %b %d" }}<span> {% if page.event_enddate and page.event_enddate != '' %} <br /><i>to</i> {{ page.event_enddate | date: "%a %b %d" }}{% else %}<br />{{ page.event_time }}{% endif %}<br />
+        @ {{ page.event_venue }}
+      </h5>
+      {{ page.long_description }}
+      <a class="primary-btn yellow" href="{{ page.reserve_url }}" target="_blank">Reserve A Table</a>
+      <hr>
+      <div class="tnc">
+        <h6>Terms & Conditions</h6>
+        {{ page.terms }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="more-events">
+  <div class="more-events-wrapper">
+    <h2>More Events</h2>
+    <div class="more-events-listing">
+      {% assign events = site.data._models.events %}
+      {% for event in events %}
+      <!-- Event -->
+      <div class="event">
+        <h4>{{ event.event_date | date: "%a %b %d" }}<span>{% if event.event_enddate and event.event_enddate != '' %}<i>to</i> {{ event.event_enddate | date: "%a %b %d" }}{% else %}{{ event.event_time }}{% endif %}</span></h4>
+        <div class="event-image" style="background-image: url('{{ event.event_thumb_image.url_small }}')">
+        </div>
+        <div class="event-info balance_height">
+          <p>
+            {{ event.short_description }}
+          </p>
+        </div>
+        <a class="secondary-btn {% if event.btn_txt and event.btn_txt == '' %}hidden{% endif %}" href="/aah-tonight/{{ event.url_friendly_name }}/">{{ event.btn_txt }}</a>
+        <hr>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

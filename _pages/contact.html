@@ -5,25 +5,32 @@ meta_description:
 permalink: /contact/
 meta_tags:
   robots:
-published: false
+published: true
 ---
 
-{% comment %}
-
-  Name:
-
-    Contact Page
-
-  Description:
-
-    Static content that can be modified by editable regions.
-
-  Usage:
-
-    Text   - {% regionblock region_name, type:text %}{% endregionblock %}
-
-    Header - {% regionblock region_name, type:header %}{% endregionblock %}
-
-    Image  - {% regionblock region_name, type:image %}{% endregionblock %}
-
-{% endcomment %}
+<section class="contact-wrapper">
+  <div class="contact-inner m-0 d-flex align-items-center">
+    <div class="details">
+      <h3>Contact Us</h3>
+      <div class="details-inner m-0">
+        <div class="address p-0">
+          <p>
+            <a href="https://goo.gl/Vh2tTu" target="_blank"><span>address:</span><br>
+              3550 SAMUEL SHEPARD DR<br>
+              SAINT LOUIS,<br>
+              MO 63103</a>
+          </p>
+          <a class="secondary-btn green mb-40" href="https://goo.gl/mFT5SB" target="_blank">Get Directions</a>
+          <p><span>Telephone:</span><br>
+          <a href="tel:+1(314)5610033">+1 (314) 561 0033</a><br>
+          <a href="tel:+1(833)2330014">+1 (833) 233 0014</a></p>
+          <p><span>Email:</span><br>
+          <a href="mailto:INFO@ANGADARTSHOTEL.COM">INFO@ANGADARTSHOTEL.COM</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="map" id="map">
+      <img src="/assets/images/contact/map.jpg" alt="Map">
+    </div>
+  </div>
+</section>

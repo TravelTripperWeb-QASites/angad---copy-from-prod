@@ -2,32 +2,54 @@
 layout: default
 title: Events
 meta_description:
-permalink: /events/
+permalink: /aah-tonight/
 meta_tags:
   robots:
 published: false
 ---
 
-{% comment %}
+{% assign events = site.data._models.events | sort: 'event_date' %}
 
-  Name:
+<section class="inner-hero-banner bg-styles blue mb-80 aah-banner" style="background-image: url('/assets/images/events/events-banner.jpg')">
+  <div class="banner-text">
+    {% regionblock banner_heading, type: header %}
+      <h1>AAH! <span>T</span>onight</h1>
+    {% endregionblock %}
+  </div>
+</section>
 
-    Events Page
-
-  Description:
-
-    Display events[item] from a content model.
-
-  Usage:
-
-    Assign content model on page then display using [item].
-
-    eg. {% assign events = site.data._models.events %}
-        {% for item in events %}
-          {{ item.title }}
-          {{ item.location }}
-          {{ item.start_date | date: "%B %d %Y" }} - {{ item.end_date | date: "%B %d %Y" }}
-          {{ item.description | strip_html | truncatewords: 18 }}
-        {% endfor %}
-
-{% endcomment %}
+<section class="events">
+  <div class="events-listing">
+    {% for event in events %}
+    <!-- Event -->
+    <div class="event">
+      <h4>
+        {% assign month = event.event_enddate | date: "%b" %}
+        {% assign smonth = event.event_date | date: "%b" %}
+        {% if month == smonth %}
+          {% assign end_date = event.event_enddate | date: "%d" %}
+        {% else %}
+          {% assign end_date = event.event_enddate | date: "%b %d" %}
+        {% endif %}
+        {% if event.event_enddate and event.event_enddate != '' %}
+          {{ event.event_date | date: "%b %d" }} - {{ end_date }}
+        {% else %}
+          {{ event.event_date | date: "%a %b %d" }}
+        {% endif %}
+        <span>{{ event.event_time }}</span>
+      </h4>
+      <div class="event-image" style="background-image: url('{{ event.event_thumb_image.url_small }}')">
+      </div>
+      <div class="event-info balance_height">
+        <p>
+          {{ event.short_description }}
+        </p>
+      </div>
+      <div class="btn-holder">
+        <a class="secondary-btn {{ event.btn_color }} {% if event.btn_txt and event.btn_txt == '' %}hidden{% endif %}" href="/aah-tonight/{{ event.url_friendly_name }}/" title="{{ event.event_name }}">{{ event.btn_txt }}</a>
+      </div>
+      <hr>
+    </div>
+    {% endfor %}
+  </div>
+</section>

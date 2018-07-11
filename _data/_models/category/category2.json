@@ -1,0 +1,28 @@
+{
+  "order": "2",
+  "title": "Category 2",
+  "url_friendly_name": "category-2",
+  "categoryimage": {
+    "name": "fashion",
+    "file_name": "fashion.png",
+    "url": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-02-053143/fashion.png",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-02-053143",
+    "file_type": "image/png",
+    "width": 1440,
+    "height": 765,
+    "file_size": 1947903,
+    "url_large": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-02-053143/large_fashion.png",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-02-053143/medium_fashion.png",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-02-053143/small_fashion.png",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-02-053143/xsmall_fashion.png",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-02-053143/thumb_fashion.png",
+    "git_file_name": "_assets/image_data/fashion.json",
+    "path": "//cdn.traveltripper.io/site-assets/32_897_16868/media/2018-07-02-053143/fashion.png",
+    "alt": "fashion",
+    "caption": ""
+  },
+  "intro_text": "Lorem ipsum dolor sit blog, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
+  "intro_heading": "DOLORE MAGNA ALIQUA"
+}

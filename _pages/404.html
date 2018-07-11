@@ -7,24 +7,18 @@ meta_tags:
   robots:
 ---
 
-<section class="inner-hero-banner">
-  <div id="innerCarousel" class="carousel slide theme-carousel" data-ride="carousel">
-    <!-- The slideshow -->
-    <div class="carousel-inner">
-      <div class="banner-text">
-        {% regionblock banner_heading_1, type: header %}
-          <h3>404 Error</h3>
-        {% endregionblock %}
-        {% regionblock banner_heading_2, type: header %}
-          <h2>Page Not Found</h2>
-        {% endregionblock %}
-      </div>
-      <div class="carousel-item active bg-styles" style="background-image: url('/assets/images/404-banner.jpg')">
-      </div>
-    </div>
+<section class="inner-hero-banner" style="background-image: url('/assets/images/about/hero.jpg')">
+  <div class="banner-text">
+    {% regionblock banner_heading_1, type: header %}
+    <h3>404 Error</h3>
+    {% endregionblock %}
+    {% regionblock banner_heading_2, type: header %}
+    <h2>Page Not Found</h2>
+    {% endregionblock %}
   </div>
 </section>
-
+{% assign links = site.data.navigation.main %}
+{% assign footer-links = site.data.navigation.footer %}
 <section class="full-text-wrap">
   <div class="full-text">
     <div class="text-content text-center">
@@ -34,12 +28,18 @@ meta_tags:
       {% endregionblock %}
       <div class="sitemap">
         {% regionblock banner_heading_2, type: header %}
-          <h4>Sitemap</h4>
+          <h5>Sitemap</h5>
         {% endregionblock %}
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/about/" title="About">About</a></li>
-          <li><a href="/press/" title="Press">Press</a></li>
+          {% for link in links %}
+          <li><a href="{{ link.url | absolute_url }}" title="{{ link.title }}">{{ link.title }}</a></li>
+          {% endfor %}
+          {% for link in footer-links %}
+          <li>
+            <a href="{{ link.url | absolute_url }}" title="{{ link.title }}">{{ link.title }}</a>
+          </li>
+          {% endfor %}
         </ul>
       </div>
       <div class="color-block-yellow bottom bottom-right-block"></div>
