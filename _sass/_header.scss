@@ -48,7 +48,8 @@
         left: 0;
         z-index: 9;
         width: 100%;
-        padding: 120px 40px;
+        height: 100vh;
+        padding: 80px 40px;
         text-align: center;
         background-color: rgba($white, 0.95);
       }
@@ -89,7 +90,7 @@
               font-size: 0.8rem;
             }
             @media screen and (max-width: 991px) {
-              padding: 30px 0;
+              padding: 15px 0;
               font-family: $lighter-font;
               font-size: 1.875rem;
               font-weight: 400;
@@ -100,7 +101,7 @@
             &.show-on-hover {
               position: absolute;
               top: -55px;
-              left: -50px;
+              left: -100px;
               display: none;
               width: 180%;
               font-family: $extrabold-font;
@@ -150,7 +151,7 @@
           }
           &.mainnav-storytelling {
             .show-on-hover {
-              left: 250px;
+              left: 150px;
             }
             &:hover {
               .show-on-hover {
