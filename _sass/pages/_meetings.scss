@@ -111,6 +111,7 @@
     }
   }
   .big-img {
+    position: relative;
     min-height: 300px !important;
     @include make-col-ready();
     @include media-breakpoint-up(md) {
@@ -122,7 +123,7 @@
     }
     .color-block-green {
       position: absolute;
-      right: 75px;
+      right: 0;
       bottom: 300px;
     }
   }
