@@ -1,5 +1,8 @@
 .menu-links {
   margin-top: 30px;
+  p {
+    margin-top: 0 !important;
+  }
   .secondary-btn {
     margin: 40px 0 0 50px;
     color: $black;
@@ -12,55 +15,115 @@
   }
 }
 
-.event-spaces {
-  .event-spaces-row {
-    @include make-row;
-    margin: 0;
-    .event-spaces-img {
-      @include make-col-ready();
-      @include media-breakpoint-up(lg) {
-        @include make-col(5);
-        min-height: 320px;
-        padding-right: 0;
-      }
-      @media screen and (max-width: 991px) {
-        min-height: 210px;
-      }
+// .event-spaces {
+//   .event-spaces-row {
+//     @include make-row;
+//     margin: 0;
+//     .event-spaces-img {
+//       @include make-col-ready();
+//       @include media-breakpoint-up(lg) {
+//         @include make-col(5);
+//         min-height: 320px;
+//         padding-right: 0;
+//       }
+//       @media screen and (max-width: 991px) {
+//         min-height: 210px;
+//       }
+//
+//       background-image: url("/assets/images/meetings/skyline.jpg");
+//     }
+//     .event-spaces-text {
+//       padding-left: 35px;
+//       @include make-col-ready();
+//       @include media-breakpoint-up(lg) {
+//         @include make-col(7);
+//         padding-left: 24px;
+//       }
+//       p {
+//         max-width: 220px;
+//         padding-top: 30px;
+//         padding-bottom: 30px;
+//         @media screen and (min-width: 1140px) {
+//           max-width: 300px;
+//         }
+//       }
+//     }
+//     .event-spaces-inner {
+//       @include main-container;
+//       position: relative;
+//       display: none;
+//       @include media-breakpoint-up(lg) {
+//         display: block;
+//       }
+//       img {
+//         position: absolute;
+//         right: 20px;
+//         bottom: -100px;
+//         max-width: 300px;
+//         @include media-breakpoint-down(lg) {
+//           bottom: -60px;
+//         }
+//       }
+//     }
+//   }
+// }
 
-      background-image: url("/assets/images/meetings/skyline.jpg");
+
+.our-event-spaces {
+  width: 100%;
+  margin-bottom: 50px;
+  overflow-x: hidden;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 120px;
+  }
+  .our-event-spaces-inner {
+    @include make-row;
+  }
+  .small-img {
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
     }
-    .event-spaces-text {
-      padding-left: 35px;
-      @include make-col-ready();
-      @include media-breakpoint-up(lg) {
-        @include make-col(7);
-        padding-left: 24px;
-      }
-      p {
-        max-width: 220px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        @media screen and (min-width: 1140px) {
-          max-width: 300px;
-        }
-      }
+    @include media-breakpoint-up(lg) {
+      @include make-col(3.5);
+      min-height: 500px !important;
     }
-    .event-spaces-inner {
-      @include main-container;
-      position: relative;
-      display: none;
-      @include media-breakpoint-up(lg) {
-        display: block;
-      }
-      img {
-        position: absolute;
-        right: 20px;
-        bottom: -100px;
-        max-width: 300px;
-        @include media-breakpoint-down(lg) {
-          bottom: -60px;
-        }
-      }
+    min-height: 530px !important;
+  }
+  .content {
+    padding: 50px 25px;
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+      padding: 25px;
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(3);
+    }
+    p {
+      padding-left: 25px;
+      font-family: $global-font-family;
+      font-size: $type-size-7;
+      font-weight: 300;
+      color: $black;
+      text-transform: uppercase;
+      letter-spacing: 1.9px;
+    }
+  }
+  .big-img {
+    min-height: 300px !important;
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+      min-height: 500px !important;
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(5.5);
+    }
+    .color-block-green {
+      position: absolute;
+      right: 35px;
+      bottom: 300px;
     }
   }
 }
