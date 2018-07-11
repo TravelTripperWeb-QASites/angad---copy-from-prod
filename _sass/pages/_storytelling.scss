@@ -57,6 +57,7 @@
   }
   .blog-row {
     @include make-row;
+    position: relative;
     margin: 0;
     .blog-col {
       @include make-col-ready();
@@ -165,6 +166,7 @@
         @include make-col(4);
         padding-left: 50px;
       }
+      @include global-transition(0.3s);
       position: static;
       .widget-box {
         margin-bottom: 50px;
@@ -288,6 +290,16 @@
           background-color: $white;
         }
       }
+      &.absolute {
+        @include media-breakpoint-up(lg) {
+          position: absolute;
+          right: 0 !important;
+          bottom: 0;
+          left: auto !important;
+          max-width: 33.33% !important;
+          background-color: $white;
+        }
+      }
     }
   }
   &.details-page {
@@ -299,7 +311,7 @@
     .blog-intro {
       margin-bottom: 30px;
       padding-left: 15px;
-      line-height: 2.5rem;
+      font-size: $type-size-2;
       @include media-breakpoint-up(md) {
         max-width: 66%;
       }
