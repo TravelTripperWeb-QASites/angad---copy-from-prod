@@ -308,6 +308,18 @@
     @include media-breakpoint-up(lg) {
       padding: 30px 15px 0;
     }
+    .blog-description {
+      h4 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        line-height: normal;
+      }
+      h3 {
+        margin-bottom: 10px;
+        font-size: 2rem;
+        line-height: normal;
+      }
+    }
     .blog-intro {
       margin-bottom: 30px;
       padding-left: 15px;
@@ -386,8 +398,12 @@
           background-position: top center;
           background-size: cover;
         }
-        h4 {
-          @include text-formatting(
+        .related-details {
+          @include media-breakpoint-up(lg) {
+            padding-right: 110px;
+          }
+          h4 {
+            @include text-formatting(
             $global-font-family,
             $type-size-3,
             600,
@@ -395,20 +411,20 @@
             $white,
             uppercase,
             0.0625rem
-          );
-          margin-bottom: 5px;
-        }
-        .short-description {
-          p {
-            color: $white;
+            );
+            margin-bottom: 5px;
           }
-        }
-        .info {
-          width: 100%;
-          margin-bottom: 20px;
-          color: $white;
-          .date {
-            @include text-formatting(
+          .short-description {
+            p {
+              color: $white;
+            }
+          }
+          .info {
+            width: 100%;
+            margin-bottom: 20px;
+            color: $white;
+            .date {
+              @include text-formatting(
               $global-font-family,
               $font-size-base,
               400,
@@ -416,11 +432,11 @@
               $white,
               uppercase,
               0.0625rem
-            );
-            margin-right: 10px;
-          }
-          .categories {
-            @include text-formatting(
+              );
+              margin-right: 10px;
+            }
+            .categories {
+              @include text-formatting(
               $global-font-family,
               $font-size-base,
               400,
@@ -428,16 +444,17 @@
               $brand-red,
               uppercase,
               0.0625rem
-            );
-            margin-left: 10px;
+              );
+              margin-left: 10px;
+            }
           }
-        }
-        .btn-holder {
-          margin-top: 20px;
-          margin-right: 60px;
-          text-align: right;
-          a {
-            color: $white;
+          .btn-holder {
+            margin-top: 20px;
+            margin-right: 60px;
+            text-align: right;
+            a {
+              color: $white;
+            }
           }
         }
       }

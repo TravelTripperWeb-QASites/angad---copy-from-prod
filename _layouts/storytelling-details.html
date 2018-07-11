@@ -60,11 +60,13 @@ parent: /storytelling/
         {% if blog.category.url_friendly_name == post.category.url_friendly_name %}
           <div class="related-post-item">
             <a class="related-thumb" href="{{post.url_friendly_name}}" title="{{post.title}}" style="background-image: url('{{post.blogimage.url_medium}}')"></a>
-            <h4>{{post.title}}</h4>
-            <p class="info"> <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span>  |  <a href="{{post.category.url_friendly_name}}" class="categories"> {{post.category.title}} </a> </p>
-            <div class="short-description"> {{post.short_description}} </div>
-            <div class="btn-holder">
-              <a href="{{post.url_friendly_name}}" class="secondary-btn red" title="{{post.title}}">Read Story</a>
+            <div class="related-details">
+              <h4>{{post.title}}</h4>
+              <p class="info"> <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span>  |  <a href="{{post.category.url_friendly_name}}" class="categories"> {{post.category.title}} </a> </p>
+              <div class="short-description"> {{post.short_description}} </div>
+              <div class="btn-holder">
+                <a href="{{post.url_friendly_name}}" class="secondary-btn red" title="{{post.title}}">Read Story</a>
+              </div>
             </div>
           </div>
         {% endif %}
