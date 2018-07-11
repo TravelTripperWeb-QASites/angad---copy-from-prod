@@ -49,7 +49,7 @@ h2 {
 h3,
 .page-title {
   @include text-formatting(
-    $header-font-family,
+    $global-font-family,
     $type-size-2,
     700,
     4.375rem,
