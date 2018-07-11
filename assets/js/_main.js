@@ -244,7 +244,7 @@ $(window).on("load resize scroll", function() {
 
   if($(".blog-container").length) {
     var distance = $('.blog-row').offset().top;
-    var endDistance = $(".blog-container").offset().top+$(".blog-container").height()-2000;
+    var endDistance = $(".blog-container").offset().top+$(".blog-container").height()-500;
     $window = $(window);
     console.log($(window).scrollTop());
     console.log(endDistance);
