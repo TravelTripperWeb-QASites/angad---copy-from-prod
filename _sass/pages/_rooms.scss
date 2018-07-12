@@ -121,6 +121,22 @@
     }
   }
 }
+.page-intro {
+  &.rooms-page-intro {
+    margin-bottom: 20px !important;
+  }
+}
+
+.note {
+  @include main-container;
+  margin: 0 auto 40px;
+  p {
+
+    font-family: $header-font-family;
+    font-size: $type-size-3;
+    text-transform: uppercase;
+  }
+}
 
 .cross-sell-banner {
   position: relative;
