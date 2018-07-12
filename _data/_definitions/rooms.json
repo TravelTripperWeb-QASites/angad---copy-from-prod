@@ -10,6 +10,10 @@
     "display_field": "title",
     "required": true
   },
+  "bed_type": {
+    "label": "Bed Type and other features",
+    "required": true
+  },
   "room_image": {
     "label": "Room Image",
     "type": "image",
