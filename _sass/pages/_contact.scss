@@ -98,5 +98,21 @@
     img {
       width: 100%;
     }
+    .map-popup {
+      p {
+        margin: 15px 0;
+        font-size: 1.2rem;
+        line-height: normal;
+        color: $black;
+        text-transform: uppercase;
+        a {
+          color: $black;
+        }
+      }
+      .secondary-btn {
+        margin-bottom: 10px;
+        color: $black;
+      }
+    }
   }
 }
