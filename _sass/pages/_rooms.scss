@@ -138,28 +138,27 @@
       color: $white;
       &:after {
         position: absolute;
-        top: 4px;
+        top: -2px;
         left: -2px;
         z-index: -1;
         width: 23px;
         height: 29px;
         content: "";
         background-color: $brand-green;
-
         @include media-breakpoint-up(md) {
-          top: 15px;
+          top: -1px;
           left: -5px;
           width: 65px;
           height: 72px;
         }
         @include media-breakpoint-up(lg) {
-          top: 15px;
+          top: 0;
           left: -6px;
           width: 66px;
           height: 72px;
         }
         @include media-breakpoint-up(xl) {
-          top: 14px;
+          top: -2px;
           left: -6px;
           width: 67px;
           height: 74px;

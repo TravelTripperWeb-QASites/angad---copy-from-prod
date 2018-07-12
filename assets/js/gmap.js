@@ -246,10 +246,6 @@ function initialize() {
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
   }
 
-
-
-
-
   var contentString = '<div class="map-popup">' +
     '<p>'+
       '<b>Angad Arts Hotel</b> <br>'+
