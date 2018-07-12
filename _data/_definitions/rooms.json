@@ -4,7 +4,7 @@
     "required": true
   },
   "room_type": {
-    "label": "Room Type",
+    "label": "Room Type (For Filtering on Website)",
     "type": "model",
     "model_name": "categories",
     "display_field": "title",
@@ -18,6 +18,10 @@
   "room_size": {
     "label": "Room Size",
     "instructions": "(in square feet)"
+  },
+  "bed_type": {
+    "label": "Bed Type and other features",
+    "required": true
   },
   "booking_link": {
     "label": "Booking Link",

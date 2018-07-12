@@ -1,5 +1,5 @@
 {
-  "title": "King Bed",
+  "title": "Medium",
   "room_type": "categories2",
   "room_image": {
     "name": "Room M@2x",
@@ -24,5 +24,6 @@
   "room_size": "300 to 350 SQ FT",
   "booking_link": "https://angadartshotel.reztrip.com/search?selected_room_category=Medium&selected_room=MKB&_ga=2.165054011.562446127.1530008939-352339687.1528700580",
   "ada_options_available": true,
-  "sort_order": 2
+  "sort_order": 2,
+  "bed_type": "King Bed"
 }

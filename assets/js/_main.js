@@ -1,8 +1,19 @@
 /*
    jQuery plugin settings and other scripts
    ========================================================================== */
+// filtering dates in booking widget
+
+ setTimeout(function(){
+   while($(".calendar-month__header__name").html().replace(/\n|\s|\r/g, "").toLowerCase() != 'november2018') {
+     $(".calendar-month__header__control--next").click();
+   }
+   $("td.calendar-month__grid__date[data-date='2018-11-01']").click();
+   $("td.calendar-month__grid__date[data-date='2018-11-02']").click();
+ },2000);
 
 $(document).ready(function() {
+
+
   //hover effects for navigation
 
   $(".nav-item").hover(
