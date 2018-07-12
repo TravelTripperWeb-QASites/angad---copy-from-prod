@@ -1,6 +1,6 @@
 {
   "sort_order": 10,
-  "title": "1 Bedroom Suite with Kitchenette, King Bed and Sleeper Sofa",
+  "title": "Suites",
   "room_type": "categories5",
   "room_image": {
     "name": "Room 1BSWK@2x",
@@ -24,5 +24,6 @@
   },
   "room_size": "510 to 610 SQ FT",
   "booking_link": "https://angadartshotel.reztrip.com/search?selected_room_category=Suites&selected_room=1SB&_ga=2.168726181.562446127.1530008939-352339687.1528700580",
-  "ada_options_available": true
+  "ada_options_available": true,
+  "bed_type": "1 Bedroom Suite with Kitchenette, King Bed and Sleeper Sofa"
 }
