@@ -44,13 +44,13 @@ $(document).ready(function() {
   $(".overlay-blocks a").hover(
     function() {
       $(this).css({
-        width: "80%",
+        width: "52%",
         opacity: "0"
       });
       $(".overlay-blocks .overlay")
         .not(this)
         .css({
-          width: "6%"
+          width: "16%"
         });
       var imagefor = $(this).data("imgsrc");
       $("#mainroom-image").css("background-image", "url(" + imagefor + ")");
