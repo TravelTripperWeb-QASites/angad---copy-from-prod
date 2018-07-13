@@ -80,7 +80,10 @@
         background-color: $site-transparent-clr-3;
       }
       &.block-2 {
-        margin-left: -20px;
+        margin-left: -10px;
+        @include media-breakpoint-up(xl) {
+          margin-left: -20px;
+        }
         width: 20%;
         background-color: $site-transparent-clr-1;
       }
