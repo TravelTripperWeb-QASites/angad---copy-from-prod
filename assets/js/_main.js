@@ -34,12 +34,12 @@ $(document).ready(function() {
     }
   );
 
-  // setTimeout(function() {
-  //   $(".intro-logo img").attr("src", "/assets/images/logo-animation.gif");
-  // }, 500);
-  // setTimeout(function() {
-  //   $(".intro-logo").slideUp(300);
-  // }, 2000);
+  setTimeout(function() {
+    $(".intro-logo img").attr("src", "/assets/images/logo-animation.gif");
+  }, 500);
+  setTimeout(function() {
+    $(".intro-logo").slideUp(300);
+  }, 2000);
 
   $(".overlay-blocks a").hover(
     function() {

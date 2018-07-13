@@ -4,9 +4,9 @@
 <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
 
 <!--New Booking Widget-->
-<!-- <script src="https://plugins.traveltripper.io/v2/rt3api.js"></script> -->
-<!-- <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script> -->
-{% comment %}
+<script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
+<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
+
 <script>
   TTWeb.Config.configure({
     hotelId: 'STLAAH', //'orwhatever your values are',
@@ -21,7 +21,6 @@
     showOfferCode: true
   });
 </script>
-{% endcomment %}
 
 <!-- Load Google Map on Contact Page -->
 {% if site.data.api-keys.maps.google.enabled != false %}
