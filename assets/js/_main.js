@@ -4,7 +4,7 @@
 // filtering dates in booking widget
 
  setTimeout(function(){
-   while($(".calendar-month__header__name").html().replace(/\n|\s|\r/g, "").toLowerCase() != 'november2018') {
+   while($(".calendar-month__header__name").html().replace(/\n|\s|\u200E|\r/g, "").toLowerCase() != 'november2018') {
      $(".calendar-month__header__control--next").click();
    }
    $("td.calendar-month__grid__date[data-date='2018-11-01']").click();
