@@ -732,3 +732,7 @@ svg:not(:root) {
     }
   }
 }
+//For Anuglar ng-cloak
+[ng\:cloak], [ng-cloak] {
+  display: none !important;
+}
