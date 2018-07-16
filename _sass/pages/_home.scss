@@ -7,8 +7,16 @@
   }
 }
 
+.stay-colorful-video {
+  display: block;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
 .stay-colorful {
   position: relative;
+  display: none;
   min-height: 320px;
   overflow: hidden;
   text-align: center;
@@ -17,6 +25,7 @@
     min-height: 500px;
   }
   @include media-breakpoint-up(lg) {
+    display: block;
     min-height: 810px;
   }
   .banner-text {
