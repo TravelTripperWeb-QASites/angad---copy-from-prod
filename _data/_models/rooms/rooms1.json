@@ -26,25 +26,25 @@
         "x": 0,
         "y": 0
       },
-      "width": 1215,
-      "height": 706
+      "width": 1216,
+      "height": 705
     },
     "croppedImage": {
       "name": "Room_LTS_2x",
       "file_name": "Room_LTS_2x.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164406/Room_LTS_2x.png",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164752/Room_LTS_2x.png",
       "tags": "",
       "description": "",
-      "date_added": "2018-07-16-164406",
+      "date_added": "2018-07-16-164752",
       "file_type": "image/jpeg",
-      "width": 1215,
-      "height": 706,
-      "file_size": 949538,
-      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164406/large_Room_LTS_2x.png",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164406/medium_Room_LTS_2x.png",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164406/small_Room_LTS_2x.png",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164406/xsmall_Room_LTS_2x.png",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164406/thumb_Room_LTS_2x.png"
+      "width": 1216,
+      "height": 705,
+      "file_size": 949241,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164752/large_Room_LTS_2x.png",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164752/medium_Room_LTS_2x.png",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164752/small_Room_LTS_2x.png",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164752/xsmall_Room_LTS_2x.png",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164752/thumb_Room_LTS_2x.png"
     }
   },
   "room_size": "230 TO 280 SQ FT",
