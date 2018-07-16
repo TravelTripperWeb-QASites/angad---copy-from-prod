@@ -20,7 +20,32 @@
     "git_file_name": "_assets/image_data/Room-LTS-2x.json",
     "path": "//cdn.traveltripper.io/site-assets/32_897_16873/media/2018-06-29-052245/Room_LTS_2x.jpg",
     "alt": "Small",
-    "caption": ""
+    "caption": "",
+    "crop": {
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "width": 1216,
+      "height": 705
+    },
+    "croppedImage": {
+      "name": "Room_LTS_2x",
+      "file_name": "Room_LTS_2x.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164752/Room_LTS_2x.png",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-16-164752",
+      "file_type": "image/jpeg",
+      "width": 1216,
+      "height": 705,
+      "file_size": 949241,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164752/large_Room_LTS_2x.png",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164752/medium_Room_LTS_2x.png",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164752/small_Room_LTS_2x.png",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164752/xsmall_Room_LTS_2x.png",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_17444/media/2018-07-16-164752/thumb_Room_LTS_2x.png"
+    }
   },
   "room_size": "230 TO 280 SQ FT",
   "booking_link": "https://angadartshotel.reztrip.com/search?selected_room_category=Small&&arrival_date=2018-11-01&departure_date=2018-11-02selected_room=SQY#category=small",
