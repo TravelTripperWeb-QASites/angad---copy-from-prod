@@ -22,7 +22,7 @@
     "caption": ""
   },
   "room_size": "230 TO 280 SQ FT",
-  "booking_link": "https://angadartshotel.reztrip.com/search?selected_room_category=Small&selected_room=SQY#category=small",
+  "booking_link": "https://angadartshotel.reztrip.com/search?selected_room_category=Small&&arrival_date=2018-11-01&departure_date=2018-11-02selected_room=SQY#category=small",
   "ada_options_available": false,
   "sort_order": 1,
   "bed_type": "Queen or King Bed"
