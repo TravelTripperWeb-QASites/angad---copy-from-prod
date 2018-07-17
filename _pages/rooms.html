@@ -47,7 +47,7 @@ published: true
     {% for room in rooms %}
       <div class="room-item {{ room.room_type.title | downcase | replace: ' ', '-' }} {% if room.ada_options_available == true %} ada-option {% endif %}" tabindex="0">
         <div class="room-image" style="background-image: url('{{ room.room_image.url }}');">
-          <a class="book-now-btn" href="{{ room.booking_link }}">Book Now</a>
+          <a class="book-now-btn" href="{{ room.booking_link }}" target="_blank" title="{{room.title}}">Book Now</a>
           {% if room.ada_options_available == true %}
             <div class="ada-available"><span>ADA Options Available</span><i class="fa fa-wheelchair"></i></div>
           {% endif %}

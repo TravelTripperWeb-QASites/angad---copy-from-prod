@@ -12,8 +12,6 @@
  },2000);
 
 $(document).ready(function() {
-
-
   //hover effects for navigation
 
   $(".nav-item").hover(
@@ -33,6 +31,23 @@ $(document).ready(function() {
       });
     }
   );
+
+  if($(".rooms-listing .room-item").length > 0) {
+    var openingDate = new Date(Date.parse("2018-11-01")).setHours(0,0,0,0);
+    var todayDate = new Date().setHours(0,0,0,0);
+    if(openingDate > todayDate) {
+      $(".rooms-listing .room-item").each(function() {
+        var fullUrl = $(this).find(".book-now-btn").attr("href");
+        if(fullUrl.indexOf("#") > -1) {
+          var urlArray = fullUrl.split("#");
+          fullUrl = urlArray[0]+"&arrival_date=2018-11-01&departure_date=2018-11-02#"+urlArray[1];
+        } else {
+          fullUrl = fullUrl+"&arrival_date=2018-11-01&departure_date=2018-11-02";
+        }
+        $(this).find(".book-now-btn").attr("href", fullUrl);
+      });
+    }
+  }
 
   setTimeout(function() {
     $(".intro-logo img").attr("src", "/assets/images/logo-animation.gif");
