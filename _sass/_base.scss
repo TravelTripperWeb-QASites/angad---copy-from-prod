@@ -732,6 +732,14 @@ svg:not(:root) {
     }
   }
 }
+.page-intro {
+  &.full-width {
+    P {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
 //For Anuglar ng-cloak
 [ng\:cloak], [ng-cloak] {
   display: none !important;
