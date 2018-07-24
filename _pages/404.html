@@ -13,7 +13,7 @@ meta_tags:
     <h3>404 Error</h3>
     {% endregionblock %}
     {% regionblock banner_heading_2, type: header %}
-    <h2>Page Not Found</h2>
+    <h2 tabindex="0">Page Not Found</h2>
     {% endregionblock %}
   </div>
 </section>
@@ -24,11 +24,11 @@ meta_tags:
     <div class="text-content text-center">
       <div class="color-block-red top-left-block"></div>
       {% regionblock intro_text, type: text %}
-      <p class="mb-4">We're sorry but it looks like that page doesn't exist anymore. Please view the sitemap below or go back to the <a href="/" title="Homepage"> Homepage</a>.</p>
+      <p class="mb-4" tabindex="0">We're sorry but it looks like that page doesn't exist anymore. Please view the sitemap below or go back to the <a href="/" title="Homepage"> Homepage</a>.</p>
       {% endregionblock %}
       <div class="sitemap">
         {% regionblock banner_heading_2, type: header %}
-          <h5>Sitemap</h5>
+          <h5 tabindex="0">Sitemap</h5>
         {% endregionblock %}
         <ul>
           <li><a href="/">Home</a></li>

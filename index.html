@@ -44,25 +44,7 @@ meta_tags:
   </div>
 </section>
 
-<!--image load on load time to smooth scrool-->
-<img src="/assets/images/home/Room-GREEN-min.jpg" class="d-none" alt="rooms green">
-<img src="/assets/images/home/Room-RED-min.jpg" class="d-none" alt="rooms red">
-<img src="/assets/images/home/Room-BLUE-min.jpg" class="d-none" alt="rooms blue">
-<img src="/assets/images/home/Room-yellow-min.jpg" class="d-none" alt="rooms yellow">
-
-<section class="stay-colorful bg-styles"  id="mainroom-image" style="background-image: url('/assets/images/home/stay-colorful-bg-min.jpg')">
-  <div class="overlay-blocks">
-    <a href="javascript:void(0);" title="Overlay Room Image" data-imgsrc="/assets/images/home/Room-GREEN-min.jpg" class="overlay block-1"></a>
-    <a href="javascript:void(0);" title="Overlay Room Image" data-imgsrc="/assets/images/home/Room-BLUE-min.jpg" class="overlay block-2"></a>
-    <a href="javascript:void(0);" title="Overlay Room Image" data-imgsrc="/assets/images/home/Room-RED-min.jpg" class="overlay block-3"></a>
-    <a href="javascript:void(0);" title="Overlay Room Image" data-imgsrc="/assets/images/home/Room-yellow-min.jpg" class="overlay block-4"></a>
-  </div>
-  <div class="banner-text">
-    {% regionblock stay_colorful_heading, type: header %}
-      <h2>Stay Colorful</h2>
-    {% endregionblock %}
-  </div>
-</section>
+{% include stay-colorful-section.html %}
 
 <section class="full-text-wrap" tabindex="0">
   <div class="full-text">

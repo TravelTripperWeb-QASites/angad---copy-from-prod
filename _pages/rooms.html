@@ -9,16 +9,16 @@ published: true
 ---
 <div class="loading" style="display:block;">Loading&#8230;</div>
 <!-- Rooms page Intro -->
-<section class="page-intro mb-5 rooms-page-intro" tabindex="0">
+<section class="page-intro mb-5 rooms-page-intro">
   {% regionblock rooms_page_title, type: header %}
-    <h1 class="page-title mb-4">Stay Colorful</h1>
+  <h1 class="page-title mb-4" tabindex="0">Stay Colorful</h1>
   {% endregionblock %}
   {% regionblock rooms_page_text, type: text %}
-    <p>Featuring 146 artfully designed guest rooms, including 38 suites and 25 extended stay rooms with kitchenettes, ours is the ﬁrst hotel in the world that gives you the option of booking your room not only by bed and room size, but also by the emotion of color – <span class="passion-red">Passion Red</span>, <span class="tranquility-blue">Tranquility Blue</span>, <span class="rejuvenation-green">Rejuvenation Green</span> or <span class="happiness-yellow">Happiness Yellow</span>.</p>
+    <p tabindex="0">Featuring 146 artfully designed guest rooms, including 38 suites and 25 extended stay rooms with kitchenettes, ours is the ﬁrst hotel in the world that gives you the option of booking your room not only by bed and room size, but also by the emotion of color – <span class="passion-red">Passion Red</span>, <span class="tranquility-blue">Tranquility Blue</span>, <span class="rejuvenation-green">Rejuvenation Green</span> or <span class="happiness-yellow">Happiness Yellow</span>.</p>
   {% endregionblock %}
 </section>
 
-<div class="note">
+<div class="note" tabindex="0">
   {% regionblock rooms_page_note, type: text %}
     <p>
       Currently taking reservations for November 1st onward.
@@ -30,7 +30,7 @@ published: true
 <section class="rooms" ng-controller="loader">
   <!-- Filter rooms by Category -->
   <div class="filter" tabindex="0">
-    <h6>Filter by room type</h6>
+    <h6>Filter by room type:</h6>
     {% assign categories = site.data._models.categories | sort: 'sort_order' %}
       <ul>
         <li> <a href="javascript:void(0);" class="active" data-filter="all-rooms">All Rooms</a></li>
