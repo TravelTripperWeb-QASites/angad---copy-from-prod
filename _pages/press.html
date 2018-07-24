@@ -7,12 +7,12 @@ meta_tags:
   robots:
 ---
 
-<section class="page-intro">
+<section class="page-intro" tabindex="0">
   {% regionblock press_page_title, type: header %}
-    <h3>Worth Reading</h3>
+    <h3 tabindex="0">Worth Reading</h3>
   {% endregionblock %}
   {% regionblock press_page_text, type: text %}
-    <p>For any inquiries, please contact NJF Public Relations at <a href="mailto:aahpress@njfpr.com" title="aahpress@njfpr.com">aahpress@njfpr.com </a>. We look forward to speaking with you about Angad Arts Hotel, a wholly new hospitality experience and beacon for St. Louis’ vibrant arts scene.</p>
+    <p tabindex="1">For any inquiries, please contact NJF Public Relations at <a href="mailto:aahpress@njfpr.com" title="aahpress@njfpr.com">aahpress@njfpr.com </a>. We look forward to speaking with you about Angad Arts Hotel, a wholly new hospitality experience and beacon for St. Louis’ vibrant arts scene.</p>
   {% endregionblock %}
 </section>
 
@@ -21,7 +21,7 @@ meta_tags:
 <section class="press-listing">
   <div class="list-row">
     {% for press-item in press-items %}
-      <div class="list-item red">
+      <div class="list-item red" tabindex="0">
         <div class="list-item-inner">
           <p class="date">{{ press-item.date | date: "%b %-d, %Y" }}</p>
           <p class="title">{{ press-item.title }}</p>
