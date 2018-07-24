@@ -11,12 +11,12 @@ published: true
 <div class="loading" style="display:block;">Loading&#8230;</div>
 <!-- Offers Wrapper-->
 <section class="offers" rt3-special-rates="offers">
-  <h1 class="page-title">Offers</h1>
+  <h1 class="page-title" tabindex="0">Offers</h1>
   <!-- Offers Listing -->
   <div class="offers-listing">
     <div class="no-offer-block" ng-show="offers.special_rates.length == 0"><h6>We're sorry, there are no special offers available at this time.</h6></div>
     <!-- Offer item 1 -->
-    <div class="offer-item mb-80" ng-repeat="offer in offers.special_rates">
+    <div class="offer-item mb-80" ng-repeat="offer in offers.special_rates" tabindex="0">
       <div class="offer-image" ng-style="{'background-image': 'url([[offer.images[0].large || '/assets/images/dummy.jpg' ]])'}">
       </div>
       <div class="offer-info balance_height">
@@ -29,23 +29,10 @@ published: true
   </div>
 </section>
 
-<!-- Rooms Cross Sell Banner -->
-<section class="stay-colorful bg-styles"  id="mainroom-image" style="background-image: url('/assets/images/home/stay-colorful-bg-min.jpg')">
-  <div class="overlay-blocks">
-    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-GREEN-min.jpg" class="overlay block-1" title="Room Green"></a>
-    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-BLUE-min.jpg" class="overlay block-2" title="Room Blue"></a>
-    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-RED-min.jpg" class="overlay block-3" title="Room Red"></a>
-    <a href="javascript:void(0);" data-imgsrc="/assets/images/home/Room-yellow-min.jpg" class="overlay block-4" title="Room Yellow"></a>
-  </div>
-  <div class="banner-text">
-    {% regionblock stay_colorful_heading, type: header %}
-      <h2>Stay Colorful</h2>
-    {% endregionblock %}
-  </div>
-</section>
+{% include stay-colorful-section.html %}
 
 <!-- Rooms Cross sell content -->
-<section class="full-text-wrap rooms-cross-sell">
+<section class="full-text-wrap rooms-cross-sell" tabindex="0">
   <div class="full-text">
     <div class="text-content">
       <div class="color-block-green top-left-block"></div>

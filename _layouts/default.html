@@ -7,7 +7,7 @@
 </head>
 
 <body ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-portal-info="portalInfo" rt3-rooms-browser="browser" ng-cloak>
-
+  <a class="skip-main" href="#main">Skip to main content</a>
   {% if site.data.tracking.analytics.provider and page.analytics != false %}
     {% case site.data.tracking.analytics.provider %}
     {% when "gtm" %}
@@ -22,11 +22,11 @@
   </section>
 
   {% include nav-main.html %}
-
+  <div id="main">
     {{ content }}
-
-    {% include footer/custom.html %}
-    {% include footer.html %}
+  </div>
+  {% include footer/custom.html %}
+  {% include footer.html %}
 
   {% include scripts.html %}
 
