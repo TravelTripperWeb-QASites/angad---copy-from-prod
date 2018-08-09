@@ -22,10 +22,52 @@
   });
 </script>
 
-<!-- Load Google Map on Contact Page -->
-{% if site.data.api-keys.maps.google.enabled != false %}
-  {% if page.permalink == "/contact/" %}
-    <script async defer src="https://maps.google.com/maps/api/js?key={{ site.data.api-keys.maps.google.api_key }}&callback=initialize"></script>
-    <script src="{{ '/assets/js/gmap.js' | absolute_url }}"></script>
-  {% endif %}
+
+{% if page.permalink == "/contact/" %}
+  {% assign map = true %}
+{% endif %}
+
+{% if map == true %}
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script>
+
+  <!-- Leaflet Settings -->
+  <script>
+  setTimeout(function(){
+    // Create map object, assign it to the 'map' div, give initial latitude, longitude and zoom values.
+    var map = L.map('map', {scrollWheelZoom:false}).setView([38.639429, -90.230389], 17);
+
+    // Add base map tiles from Carto CDN - Voyager Theme
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/pitney-bowes-streets/{z}/{x}/{y}.png', {
+      attribution:'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution/">CARTO</a>',
+      maxZoom: 20,
+      minZoom: 0,
+    }).addTo(map);
+
+    // Create a custom marker icon.
+    var hotelIcon = L.icon({
+      iconUrl: '/assets/images/leaflet/map-pointer.png',
+      iconSize: [46, 61],
+    });
+
+
+    // Create a default marker object, pass custom icon as an option, add it to the map.
+    var marker = L.marker([38.639429, -90.230389], {icon: hotelIcon}).addTo(map);
+
+    // Bind a popup to the default marker.
+    var contentString = '<div class="map-popup">' +
+    '<p>'+
+    '<b>Angad Arts Hotel</b> <br>'+
+    '<a href="https://goo.gl/Vh2tTu" target="_blank">'+
+    '3550 SAMUEL SHEPARD DR<br>'+
+    'SAINT LOUIS, MO 63103'+
+    '</a>'+
+    '</p>'+
+    '<a class="secondary-btn green mb-40" href="https://goo.gl/mFT5SB" target="_blank">Get Directions</a>'+
+    '</div>';
+    marker.bindPopup(contentString);
+  }, 1000)
+  </script>
 {% endif %}
