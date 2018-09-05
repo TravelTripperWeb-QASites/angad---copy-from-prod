@@ -1,23 +1,23 @@
 {
   "image": {
-    "name": "dd-background",
-    "file_name": "dd-background.jpg",
-    "url": "//cdn.traveltripper.io/site-assets/32_897_16168/media/2018-05-25-112724/dd-background.jpg",
+    "name": "dine-distinctively",
+    "file_name": "dine-distinctively.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/32_897_18768/media/2018-09-05-053935/dine-distinctively.jpg",
     "tags": "",
     "description": "",
-    "date_added": "2018-05-25-112724",
+    "date_added": "2018-09-05-053935",
     "file_type": "image/jpeg",
-    "width": 2189,
-    "height": 1021,
-    "file_size": 716956,
-    "url_large": "//cdn.traveltripper.io/site-assets/32_897_16168/media/2018-05-25-112724/large_dd-background.jpg",
-    "url_medium": "//cdn.traveltripper.io/site-assets/32_897_16168/media/2018-05-25-112724/medium_dd-background.jpg",
-    "url_small": "//cdn.traveltripper.io/site-assets/32_897_16168/media/2018-05-25-112724/small_dd-background.jpg",
-    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_16168/media/2018-05-25-112724/xsmall_dd-background.jpg",
-    "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_16168/media/2018-05-25-112724/thumb_dd-background.jpg",
-    "path": "//cdn.traveltripper.io/site-assets/32_897_16168/media/2018-05-25-112724/dd-background.jpg",
-    "alt": "dd-background",
+    "width": 1440,
+    "height": 700,
+    "file_size": 202749,
+    "url_large": "//cdn.traveltripper.io/site-assets/32_897_18768/media/2018-09-05-053935/large_dine-distinctively.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_897_18768/media/2018-09-05-053935/medium_dine-distinctively.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_897_18768/media/2018-09-05-053935/small_dine-distinctively.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_18768/media/2018-09-05-053935/xsmall_dine-distinctively.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_18768/media/2018-09-05-053935/thumb_dine-distinctively.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/32_897_18768/media/2018-09-05-053935/dine-distinctively.jpg",
+    "alt": "dine-distinctively",
     "caption": ""
   },
-  "order": ""
+  "order": 1
 }
