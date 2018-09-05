@@ -11,8 +11,15 @@
    $("td.calendar-month__grid__date[data-date='2018-11-02']").click();
  },2000);
 
+$(window).on("load", function(){
+  if($(window).width() < 992) {
+    $(".stay-colorful-video").append('<video muted loop poster="/assets/images/home/stay-colorful-banner.jpg" ><source src="//cdn.traveltripper.io/site-assets/32_897_15880/media/2018-05-23-050643/stay-colorful.mp4" type="video/mp4">Your browser does not support the video tag.</video><div class="play-overlay"><span class="far fa-play-circle"></span></div>');
+  }
+});
+
 $(document).ready(function() {
   //hover effects for navigation
+  //alert(window.innerWidth);
 
   $(".nav-item").hover(
     function() {
