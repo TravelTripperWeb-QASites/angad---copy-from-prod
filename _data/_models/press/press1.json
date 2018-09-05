@@ -1,5 +1,25 @@
 {
   "date": "2018-09-05T18:30:00.000Z",
   "title": "For Art Lovers: Angad Arts Hotel",
-  "link": "https://www.travelchannel.com/interests/top-hotels/photos/amazing-hotels-for-every-type-of-traveler"
+  "link": "https://www.travelchannel.com/interests/top-hotels/photos/amazing-hotels-for-every-type-of-traveler",
+  "logo": {
+    "name": "travel-channel",
+    "file_name": "travel-channel.png",
+    "url": "//cdn.traveltripper.io/site-assets/32_897_18771/media/2018-09-05-104155/travel-channel.png",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-05-104155",
+    "file_type": "image/png",
+    "width": 158,
+    "height": 64,
+    "file_size": 7640,
+    "url_large": "//cdn.traveltripper.io/site-assets/32_897_18771/media/2018-09-05-104155/large_travel-channel.png",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_897_18771/media/2018-09-05-104155/medium_travel-channel.png",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_897_18771/media/2018-09-05-104155/small_travel-channel.png",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_18771/media/2018-09-05-104155/xsmall_travel-channel.png",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_18771/media/2018-09-05-104155/thumb_travel-channel.png",
+    "path": "//cdn.traveltripper.io/site-assets/32_897_18771/media/2018-09-05-104155/travel-channel.png",
+    "alt": "Travel Channel Logo",
+    "caption": ""
+  }
 }
