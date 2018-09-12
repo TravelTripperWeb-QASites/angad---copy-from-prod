@@ -6,7 +6,7 @@
   "event_venue": "Angad Playhouse",
   "short_description": "<p><strong>INCIDIDUNT</strong>&nbsp;ut labore et dolore magna aliqua.</p>",
   "long_description": "<p><strong>LOREM IPSUM</strong>&nbsp;dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>",
-  "reserve_url": "#",
+  "reserve_url": "",
   "url_friendly_name": "fashion-show-and-dinner-at-angad-playhouse",
   "btn_txt": "Learn More",
   "btn_color": "yellow",
@@ -72,5 +72,6 @@
     "alt": "Fashion show & dinner at Angad Playhouse",
     "caption": ""
   },
-  "event_date": "2018-06-25T18:30:00.000Z"
+  "event_date": "2018-06-25T18:30:00.000Z",
+  "reservation_cta_btn_text": "Reserve A Table"
 }
