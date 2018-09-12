@@ -14,6 +14,16 @@
   }
 }
 
+.stay-colorful-header {
+  display: none;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  text-align: center;
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+
 .stay-colorful {
   position: relative;
   display: none;

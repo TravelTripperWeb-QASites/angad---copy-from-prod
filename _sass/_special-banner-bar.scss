@@ -1,0 +1,35 @@
+// Special Banner Bar
+
+.special-banner-bar {
+  max-width: 100%;
+  margin: 2px auto;
+  padding: 10px 0;
+  text-align: center;
+  background-color: rgba(0,0,0,.3);
+
+  h5 {
+    display: inline-block;
+    margin: 0 15px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    @include media-breakpoint-down(md) {
+      display: block;
+      font-size: $type-size-6;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 30px 0 0;
+    }
+  }
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    @include media-breakpoint-down(lg) {
+      font-size: $type-size-5;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: $type-size-13;
+      letter-spacing: .05rem;
+    }
+  }
+}
