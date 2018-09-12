@@ -72,5 +72,6 @@
     "caption": ""
   },
   "event_date": "2018-07-17T18:30:00.000Z",
-  "btn_color": "yellow"
+  "btn_color": "yellow",
+  "reservation_cta_btn_text": "Reserve A Table"
 }
