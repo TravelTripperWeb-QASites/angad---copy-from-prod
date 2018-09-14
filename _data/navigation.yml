@@ -24,3 +24,4 @@ footer:
   - title: Careers
     url: https://harri.com/tlg-634-hotel-manager
     new-tab: true
+    nofollow: true
