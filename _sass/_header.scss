@@ -149,7 +149,7 @@
               }
             }
           }
-          &.mainnav-storytelling {
+          &.mainnav-storyteller {
             .show-on-hover {
               left: 150px;
             }
@@ -261,7 +261,7 @@
   .dining-bars-logo,
   .meetings-catering-logo,
   .aah-tonight-logo,
-  .storytelling-logo {
+  .storyteller-logo {
     display: none;
   }
   @include media-breakpoint-up(lg) {
@@ -316,12 +316,12 @@
         display: block;
       }
     }
-    &.hovered-storytelling {
+    &.hovered-storyteller {
       background-color: $nav-yellow;
       .default-logo {
         display: none;
       }
-      .storytelling-logo {
+      .storyteller-logo {
         display: block;
       }
     }
