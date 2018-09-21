@@ -15,7 +15,9 @@ layout: default
         @ {{ page.event_venue }}
       </h5>
       {{ page.long_description }}
-      <a class="primary-btn yellow" href="{{ page.reserve_url }}" target="_blank">Reserve A Table</a>
+      {% if page.reservation_cta_btn_text != "" and page.reservation_cta_btn_text != undefined and page.reserve_url != "" and page.reserve_url != undefined %}
+        <a class="primary-btn yellow" href="{{ page.reserve_url }}" target="_blank">{{page.reservation_cta_btn_text}}</a>
+      {% endif %}
       <hr>
       <div class="tnc">
         <h6>Terms & Conditions</h6>
