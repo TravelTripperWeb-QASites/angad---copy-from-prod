@@ -7,10 +7,10 @@ main:
     url: /dining-bars/
   - title: Meetings & Catering
     url: /meetings-catering/
-  - title: Aah! tonight
-    url: /aah-tonight/
-  - title: Storyteller
-    url: /storyteller/
+  # - title: Aah! tonight
+  #   url: /aah-tonight/
+  # - title: Storyteller
+  #   url: /storyteller/
 
 footer:
   - title: Gallery
