@@ -9,8 +9,9 @@ main:
     url: /meetings-catering/
   # - title: Aah! tonight
   #   url: /aah-tonight/
-  # - title: Storyteller
-  #   url: /storyteller/
+  - title: Storyteller
+    url: http://aahstoryteller.com
+    newtab: true
 
 footer:
   - title: Gallery

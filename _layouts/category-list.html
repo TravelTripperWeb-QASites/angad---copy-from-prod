@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: /storytelling/
+parent: /storyteller/
 ---
 {% assign seo_title = page.data.title %}
 <div class="blog-banner bg-styles" style="background-image: url('{{page.data.categoryimage.url_large}}');"></div>
@@ -9,15 +9,15 @@ parent: /storytelling/
   <div class="blog-row">
     <div class="blog-col lead-post">
       <div class="lead-story-box">
-        {% for post in site.data._models.storytelling %}
+        {% for post in site.data._models.storyteller %}
           {% if post.category.url_friendly_name == page.url_friendly_name %}
             <p class="info">
-              <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span> | <span class="categories"> <a href="/storytelling/category/{{post.category.url_friendly_name}}" > {{post.category.title}} </a></span>
+              <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span> | <span class="categories"> <a href="/storyteller/category/{{post.category.url_friendly_name}}" > {{post.category.title}} </a></span>
             </p>
             <h2>{{post.title}}</h2>
             {{post.short_description}}
             <div class="btn-holder">
-              <a class="secondary-btn yellow" href="/storytelling/{{post.url_friendly_name}}"> Read Story </a>
+              <a class="secondary-btn yellow" href="/storyteller/{{post.url_friendly_name}}"> Read Story </a>
             </div>
             {% break %}
           {% endif %}
@@ -26,14 +26,14 @@ parent: /storytelling/
 
       <h3 class="blog-intro">{{page.intro_heading}}</h3>
       <p class="blog-intro-text">{{page.intro_text}}</p>
-      {% for post in site.data._models.storytelling %}
+      {% for post in site.data._models.storyteller %}
         {% if post.category.url_friendly_name == page.url_friendly_name %}
           <div class="post-item mb-80">
-          <a href="/storytelling/{{ post.url_friendly_name }}/" title="{{post.title}}">
+          <a href="/storyteller/{{ post.url_friendly_name }}/" title="{{post.title}}">
             <img src="{{post.blogimage.url}}" class="img-responsive post-img" alt="{{post.img_alt_txt}}">
           </a>
           <div class="blog-item-text">
-            <a href="/storytelling/{{ post.url_friendly_name }}/" title="{{post.title}}" class="post-title">
+            <a href="/storyteller/{{ post.url_friendly_name }}/" title="{{post.title}}" class="post-title">
               <h4> {{post.title}} </h4>
             </a>
             <div class="info">
@@ -41,7 +41,7 @@ parent: /storytelling/
                 <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span>
                 {% if post.category.url_friendly_name %} |
                   <span class="categories">
-                      <a href="/storytelling/category/{{post.category.url_friendly_name}}/" >{{post.category.title}}</a>
+                      <a href="/storyteller/category/{{post.category.url_friendly_name}}/" >{{post.category.title}}</a>
                   </span>
                 {% endif %}
               </p>
@@ -50,7 +50,7 @@ parent: /storytelling/
               {{post.short_description}}
             </div>
             <div class="btn-holder">
-              <a class="secondary-btn red" href="/storytelling/{{ post.url_friendly_name }}/"> Read Story </a>
+              <a class="secondary-btn red" href="/storyteller/{{ post.url_friendly_name }}/"> Read Story </a>
             </div>
           </div>
         </div>
