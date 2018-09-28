@@ -15,7 +15,7 @@ include_in_nav_localized:
   en: true
 
 ---
-<div class="blog-banner bg-styles" style="background-image: url('/assets/images/storytelling/banner.jpg');">
+<div class="blog-banner bg-styles" style="background-image: url('/assets/images/storyteller/banner.jpg');">
 </div>
 
 <section class="blog-container search-page">
@@ -34,7 +34,7 @@ include_in_nav_localized:
 
 <script>
   window.store = {
-    {% for post in site.data._models.storytelling %}
+    {% for post in site.data._models.storyteller %}
       "{{ post.url_friendly_name }}": {
         "title": "{{ post.title | xml_escape }}",
         "category": "{{ post.category.title | xml_escape }}",

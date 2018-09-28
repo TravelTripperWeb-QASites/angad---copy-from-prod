@@ -1,11 +1,11 @@
 ---
 layout: default
-parent: /storytelling/
+parent: /storyteller/
 ---
 {% assign blogseo_title =  'blog title' %}
 {% assign blog = page %}
 {% assign model = page %}
-{% assign post = site.data._models.storytelling  %}
+{% assign post = site.data._models.storyteller  %}
 {% for p in post %}
     {% if p.url_friendly_name == blog.url_friendly_name %}
         {% assign pInd = forloop.index0 | minus: 1 %}
@@ -35,7 +35,7 @@ parent: /storytelling/
 <section class="blog-container details-page">
   <div class="blog-row">
     <p class="info">
-      <span class="date"> {{ blog.date | date: "%B %d, %Y" }} </span> {% if blog.category.url_friendly_name %}| <span class="categories"><a href="/storytelling/category/{{blog.category.url_friendly_name}}/">{{blog.category.title}}</a></span> {% endif %}
+      <span class="date"> {{ blog.date | date: "%B %d, %Y" }} </span> {% if blog.category.url_friendly_name %}| <span class="categories"><a href="/storyteller/category/{{blog.category.url_friendly_name}}/">{{blog.category.title}}</a></span> {% endif %}
     </p>
     <h1 class="blog-intro">{{blog.title}}</h1>
     <div class="blog-col">
@@ -56,7 +56,7 @@ parent: /storytelling/
   <div class="related-posts-inner">
     <h2>Related Stories</h2>
     <div class="related-posts-row">
-      {% for post in site.data._models.storytelling %}
+      {% for post in site.data._models.storyteller %}
         {% if blog.category.url_friendly_name == post.category.url_friendly_name %}
           <div class="related-post-item">
             <a class="related-thumb" href="{{post.url_friendly_name}}" title="{{post.title}}" style="background-image: url('{{post.blogimage.url_medium}}')"></a>

@@ -1,6 +1,6 @@
 ---
 title_localized:
-  en: Storytelling | Angad Arts Hotel
+  en: Storyteller | Angad Arts Hotel
 label_localized:
   en:
 layout_localized:
@@ -15,13 +15,13 @@ include_in_nav_localized:
   en: true
 
 ---
-<div class="blog-banner bg-styles" style="background-image: url('/assets/images/storytelling/banner.jpg');">
+<div class="blog-banner bg-styles" style="background-image: url('/assets/images/storyteller/banner.jpg');">
 </div>
 <section class="blog-container">
   <div class="blog-row">
     <div class="blog-col lead-post">
       <div class="lead-story-box">
-        {% for post in site.data._models.storytelling | limit: 1 %}
+        {% for post in site.data._models.storyteller | limit: 1 %}
           <p class="info">
             <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span> | <span class="categories"> <a href="{{post.category.url_friendly_name}}" > {{post.category.title}} </a></span>
           </p>
@@ -37,18 +37,18 @@ include_in_nav_localized:
       <p class="blog-intro-text">Lorem ipsum dolor sit blog, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
       {% for post in data_paginator.posts %}
         <div class="post-item mb-80">
-          <a href="/storytelling/{{ post.url_friendly_name }}/" title="{{post.title}}">
+          <a href="/storyteller/{{ post.url_friendly_name }}/" title="{{post.title}}">
             <img src="{{post.blogimage.url}}" class="img-responsive post-img" alt="{{post.title}}">
           </a>
           <div class="blog-item-text">
-            <a href="/storytelling/{{ post.url_friendly_name }}/" title="{{post.title}}" class="post-title">
+            <a href="/storyteller/{{ post.url_friendly_name }}/" title="{{post.title}}" class="post-title">
               <h4> {{post.title}} </h4>
             </a>
             <p class="info">
                 <span class="date"> {{ post.date | date: "%B %d, %Y" }} </span>
                 {% if post.category.url_friendly_name %} |
                   <span class="categories">
-                    <a href="/storytelling/category/{{post.category.url_friendly_name}}/" >{{post.category.title}}</a>
+                    <a href="/storyteller/category/{{post.category.url_friendly_name}}/" >{{post.category.title}}</a>
                 </span>
                 {% endif %}
             </p>
@@ -56,7 +56,7 @@ include_in_nav_localized:
               {{post.short_description}}
             </div>
             <div class="btn-holder">
-              <a class="secondary-btn red" href="/storytelling/{{ post.url_friendly_name }}/"> Read Story </a>
+              <a class="secondary-btn red" href="/storyteller/{{ post.url_friendly_name }}/"> Read Story </a>
             </div>
           </div>
         </div>
