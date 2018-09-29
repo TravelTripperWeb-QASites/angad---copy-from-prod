@@ -2,15 +2,15 @@
   "title": "Funk Buffet with Mark Lewis",
   "event_name": "Funk Buffet with Mark Lewis",
   "meta_description": "Funk Buffet with Mark Lewis",
-  "event_time": "Weekly at 8pm",
+  "event_time": "Every Thursday at 8pm",
   "event_venue": "The Playroom",
   "short_description": "<p>Thursdays are all about the vibe and Mark Lewis is just the man to take you and your friends on that musical journey. You will find yourself singing along to songs that made you smile and heading over to the booth to ask, &ldquo;What song is this?&rdquo;.</p>",
-  "long_description": "<p>Thursdays are all about the vibe and Mark Lewis is just the man to take you and your friends on that musical journey. You will find yourself singing along to songs that made you smile and heading over to the booth to ask, &ldquo;What song is this?&rdquo;.</p>\n<p>Mark grew up with a love for music. Even before he became a professional DJ, he had a diverse music collection including over 3 thousand vinyl albums. Shortly after DJ&rsquo;ing became a hobby it then took off, making Mark one of the most sought after professional DJ&rsquo;s in St. Louis.</p>\n<p>&nbsp;</p>\n<p>Mark is co-founder of Nightchaser, and has been their resident DJ for the last 5 years and has been holding down various residencies around the city representing vintage skater music, 80s nights, disco and deep house. He has traveled out West with the Nightchaser family and continues to be one step ahead of the latest music trends as well as the depths of the most classic rare groove out there. Don&rsquo;t miss a chance to boogie to a Mark Lewis set! They're unforgettable.&nbsp;</p>\n<p>&nbsp;</p>",
+  "long_description": "<p>Thursdays are all about the vibe and Mark Lewis is just the man to take you and your friends on that musical journey. You will find yourself singing along to songs that made you smile and heading over to the booth to ask, &ldquo;What song is this?&rdquo;.</p>\n<p>Mark grew up with a love for music. Even before he became a professional DJ, he had a diverse music collection including over 3 thousand vinyl albums. Shortly after DJ&rsquo;ing became a hobby it then took off, making Mark one of the most sought after professional DJ&rsquo;s in St. Louis.</p>\n<p>Mark is co-founder of Nightchaser, and has been their resident DJ for the last 5 years and has been holding down various residencies around the city representing vintage skater music, 80s nights, disco and deep house. He has traveled out West with the Nightchaser family and continues to be one step ahead of the latest music trends as well as the depths of the most classic rare groove out there. Don&rsquo;t miss a chance to boogie to a Mark Lewis set! They're unforgettable.</p>\n<p class=\"p1\"><strong><span class=\"s1\">General RSVP is not required but does get you on our A-List mailer for the latest in bookings and event info.<span class=\"Apple-converted-space\">&nbsp;</span></span></strong></p>",
   "reserve_url": "",
   "url_friendly_name": "funk-buffet-with-mark-lewis",
   "btn_txt": "Learn More",
   "btn_color": "yellow",
-  "terms": "<p>General RSVP is not required but does get you on our A-List mailer for the latest in bookings and event info.&nbsp;</p>",
+  "terms": "<p>n/a&nbsp;</p>",
   "event_image": {
     "name": "james-price-335314-unsplash-1@2x",
     "file_name": "james-price-335314-unsplash-1@2x.jpg",
@@ -72,5 +72,6 @@
     "caption": ""
   },
   "event_date": "2018-11-08T05:00:00.000Z",
-  "reservation_cta_btn_text": "RSVP here"
+  "reservation_cta_btn_text": "RSVP here",
+  "event_enddate": "2018-12-27T05:00:00.000Z"
 }
