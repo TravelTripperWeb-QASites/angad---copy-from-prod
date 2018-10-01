@@ -49,28 +49,28 @@
     "caption": "",
     "crop": {
       "origin": {
-        "x": 18,
+        "x": 56,
         "y": 0
       },
-      "width": 284,
+      "width": 246,
       "height": 192
     },
     "croppedImage": {
       "name": "angard_events_thumbs-funkbuffet-2",
       "file_name": "angard_events_thumbs-funkbuffet-2.png",
-      "url": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125520/angard_events_thumbs-funkbuffet-2.png",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125743/angard_events_thumbs-funkbuffet-2.png",
       "tags": "",
       "description": "",
-      "date_added": "2018-10-01-125520",
+      "date_added": "2018-10-01-125743",
       "file_type": "image/png",
-      "width": 284,
+      "width": 246,
       "height": 192,
-      "file_size": 90449,
-      "url_large": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125520/large_angard_events_thumbs-funkbuffet-2.png",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125520/medium_angard_events_thumbs-funkbuffet-2.png",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125520/small_angard_events_thumbs-funkbuffet-2.png",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125520/xsmall_angard_events_thumbs-funkbuffet-2.png",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125520/thumb_angard_events_thumbs-funkbuffet-2.png"
+      "file_size": 80680,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125743/large_angard_events_thumbs-funkbuffet-2.png",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125743/medium_angard_events_thumbs-funkbuffet-2.png",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125743/small_angard_events_thumbs-funkbuffet-2.png",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125743/xsmall_angard_events_thumbs-funkbuffet-2.png",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125743/thumb_angard_events_thumbs-funkbuffet-2.png"
     }
   },
   "event_time": "8pm",
