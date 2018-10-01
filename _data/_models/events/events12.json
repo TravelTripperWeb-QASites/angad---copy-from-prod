@@ -49,5 +49,6 @@
     "caption": ""
   },
   "event_time": "8pm",
-  "event_venue": "The Playroom"
+  "event_venue": "The Playroom",
+  "event_enddate": "2018-11-23"
 }
