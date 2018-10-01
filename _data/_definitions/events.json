@@ -13,8 +13,8 @@
   "event_date": {
     "required": true,
     "label": "Event Date",
-    "type": "date",
-    "instructions": "Date of event or start date of event."
+    "type": "text",
+    "instructions": "Date of event or start date of event. (Format: YYYY-MM-DD)"
   },
   "event_time": {
     "label": "Event Time",
@@ -22,8 +22,8 @@
   },
   "event_enddate": {
     "label": "Event End Date",
-    "type": "date",
-    "instructions": "Fill this only if it's a multiday event. For single day events, don't fill this."
+    "type": "text",
+    "instructions": "Fill this only if it's a multiday event. For single day events, don't fill this. (Format: YYYY-MM-DD)"
   },
   "event_venue": {
     "required": true,
