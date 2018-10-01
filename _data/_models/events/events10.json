@@ -46,8 +46,34 @@
     "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_19473/media/2018-09-29-181601/thumb_angard_events_thumbs-funkbuffet-2.png",
     "path": "//cdn.traveltripper.io/site-assets/32_897_19473/media/2018-09-29-181601/angard_events_thumbs-funkbuffet-2.png",
     "alt": "Funk Buffet with Mark Lewis Vol. 2",
-    "caption": ""
+    "caption": "",
+    "crop": {
+      "origin": {
+        "x": 18,
+        "y": 0
+      },
+      "width": 284,
+      "height": 192
+    },
+    "croppedImage": {
+      "name": "angard_events_thumbs-funkbuffet-2",
+      "file_name": "angard_events_thumbs-funkbuffet-2.png",
+      "url": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125520/angard_events_thumbs-funkbuffet-2.png",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-10-01-125520",
+      "file_type": "image/png",
+      "width": 284,
+      "height": 192,
+      "file_size": 90449,
+      "url_large": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125520/large_angard_events_thumbs-funkbuffet-2.png",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125520/medium_angard_events_thumbs-funkbuffet-2.png",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125520/small_angard_events_thumbs-funkbuffet-2.png",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125520/xsmall_angard_events_thumbs-funkbuffet-2.png",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_897_19500/media/2018-10-01-125520/thumb_angard_events_thumbs-funkbuffet-2.png"
+    }
   },
   "event_time": "8pm",
-  "event_venue": "The Playroom"
+  "event_venue": "The Playroom",
+  "btn_txt": "Learn More"
 }
