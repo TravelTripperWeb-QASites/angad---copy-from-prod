@@ -12,7 +12,6 @@ main:
   - title: Storyteller
     url: http://aahstoryteller.com
     newtab: true
-
 footer:
   - title: Gallery
     url: /gallery/
