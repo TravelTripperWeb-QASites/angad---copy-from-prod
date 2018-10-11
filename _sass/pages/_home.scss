@@ -270,3 +270,12 @@
     width: 100%;
   }
 }
+.full-text-wrap {
+  &.make-something-new {
+    .full-text {
+      .top-right-block {
+        top: 0;
+      }
+    }
+  }
+}
