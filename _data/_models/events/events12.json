@@ -51,5 +51,6 @@
   "event_time": "8pm",
   "event_venue": "The Playroom",
   "event_enddate": "",
-  "btn_txt": "Learn More"
+  "btn_txt": "Learn More",
+  "show_email_subscription": true
 }
