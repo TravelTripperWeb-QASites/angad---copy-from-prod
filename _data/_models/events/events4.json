@@ -49,6 +49,7 @@
     "caption": ""
   },
   "event_time": "9pm",
-  "event_venue": "The Playroom",
-  "btn_txt": "Learn More"
+  "event_venue": "Chameleon Lounge",
+  "btn_txt": "Learn More",
+  "show_email_subscription": true
 }
