@@ -50,5 +50,7 @@
   "terms": "<p>none.&nbsp;</p>",
   "url_friendly_name": "tribute-after-party",
   "btn_txt": "Learn More",
-  "btn_color": "blue"
+  "btn_color": "blue",
+  "reserve_url": "https://www.metrotix.com/events/detail/tribute-fashion-fest",
+  "reservation_cta_btn_text": "Get tickets here"
 }
