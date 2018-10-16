@@ -83,6 +83,9 @@
     "type": "image",
     "label": "Event Image",
     "instructions": "This is for Event details page."
+  },
+  "show_email_subscription": {
+    "type": "boolean"
   }
 
 }
