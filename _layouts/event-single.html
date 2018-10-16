@@ -18,6 +18,9 @@ layout: default
       {% if page.reservation_cta_btn_text != "" and page.reservation_cta_btn_text != undefined and page.reserve_url != "" and page.reserve_url != undefined %}
         <a class="primary-btn yellow" href="{{ page.reserve_url }}" target="_blank">{{page.reservation_cta_btn_text}}</a>
       {% endif %}
+
+      {% if page.show_email_subscription == true %}
+
       {% assign jotform = site.data.forms.jotform %}
       <form class="newsletter-footer" action="https://submit.jotform.me/submit/{{jotform.events-tc-id}}/" method="post" name="form_{{jotform.events-tc-id}}" id="{{jotform.events-tc-id}}">
         <input type="hidden" name="formID" value="{{jotform.events-tc-id}}" />
@@ -25,12 +28,16 @@ layout: default
           <input class="form-control" type="email" name="q3_email" value="" placeholder="name@domain.com" title="Enter Your Email" aria-label="Enter Your Email" required>
           <label for="input_4_0" class="agree">
             <input type="checkbox" aria-label="I agree to the Terms of Service and Privacy Policy." title="I agree to the Terms of Service and Privacy Policy." id="input_4_0" name="q4_acceptTerms[]" tabindex="0" required>
+            <input type="hidden" name="q5_eventName" value="{{page.event_name}}">
             I agree to the <a href="/terms-of-use/" target="_blank">Terms of Use</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.
             <span class="checkmark"></span>
           </label>
         </div>
         <button id="signUpBtn" type="submit" name="button" title="Signup" aria-label="Signup" tabindex="0" disabled></button>
       </form>
+
+      {% endif %}
+
       <hr>
       <div class="tnc">
         <h6>Terms & Conditions</h6>
