@@ -2,16 +2,16 @@
   "title": {
     "required": true
   },
-  "categoryimage":
-		{"type":"image","required":true},
+  "categoryimage": {
+    "type": "image",
+    "required": true
+  },
   "url_friendly_name": {
     "required": true
   },
-  "intro_heading": {
-  },
-  "intro_text": {
-  },
-  "order":{
-  	 "required": true
+  "intro_heading": {},
+  "intro_text": {},
+  "order": {
+    "required": true
   }
 }

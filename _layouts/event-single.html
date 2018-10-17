@@ -14,12 +14,12 @@ layout: default
         {{ page.event_date | date: "%a %b %d" }}<span> {% if page.event_enddate and page.event_enddate != '' %} <br /><i>to</i> {{ page.event_enddate | date: "%a %b %d" }}{% else %}<br />{{ page.event_time }}{% endif %}<br />
         @ {{ page.event_venue }}
       </h5>
+
       {{ page.long_description }}
-      {% if page.reservation_cta_btn_text != "" and page.reservation_cta_btn_text != undefined and page.reserve_url != "" and page.reserve_url != undefined %}
-        <a class="primary-btn yellow" href="{{ page.reserve_url }}" target="_blank">{{page.reservation_cta_btn_text}}</a>
-      {% endif %}
+
 
       {% if page.show_email_subscription == true %}
+
 
       {% assign jotform = site.data.forms.jotform %}
       <form class="newsletter-footer" action="https://submit.jotform.me/submit/{{jotform.events-tc-id}}/" method="post" name="form_{{jotform.events-tc-id}}" id="{{jotform.events-tc-id}}">
@@ -38,6 +38,10 @@ layout: default
 
       {% endif %}
 
+      {% if page.reservation_cta_btn_text != "" and page.reservation_cta_btn_text != undefined and page.reserve_url != "" and page.reserve_url != undefined %}
+      <hr>
+      <a class="primary-btn yellow" href="{{ page.reserve_url }}" target="_blank">{{page.reservation_cta_btn_text}}</a>
+      {% endif %}
       <hr>
       <div class="tnc">
         <h6>Terms & Conditions</h6>
