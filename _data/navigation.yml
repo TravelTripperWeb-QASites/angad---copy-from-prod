@@ -1,28 +1,28 @@
+---
 main:
-  - title: Rooms
-    url: /rooms/
-  - title: Offers
-    url: /offers/
-  - title: Dining & Bars
-    url: /dining-bars/
-  - title: Meetings & Catering
-    url: /meetings-catering/
-  - title: Aah! tonight
-    url: /aah-tonight/
-  - title: Storyteller
-    url: http://aahstoryteller.com
-    newtab: true
-    
+- title: Rooms
+  url: "/rooms/"
+- title: Offers
+  url: "/offers/"
+- title: Dining & Bars
+  url: "/dining-bars/"
+- title: Meetings & Catering
+  url: "/meetings-catering/"
+- title: Aah! tonight
+  url: "/aah-tonight/"
+- title: Storyteller
+  url: http://aahstoryteller.com
+  newtab: true
+- title: Gallery
+  url: "/gallery/"
 footer:
-  - title: Gallery
-    url: /gallery/
-  - title: Contact us
-    url: /contact/
-  - title: Press
-    url: /press/
-  - title: About
-    url: /about/
-  - title: Careers
-    url: https://harri.com/tlg-634-hotel-manager
-    new-tab: true
-    nofollow: true
+- title: Contact us
+  url: "/contact/"
+- title: Press
+  url: "/press/"
+- title: About
+  url: "/about/"
+- title: Careers
+  url: https://harri.com/tlg-634-hotel-manager
+  new-tab: true
+  nofollow: true
